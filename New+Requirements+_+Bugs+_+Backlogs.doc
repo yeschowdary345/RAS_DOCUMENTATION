@@ -1,0 +1,1286 @@
+Date: Wed, 3 Jan 2024 04:30:28 +0000 (UTC)
+Message-ID: <1480595219.31.1704256228371@0564475b91b8>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_30_1027152665.1704256228371"
+
+------=_Part_30_1027152665.1704256228371
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>New Requirements / Bugs / Backlogs</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>New Requirements / Bugs / Backlogs</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"full-width" data-local-id=3D"b3940965-9804-434c-9502-=
+987c31f1b791" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 75.0px;">
+<col style=3D"width: 129.0px;">
+<col style=3D"width: 350.0px;">
+<col style=3D"width: 110.0px;">
+<col style=3D"width: 98.0px;">
+<col style=3D"width: 130.0px;">
+<col style=3D"width: 52.0px;">
+<col style=3D"width: 156.0px;">
+<col style=3D"width: 56.0px;">
+<col style=3D"width: 126.0px;">
+<col style=3D"width: 140.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p><strong>#</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Head / Group</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Requirements (Epics)</strong></p></td=
+>
+<td class=3D"confluenceTd"><p><strong>Proposed By</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Task Type</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Complexity </strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Priority</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Estimation (Hrs)</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Remark/JIRA</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>status</strong></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Administrator =E2=86=92 Company</p></td>
+<td class=3D"confluenceTd"><p>Edit for Company in UI:</p><p>We should have =
+edit option for the company in UI instead of deleting company from the serv=
+er DB<br></p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>to be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>Administrator =E2=86=92 Asset </p></td>
+<td class=3D"confluenceTd"><p>Edit for Asset Type in UI:</p><p>We should ha=
+ve edit option for the Asset Type in UI instead of deleting company from th=
+e server DB</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>to be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Implement pagination for all data tables in R=
+AS</p></td>
+<td class=3D"confluenceTd"><p>Adding pagination will help in executing the =
+set of data quickly</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp; <span class=3D"confluence-jim-macro ji=
+ra-issue" data-jira-key=3D"RASP-745"> <a href=3D"https://nexchargeapplicati=
+ons.atlassian.net/browse/RASP-745" class=3D"jira-issue-key"><img class=3D"i=
+con" src=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universa=
+l_avatar/view/type/issuetype/avatar/10318?size=3Dmedium">RASP-745</a> - <sp=
+an class=3D"summary">FOTA Status - Need Pagination by default last 20 (UI +=
+ Backend)</span> <span class=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-=
+success jira-macro-single-issue-export-pdf">Done</span> </span> </p></td>
+<td class=3D"confluenceTd"><p>To do</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>Dashboards</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;Enable Auto refresh feature in RAS</p><=
+/td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>View historical data for an asset selection</=
+p></td>
+<td class=3D"confluenceTd"><p>User should be able to view all historical da=
+ta for the specific asset</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>to be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Dashboards</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;Enable Time range filter option in RAS<=
+/p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Dashboards</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;Permission setting to view historical d=
+ata for specific user </p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;&nbsp;<a class=3D"external-link" href=
+=3D"https://nexchargeapplications.atlassian.net/browse/RASP-464" rel=3D"nof=
+ollow">RASP-464</a></p></td>
+<td class=3D"confluenceTd"><p>To Do</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>To export for historical data to pdf/csv/xls =
+files with timestamp range filter</p></td>
+<td class=3D"confluenceTd"><p>User should be able to export data based on t=
+ime filter range</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;<a class=3D"external-link" href=3D"http=
+s://nexchargeapplications.atlassian.net/browse/RASP-748" rel=3D"nofollow">R=
+ASP-748</a></p></td>
+<td class=3D"confluenceTd"><p>To Do</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>To export for historical data to pdf/csv/xls =
+files with property selection</p></td>
+<td class=3D"confluenceTd"><p>User should be able to export data based on t=
+ime filter range</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;<a class=3D"external-link" href=3D"http=
+s://nexchargeapplications.atlassian.net/browse/RASP-749" rel=3D"nofollow">R=
+ASP-749</a></p></td>
+<td class=3D"confluenceTd"><p>to DO</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Change required in mail configuration while s=
+haring dashboards/reports</p></td>
+<td class=3D"confluenceTd"><p>URL must contain domain name, not an IP addre=
+ss</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>to be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>11</p></td>
+<td class=3D"confluenceTd"><p>"Rename filter" option should work</p></td>
+<td class=3D"confluenceTd"><p>Now if we change the name of the filter at th=
+e end of "Complete Filter Wizard"<br>It does not load all the data</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>BUG</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;Not a bug</p></td>
+<td class=3D"confluenceTd"><p>Done </p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>12</p></td>
+<td class=3D"confluenceTd"><p>Loading Dashboard Issue</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Sometimes it takes time to load data</p></li>
+<li><p>Getting crashed due to overload of data.</p></li>
+</ul><p>[Scenario: Experienced the dashboard crashing while trying to load =
+a bulk of data]</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>BUG</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>To be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>Data not captured in milliseconds to RAS DB</=
+p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>To be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>Filter Issue</p></td>
+<td class=3D"confluenceTd"><p>Once the filter is created for the assets whi=
+ch don=E2=80=99t have data at that time&nbsp; (but expecting data to come i=
+n future). And configured those dashboard during that. YOU SEE NO DATA IN T=
+HE DASHBOARD&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>BUG</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>to be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Advance Graph </p></td>
+<td class=3D"confluenceTd"><p>Required Advance Graph with multiple compassi=
+on </p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>to be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>Filter</p></td>
+<td class=3D"confluenceTd"><p>Change in Filter UI based on Site and Asset g=
+rouping</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>Enhancement</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>17</p></td>
+<td class=3D"confluenceTd"><p>OTA (Firmware/Config)</p></td>
+<td class=3D"confluenceTd"><p>Need to develop option for selected user to u=
+pload firmware/configuration file on selected asset under testing using bro=
+wsing option in UI with comment field.</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>New Feature</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://ne=
+xchargeapplications.atlassian.net/browse/RASP-720" rel=3D"nofollow">RASP-72=
+0</a></p></td>
+<td class=3D"confluenceTd"><p>To Do</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>18</p></td>
+<td class=3D"confluenceTd"><p>AIRTEL POC</p></td>
+<td class=3D"confluenceTd"><p>Asset Grouping on Site level </p><p>(TCU + PA=
+CKS)</p></td>
+<td class=3D"confluenceTd"><p>BU Team</p></td>
+<td class=3D"confluenceTd"><p>New Feature</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>19</p></td>
+<td class=3D"confluenceTd"><p>AIRTEL POC</p></td>
+<td class=3D"confluenceTd"><p>Asset Grouping for Cluster =E2=86=92 District=
+ =E2=86=92 Circle </p></td>
+<td class=3D"confluenceTd"><p>BU Team</p></td>
+<td class=3D"confluenceTd"><p>New Feature</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>To be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>20</p></td>
+<td class=3D"confluenceTd"><p>AIRTEL POC</p></td>
+<td class=3D"confluenceTd"><p>Dashboards</p></td>
+<td class=3D"confluenceTd"><p>BU Team</p></td>
+<td class=3D"confluenceTd"><p>New Dashboard</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>21</p></td>
+<td class=3D"confluenceTd"><p>AIRTEL POC</p></td>
+<td class=3D"confluenceTd"><p>Reports - Total Run Hours</p></td>
+<td class=3D"confluenceTd"><p>BU Team</p></td>
+<td class=3D"confluenceTd"><p>New Report</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>22</p></td>
+<td class=3D"confluenceTd"><p>DataChunk</p></td>
+<td class=3D"confluenceTd"><p>Store the success and failed data log files i=
+n separate place under =E2=80=9CArchive=E2=80=9D Folder and display the sum=
+mary on UI =E2=80=9CDataChunk=E2=80=9D</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>New Feature</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://ne=
+xchargeapplications.atlassian.net/browse/RASP-703" rel=3D"nofollow">RASP-70=
+3</a></p></td>
+<td class=3D"confluenceTd"><p>To do</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>23</p></td>
+<td class=3D"confluenceTd"><p>Release and Version Management System </p></t=
+d>
+<td class=3D"confluenceTd"><p>Required to analysis and develop Release and =
+Version Management System for Configuration and Firmware files of Telemetry=
+ and Packs</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>New Feature</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>To be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>24</p></td>
+<td class=3D"confluenceTd"><p>NoReplyEmail need to configure</p></td>
+<td class=3D"confluenceTd"><p>Replace the NoReplyEmail" <a class=3D"externa=
+l-link" href=3D"mailto:value=3D%22noreply.nexcharge@gmail.com" rel=3D"nofol=
+low">value=3D"noreply.nexcharge@gmail.com</a>"</p><p>Ask to Siddharth email=
+id</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>Medium</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>To be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>25</p></td>
+<td class=3D"confluenceTd"><p>Server maintenance page</p></td>
+<td class=3D"confluenceTd"><p>Create a one web page for notification messag=
+e to users while updating server</p><p>message =E2=80=9CSorry, We're down f=
+or scheduled maintenance right now=E2=80=9D</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>New</p></td>
+<td class=3D"confluenceTd"><p>Low</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>To be added </p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>26</p></td>
+<td class=3D"confluenceTd"><p>Web API</p></td>
+<td class=3D"confluenceTd"><p>HTTP endpoint should be segregated</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p>New</p></td>
+<td class=3D"confluenceTd"><p>Medium</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>to be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>27</p></td>
+<td class=3D"confluenceTd"><p>Database</p></td>
+<td class=3D"confluenceTd"><p>Archival of database data after a period of t=
+ime</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p> New</p></td>
+<td class=3D"confluenceTd"><p>Medium</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://ne=
+xchargeapplications.atlassian.net/browse/RASP-591" rel=3D"nofollow">RASP-59=
+1</a></p></td>
+<td class=3D"confluenceTd"><p>To Do</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>28</p></td>
+<td class=3D"confluenceTd"><p>FOTA</p></td>
+<td class=3D"confluenceTd"><p>Detailed analysis of the FOTA implementation<=
+/p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>to be added</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>#</p></td>
+<td class=3D"confluenceTd"><p>GOAL / EPIC</p></td>
+<td class=3D"confluenceTd"><p>##</p></td>
+<td class=3D"confluenceTd"><p>SUB GOAL / STORY</p></td>
+<td class=3D"confluenceTd"><p>###</p></td>
+<td class=3D"confluenceTd"><p>TASK</p></td>
+<td class=3D"confluenceTd"><p>ESTI. (HRS.)&nbsp; TASK</p></td>
+<td class=3D"confluenceTd"><p>ESTI. (HRS.)&nbsp; <br>SUB GOAL</p></td>
+<td class=3D"confluenceTd"><p>Priority</p></td>
+<td class=3D"confluenceTd"><p>Remarks/Status</p></td>
+<td class=3D"confluenceTd"><p>Approval (Y/N)</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>OTA (Over-The-Air)</p></td>
+<td colspan=3D"4" class=3D"confluenceTd"><p>Send the Firmware or Config fil=
+es to the single or multiple assets.<br>Track the version of installed Firm=
+ware and Config file in device<br>The file will be sent when the admin allo=
+ws<br>Files will be categories into product and customer</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>1.1</p></td>
+<td colspan=3D"4" class=3D"confluenceTd"><p>FOTA Approach 1 - HFS</p></td>
+<td class=3D"confluenceTd"><p>352</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+<td class=3D"confluenceTd"><p>Y</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td colspan=3D"4" class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<h2 id=3D"NewRequirements/Bugs/Backlogs-BUGS">BUGS</h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"ed4349df-1c5d-45cb-9e0a-f4b=
+bab92c6f2" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 61.0px;">
+<col style=3D"width: 164.0px;">
+<col style=3D"width: 155.0px;">
+<col style=3D"width: 121.0px;">
+<col style=3D"width: 121.0px;">
+<col style=3D"width: 138.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>#</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Bug</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Raised By</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Effort (Hrs.)</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Status</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Status </strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Replace IP with domain name in the sharing da=
+shboard email</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>Not completed</p></td>
+<td class=3D"confluenceTd"><p>to be added</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>Duplicate records in FOTA status page</p></td=
+>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>Not completed</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Implement backup policy DB</p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>Not completed</p></td>
+<td class=3D"confluenceTd"><p>to be added</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>Implementation of versioning for Private UI</=
+p></td>
+<td class=3D"confluenceTd"><p>RAS Team</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>Not completed</p></td>
+<td class=3D"confluenceTd"><p>to be added</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p><strong>Customer requirements :</strong></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"ffca905a-b902-441f-b5a7-278=
+b220ef172" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 159.0px;">
+<col style=3D"width: 48.0px;">
+<col style=3D"width: 48.0px;">
+<col style=3D"width: 48.0px;">
+<col style=3D"width: 48.0px;">
+<col style=3D"width: 60.0px;">
+<col style=3D"width: 252.0px;">
+<col style=3D"width: 55.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p>Airtel - Requirement</p><p></p></th>
+<th class=3D"confluenceTh"><p><strong>Action/Statement</strong></p></th>
+<th class=3D"confluenceTh"><p>User Story</p></th>
+<th class=3D"confluenceTh"><p><strong>Priority</strong></p></th>
+<th class=3D"confluenceTh"><p>Jira Issue</p></th>
+<th class=3D"confluenceTh"><p>Approval</p></th>
+<th class=3D"confluenceTh"><p>&nbsp;</p></th>
+<th class=3D"confluenceTh"><p><strong>Status</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd"><p>Fine tune the =E2=80=9CLive dashboards=E2=80=
+=9D with BU team on regular basis.</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p><span class=3D"status-macro aui-lozenge aui-l=
+ozenge-error">HIGH</span></p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Status</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd"><p>Currently =E2=80=9CLive dashboard=E2=80=9D is=
+ using to load data for last 2 to 4 days.</p></td>
+<td class=3D"confluenceTd"><p>Statement</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>In-Progress</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd"><p>Need to keep 1 month data for =E2=80=9CLive d=
+ashboard=E2=80=9D</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Required to generate report fo one or more th=
+an one month data.<br>Dashboard will be not supported</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">4</td>
+<td class=3D"confluenceTd"><p>Share the list of performance parameters to B=
+U team</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">5</td>
+<td class=3D"confluenceTd"><p>BU Team will provide the critical parameters =
+based on performance list. &nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">6</td>
+<td class=3D"confluenceTd"><p>Dashboard "Performance Parameters" need to be=
+ modified to display only relevant data based on BU Input.</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">7</td>
+<td class=3D"confluenceTd"><p>Unnecessary details such as signal strength, =
+power board can be hidden from the dashboard.</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Signal strength paraeter is needed as per BU =
+Team's feedback</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">8</td>
+<td class=3D"confluenceTd"><p>Timestamp - GMT vs IST hours difference need =
+to be confirmed.</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Reconfigure all the dashboards and reports on=
+ IST by referring all the filters&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">9</td>
+<td class=3D"confluenceTd"><p>Need a provision to configured IST time with =
+Asset</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Stored procedure (add logic to convert into I=
+ST)</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">10</td>
+<td class=3D"confluenceTd"><p>All data Graph need to be plot in ascending o=
+rder =E2=80=93 (Dashboard =E2=80=9CDC, Current &amp; Inst. Power=E2=80=9D f=
+ound in descending order</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">11</td>
+<td class=3D"confluenceTd"><p>Need to verify "SOH" whether it is being gene=
+rated by the device or not, if not then remove, else must fix</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>SOH means Sate of health of Battery.<br>Typic=
+al, the value of SOH is 100% <br>Once battery is started to degrading then =
+SoH value is coming down from 100%.<br>Can=E2=80=99t expect the new battery=
+ will give you SoH value less than 100%.This parameter is varying very rare=
+ly.</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">12</td>
+<td class=3D"confluenceTd"><p>Dashboard "Cell Voltage" - Keep as it SOC at =
+Y axis</p></td>
+<td class=3D"confluenceTd"><p>Statement</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">13</td>
+<td class=3D"confluenceTd"><p>Dashboard "Cell Temperature" =E2=80=93<br>Max=
+imum cell temperature needs to be scaled up +2 points so that line graph sh=
+ould not be clipped/Touched at graph boundary. Ex. 36+2 at 'x' axis</p></td=
+>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">14</td>
+<td class=3D"confluenceTd"><p>Dashboard "Cell Temperature" =E2=80=93<br>How=
+ many ambient sensors are available in the battery pack? Need to verify wit=
+h firmware team.<br>If it is available, then need to display in dashboard</=
+p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Not feasible as of now<br>Need to customize b=
+ut it will take some required time</p></td>
+<td class=3D"confluenceTd"><p>Open</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">15</td>
+<td class=3D"confluenceTd"><p>Dashboard =E2=80=9CAlarms &amp; Events=E2=80=
+=9D =E2=80=93<br>Naming convention of alarms/events need to be collaborativ=
+e and clear.</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>No Ambient and Mosfet temperatures are gettin=
+g generated from the device</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">16</td>
+<td class=3D"confluenceTd"><p>Need to complete =E2=80=9CAlarms &amp; Events=
+ status=E2=80=9D Dashboard</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">17</td>
+<td class=3D"confluenceTd"><p>Need to display site down time =E2=80=93 It c=
+an be DG and EB down time</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">18</td>
+<td class=3D"confluenceTd"><p>Manual Refresh is required to update Dashboar=
+d data.</p></td>
+<td class=3D"confluenceTd"><p>Statement</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Open</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">19</td>
+<td class=3D"confluenceTd"><p>Need a dynamic dashboard to develop for histo=
+rical data with period and site selection options</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">20</td>
+<td class=3D"confluenceTd"><p>Create the Scheduler based Reports based in B=
+U input</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">21</td>
+<td class=3D"confluenceTd"><p>Timestamp should be left aligned.</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">22</td>
+<td class=3D"confluenceTd"><p>Decimal value should be right aligned.</p></t=
+d>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">23</td>
+<td class=3D"confluenceTd"><p>Replace the N/A with =E2=80=9C-=E2=80=9C in c=
+ase of data not available.</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">24</td>
+<td class=3D"confluenceTd"><p>Previous SOC value needs to reprint in case o=
+f not available in respective of parallel parameter</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">25</td>
+<td class=3D"confluenceTd"><p>Implement Analytical Logics in later based on=
+ BU input</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>In-Progress</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">26</td>
+<td class=3D"confluenceTd"><p>Battery Run Time must come down. Requires a p=
+roper analysis based on BU input.</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://ne=
+xchargeapplications.atlassian.net/browse/RASP-660" rel=3D"nofollow">RASP-66=
+0</a></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">27</td>
+<td class=3D"confluenceTd"><p>There is a sharp drop in the DC link voltage =
+at some of the data points. need to analyse</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">28</td>
+<td class=3D"confluenceTd"><p>GUW701-PAMOHI =E2=80=93 TCU replacement to be=
+ delivered to BU</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">29</td>
+<td class=3D"confluenceTd"><p>Required regular communication with BU team t=
+o improve the dashboard for the customer</p></td>
+<td class=3D"confluenceTd"><p>Statement</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">30</td>
+<td class=3D"confluenceTd"><p>Create a common communication channel on Team=
+ and schedule daily 20 minutes review meeting to till improvement.</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>In-Progress</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">31</td>
+<td class=3D"confluenceTd"><p>Share the RAS login details to BU team (will =
+share by tomorrow after few small fixes)</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Done</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">32</td>
+<td class=3D"confluenceTd"><p>Currently we are keeping the Airtel's Site da=
+ta on Development/Test server machine with =E2=80=9Cdeveloper=E2=80=9D edit=
+ion of database.<br>It is low-end server machine, not capable to handle lar=
+ge data, and "Developer edition=E2=80=9D is not allowing to be commercializ=
+ed used but we can use for development, education, and demo with minimum da=
+ta size.</p></td>
+<td class=3D"confluenceTd"><p>Statement</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>N/A</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">33</td>
+<td class=3D"confluenceTd"><p>Analysis the business need, Plan for the prod=
+uction server as per business projections, if required.<br>(RAS team requir=
+e at least one-month prior notice to purchase and setup production server t=
+o make it live)</p></td>
+<td class=3D"confluenceTd"><p>Action</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>N/A</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_30_1027152665.1704256228371--

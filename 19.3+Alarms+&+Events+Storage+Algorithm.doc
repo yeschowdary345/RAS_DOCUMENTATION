@@ -1,0 +1,2052 @@
+Date: Wed, 3 Jan 2024 05:48:55 +0000 (UTC)
+Message-ID: <270239912.129.1704260935500@825850ec0edf>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_128_747840188.1704260935500"
+
+------=_Part_128_747840188.1704260935500
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>19.3 Alarms &amp; Events Storage Algorithm</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>19.3 Alarms &amp; Events Storage Algorithm</h1>
+    <div class=3D"Section1">
+        <p>Reference Protocols </p>
+<p><a class=3D"external-link" href=3D"https://exideleclanche.sharepoint.com=
+/:b:/s/RnD_RAS201910-Developers/EVSWNv_L4BNKljAK1904qcABAEJT2tnNGOOWtUPhdAD=
+PVA?e=3DkiJ67Q" rel=3D"nofollow">Vision Modbus communication protocol 2017-=
+12-20</a></p>
+<p>Alarms can be categorized into 4 types.</p>
+<ol>
+<li><p>Warnings </p></li>
+<li><p>Errors</p></li>
+<li><p>Protections</p></li>
+<li><p>Status</p></li>
+</ol>
+<p>RAS receives all the above alarms as ushort type. (ranges from 0 to 6553=
+5)</p>
+<p>The actual alarm code received from device will be stored in AssetProper=
+tyValue table against the alarm type.</p>
+<p>Then the received code is decoded and mapped against the codes and their=
+ message and the flag is set / clear based on the decoded value.</p>
+<p></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">  forea=
+ch (var item in eventList)
+                         {
+                              var bitAnd =3D code &amp; item.Mask;
+                              if (bitAnd =3D=3D item.Mask)
+                                   activeEventsList.Add(item.Id);
+                         }</pre>=20
+</div>
+</div>
+<p>Then all the alarms against the device id is stored in the AssetProperty=
+Value table. The alarms are inserted only when there is change in the state=
+. If the current value is same as previous value, then no action is taken.<=
+/p>
+<p>Also when creating asset property record in AssetProperty table, necessa=
+ry ropertyOrigin and PropertyType values are set.</p>
+<p></p>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"90ad901a-5b4e-40be-9509-57e=
+70bf35aa1" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 133.0px;">
+<col style=3D"width: 627.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>Id</p></td>
+<td class=3D"confluenceTd"><p>SeverityName</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Crtical</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>Info</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>Major</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Minor</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"45b2ea84-6ce3-4062-8bd9-1d8=
+3ab342561" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 190.0px;">
+<col style=3D"width: 190.0px;">
+<col style=3D"width: 190.0px;">
+<col style=3D"width: 190.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>Id</p></td>
+<td class=3D"confluenceTd"><p>EventType</p></td>
+<td class=3D"confluenceTd"><p>EventDescription</p></td>
+<td class=3D"confluenceTd"><p>CreatedAt</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>WARN</p></td>
+<td class=3D"confluenceTd"><p>Warning</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>ERR</p></td>
+<td class=3D"confluenceTd"><p>Error</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>PROT</p></td>
+<td class=3D"confluenceTd"><p>Protection</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>ST</p></td>
+<td class=3D"confluenceTd"><p>Status</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>STATE_OVT</p></td>
+<td class=3D"confluenceTd"><p>Over voltage state</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>STATE</p></td>
+<td class=3D"confluenceTd"><p>State</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>STATE_ODC</p></td>
+<td class=3D"confluenceTd"><p>Over discharge State</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>STATE_TMP</p></td>
+<td class=3D"confluenceTd"><p>Temperature protection state</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>STATE_PRO</p></td>
+<td class=3D"confluenceTd"><p>Protection state</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>STATE_BAL</p></td>
+<td class=3D"confluenceTd"><p>Balance state from 1 - 24</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>STATE_MOS</p></td>
+<td class=3D"confluenceTd"><p>MOS state</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>STATE_FAL</p></td>
+<td class=3D"confluenceTd"><p>Failure state</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>STATE_WARN</p></td>
+<td class=3D"confluenceTd"><p>Warning states</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"7279afa8-1c03-4095-9e83-c89=
+ffa564b83" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 112.0px;">
+<col style=3D"width: 108.0px;">
+<col style=3D"width: 108.0px;">
+<col style=3D"width: 108.0px;">
+<col style=3D"width: 108.0px;">
+<col style=3D"width: 108.0px;">
+<col style=3D"width: 108.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>Id</p></td>
+<td class=3D"confluenceTd"><p>EventDefinitionId</p></td>
+<td class=3D"confluenceTd"><p>EventName</p></td>
+<td class=3D"confluenceTd"><p>Mask</p></td>
+<td class=3D"confluenceTd"><p>CreatedAt</p></td>
+<td class=3D"confluenceTd"><p>EventSeverityId</p></td>
+<td class=3D"confluenceTd"><p>AssetTypeKeyId</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Over voltage warning</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Cell Over voltage warning</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Low voltage warning</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Low cell voltage warning</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Charge over current warning</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Discharge over current warning</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>MOSFET over temp. warning</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Charge over temperature warning</p></td>
+<td class=3D"confluenceTd"><p>256</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Discharge over temperature warning</p></td>
+<td class=3D"confluenceTd"><p>512</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Charge low temperature warning</p></td>
+<td class=3D"confluenceTd"><p>1024</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>11</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Discharge low temperature warning</p></td>
+<td class=3D"confluenceTd"><p>2048</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>12</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Low capacity warning</p></td>
+<td class=3D"confluenceTd"><p>4096</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Low SOH warning</p></td>
+<td class=3D"confluenceTd"><p>8192</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Module Isolated alarm</p></td>
+<td class=3D"confluenceTd"><p>16384</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>Voltage measurement error</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>Temperature measurement error</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>17</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>Battery cell unbalance</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>18</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>Emergency Alarm</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>19</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Over voltage protection</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>20</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Over Cell voltage protection</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>21</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Low voltage protection</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>22</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Low cell voltage protection</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>23</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Charge over current protection</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>24</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Discharge over current protection</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>25</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>MOSFET over temperature protection</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>26</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Charge over temperature protection</p></td>
+<td class=3D"confluenceTd"><p>256</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>27</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Discharge over temperature protection</p></td=
+>
+<td class=3D"confluenceTd"><p>512</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>28</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Charge low temperature protection</p></td>
+<td class=3D"confluenceTd"><p>1024</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>29</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Discharge low temperature protection</p></td>
+<td class=3D"confluenceTd"><p>2048</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>30</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Low capacity protection</p></td>
+<td class=3D"confluenceTd"><p>4096</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>31</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Short circuit protection</p></td>
+<td class=3D"confluenceTd"><p>8192</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>Stand by</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>33</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>Charging</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>34</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>Discharging</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>35</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>Protected</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>50:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>41</p></td>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Cell over voltage protection</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>42</p></td>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Over total voltage protection</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>43</p></td>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>44</p></td>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>45</p></td>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Fully charge protection</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>47</p></td>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>48</p></td>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>49</p></td>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>50</p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Discharge</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>51</p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Discharge</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>52</p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>53</p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>54</p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Have MOS temperature</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>55</p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Have ambient temperature</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>56</p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>57</p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>58</p></td>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Cell under voltage protection</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>59</p></td>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Total under voltage protection</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>60</p></td>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>61</p></td>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>62</p></td>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>63</p></td>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>65</p></td>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>66</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>Charge temperature protection</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>67</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>Discharge temperature protection</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>68</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>MOS over temperature protection</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>69</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>70</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>High temperature protection</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>71</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>Low temperature protection</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>72</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>74</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>75</p></td>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Discharge short circuit protection&nbsp;</p><=
+/td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>76</p></td>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Over current discharge protection&nbsp;</p></=
+td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>77</p></td>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Over current charge protection</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>78</p></td>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>79</p></td>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Ambient high temperature protection</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>80</p></td>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Ambient low temperature protection</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>81</p></td>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>82</p></td>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>83</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>84</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 2</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>85</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 3</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>86</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 4</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>87</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 5</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>88</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 6</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>89</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 7</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>90</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 8</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>91</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 9</p></td>
+<td class=3D"confluenceTd"><p>256</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>93</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 10</p></td>
+<td class=3D"confluenceTd"><p>512</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>94</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 11</p></td>
+<td class=3D"confluenceTd"><p>1024</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>95</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 12</p></td>
+<td class=3D"confluenceTd"><p>2048</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>96</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 13</p></td>
+<td class=3D"confluenceTd"><p>4096</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>97</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 14</p></td>
+<td class=3D"confluenceTd"><p>8192</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>98</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 15</p></td>
+<td class=3D"confluenceTd"><p>16384</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>99</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 16</p></td>
+<td class=3D"confluenceTd"><p>32768</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>100</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 17</p></td>
+<td class=3D"confluenceTd"><p>65536</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>101</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 18</p></td>
+<td class=3D"confluenceTd"><p>131072</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>102</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 19</p></td>
+<td class=3D"confluenceTd"><p>262144</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>103</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 20</p></td>
+<td class=3D"confluenceTd"><p>524288</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>104</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 21</p></td>
+<td class=3D"confluenceTd"><p>1048576</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>105</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 22</p></td>
+<td class=3D"confluenceTd"><p>2097152</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>106</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 23</p></td>
+<td class=3D"confluenceTd"><p>4194304</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>107</p></td>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Cell 24</p></td>
+<td class=3D"confluenceTd"><p>8388608</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>110</p></td>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>112</p></td>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>Discharge MOS&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>113</p></td>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>Discharge MOS&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>115</p></td>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>116</p></td>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>117</p></td>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>118</p></td>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>119</p></td>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>121</p></td>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>Temperature collect failure&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>122</p></td>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>Voltage collect failure</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>123</p></td>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>Discharge MOS failure</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>124</p></td>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>Charge MOS failure</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>125</p></td>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>Cell imbalance warning</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>126</p></td>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>127</p></td>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>129</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Cell over discharge warning</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>130</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Total voltage over discharge warning</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>131</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Cell voltage over discharge warning</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>132</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Total voltage over voltage warning</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>133</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Over current discharge warning</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>134</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Over current charge warning</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>135</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Discharge over temperature warning</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>136</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Charge over temperature warning</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>137</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Ambient high temperature warning</p></td>
+<td class=3D"confluenceTd"><p>256</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>138</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Ambient low temperature warning</p></td>
+<td class=3D"confluenceTd"><p>512</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>139</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Low SOC warning</p></td>
+<td class=3D"confluenceTd"><p>1024</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>140</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>MOS over temperature warning</p></td>
+<td class=3D"confluenceTd"><p>2048</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>141</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>4096</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>142</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>8192</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>143</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>16384</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>144</p></td>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Reserved</p></td>
+<td class=3D"confluenceTd"><p>32768</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>145</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>battery cell overvoltage alarm</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>146</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>battery cell low voltage alarm</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>148</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>battery pack overvoltage alarm</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>149</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>battery pack low voltage alarm</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>150</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>charging over current alarm</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>151</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>discharging over current alarm</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>152</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>reserve</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>153</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>reserve</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>154</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>charging high temperature alarm</p></td>
+<td class=3D"confluenceTd"><p>256</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>155</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>discharging high temperature alarm</p></td>
+<td class=3D"confluenceTd"><p>512</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>156</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>charging low temperature alarm</p></td>
+<td class=3D"confluenceTd"><p>1024</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>157</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>discharging low temperature alarm</p></td>
+<td class=3D"confluenceTd"><p>2048</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>159</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>environment high temperature alarm</p></td>
+<td class=3D"confluenceTd"><p>4096</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>160</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>environment low temperature alarm</p></td>
+<td class=3D"confluenceTd"><p>8192</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>161</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>MOSFET high temperature alarm</p></td>
+<td class=3D"confluenceTd"><p>16384</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>162</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>SOC Low alarm</p></td>
+<td class=3D"confluenceTd"><p>32768</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>164</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>battery cell over voltage protection</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>165</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>battery cell low voltage protection</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>166</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>battery pack over voltage protection</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>167</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>battery pack low voltage protection</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>168</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>charging over current protection</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>169</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>discharging over current protection</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>170</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>short circuit protection</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>171</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>charger overvoltage protection</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>172</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>charging high temperature protection</p></td>
+<td class=3D"confluenceTd"><p>256</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>173</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>discharging high temperature protection</p></=
+td>
+<td class=3D"confluenceTd"><p>512</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>174</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>charging low temperature protection</p></td>
+<td class=3D"confluenceTd"><p>1024</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>175</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>discharging low temperature protection</p></t=
+d>
+<td class=3D"confluenceTd"><p>2048</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>176</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>MOSFET high temperature protection</p></td>
+<td class=3D"confluenceTd"><p>4096</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>177</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>environment high temperature protection</p></=
+td>
+<td class=3D"confluenceTd"><p>8192</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>178</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>environment low temperature protection</p></t=
+d>
+<td class=3D"confluenceTd"><p>16384</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>179</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>reserve</p></td>
+<td class=3D"confluenceTd"><p>32768</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>180</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>charging MOSFET fault</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>181</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>discharging MOSFET fault</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>182</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>temperature sensor fault</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>183</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>reserve</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>184</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>battery cell fault</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>185</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>front end sampling communication fault</p></t=
+d>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>186</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>reserve</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>187</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>reserve</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>188</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>state of charge</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>189</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>state of discharge</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>190</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>charging MOSFET</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>191</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>discharging MOSFET</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>192</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>charging Limiter</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>193</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>reserve</p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>194</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>charger inversed</p></td>
+<td class=3D"confluenceTd"><p>64</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>195</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>heater</p></td>
+<td class=3D"confluenceTd"><p>128</p></td>
+<td class=3D"confluenceTd"><p>00:00.0</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_128_747840188.1704260935500--

@@ -1,0 +1,760 @@
+Date: Wed, 3 Jan 2024 06:05:57 +0000 (UTC)
+Message-ID: <2133260232.119.1704261957852@0564475b91b8>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_118_30587088.1704261957852"
+
+------=_Part_118_30587088.1704261957852
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>2022-Jun-07 Retrospective - Sprint #30</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>2022-Jun-07 Retrospective - Sprint #30</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<style>[data-colorid=3Dz8t9pcqp6x]{color:#0747a6} html[data-color-mode=3Dda=
+rk] [data-colorid=3Dz8t9pcqp6x]{color:#5999f8}[data-colorid=3Dk5959jhdhc]{c=
+olor:#403294} html[data-color-mode=3Ddark] [data-colorid=3Dk5959jhdhc]{colo=
+r:#796bcd}[data-colorid=3Djkf64td5hq]{color:#bf2600} html[data-color-mode=
+=3Ddark] [data-colorid=3Djkf64td5hq]{color:#ff6640}[data-colorid=3Dp8lho6i3=
+6f]{color:#403294} html[data-color-mode=3Ddark] [data-colorid=3Dp8lho6i36f]=
+{color:#796bcd}[data-colorid=3Dh9v3iaa8g8]{color:#403294} html[data-color-m=
+ode=3Ddark] [data-colorid=3Dh9v3iaa8g8]{color:#796bcd}[data-colorid=3Dffir5=
+d0b31]{color:#006644} html[data-color-mode=3Ddark] [data-colorid=3Dffir5d0b=
+31]{color:#99ffdd}[data-colorid=3Dvxkjopr6wk]{color:#403294} html[data-colo=
+r-mode=3Ddark] [data-colorid=3Dvxkjopr6wk]{color:#796bcd}</style>
+<table data-layout=3D"default" data-local-id=3D"d52ca050-9190-48d4-b255-e2a=
+28b8ced70" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 168.0px;">
+<col style=3D"width: 590.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Date</strong></p></th>
+<th class=3D"confluenceTh"><p><time datetime=3D"2022-06-07" class=3D"date-p=
+ast">07 Jun 2022</time> </p></th>
+</tr>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Team</strong></p></th>
+<td class=3D"confluenceTd"><p>RAS Development</p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Participants</strong></p></th>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"61bc10ba150ace00690ea500" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/61bc10ba150ace00690ea500?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Sowmya.R (Unlicensed)</a> <a class=3D"confluence-userlink user=
+-mention" data-account-id=3D"6243e55ff3824d006a57b6fb" href=3D"https://nexc=
+hargeapplications.atlassian.net/wiki/people/6243e55ff3824d006a57b6fb?ref=3D=
+confluence" target=3D"_blank" data-linked-resource-id=3D"1082359810" data-l=
+inked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-ba=
+se-url=3D"https://nexchargeapplications.atlassian.net/wiki">rahul ranjan</a=
+> <a class=3D"confluence-userlink user-mention" data-account-id=3D"62069791=
+6ba61b006fb6e208" href=3D"https://nexchargeapplications.atlassian.net/wiki/=
+people/620697916ba61b006fb6e208?ref=3Dconfluence" target=3D"_blank" data-ba=
+se-url=3D"https://nexchargeapplications.atlassian.net/wiki">Prabhash.Ranjan=
+ (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-accoun=
+t-id=3D"6283243ff0302e0068bcb3d0" href=3D"https://nexchargeapplications.atl=
+assian.net/wiki/people/6283243ff0302e0068bcb3d0?ref=3Dconfluence" target=3D=
+"_blank" data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki"=
+>Akash Kumar (Unlicensed)</a> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-2022-Jun-07Retrospective-Sprint#30-Background:"><span data-col=
+orid=3D"k5959jhdhc">Background:</span></h2>
+<p></p>
+<p></p>
+<h2 id=3D"id-2022-Jun-07Retrospective-Sprint#30-Tasks/Tickets:"><span data-=
+colorid=3D"vxkjopr6wk">Tasks/Tickets:</span></h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" data-local-id=3D"6e00de17-52b7-4639-919f-9901e6=
+ae309a" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 171.0px;">
+<col style=3D"width: 222.0px;">
+<col style=3D"width: 120.0px;">
+<col style=3D"width: 309.0px;">
+<col style=3D"width: 95.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>Assignee</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Sprint Backlogs (To Do)</strong></p><=
+/th>
+<th class=3D"confluenceTh"><p><strong>Actual Efforts (Hrs.)</strong></p></t=
+h>
+<th class=3D"confluenceTh"><p><strong>Remarks</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Approval</strong></p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"620697916ba61b006fb6e208" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/620697916ba61b006fb6e208?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Prabhash.Ranjan (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-868"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-868" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10316?size=3Dmedium">RASP-868</a> - <span cla=
+ss=3D"summary">Asset not displayed MCU firmware Slave Firmware DBC file</sp=
+an> <span class=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-success jira-=
+macro-single-issue-export-pdf">Done</span> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>8</stro=
+ng></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"620697916ba61b006fb6e208" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/620697916ba61b006fb6e208?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Prabhash.Ranjan (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-866"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-866" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10318?size=3Dmedium">RASP-866</a> - <span cla=
+ss=3D"summary">Fota Issue related to Asset</span> <span class=3D"aui-lozeng=
+e aui-lozenge-subtle aui-lozenge-success jira-macro-single-issue-export-pdf=
+">Done</span> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>48</str=
+ong></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"620697916ba61b006fb6e208" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/620697916ba61b006fb6e208?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Prabhash.Ranjan (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-869"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-869" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10316?size=3Dmedium">RASP-869</a> - <span cla=
+ss=3D"summary">Upload config done but not displaying in Upload page TCU con=
+fig Param configuration Slave config</span> <span class=3D"aui-lozenge aui-=
+lozenge-subtle aui-lozenge-success jira-macro-single-issue-export-pdf">Done=
+</span> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>24</str=
+ong></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">4</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"620697916ba61b006fb6e208" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/620697916ba61b006fb6e208?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Prabhash.Ranjan (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-864"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-864" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10318?size=3Dmedium">RASP-864</a> - <span cla=
+ss=3D"summary">Analysis of Event and alert based notification for scheduler=
+</span> <span class=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-success j=
+ira-macro-single-issue-export-pdf">Done</span> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>16</str=
+ong></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">5</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"620697916ba61b006fb6e208" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/620697916ba61b006fb6e208?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Prabhash.Ranjan (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-867"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-867" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10318?size=3Dmedium">RASP-867</a> - <span cla=
+ss=3D"summary">KT To Vivek</span> <span class=3D"aui-lozenge aui-lozenge-su=
+btle aui-lozenge-success jira-macro-single-issue-export-pdf">Done</span> </=
+span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>16</str=
+ong></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">6</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"620697916ba61b006fb6e208" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/620697916ba61b006fb6e208?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Prabhash.Ranjan (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-865"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-865" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10318?size=3Dmedium">RASP-865</a> - <span cla=
+ss=3D"summary">On Call Support</span> <span class=3D"aui-lozenge aui-lozeng=
+e-subtle aui-lozenge-success jira-macro-single-issue-export-pdf">Done</span=
+> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>12</str=
+ong></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">7</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"620697916ba61b006fb6e208" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/620697916ba61b006fb6e208?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Prabhash.Ranjan (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-591"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-591" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10318?size=3Dmedium">RASP-591</a> - <span cla=
+ss=3D"summary">Backup and Archieve the historical data .. beyond ...</span>=
+ <span class=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-success jira-mac=
+ro-single-issue-export-pdf">Done</span> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>12</str=
+ong></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">8</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"620697916ba61b006fb6e208" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/620697916ba61b006fb6e208?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Prabhash.Ranjan (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-863"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-863" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10318?size=3Dmedium">RASP-863</a> - <span cla=
+ss=3D"summary">Unable to get the notification for FOTA </span> <span class=
+=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-success jira-macro-single-is=
+sue-export-pdf">Done</span> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>32</str=
+ong></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">9</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"6243e55ff3824d006a57b6fb" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/6243e55ff3824d006a57b6fb?ref=3Dconfluenc=
+e" target=3D"_blank" data-linked-resource-id=3D"1082359810" data-linked-res=
+ource-version=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D=
+"https://nexchargeapplications.atlassian.net/wiki">rahul ranjan</a> </p></t=
+d>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-703"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-703" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10318?size=3Dmedium">RASP-703</a> - <span cla=
+ss=3D"summary">Preprocessor - Separation of succeeded and failed files - An=
+alysis</span> <span class=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-suc=
+cess jira-macro-single-issue-export-pdf">Done</span> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>16</str=
+ong></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">10</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"6243e55ff3824d006a57b6fb" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/6243e55ff3824d006a57b6fb?ref=3Dconfluenc=
+e" target=3D"_blank" data-linked-resource-id=3D"1082359810" data-linked-res=
+ource-version=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D=
+"https://nexchargeapplications.atlassian.net/wiki">rahul ranjan</a> </p></t=
+d>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-745"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-745" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10318?size=3Dmedium">RASP-745</a> - <span cla=
+ss=3D"summary">FOTA Status - Need Pagination by default last 20 (UI + Backe=
+nd)</span> <span class=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-succes=
+s jira-macro-single-issue-export-pdf">Done</span> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>0</stro=
+ng></p></td>
+<td class=3D"confluenceTd"><p>This ticket is the parent of <a class=3D"exte=
+rnal-link" href=3D"https://nexchargeapplications.atlassian.net/browse/RASP-=
+801" rel=3D"nofollow">RASP-801</a>. Refer ticket for comments.</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">11</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"6243e55ff3824d006a57b6fb" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/6243e55ff3824d006a57b6fb?ref=3Dconfluenc=
+e" target=3D"_blank" data-linked-resource-id=3D"1082359810" data-linked-res=
+ource-version=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D=
+"https://nexchargeapplications.atlassian.net/wiki">rahul ranjan</a> </p></t=
+d>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-793"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-793" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10315?size=3Dmedium">RASP-793</a> - <span cla=
+ss=3D"summary">DAE - Implement one of use cases and Fix the bug</span> <spa=
+n class=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-success jira-macro-si=
+ngle-issue-export-pdf">Done</span> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>16</str=
+ong></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">12</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"6243e55ff3824d006a57b6fb" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/6243e55ff3824d006a57b6fb?ref=3Dconfluenc=
+e" target=3D"_blank" data-linked-resource-id=3D"1082359810" data-linked-res=
+ource-version=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D=
+"https://nexchargeapplications.atlassian.net/wiki">rahul ranjan</a> </p></t=
+d>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-801"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-801" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10316?size=3Dmedium">RASP-801</a> - <span cla=
+ss=3D"summary">Limit the number of paging elements like &lt;&lt;First &lt;P=
+revious| 1, 2, 3, 4,...... |10|........, 17, 18, 19, 20| Next&gt; | Last&gt=
+;&gt;</span> <span class=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-succ=
+ess jira-macro-single-issue-export-pdf">Done</span> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>80</str=
+ong></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">13</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"6243e55ff3824d006a57b6fb" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/6243e55ff3824d006a57b6fb?ref=3Dconfluenc=
+e" target=3D"_blank" data-linked-resource-id=3D"1082359810" data-linked-res=
+ource-version=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D=
+"https://nexchargeapplications.atlassian.net/wiki">rahul ranjan</a> </p></t=
+d>
+<td class=3D"confluenceTd"><p> <span class=3D"confluence-jim-macro jira-iss=
+ue" data-jira-key=3D"RASP-871"> <a href=3D"https://nexchargeapplications.at=
+lassian.net/browse/RASP-871" class=3D"jira-issue-key"><img class=3D"icon" s=
+rc=3D"https://nexchargeapplications.atlassian.net/rest/api/2/universal_avat=
+ar/view/type/issuetype/avatar/10318?size=3Dmedium">RASP-871</a> - <span cla=
+ss=3D"summary">On call support</span> <span class=3D"aui-lozenge aui-lozeng=
+e-subtle aui-lozenge-success jira-macro-single-issue-export-pdf">Done</span=
+> </span> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>8</stro=
+ng></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-2022-Jun-07Retrospective-Sprint#30-Capacity:"><span data-color=
+id=3D"h9v3iaa8g8">Capacity:</span></h2>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>[Weekly working hours (40) x Resources] - Planned Leaves Holidays</p>
+</div>
+</div>
+<h4 id=3D"id-2022-Jun-07Retrospective-Sprint#30-WorkingHours:240Hrs.(Totalh=
+oursin21dayssprint)">Working Hours: 240 Hrs. (Total hours in <strong>21 day=
+s </strong>sprint)</h4>
+<h4 id=3D"id-2022-Jun-07Retrospective-Sprint#30-Resources:2">Resources: 2</=
+h4>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"444da474-6a76-4423-ae1c-41e=
+b8e7634c3" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 206.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 140.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Name</strong></p></th>
+<th class=3D"confluenceTh"><p style=3D"text-align: center;"><strong>Availab=
+ility (in hrs) / 120Hrs.(3W)</strong></p></th>
+<th class=3D"confluenceTh"><p style=3D"text-align: center;"><strong>Planed =
+Leave/Holiday (Hrs.)</strong></p></th>
+<th class=3D"confluenceTh"><p style=3D"text-align: center;"><strong>Remarks=
+</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"6243e55ff3824d006a57b6fb" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/6243e55ff3824d006a57b6fb?ref=3Dconfluenc=
+e" target=3D"_blank" data-linked-resource-id=3D"1082359810" data-linked-res=
+ource-version=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D=
+"https://nexchargeapplications.atlassian.net/wiki">rahul ranjan</a> </p></t=
+d>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;">120</p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;">-</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"620697916ba61b006fb6e208" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/620697916ba61b006fb6e208?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Prabhash.Ranjan (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;">120</p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;">-</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Total</strong></p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>240</st=
+rong></p></td>
+<td class=3D"confluenceTd"><p style=3D"text-align: center;"><strong>-</stro=
+ng></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-2022-Jun-07Retrospective-Sprint#30-Retrospective:"><span data-=
+colorid=3D"p8lho6i36f">Retrospective:</span></h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" data-local-id=3D"4e1370b7-9d46-4f3b-a41c-c15079=
+bf4def" class=3D"confluenceTable">
+<colgroup>
+<col>
+<col style=3D"width: 340.0px;">
+<col style=3D"width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"numberingColumn confluenceTh"></th>
+<th class=3D"confluenceTh"><p><strong>What did we do well?</strong></p></th=
+>
+<th class=3D"confluenceTh"><p><strong>What didn=E2=80=99t go well?</strong>=
+</p></th>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">1</td>
+<td class=3D"confluenceTd"><p>UI changes were implemented for Scheduled tas=
+ks</p></td>
+<td class=3D"confluenceTd"><p>Turnaround time for Notification email ID cre=
+ation is higher than assumed duration due to administrative policies and ap=
+provals.</p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">2</td>
+<td class=3D"confluenceTd"><p>FOTA notification issues were resolved - Devi=
+ce agnostic TCU is now able to download the latest FOTA.</p></td>
+<td class=3D"confluenceTd"><p>Pagination Development efforts were under est=
+imated due to the following reason(s):</p>
+<ul>
+<li><p>Bootstrap - jQuery Plugin integration was not highlighted in the Tec=
+hnical Specification Document. </p></li>
+</ul><p><strong>Impact</strong>: Feasibility study was time consuming and h=
+ad an impact on other sprint deliverables. </p></td>
+</tr>
+<tr>
+<td class=3D"numberingColumn confluenceTd">3</td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"6281df65c217e200698b67df" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/6281df65c217e200698b67df?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Vivek Kumar (Unlicensed)</a> 's KT has been completed </p></td=
+>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"a7931ab8-0148-4ed5-b29c-da9=
+7cabfe11c" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 226.67px;">
+<col style=3D"width: 226.67px;">
+<col style=3D"width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><span data-colorid=3D"ffir5d0b31"><strong>Sta=
+rt doing</strong></span></p></th>
+<th class=3D"confluenceTh"><p><span data-colorid=3D"jkf64td5hq"><strong>Sto=
+p doing</strong></span></p></th>
+<th class=3D"confluenceTh"><p><span data-colorid=3D"z8t9pcqp6x"><strong>Kee=
+p doing</strong></span></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Create Epics to bucket Features to help monit=
+or the progress and health.</p></td>
+<td class=3D"confluenceTd"><p>Avoid Unnecessary Meetings.</p></td>
+<td class=3D"confluenceTd"><p>Continue Time logging &amp; Sprint Ceremonies=
+</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Bring in better documentation practices and h=
+ighlight exceptions, contingencies and remedies used.</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Actively Contribute towards Lessons Learnt Re=
+gistry. </p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Encourage and welcome suggestions towards All=
+ Improvement areas. </p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Action Items:</p>
+    </div>
+</body>
+</html>
+------=_Part_118_30587088.1704261957852--

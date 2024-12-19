@@ -1,0 +1,718 @@
+Date: Wed, 3 Jan 2024 05:17:50 +0000 (UTC)
+Message-ID: <1842904677.73.1704259070600@9c4c96a6ba92>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_72_2094861033.1704259070599"
+
+------=_Part_72_2094861033.1704259070599
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>2.2.1 Message Bus Technical Analysis</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>2.2.1 Message Bus Technical Analysis</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"id-2.2.1MessageBusTechnicalAnalysis-Introduction">Introdu=
+ction</h1>
+<p>This document describes the technical side of the message bus that will =
+be used as a communications mechanism within RAS for</p>
+<ul>
+<li>Internal messaging. For example, the preprocessor will notify postproce=
+ssor &amp; notification engine when a new file has been published.&nbsp;</l=
+i>
+<li>Relaying of user notifications. For example, when the notification engi=
+ne detects an event/alert/alarm/ras custom event, the user should be notifi=
+ed immediately.&nbsp;</li>
+<li>System performance monitoring</li>
+</ul>
+<p>In the future we will also support MQTT as a live data transmission prot=
+ocol, and may decide to integrate this functionality into our existing mess=
+age bus.&nbsp;</p>
+<h2 id=3D"id-2.2.1MessageBusTechnicalAnalysis-Details">Details</h2>
+<p>We'll use RabbitMQ as our message bus broken. RabbitMQ supports differen=
+t protocols and is the most widely deployed open source message broker.</p>
+<p>A quick reading of the <a class=3D"external-link" href=3D"https://www.ra=
+bbitmq.com/tutorials/tutorial-one-dotnet.html" rel=3D"nofollow">RabbitMQ tu=
+torials</a> is recommended before proceeding, especially the parts on routi=
+ng &amp; topics.&nbsp;</p>
+<p>In short, RabbitMQ supports different methods of connecting the publishi=
+ng of a message to one or more consumers of that message. Messages can be s=
+ent to all listening clients (publish/subscribe), they can be sent into a w=
+ork queue or they can be consumed only by consumers interested in that part=
+icular message.&nbsp;</p>
+<p>On top of RabbitMQ, we'll use the MassTransit framework. MassTransit pro=
+vides features such as C# typing support, retries, transactions, .... Altho=
+ugh it is somewhat more difficult to get started with than plain old Rabbit=
+MQ, it is well architected and the resulting code is clean and clear. MassT=
+ransit supports dependency injection through both ninject and unity, and su=
+pports ASP.NET integration. It can also be hooked up to log4net logging.&nb=
+sp;</p>
+<p>An important detail is that messages sent will not be received in the or=
+der they are sent. This should be taken into account, especially when creat=
+ing state machines using <span class=3D"inline-comment-marker" data-ref=3D"=
+a9b556a1-6b7a-4ca2-ac0d-2a69e1be199b">automateaneotonemus[sic].</span>&nbsp=
+;</p>
+<p>By convention, we'll name all receiving queues "&lt;processname&gt;_&lt;=
+messagetype&gt;". The important part is that all queue names should start w=
+ith the processname, to avoid message misdelivery.&nbsp;</p>
+<h1 id=3D"id-2.2.1MessageBusTechnicalAnalysis-Usages">Usages</h1>
+<h2 id=3D"id-2.2.1MessageBusTechnicalAnalysis-Usage1:InternalMessaging">Usa=
+ge 1: Internal Messaging</h2>
+<p><br></p>
+<p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
+al-size"><img class=3D"confluence-embedded-image confluence-external-resour=
+ce" height=3D"177" width=3D"468" src=3D"f43c4fd26bb95ba6c14e9fc236245da0" d=
+ata-image-src=3D"/wiki/download/attachments/83755098/preprocessor_publishes=
+_file.png?api=3Dv2" loading=3D"lazy"></span></p>
+<h3 id=3D"id-2.2.1MessageBusTechnicalAnalysis-Implementation">Implementatio=
+n</h3>
+<p>MassTransit routing of messages is linked to the C# typing system. The p=
+reprocessor en postprocessor will, when they produce a chunk of data broadc=
+ast a message <em>like</em> the following</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">interfa=
+ce DataAdded
+{
+   public long? LogFileId {get; set;}
+   public long AssetId {get;set;}
+}</pre>=20
+</div>
+</div>
+<p>It's important that the&nbsp;<strong>actual</strong> class itself is sha=
+red, simply copy pasting the class definition above will not suffice. The a=
+ctual class will be defined in the contracts section of RAS.Core. This clas=
+s will be used by the preprocessor, the postprocessor and also the notifica=
+tion engine.&nbsp;</p>
+<p>When data is processed by the preprocessor, it will publish a message of=
+ type DataAdded. The notification engine / postprocessor will create a rece=
+ive endpoint with a queue named "notificationengine_data_added" / "postproc=
+essor_data_added". The consumer they define to receive these messages will =
+be responsible for processing the data added messages.&nbsp;</p>
+<h2 id=3D"id-2.2.1MessageBusTechnicalAnalysis-Codeexample1">Code example 1<=
+/h2>
+<p>In the example below, we write a simple one-way chat client. The preproc=
+essor asks the user to input lines of text. Those lines of text are broadca=
+st by MassTransport to the RabbitMQ server. It in turn delivers these messa=
+ges to every queue listening to the type of message that's being sent. In o=
+ur case, the Notification Engine is listening. When the notification engine=
+ receives a message, it will print the contents in the terminal window.&nbs=
+p;</p>
+<p>The queues are persistent by default, meaning that if a message somehow =
+cannot be delivered because no-one is listening, the message will remain in=
+ the queue until it is received. This means that we can exit the Notificati=
+onEngine client below, send a few messages using the preprocessor, and the =
+messages that were sent will be received as soon as the notification engine=
+ is started.&nbsp;</p>
+<p>A second listening client (eg postprocessor) can be easily attached by d=
+uplicating the notification engine code, but&nbsp;<strong>with a different =
+queue name</strong>. If we were to give the notification engine and the pos=
+tprocessor the same queue name, only one of them would receive each message=
+.&nbsp;</p>
+<h3 id=3D"id-2.2.1MessageBusTechnicalAnalysis-Preprocessor">Preprocessor</h=
+3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">using L=
+ib;
+using log4net.Config;
+using MassTransit;
+using MassTransit.Log4NetIntegration.Logging;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Preprocessor
+{
+    public class Program
+    {
+        static void ConfigureLogger()
+        {
+            const string logConfig =3D @"&lt;?xml version=3D""1.0"" encodin=
+g=3D""utf-8"" ?&gt;
+&lt;log4net&gt;
+  &lt;root&gt;
+    &lt;level value=3D""INFO"" /&gt;
+    &lt;appender-ref ref=3D""console"" /&gt;
+  &lt;/root&gt;
+  &lt;appender name=3D""console"" type=3D""log4net.Appender.ColoredConsoleA=
+ppender""&gt;
+    &lt;layout type=3D""log4net.Layout.PatternLayout""&gt;
+      &lt;conversionPattern value=3D""%m%n"" /&gt;
+    &lt;/layout&gt;
+  &lt;/appender&gt;
+&lt;/log4net&gt;";
+
+            using (var stream =3D new MemoryStream(Encoding.UTF8.GetBytes(l=
+ogConfig)))
+            {
+                XmlConfigurator.Configure(stream);
+            }
+        }
+        public static void Main()
+        {
+            ConfigureLogger();
+            Log4NetLogger.Use();
+            var uri =3D new Uri("rabbitmq://localhost");
+            var bus =3D Bus.Factory.CreateUsingRabbitMq(sbc =3D&gt;
+            {
+                var host =3D sbc.Host(uri, h =3D&gt;
+                {
+                    h.Username("guest");
+                    h.Password("guest");
+                });
+
+                sbc.ConfigurePublish((config) =3D&gt;
+                {
+                    Console.WriteLine("Send complete?");
+                });
+            });
+
+
+            bus.Start();
+
+            Console.WriteLine("Publishing message on queue");
+
+            while (true)
+            {
+                var line =3D Console.ReadLine();
+                bus.Publish(new YourMessage { Text =3D line });
+            }
+
+            Console.WriteLine("Press any key to exit");
+            Console.ReadKey();
+
+            bus.Stop();
+        }
+    }
+}</pre>=20
+</div>
+</div>
+<h2 id=3D"id-2.2.1MessageBusTechnicalAnalysis-Usage2:Relayingofusernotifica=
+tions&amp;RASsystemnotifications">Usage 2: Relaying of user notifications &=
+amp; RAS system notifications</h2>
+<p>When the notification engine detects an alarm, a message should be sent =
+towards the user. We'll write a component called the TaskTriggerer.&nbsp;</=
+p>
+<p>When the notification engine detects a condition that requires a notific=
+ation, it will broadcast a message on the RabbitMQ telling the TaskTriggere=
+r about the event.&nbsp;</p>
+<p>Messages:</p>
+<ul>
+<li>Asset Added</li>
+<li>Data Added (either by preprocessor or postprocessor)</li>
+<li>Notification Fired</li>
+</ul>
+<p>The task triggerer will listen to these messages in a queue called "task=
+triggerer_events". When such an event is received, the TaskTriggerer will c=
+heck the database to see if any scheduled tasks have been linked to the rec=
+eived event. These scheduled tasks, if any, are then triggered by the TaskT=
+riggerer.&nbsp;</p>
+<p>The TaskTriggerer will run as a part of the Hangfire process.&nbsp;</p>
+<h2 id=3D"id-2.2.1MessageBusTechnicalAnalysis-Usage3:SystemPerformanceMonit=
+oring">Usage 3: System Performance Monitoring</h2>
+<p>A message queue can be used to communicate usage and performance statist=
+ics from each of the components to the performance monitor. While the perfo=
+rmance monitoring system may use this in the future, for now it will commun=
+icate using HTTP REST calls.&nbsp;</p>
+<h2 id=3D"id-2.2.1MessageBusTechnicalAnalysis-UsageX:MQTTdataacceptance">Us=
+age X: MQTT data acceptance</h2>
+<p>When required, this can still be implemented. No extra effort is require=
+d when it is necessary.&nbsp;</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_72_2094861033.1704259070599
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/f43c4fd26bb95ba6c14e9fc236245da0
+
+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
+AElFTkSuQmCC
+------=_Part_72_2094861033.1704259070599--

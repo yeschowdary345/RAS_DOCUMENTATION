@@ -1,0 +1,473 @@
+Date: Wed, 3 Jan 2024 05:58:19 +0000 (UTC)
+Message-ID: <1369465945.103.1704261499928@0564475b91b8>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_102_919630018.1704261499928"
+
+------=_Part_102_919630018.1704261499928
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Requirements</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Requirements</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"full-width" data-local-id=3D"09f144a5-a51b-466b-81ff-=
+c08d142fde50" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 241.0px;">
+<col style=3D"width: 240.0px;">
+<col style=3D"width: 240.0px;">
+<col style=3D"width: 240.0px;">
+<col style=3D"width: 363.0px;">
+<col style=3D"width: 116.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p><strong>#</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Group/Dashboard</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Description</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Assign To</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Remarks</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Status</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>My Assets</p></td>
+<td class=3D"confluenceTd"><p>Asset Type name need to be change; it should =
+not be based on vendor name.</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p></t=
+d>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td rowspan=3D"2" class=3D"confluenceTd"><p>System Parameters Status (Recen=
+t)</p></td>
+<td class=3D"confluenceTd"><p>Parameter=E2=80=99s name needs to be display =
+with proper name and unit</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p></t=
+d>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Add the text =E2=80=9CUTC or GMT=E2=80=9D in =
+column =E2=80=9CLast updated time=E2=80=9D</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p></t=
+d>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td rowspan=3D"2" class=3D"confluenceTd"><p>Run Hour Status</p></td>
+<td class=3D"confluenceTd"><p>Change the name:</p><p>EB: Electricity board<=
+/p><p>DG: Diesel Generator</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p></t=
+d>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Total Run Hours is not accurate</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p><p>=
+<a class=3D"external-link" href=3D"mailto:Raveesha.Nidugala@exideleclanche.=
+com" rel=3D"nofollow">@Raveesha Nidugala</a></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Filters</p></td>
+<td class=3D"confluenceTd"><p>Remove the data for July months to 4<sup>th</=
+sup> Aug from all filters</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p></t=
+d>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>System Para. (DC, Current &amp; Inst. Power)<=
+/p></td>
+<td class=3D"confluenceTd"><p>Add indication on dashboard</p>
+<ul>
+<li><p>System Current:</p></li>
+</ul><p>Positive =3D Charging</p><p>Negative =3D Discharging</p>
+<ul>
+<li><p>Instantaneous Power</p></li>
+</ul><p>Positive =3D Charging power</p><p>Negative =3D Discharging power</p=
+></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p></t=
+d>
+<td class=3D"confluenceTd"><p>Need some clarification</p></td>
+<td class=3D"confluenceTd"><p>OPEN</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td rowspan=3D"4" class=3D"confluenceTd"><p>Perf. Para. (Pack-I and Pack-V)=
+</p></td>
+<td class=3D"confluenceTd"><p>Change the name Dashboard name:</p><p>Pack_I =
+to Pack-I, Pack_V to Pack-V</p><p>Telemetry (0) need to be highlight with d=
+ark colour (like Black);</p><p>This color should be fixed in every dashboar=
+d for Telemetry</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p></t=
+d>
+<td class=3D"confluenceTd"><p>No highlight can be done for Telemetry (0) - =
+Confirmed with Awnindera</p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Single Graph with two Y axis for Pack-I (Left=
+) and Pack-V (Right)</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p></t=
+d>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Asset Name need to be changed as per actual S=
+ite name Or Serial Number(Pack/Telemetry)</p><p>E.g.: CPOHE62-0550-120=E2=
+=80=8B</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p></t=
+d>
+<td class=3D"confluenceTd"><p>Replaced the following asset name w.r.t. SITE=
+s </p><p><strong>BMS list</strong></p><p>1)AC-TC-01-2 =E2=86=94=EF=B8=8E GU=
+W604-CHANDMARI-S213T3M31000049</p><p>2)AC-TC-01-3 =E2=86=94=EF=B8=8E GUW604=
+-CHANDMARI-S213T3M31000091</p><p>3)AC-TC-01-4 =E2=86=94=EF=B8=8E GUW604-CHA=
+NDMARI-S213T3M52000079</p><p>4)AC-TC-01-2 =E2=86=94=EF=B8=8E GUW701-PAMOHI-=
+S213T3M31000089</p><p>5)AC-TC-01-3 =E2=86=94=EF=B8=8E GUW701-PAMOHI-S213T3M=
+31000087</p><p>6)AC-TC-01-4 =E2=86=94=EF=B8=8E GUW701-PAMOHI-S213T3M3100008=
+5 </p><p>7)AC-TC-01-5 =E2=86=94=EF=B8=8E GUW701-PAMOHI-S213T3M31000047</p>
+<hr><p><strong>TCU list</strong></p><p>1)AC-TC-01-0 =E2=86=94=EF=B8=8E GUW6=
+04-CHANDMARI-TCU</p><p>2)AC-TC-02-0 =E2=86=94=EF=B8=8E GUW604-PAMOHI-TCU</p=
+>
+<hr></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>11</p></td>
+<td class=3D"confluenceTd"><p>Store the Site name also with Serial Number i=
+n separate filed.</p><p>Installed site name:</p>
+<ol>
+<li><p>GUW701-PAMOHI</p></li>
+</ol>
+<ol>
+<li><p>GUW604-CHANDMARI (@Raveesha : Please confirm which of these belong t=
+o Site1 and Site2)</p></li>
+</ol></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p></t=
+d>
+<td class=3D"confluenceTd">
+<ol>
+<li><p>GUW604-CHANDMARI =E2=86=94=EF=B8=8E SITE1</p></li>
+<li><p>GUW701-PAMOHI =E2=86=94=EF=B8=8E SITE2</p></li>
+</ol></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>12</p></td>
+<td rowspan=3D"2" class=3D"confluenceTd"><p>Parameters Cell Voltage</p></td=
+>
+<td class=3D"confluenceTd"><p>Verify the Cell Voltage last received datetim=
+e and value in Graph with Data source.</p><p>Cell V9 last received date tim=
+e is not showing in Graph</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p></t=
+d>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>DONE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>13</p></td>
+<td class=3D"confluenceTd"><p>KWH needs to calculate and display in Dashboa=
+rd </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Var=
+tika.Pandey@exideleclanche.com" rel=3D"nofollow">@Vartika Pandey</a></p><p>=
+<a class=3D"external-link" href=3D"mailto:Raveesha.Nidugala@exideleclanche.=
+com" rel=3D"nofollow">@Raveesha Nidugala</a></p></td>
+<td class=3D"confluenceTd"><p>Raveesha needs to send the calculated data fo=
+r KWH from the device end</p></td>
+<td class=3D"confluenceTd"><p>OPEN</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>14</p></td>
+<td rowspan=3D"2" class=3D"confluenceTd"><p>Event and Alarm</p></td>
+<td class=3D"confluenceTd"><p>Events and Alarm Group-name to display in pro=
+per format</p><p>Events and Alarm name to display in proper format</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Siv=
+aPrakash.Chinnanai@exideleclanche.com" rel=3D"nofollow">@Siva Prakash Chinn=
+anai</a></p><p><a class=3D"external-link" href=3D"mailto:Raveesha.Nidugala@=
+exideleclanche.com" rel=3D"nofollow">@Raveesha Nidugala</a></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>15</p></td>
+<td class=3D"confluenceTd"><p>Events needs to be verified with Actual Syste=
+m</p><p>Why is Error still coming? (Urgent)</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:Siv=
+aPrakash.Chinnanai@exideleclanche.com" rel=3D"nofollow">@Siva Prakash Chinn=
+anai</a></p><p><a class=3D"external-link" href=3D"mailto:Raveesha.Nidugala@=
+exideleclanche.com" rel=3D"nofollow">@Raveesha Nidugala</a></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p>Filter Issue</p></td>
+<td class=3D"confluenceTd"><p>When filter is created for all the Telecom BM=
+S OR TCU, It shows data only for few of them</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p>Working on it</p></td>
+<td class=3D"confluenceTd"><p>In Progress</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_102_919630018.1704261499928--

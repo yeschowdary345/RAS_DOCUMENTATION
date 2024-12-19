@@ -1,0 +1,337 @@
+Date: Wed, 3 Jan 2024 04:41:51 +0000 (UTC)
+Message-ID: <111024007.39.1704256911933@89ec1521d75b>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_38_2114288443.1704256911933"
+
+------=_Part_38_2114288443.1704256911933
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>To list all RAS projects where measurement is dependent on addin=
+g new datatype in Inbound Handler measurement data model to validate rift1 =
+files only</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>To list all RAS projects where measurement is dependent on adding n=
+ew datatype in Inbound Handler measurement data model to validate rift1 fil=
+es only</h1>
+    <div class=3D"Section1">
+        <h3 id=3D"TolistallRASprojectswheremeasurementisdependentonaddingne=
+wdatatypeinInboundHandlermeasurementdatamodeltovalidaterift1filesonly-Descr=
+iption:-">Description :- </h3>
+<p>It listed all RAS projects where measurement is dependent on adding new =
+datatype in Inbound Handler measurement data model. <strong>We will impleme=
+nt the addition of datatypes only for RTIF1 data adapter.</strong></p>
+<p><strong>Purpose</strong> :- </p>
+<ul>
+<li><p> To add datatype for =E2=80=9C<strong>DateTime and Bool</strong>=E2=
+=80=9D Inbound handler measurements for uploading files to Preprocessor </p=
+></li>
+<li><p>To add datatype for =E2=80=9C<strong>DateTime and Bool</strong>=E2=
+=80=9D in RTIF1DataAdapter to validate <strong>rift1<em>(data interchange f=
+ormat)</em></strong> files only </p></li>
+<li><p>Defining all classes and controllers where adding a new datatype req=
+uires relying on a function or method. </p></li>
+</ul>
+<p>Given details are about the main project and other dependent projects wh=
+ile adding new datatype.</p>
+<p><strong>Project Name :</strong>- RAS.Private.UI</p>
+<p><strong>Controller Class name :-</strong> InboundHandlerController.cs</p=
+>
+<p><strong>Data Model Name :-</strong> InboundHandlerModel.cs</p>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 48.0px;">
+<col style=3D"width: 120.0px;">
+<col style=3D"width: 122.0px;">
+<col style=3D"width: 111.0px;">
+<col style=3D"width: 219.0px;">
+<col style=3D"width: 140.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>#</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Dependent Projects</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Classes</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Function</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Descriptions</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Change in method required?</strong></=
+p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>RAS.Core.Test</p></td>
+<td class=3D"confluenceTd"><p>SerializationPerformanceTest.cs</p></td>
+<td class=3D"confluenceTd"><p>Serialization_Deserialization_PerformanceTest=
+()</p></td>
+<td class=3D"confluenceTd"><p>Used for Serialization_Deserialization_Perfor=
+manceTest()</p></td>
+<td class=3D"confluenceTd"><p>NO</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>RAS.Private.UI.SmokeTests</p></td>
+<td class=3D"confluenceTd"><p>InboundHandlerTest.cs</p></td>
+<td class=3D"confluenceTd"><p>RoutingTest_InboundHandlerMeasurements()</p><=
+/td>
+<td class=3D"confluenceTd"><p>Used for Routing test of Inbound Handler Meas=
+urements</p></td>
+<td class=3D"confluenceTd"><p>YES</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>RAS.Backend.Preprocessor.Library</p></td>
+<td class=3D"confluenceTd"><p>RTIF1DataAdapter.cs</p></td>
+<td class=3D"confluenceTd"><p>Read(),</p><p>Open(string path) </p></td>
+<td class=3D"confluenceTd"><p>This class defines the measurements datatype =
+for RTIF1 Entry point </p></td>
+<td class=3D"confluenceTd"><p>YES</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>RAS.Private.UI.Test</p></td>
+<td class=3D"confluenceTd"><p>InboundHandlerControllerTests.cs</p></td>
+<td class=3D"confluenceTd"><p>Same as test met methods given in the descrip=
+tions column</p></td>
+<td class=3D"confluenceTd"><p>Used for the following test methods :-</p>
+<ul>
+<li><p>PostMeasurementsRequest_HavingEmptyParameters_ReturnsBadRequest</p><=
+/li>
+<li><p>PostMeasurementsRequest_HavingZeroMeasurements_CallsFilePreparerAndR=
+eturnsOk</p></li>
+<li><p>PostMeasurementsRequest_HavingZeroMeasurements_ReturnsOk</p></li>
+<li><p>PostMeasurementsRequest_HavingInvalidCredentials_ReturnsUnauthorized=
+</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>NO</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_38_2114288443.1704256911933--

@@ -1,0 +1,319 @@
+Date: Wed, 3 Jan 2024 04:25:15 +0000 (UTC)
+Message-ID: <134319316.53.1704255915424@d806889b90f2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_52_166776520.1704255915424"
+
+------=_Part_52_166776520.1704255915424
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Test report of RAS test 2018-03-08</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Test report of RAS test 2018-03-08</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"TestreportofRAStest2018-03-08-Timeperiodoftest">Time peri=
+od of test</h2>
+<p>Started 2018-03-08, ended 2018-03-08.</p>
+<h2 id=3D"TestreportofRAStest2018-03-08-Testbookused">Test book used</h2>
+<p>'RAS test book draft.docx' v.7</p>
+<h2 id=3D"TestreportofRAStest2018-03-08-Newissuesfound">New issues found</h=
+2>
+<p> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-80=
+5"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-805?s=
+rc=3Dconfmacro" class=3D"jira-issue-key">RAS-805</a> </span> &nbsp;<strong>=
+&lt;=3D blocking</strong><br> <span class=3D"confluence-jim-macro jira-issu=
+e" data-jira-key=3D"RAS-807"> <a href=3D"https://nexchargeapplications.atla=
+ssian.net/browse/RAS-807?src=3Dconfmacro" class=3D"jira-issue-key">RAS-807<=
+/a> </span> <br> <span class=3D"confluence-jim-macro jira-issue" data-jira-=
+key=3D"RAS-806"> <a href=3D"https://nexchargeapplications.atlassian.net/bro=
+wse/RAS-806?src=3Dconfmacro" class=3D"jira-issue-key">RAS-806</a> </span> <=
+br> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-80=
+4"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-804?s=
+rc=3Dconfmacro" class=3D"jira-issue-key">RAS-804</a> </span> <br> <span cla=
+ss=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-803"> <a href=
+=3D"https://nexchargeapplications.atlassian.net/browse/RAS-803?src=3Dconfma=
+cro" class=3D"jira-issue-key">RAS-803</a> </span> </p>
+<h2 id=3D"TestreportofRAStest2018-03-08-Other">Other</h2>
+<p>Issues already reported:</p>
+<h2 id=3D"TestreportofRAStest2018-03-08-Fulltestreport">Full test report</h=
+2>
+<p><img height=3D"250" style=3D"margin: 2px; border: 1px solid #ddd; box-si=
+zing: border-box; vertical-align: text-bottom;" src=3D"b943e7cbd8b31b4ce30c=
+1570a94bfb94" width=3D"250"></p>
+<h2 id=3D"TestreportofRAStest2018-03-08-Testedversion">Tested version</h2>
+<p>Commit&nbsp;<a class=3D"external-link" href=3D"https://bitbucket.org/lec=
+lanche/ras/commits/fa3d93dcb666ee089f460b3163cbe7a0beca02ab?at=3Ddemo" rel=
+=3D"nofollow" style=3D"text-decoration: none;text-align: left;">fa3d93d</a>=
+<span class=3D"legacy-color-text-blue3"><span>&nbsp;(<a class=3D"external-l=
+ink" href=3D"https://bitbucket.org/leclanche/ras/commits/fa3d93dcb666ee089f=
+460b3163cbe7a0beca02ab?at=3Ddemo" rel=3D"nofollow">https://bitbucket.org/le=
+clanche/ras/commits/fa3d93dcb666ee089f460b3163cbe7a0beca02ab?at=3Ddemo</a>)=
+</span></span></p>
+<p><br></p>
+<h2 id=3D"TestreportofRAStest2018-03-08-Conclusion">Conclusion</h2>
+<p>One issue left that is blocking: Scheduled task sends an invalid url via=
+ email rendering it useless.</p>
+<p>Resolution: Fix this issue (small fix) and redeploy + start tests again<=
+/p>
+    </div>
+</body>
+</html>
+------=_Part_52_166776520.1704255915424
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/b943e7cbd8b31b4ce30c1570a94bfb94
+
+iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAMAAAC/MqoPAAADAFBMVEX19fXv7+98fHx1dXV9fX23
+t7eenp5wcHDn5+f09PTz8/Pd3d2SkpLY2Njt7e3Q0NCioqJycnKqqqq7u7uurq6CgoKGhobOzs7D
+w8PR0dGNjY3Hx8fj4+PGxsbS0tKoqKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAABYhwFnAAADqElEQVR4Xu3cDVPaShSA4TUfbAwEodArHbXd/v8f1U7vnWmHjtex
+KogOpNkNEdigUyz5kvcZics5hxmOG5KRLAgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA1wZAeKESwWrh17xtxx7u1YgwWeH9ix5wS+88e1DdDy7chL/JYdKYRjBwrxx3u74S7sSINJO/Cy
+HctfqZxZr6UDbn2nF+GreXM70h21Zs7wfTyzE1q+vAgVtR5N3OlDLOa30bbec+UNZh+3TuWHdPBB
+RpsZwy5vMquXrvcxG5643fVMqpzWKznM9XvfsuH1SX89UybPDpRhMl2NZ5U8g/JYe7C79k9TVx9o
+rfzb3eGPvXh151dls15F6zVB64eI1g9RZa2XcwJ7SWWtV4/WDxGtHyJaP0S0fohovTphGNqhklTS
+um72cXkl2fUn4riS7qtofXodJJPdS+9ECyHi682CclTRughPxKR3NRL6HfnLiRAnlcx6JReeYude
+/ArdtjO8iuKkdX+6eUW9nAtPlbTeuQkfxYOI3Dvn5lGI9jTcvPJWTuvlsN+XuJBry2UC52x1x7DL
+myzXy8BrZ8NIDtYzWq68wfK9XDi90+D4ODjtefacbytvri29dP2OJ/tex9+ycm9LeWPt2MuO5a9U
+yXm9Hmi9YPOdln4G5ZzWy2nd2amZeUlPyg4Uwol3WR5cUutbTi1FONxF4QAAAAAAAACA2lB2IE8J
+4UtlR//CXt/tV3bAUHZgO2UH8pzhVzv0F/baetHu/7cjdaE0IQZSyk6oV4okBsuoeifjXGo500r/
+pGVZwoSHyXioR8lj5TAtSVP1o/TmTJ51I9kSQraC7oVcRpVsP5dKW0/HWSJ9yEUyHgkxMoOspJ6U
+3sjTZHOePH15vhZV+sP621MbrS8TJqxn39fVZpCV7E0BnyP+kdw+3x+Jwc/3cfBfFv33+dSajcRd
+cnP1h57NYFVUR0pvVhP3seXqvdtEX0iFajXrWUJT+rp0oGfdDJ5K9mWvR/gvZq3r0/x8e5h7R1nU
+sFPf9d9i+f1UadkyYeildWZNwtOgvuQo1AelYRAMzEs06H7Sv3VU6Xwu5brnTwcwU5YlzG5gjm4D
+fV4o5DC311lfXN0p8eOfmzi+7QvRv41n+jsJTNTIpfz452zcWXtwljCi8WzcvhTisj2+Hm/7Epc3
+S9mBPdvrrDfLAbcOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG/ab3euqX4uYjs6AAAAAElF
+TkSuQmCC
+------=_Part_52_166776520.1704255915424--

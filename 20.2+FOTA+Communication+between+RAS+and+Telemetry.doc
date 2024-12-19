@@ -1,0 +1,621 @@
+Date: Wed, 3 Jan 2024 05:51:26 +0000 (UTC)
+Message-ID: <1007248166.91.1704261086438@0564475b91b8>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_90_561317187.1704261086438"
+
+------=_Part_90_561317187.1704261086438
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>20.2 FOTA Communication between RAS and Telemetry</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>20.2 FOTA Communication between RAS and Telemetry</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 48.0px;">
+<col style=3D"width: 206.0px;">
+<col style=3D"width: 259.0px;">
+<col style=3D"width: 247.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Subject</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Description</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Telemetry / Slave (Sample format to s=
+end)</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>RAS Command against performance data =
+response</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Version Info</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Telemetry and Slave should send the all file types(firmware/config/d=
+bc) of version details to RAS on following condition:-</p>
+<ul>
+<li><p>Once a day (It should configurable)</p></li>
+<li><p>Boot time </p></li>
+<li><p>On request from the RAS</p></li>
+</ul></li>
+<li><p>Parameter: It is a list of AssetFileType below:-</p>
+<ul>
+<li><p>FRM_SLV</p></li>
+<li><p>CFG_SLV</p></li>
+<li><p>FRM_TCU</p></li>
+<li><p>FRM_MCU</p></li>
+<li><p>FRM_NEX</p></li>
+<li><p>CFG_GUID</p></li>
+<li><p>CFG_TCU</p></li>
+<li><p>CFG_RS48</p></li>
+<li><p>DBC</p></li>
+</ul></li>
+</ul><p><u>Note</u>: Version data type is string. Ex.: 1.0.0</p></td>
+<td class=3D"confluenceTd"><p><strong>Sample for the Telemetry </strong></p=
+>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POST /I=
+nboundHandler/7780f4a7-93da-7e62-582b-ab584c5b36f2/Measurements
+Host: ras.leclanche.com
+Content-Type: application/json
+=20
+{
+    "Password": "Asset Password",
+    "Measurements": [
+       {
+            "Timestamp": "2019-03-28T08:23:05.334Z",
+            "Parameter": "FRM_TCU",
+            "String": 1.0.0
+        },
+        {
+            "Timestamp": "2019-03-28T08:23:06.380Z",
+            "Parameter": "FRM_MCU",
+            "String": 1.0.0
+        },
+        {
+            "Timestamp": "2019-03-28T08:23:06.380Z",
+            "Parameter": "FRM_NEX",
+            "String": 1.0.0
+        },
+        {
+            "Timestamp": "2019-03-28T08:23:05.334Z",
+            "Parameter": "CFG_TCU",
+            "String": 1.0.0
+        },
+        {
+            "Timestamp": "2019-03-28T08:23:06.380Z",
+            "Parameter": "CFG_GUID",
+            "String": 1.0.0
+        },
+        {
+            "Timestamp": "2019-03-28T08:23:06.380Z",
+            "Parameter": "CFG_RS48",
+            "String": 1.0.0
+        },
+        {
+            "Timestamp": "2019-03-28T08:23:06.380Z",
+            "Parameter": "DBC",
+            "String": 1.0.0
+        }
+    ]
+}</pre>=20
+</div>
+</div><p><strong>Sample for the Slave </strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POST /I=
+nboundHandler/7780f4a7-93da-7e62-582b-ab584c5b36f2/Measurements
+Host: ras.leclanche.com
+Content-Type: application/json
+{
+    "Password": "Asset Password",
+    "Measurements": [
+       {
+            "Timestamp": "2019-03-28T08:23:05.334Z",
+            "Parameter": "FRM_SLV",
+            "String": 1.0.0
+        },
+        {
+            "Timestamp": "2019-03-28T08:23:06.380Z",
+            "Parameter": "CFG_SLV",
+            "String": 1.0.0
+        }
+    ]
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd"><p>Request command to get current versions again=
+st in performance data</p><p>Command: <strong>GET_VER_INFO</strong></p><p>S=
+ample: (For All version )</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">[
+    {
+        "Key": "GET_VER_INFO",
+        "Value":""
+    }
+]</pre>=20
+</div>
+</div><p></p><p>Sample2: (For specific version )</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">[
+    {
+        "Key": "GET_VER_INFO",
+        "Value":"FRM_NEX"
+    }
+]</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Version Update Instruction</p></td>
+<td class=3D"confluenceTd"><p>RAS send command to Telemetry/Slave to update=
+ the new version for the specifc fieltype (firmware, configuration, DBC. et=
+c).</p><p>This command will be send against performance data</p>
+<ul>
+<li><p><u>ID</u>: is unique value in respective of command</p></li>
+<li><p><u>AssetFileType</u>: It is used to define install file type. Ex:-</=
+p>
+<ul>
+<li><p>FRM_SLV</p></li>
+<li><p>CFG_SLV</p></li>
+<li><p>FRM_TCU</p></li>
+<li><p>FRM_MCU</p></li>
+<li><p>FRM_NEX</p></li>
+<li><p>CFG_GUID</p></li>
+<li><p>CFG_TCU</p></li>
+<li><p>CFG_RS48</p></li>
+<li><p>DBC</p></li>
+</ul></li>
+<li><p><u>AssetFileName</u>: This file name Telemetry will use during downl=
+oad from RAS file server</p></li>
+</ul><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>Command: <strong>VER_UPDATE_FOUND</strong></p=
+><p>Desc: Send the instruction to Telemetry/Slave to install the version</p=
+><p>Sample:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">[
+    {
+        "Key": "VER_UPDATE_FOUND",
+        "Value": {
+            "Id": 3,
+            "AssetFileType": "FRM_TCU",
+            "AssetFileName": "20210219_frm_sample.frm",
+            "Version": 2.0.0,
+            "ReleaseDate": "2021-02-10T00:00:00",
+            "Comments": "Bug Fixed"
+        }
+    }
+]</pre>=20
+</div>
+</div></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Download File (Management Data)</p></td>
+<td class=3D"confluenceTd"><p>Telemetry/Slave download the file from =E2=80=
+=9CRAS File server=E2=80=9D as per version update instruction recived by RA=
+S</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Download and Installation Status</p></td>
+<td class=3D"confluenceTd"><p>Telemetry/Slave should send the status for th=
+e download and installation of the file to the RAS on each step, and it sho=
+ld also send on request by RAS.</p>
+<ul>
+<li><p>State of install file process:</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Telemetry / Slave sending to RAS Status</p><p=
+>Sample:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POST /I=
+nboundHandler/7780f4a7-93da-7e62-582b-ab584c5b36f2/Measurements
+Host: ras.leclanche.com
+Content-Type: application/json
+{
+    "Password": "Asset Password",
+    "Measurements": [
+       {
+            "Timestamp": "2019-03-28T08:23:05.334Z",
+            "Parameter": "STATUS_FRM_SLV",
+            "String": "3|2|503 Service Unavailable"
+        }
+    ]
+}</pre>=20
+</div>
+</div><p>Refrence:</p>
+<ul>
+<li><p><strong>Parameter</strong>: =E2=80=9CSTATUS_=E2=80=9D + AssetFileTyp=
+e </p>
+<ul>
+<li><p>Ex.: <code>"STATUS_FRM_SLV"</code></p></li>
+</ul></li>
+<li><p><strong>String</strong>: &lt;A&gt; + | + &lt;B&gt; + | &lt;C&gt;</p>
+<ul>
+<li><p>A: ID - This is same ID that we sending under command of VER_UPDATE_=
+FOUND</p></li>
+<li><p>B: State of file download and installation </p></li>
+<li><p>C: Message in respect of state (If available). It would be an explan=
+ation of that state</p></li>
+<li><p>Ex.: <code>"3|2|503 Service Unavailable=E2=80=9D</code></p></li>
+</ul></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>RAS requesting to Telemetry/Slave to get the =
+status of download and install file version</p><p>Command: <strong>GET_VER_=
+STATUS</strong></p><p>Sample:-</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">[
+    {
+        "Key": "GET_VER_STATUS",
+        "Value":"FRM_SLV"
+    }
+]</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Incorrect File</p></td>
+<td class=3D"confluenceTd"><p>If RAS send incorrect AssetFileType then Tele=
+metry/Slave should not accept and ignore it. </p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>RAS sending <code>FRM_TCU</code> to slave</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">[
+    {
+        "Key": "VER_UPDATE_FOUND",
+        "Value": {
+            "Id": 3,
+            "AssetFileType": "FRM_TCU",
+            "AssetFileName": "20210219_frm_sample.frm",
+            "Version": 2.0.0,
+            "ReleaseDate": "2021-02-10T00:00:00",
+            "Comments": "Bug Fixed"
+        }
+    }
+]</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p></p>
+<p><strong>Status / State</strong></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 107.0px;">
+<col style=3D"width: 188.0px;">
+<col style=3D"width: 465.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Stateside</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>State</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Responsible</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Initial</p></td>
+<td class=3D"confluenceTd"><p>RAS =E2=86=90 Vartika</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>Sent</p></td>
+<td class=3D"confluenceTd"><p>RAS =E2=86=90 Siva</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Command Received</p></td>
+<td class=3D"confluenceTd"><p>DEVICE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>Connecting to =E2=80=9CRAS File server=E2=80=
+=9D</p></td>
+<td class=3D"confluenceTd"><p>DEVICE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Failed to connect =E2=80=9CRAS File server=E2=
+=80=9D</p></td>
+<td class=3D"confluenceTd"><p>DEVICE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Downloading</p></td>
+<td class=3D"confluenceTd"><p>DEVICE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Downloaded</p></td>
+<td class=3D"confluenceTd"><p>DEVICE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>Installing</p></td>
+<td class=3D"confluenceTd"><p>DEVICE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Installed / Sucess</p></td>
+<td class=3D"confluenceTd"><p>DEVICE =E2=86=90 Siva</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Failed to Install</p></td>
+<td class=3D"confluenceTd"><p>DEVICE</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>11</p></td>
+<td class=3D"confluenceTd"><p>Timeout</p></td>
+<td class=3D"confluenceTd"><p>RAS =E2=86=90 Siva</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>12</p></td>
+<td class=3D"confluenceTd"><p>Unknown</p></td>
+<td class=3D"confluenceTd"><p>DEVICE</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Key Points</strong></p>
+<ul>
+<li><p>RAS is only communicating with Telemetry. Slaves are communicating w=
+ith RAS using Telemetry</p></li>
+<li><p>Every Intelligent device should have its own GUID and RAS will treat=
+ as an asset</p></li>
+<li><p>The RAS application must create a logical mapping of assets belongin=
+g to the same system. (Ex.: Display 1 telemetry and 6 slaves on a single da=
+shboard =3D 7 assets)</p></li>
+<li><p>RAS should send one command at a time in one system. After success, =
+failure, or timeout of the last command RAS can send the next command for t=
+hat particular system(1 telemetry and 6 assets)</p></li>
+</ul>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_90_561317187.1704261086438--

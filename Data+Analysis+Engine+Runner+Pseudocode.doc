@@ -1,0 +1,460 @@
+Date: Wed, 3 Jan 2024 05:30:32 +0000 (UTC)
+Message-ID: <807166944.65.1704259832745@0564475b91b8>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_64_1904731637.1704259832745"
+
+------=_Part_64_1904731637.1704259832745
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Data Analysis Engine Runner Pseudocode</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Data Analysis Engine Runner Pseudocode</h1>
+    <div class=3D"Section1">
+        <p>Following pseudocode is for running in every-record mode:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">functio=
+n getfirsttimestamp(datalinequeries):
+=09return select top 1 timestamp from datalinequeries.current where timesta=
+mp &gt; iterationtimestamp order by timestamp ascending
+
+function advance(datalinequeries):
+=09return datalinequeries.where(timestamp =3D=3D getfirsttimestamp()).forea=
+ch(getnextdatapoint())
+
+function enoughdatapresent()
+=09return datalinequeries.any(nodata)
+
+// Get a list of all "every" data lines
+everydatalines =3D alldatalines.where(type =3D=3D everyrecord)
+
+startperiod =3D getStartPeriod() // equal to the last point that was previo=
+usly processed. We'll start processing *after* this time point. Set to null=
+ if this is the first point
+
+// Make sure that buildqueryfordataline includes the previous point before =
+the startperiod if startperiod is defined and needsprevious is set
+datalinequeries =3D buildqueryfordatalines(everydatalines, needsprevious, s=
+tartperiod)
+
+// Find first point in time where all data is defined.=20
+do
+{
+=09// Find the first one that has timestamp &gt; referencetime
+=09advance()
+
+=09if(datalinequeries.all(isnull))
+   =09=09return; // we ran all the way through the one property line withou=
+t once getting one of the other properties.=20
+=09=09=09=09// Can't do much more then wait for new data
+} while(!enoughdatapresent())
+
+// At this point, we have data for all data lines=20
+
+// Skip forward to startperiod if it's defined
+if(startperiod !=3D null)=20
+{
+=09while(getfirsttimestamp() &lt;=3D starttimestamp)=20
+=09{
+=09=09advance();
+
+=09=09if(enoughdatapresent())
+   =09=09=09return; // wait for more data &amp; try again later!
+
+=09=09previous =3D datalinequeries.data;
+=09}
+}
+
+// At this point either this is the first data this statement has processed=
+ and we're located on the first full record,
+// or we've processed before and we're located on the first record *after* =
+the one that was processed last.=20
+if(needsprevious &amp;&amp; previous =3D=3D null) // Previous is needed but=
+ could not be found, use current as previous and go to next
+{
+=09previous =3D datalinequeries.data;
+=09advance();
+
+=09if(datalinequeries.any(nodata))
+   =09=09return; // wait for more data &amp; try again later!
+}
+
+// Here we're pointing to the current iteration record. If the previous rec=
+ord was needed, we have that one too!=20
+while(enoughdatapresent())
+{
+=09buildinputrecord(datalinequeries.current, getfirsttimestamp(), previous)
+
+=09advance()
+} =20
+
+updatestate(current, drivingpropertytimestamp) // Set the new upto datetime=
+</pre>=20
+</div>
+</div>
+<p class=3D"auto-cursor-target">And the algorithm for aggregates:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">abstrac=
+t class AggregateDataLine
+{
+=09public Timestamp LastAssetTimestamp{get; private set;}
+
+=09AggregateDataLine(long asset, long property)
+=09{=09
+=09}
+
+=09/** Calculate the aggregate for the given period. The callee can safely =
+assume the period is closed! */=20
+=09abstract void CalculateForPeriod(Period currentPeriod);
+}
+
+class APV
+{
+=09public double? Value {get;set;}
+=09public Timestamp Timestamp {get;set;}
+}
+
+
+class MaxDataLine : AggregateDataLine
+{
+=09MaxDataLine(long asset, long property, Timestamp lastAssetTimestamp)
+=09{=09
+=09=09Value =3D null;
+=09=09this.LastAssetTimestamp =3D lastAssetTimestamp;
+=09}
+
+=09private bool ReadNextFromQuery()
+=09{
+=09=09query.Next();
+=09=09if(query.Current =3D=3D null)
+=09=09{=09
+=09=09=09return false;
+=09=09}
+
+=09=09Previous =3D query.Current;
+=09=09return true;
+=09}
+
+=09void CalculateForPeriod(Period currentPeriod)
+=09{
+=09=09if(query.Current =3D=3D null)
+=09=09{
+=09=09=09if(!ReadNextFromQuery())
+=09=09=09=09return;
+=09=09}
+
+=09=09double currentMax =3D query.Current.Value;
+=09=09while(query.Current.Timestamp &lt; currentPeriod.EndTimestamp)
+=09=09{
+=09=09=09if(!ReadNextFromQuery()) // Period is complete, no more data from =
+this period is arriving, so we're good!
+=09=09=09{
+=09=09=09=09return;
+=09=09=09}
+
+=09=09=09var newDataPoint =3D query.Current;
+=09=09=09if (newDataPoint &gt; currentMax &amp;&amp; newDataPoint.Timestamp=
+ &lt; currentPeriod.EndTimestamp)
+=09=09=09{
+=09=09=09=09currentMax =3D newDataPoint;
+=09=09=09}
+=09=09}
+
+=09=09// By the time we get here, we've received data for a new time period=
+, meaning that the current time period the current time period was closed
+=09=09return new APV() {=20
+=09=09=09=09Value =3D currentMax,
+=09=09=09=09Timestamp =3D currentPeriod.StartTimestamp
+=09=09};
+=09}
+}
+
+DateTime DataCompleteUpto()
+{
+=09return assets.Select(x =3D&gt; x.GetLastDataPointTimestamp()).Min();=20
+}
+
+void RunAggregateData()
+{
+=09var datalines =3D GetDataLines()
+
+=09// If this is the first time this query has (succesfully) executed,=20
+=09// we need to start calculating from the first data point on. If we've a=
+lready processed before,
+=09// we calculate starting from the next period.=20
+=09if(PreviouslyCalculatedPeriod =3D=3D null)
+=09{
+=09=09// Calculate first period based on the first data point for the prope=
+rties to be aggregated
+=09=09var firstTimestamp =3D datalines.GetFirstTimestamp()
+
+=09=09var currentPeriod =3D getPeriodFromTimestamp(firstTimestamp)
+
+=09=09// If this is the first time we're calculating and we need a previous=
+ set of values, we will not
+=09=09// be able to calculate for the very first period. We will need that =
+period to use as our set of previous values.=20
+=09=09if(needsPrevious)
+=09=09{
+=09=09=09var previousData =3D BuildInputRecord(datalines.foreach(() =3D&gt;=
+ CalculateForPeriod(PreviouslyCalculatedPeriod)))
+=09=09=09var currentPeriod =3D NextPeriod(PreviouslyCalculatedPeriod)
+=09=09}
+=09}
+=09else // Not the first period, look at the previous period to determine t=
+he new period.=20
+=09{
+=09=09if(needsPrevious)
+=09=09{
+=09=09=09var previousData =3D BuildInputRecord(datalines.foreach(() =3D&gt;=
+ CalculateForPeriod(PreviouslyCalculatedPeriod)))
+=09=09}
+=09=09var currentPeriod =3D NextPeriod(PreviouslyCalculatedPeriod)
+=09}
+
+=09while(currentPeriod.EndDate &lt; DataCompleteUpto())
+=09{
+=09=09var current =3D BuildInputRecord(datalines.foreach(() =3D&gt; Calcula=
+teForPeriod(currentPeriod)), previousData)
+
+=09=09Execute(current)
+
+=09=09previousData =3D current;
+
+=09=09var currentPeriod =3D NextPeriod(currentPeriod)
+=09}
+
+=09WriteToDatabase(ProcessedUpTo =3D currentPeriod);
+
+}=09</pre>=20
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_64_1904731637.1704259832745--

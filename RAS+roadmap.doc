@@ -1,0 +1,516 @@
+Date: Wed, 3 Jan 2024 04:30:21 +0000 (UTC)
+Message-ID: <1670086999.35.1704256221545@19aa8add6f59>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_34_884511272.1704256221545"
+
+------=_Part_34_884511272.1704256221545
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>RAS roadmap</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>RAS roadmap</h1>
+    <div class=3D"Section1">
+        <p>TENTATIVE</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"ac56888b-5c23-4999-8c29-e11=
+5bc2b317c" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 48.0px;">
+<col style=3D"width: 403.0px;">
+<col style=3D"width: 56.0px;">
+<col style=3D"width: 48.0px;">
+<col style=3D"width: 91.0px;">
+<col style=3D"width: 114.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>S.No</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>content</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Timeline</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>source code release version</strong><=
+/p></th>
+<th class=3D"confluenceTh"><p><strong>application released version</strong>=
+</p></th>
+<th class=3D"confluenceTh"><p><strong>remarks</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Data flow integration (MFC&gt;FTP&gt;Preproce=
+ssing&gt;Postprocessing)<br>Data visualisation (Filtering, Dashboarding)<br=
+>Task scheduling for Dashboards<br>Dashboard editor<br>Post-processor (excl=
+. editor)<br>Database household (logging, backup)<br>Security (authenticati=
+on, roles)<br>Infrastructure test<br>RAS messaging (e-mail + website notifi=
+cations)<br>Online chat support<br>Database update<br>MFC Firmware/App uplo=
+ad through FTP</p></td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>done</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>DAE - Data Analysis Engine<br>Bugfixing &amp;=
+ maintenance</p>
+<ol>
+<li><p><strong>Received source code from LSA</strong></p></li>
+</ol></td>
+<td class=3D"confluenceTd"><p>Jan 2020</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://bi=
+tbucket.org/nexcharge/ras_source/commits/0f7cee2e2c23d08ab313debc7d1efc5075=
+9667c9" rel=3D"nofollow">0f7cee2</a></p><p><br></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>done</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd">
+<ol>
+<li><p>Configured Library(Dll)&nbsp;references</p></li>
+<li><p>Bug Fixing &amp; maintenance</p></li>
+</ol></td>
+<td class=3D"confluenceTd"><p>Mar 2020</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://bi=
+tbucket.org/nexcharge/ras_source/commits/0f3e40e57e631d7a9baaf6c2690e2504b0=
+4aba54" rel=3D"nofollow">0f3e40e</a></p><p><br></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>done</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd">
+<ol>
+<li><p>Change the&nbsp;logo and name of Leclanch=C3=A9 with Nexcharge in ev=
+ery place such as - scheduled tasks, emails etc.</p></li>
+<li><p>Telemetry&nbsp;integration with RAS via FTP /HTTP (dependent on hard=
+ware availability)</p></li>
+<li><p>Implement FTPS</p></li>
+<li><p>Enabled external database in DevExpress Dashboard</p></li>
+<li><p>Notify Admin user for invalid data or file formats</p></li>
+<li><p>Bug Fixing &amp; maintenance</p></li>
+</ol></td>
+<td class=3D"confluenceTd"><p>Nov 2020</p></td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>done</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd">
+<ol>
+<li><p>Events and Alarms implements based on VISION protocols</p></li>
+<li><p>Dashboard design for current and historical Events and Alarms</p></l=
+i>
+</ol></td>
+<td class=3D"confluenceTd"><p>Oct 2021</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>done</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd">
+<ol>
+<li><p>FOTA Development&nbsp;</p></li>
+<li><p>POC demo</p></li>
+<li><p>Implementation of Asset-Site Grouping</p></li>
+<li><p>TeamCity CI/CD Implementation</p></li>
+<li><p>Asset Registration</p></li>
+<li><p>Implementing pagination feature in RAS</p></li>
+<li><p>Application and Project Versioning management</p></li>
+<li><p>Bug Fixing &amp; maintenance</p></li>
+</ol></td>
+<td class=3D"confluenceTd"><p>Dec 2021</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>done</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd">
+<ol>
+<li><p>Implement Upload file(configuration/Firmware) option(UI+Back-end cod=
+e) for FOTA. This option is only for specific users(like firmware team) who=
+ directly want to upload their build firmware or config file to validate or=
+ debug with testing device</p></li>
+<li><p>Linked FOTA history with Asset property page</p></li>
+</ol></td>
+<td class=3D"confluenceTd"><p>Jan 2022</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://bi=
+tbucket.org/nexcharge/ras_source/commits/7d5d6d2766ef42f4d05b0a11aa3165fb1a=
+76287d" rel=3D"nofollow">7d5d6d2</a></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>done</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd">
+<ol>
+<li><p>Configuration parameters version management </p></li>
+<li><p>UI need to implement for Add/Edit parameter configuration file.</p><=
+/li>
+</ol></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd">
+<ol>
+<li><p>ION BMS</p>
+<ol>
+<li><p>Integration with</p></li>
+<li><p>Implement Events and Alarms</p></li>
+<li><p>Implement support for FOTA</p></li>
+<li><p>Test and validate</p></li>
+</ol></li>
+</ol></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd">
+<ol>
+<li><p>Nexcharge BMS</p>
+<ol>
+<li><p>Integration with</p></li>
+<li><p>Implement Events and Alarms</p></li>
+<li><p>Implement support for FOTA</p></li>
+<li><p>Test and validate</p></li>
+</ol></li>
+</ol></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>11</p></td>
+<td class=3D"confluenceTd">
+<ol>
+<li><p>Events and Alarms Enhancement </p>
+<ol>
+<li><p>System generated events and alerts</p></li>
+<li><p>Device generate events and alerts</p></li>
+</ol></li>
+<li><p>DAE Logic</p>
+<ol>
+<li><p>Create a logic based on business need</p></li>
+</ol></li>
+<li><p>Security Improvement</p></li>
+<li><p>Implement MQTT</p></li>
+<li><p>Product licenses needed</p></li>
+<li><p>Bug Fixing &amp; maintenance</p></li>
+</ol></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>12</p></td>
+<td class=3D"confluenceTd">
+<ol>
+<li><p>Convert existing monolithic architecture to micro service based arch=
+itecture </p></li>
+<li><p>Convert .NET Framework applications to .NET Core</p></li>
+<li><p>Containerization of applications </p></li>
+<li><p>Explore alternative database solution. it may be NoSQL</p></li>
+<li><p>Use orchestration technologies like OpenShift, Kubernetes, etc=E2=80=
+=A6</p></li>
+<li><p>Migrate to public cloud service providers like Azure, AWS.</p></li>
+</ol></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p><br></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Reference Excel File</strong>: </p>
+<p><a class=3D"external-link" href=3D"https://exideleclanche.sharepoint.com=
+/:x:/s/RnD_RAS201910-Developers/EYzPdPgMUVdChIIW8tXhlMoBAUulpRjP1VvrfGJdIX_=
+JyA?e=3Dn2BCd1" rel=3D"nofollow">RAS Road Map 2021-22</a> </p>
+<p></p>
+<p></p>
+<p>This preliminary roadmap is an estimation based on the known scope of th=
+e different modules. Modules to be developed near-term can be estimated wit=
+h a higher level of accuracy, compared to long term modules which are still=
+ more broad stroke defined, and probably subject to requirements change.</p=
+>
+<p>It is recommended to increase the quality of planning by adding addition=
+al specialized resources (software analist) on the project. RAS is an ambit=
+ious and sizeable project, addressing the core needs of the company. Care n=
+eeds to be taken that it exactly addresses the needs through proper analysi=
+s and careful planning.</p>
+<p>The planning is based on estimates for Analysis, Development, Validation=
+, Documentation per module. Nevertheless it is likely that bugs will exist,=
+ which are unknown today and difficult to plan for.</p>
+<p>Demonstrating each release may take up unscheduled time depending on the=
+ scope of the demonstration.</p>
+<p>Project management overhead is not included in above estimates.</p>
+<p>Some modules may require additional documentation (to be evaluated by en=
+gineering).</p>
+<h2 id=3D"RASroadmap-Roadmapplanningimpact">Roadmap planning impact</h2>
+<p>The following tasks have taken a considerable amount of time and are <st=
+rong>not</strong> included in the planning above:</p>
+<ul>
+<li><p>Preperation and execution of many Demo's: Orsted, Neeta Khare</p></l=
+i>
+<li><p>Dashboard creation &amp; other project specific support (specificati=
+ons, meetings, devexpress)</p>
+<ul>
+<li><p>Toll Plaza</p></li>
+<li><p>Buses De Lijn (x2)</p></li>
+</ul></li>
+<li><p>Marketing documentation</p>
+<ul>
+<li><p>Quick start guide for RAS</p></li>
+<li><p>Leaflet, lexicon</p></li>
+</ul></li>
+<li><p>Redesign &amp; reimplementation eventing engine</p></li>
+<li><p>Providing customer support&nbsp;</p></li>
+<li><p>Limited availability of BD, due to other projects. Most sprints were=
+ done with &lt;2 FTE's instead of 3. Some sprints were done with only 1 FTE=
+.&nbsp;</p></li>
+<li><p>Leaves due to illness</p></li>
+<li><p>Change of personnel (x2), requiring additional training and knowledg=
+e transfer</p></li>
+<li><p>UI organization (favorites, grouping, etc.)???</p></li>
+<li><p>Message throttling incl interfaces</p></li>
+<li><p>GDPR compliance</p></li>
+<li><p>Transfer of ownership</p></li>
+<li><p>Data exploration</p></li>
+</ul>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_34_884511272.1704256221545--

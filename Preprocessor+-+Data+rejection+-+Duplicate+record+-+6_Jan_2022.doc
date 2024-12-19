@@ -1,0 +1,836 @@
+Date: Wed, 3 Jan 2024 05:07:29 +0000 (UTC)
+Message-ID: <2037886222.43.1704258449461@0564475b91b8>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_42_1538973107.1704258449460"
+
+------=_Part_42_1538973107.1704258449460
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Preprocessor - Data rejection - Duplicate record - 6/Jan/2022</t=
+itle>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Preprocessor - Data rejection - Duplicate record - 6/Jan/2022</h1>
+    <div class=3D"Section1">
+        <p>Observations:</p>
+<p>A new constraint has been added in the AssetPropertyValue table - a key =
+with combination of AssetPropertyId and Timestamp. This uniquely identifies=
+ a record in AssetPropertyValue table.</p>
+<p>Because of above key, even a single duplicate record in a packet can lea=
+d to rejection of all data in the same.</p>
+<p>Preprocessor inserts as a whole in a batch of 20000 records and this is =
+the reason for all data being rejected.</p>
+<p>Timestamp column in AssetPropertyValue table is now currently stored wit=
+h 3 precisions in nanoseconds whereas we need to go with 4 precisions.</p>
+<p>When an exception other than InvalidDataException is thrown, then the st=
+ate of the DataChunk record is not changed and hence this leads to cyclic e=
+xecution of same record. (This can be avoided by changing the state at gene=
+ric exception catch block).</p>
+<p><strong>Case 1 </strong></p>
+<p>DataChunk ID=E2=80=99s =3D 2559283, 2559255</p>
+<p>AssetID =3D 109</p>
+<p>In this case, the whole data set of 2559255 is inserted into DB, whereas=
+ all data of 2559283 are rejected.</p>
+<p><strong>2559283</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Timesta=
+mp,Parameter,Float,String=20
+
+2021-12-10T10:12:44.0036Z,DC_LINK_V,49.000000,=20
+
+2021-12-10T10:12:44.0037Z,SYS_I,77.629997,=20
+
+2021-12-10T10:12:44.0039Z,INST_P,3803.869873,=20
+
+2021-12-10T10:12:44.0039Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:44.0042Z,SYS_ENRGY_IN,0.370224,=20
+
+2021-12-10T10:12:46.0019Z,DC_LINK_V,49.000000,=20
+
+2021-12-10T10:12:46.0019Z,SYS_I,77.619995,=20
+
+2021-12-10T10:12:46.0020Z,INST_P,3803.379883,=20
+
+2021-12-10T10:12:46.0021Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:46.0022Z,SYS_ENRGY_IN,0.373393,=20
+
+2021-12-10T10:12:48.0999Z,DC_LINK_V,49.000000,=20
+
+2021-12-10T10:12:49.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:12:49.0001Z,INST_P,3803.379883,=20
+
+2021-12-10T10:12:49.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:49.0003Z,SYS_ENRGY_IN,0.376563,=20
+
+2021-12-10T10:12:51.0999Z,DC_LINK_V,49.000000,=20
+
+2021-12-10T10:12:52.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:12:52.0001Z,INST_P,3803.379883,=20
+
+2021-12-10T10:12:52.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:52.0003Z,SYS_ENRGY_IN,0.379732,=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_MOUNT,1.000000,=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_PRESENT,1.000000,=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_DEV_NAME,,/dev/sda1=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_TOTAL_IN_GB,29.408772,=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_UNUSED_IN_GB,29.407841,=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_CENT_USED,0.003165,=20
+
+2021-12-10T10:12:54.0999Z,DC_LINK_V,49.000000,=20
+
+2021-12-10T10:12:55.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:12:55.0001Z,INST_P,3803.379883,=20
+
+2021-12-10T10:12:55.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:55.0003Z,SYS_ENRGY_IN,0.382902,=20
+
+2021-12-10T10:12:57.0999Z,DC_LINK_V,49.000000,=20
+
+2021-12-10T10:12:58.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:12:58.0001Z,INST_P,3803.379883,=20
+
+2021-12-10T10:12:58.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:58.0003Z,SYS_ENRGY_IN,0.386071,=20
+
+2021-12-10T10:13:00.0999Z,DC_LINK_V,49.000000,=20
+
+2021-12-10T10:13:01.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:01.0001Z,INST_P,3803.379883,=20
+
+2021-12-10T10:13:01.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:01.0003Z,SYS_ENRGY_IN,0.389241,=20
+
+2021-12-10T10:13:04.0000Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:04.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:04.0001Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:04.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:04.0003Z,SYS_ENRGY_IN,0.392411,=20
+
+2021-12-10T10:13:07.0003Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:07.0003Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:07.0004Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:07.0005Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:07.0009Z,SYS_ENRGY_IN,0.395581,=20
+
+2021-12-10T10:13:09.0999Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:10.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:10.0001Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:10.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:10.0003Z,SYS_ENRGY_IN,0.398751,=20
+
+2021-12-10T10:13:13.0960Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:13.0962Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:13.0963Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:13.0965Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:13.0966Z,SYS_ENRGY_IN,0.401921,=20
+
+2021-12-10T10:13:15.0999Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:16.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:16.0001Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:16.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:16.0003Z,SYS_ENRGY_IN,0.405091,=20
+
+2021-12-10T10:13:18.0999Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:19.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:19.0001Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:19.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:19.0003Z,SYS_ENRGY_IN,0.408261,=20
+
+2021-12-10T10:13:21.0999Z,DC_LINK_V,49.020000,=20
+
+2021-12-10T10:13:22.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:22.0001Z,INST_P,3804.932129,=20
+
+2021-12-10T10:13:22.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:22.0003Z,SYS_ENRGY_IN,0.411432,=20
+
+2021-12-10T10:13:24.0999Z,DC_LINK_V,49.020000,=20
+
+2021-12-10T10:13:25.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:25.0001Z,INST_P,3804.932129,=20
+
+2021-12-10T10:13:25.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:25.0003Z,SYS_ENRGY_IN,0.414603,=20
+
+2021-12-10T10:13:28.0007Z,DC_LINK_V,49.020000,=20
+
+2021-12-10T10:13:28.0008Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:28.0009Z,INST_P,3804.932129,=20
+
+2021-12-10T10:13:28.0010Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:28.0032Z,SYS_ENRGY_IN,0.417774,=20
+
+2021-12-10T10:13:30.0999Z,DC_LINK_V,49.020000,=20
+
+2021-12-10T10:13:31.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:31.0001Z,INST_P,3804.932129,=20
+
+2021-12-10T10:13:31.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:31.0003Z,SYS_ENRGY_IN,0.420944,=20
+
+2021-12-10T10:13:31.0004Z,EB,163104.000000,=20
+
+2021-12-10T10:13:33.0999Z,DC_LINK_V,49.029999,=20
+
+2021-12-10T10:13:34.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:34.0001Z,INST_P,3805.708252,=20
+
+2021-12-10T10:13:34.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:34.0003Z,SYS_ENRGY_IN,0.424116,=20
+
+2021-12-10T10:13:34.0004Z,EB,163107.000000,=20
+
+2021-12-10T10:13:36.0999Z,DC_LINK_V,49.029999,=20
+
+2021-12-10T10:13:37.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:37.0001Z,INST_P,3805.708252,=20
+
+2021-12-10T10:13:37.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:37.0003Z,SYS_ENRGY_IN,0.427287,=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_MOUNT,1.000000,=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_PRESENT,1.000000,=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_DEV_NAME,,/dev/sda1=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_TOTAL_IN_GB,29.408772,=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_UNUSED_IN_GB,29.407841,=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_CENT_USED,0.003165,=20
+
+2021-12-10T10:13:39.0999Z,DC_LINK_V,49.029999,=20
+
+2021-12-10T10:13:40.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:40.0001Z,INST_P,3805.708252,=20
+
+2021-12-10T10:13:40.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:40.0003Z,SYS_ENRGY_IN,0.430459,=20
+
+2021-12-10T10:13:43.0783Z,LAT,23.443171,=20
+
+2021-12-10T10:13:43.0783Z,LON,72.841301,=20
+
+2021-12-10T10:13:43.0818Z,APPS_LEGATO,319.000000,=20
+
+2021-12-10T10:13:43.0819Z,APPS_TM,3710.000000,=20
+
+2021-12-10T10:13:43.0819Z,APPS_RAS,1.000000,=20
+
+2021-12-10T10:13:43.0820Z,DEV_TEMP,50.000000,=20
+
+2021-12-10T10:13:43.0820Z,IMEI,,352913090360387=20
+
+2021-12-10T10:13:43.0821Z,VER_TM_APPS,,5.4.82=20
+
+2021-12-10T10:13:43.0823Z,VER_FRM_TCU,,1.0.7=20
+
+2021-12-10T10:13:43.0830Z,VER_FRM_MCU,,2.31=20
+
+2021-12-10T10:13:43.0834Z,VER_CFG_GUID,,1.0.0=20
+
+2021-12-10T10:13:43.0836Z,VER_CFG_TCU,,1.0.0=20
+
+2021-12-10T10:13:43.0838Z,VER_CFG_PARAM,,1.0.0=20
+
+2021-12-10T10:13:43.0841Z,VER_CFG_SLV,,1.0.2=20
+
+2021-12-10T10:13:43.0852Z,GSM_PWR,1.000000,=20
+
+2021-12-10T10:13:43.0856Z,SIG_QUAL,3.000000,=20
+
+2021-12-10T10:13:43.0864Z,IPv4,,10.219.157.152=20
+
+2021-12-10T10:13:43.0864Z,MCC,,404=20
+
+2021-12-10T10:13:43.0864Z,MNC,,98=20
+
+2021-12-10T10:13:43.0864Z,LAC,4294967296.000000,=20
+
+2021-12-10T10:13:43.0864Z,SIGSTR,-80.000000,=20
+
+2021-12-10T10:13:43.0880Z,DIR_SIZE_TEMP,0.000000,=20
+
+2021-12-10T10:13:43.0901Z,DIR_SIZE_RFS,0.000000,=20
+
+2021-12-10T10:13:43.0919Z,DIR_SIZE_SDCARD,0.999997,=20
+
+2021-12-10T10:13:43.0931Z,DIR_SIZE_SDCARD_OFFLINE,0.078125,=20
+
+2021-12-10T10:13:43.0941Z,DIR_SIZE_SDCARD_PARALLEL,0.843748,=20
+
+ </pre>=20
+</div>
+</div>
+<p><strong>2559255</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Timesta=
+mp,Parameter,Float,String=20
+
+2021-12-10T10:12:44.0036Z,DC_LINK_V,49,=20
+
+2021-12-10T10:12:44.0037Z,SYS_I,77.629997,=20
+
+2021-12-10T10:12:44.0039Z,INST_P,3803.869873,=20
+
+2021-12-10T10:12:44.0039Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:44.0042Z,SYS_ENRGY_IN,0.370224,=20
+
+2021-12-10T10:12:46.0019Z,DC_LINK_V,49,=20
+
+2021-12-10T10:12:46.0019Z,SYS_I,77.619995,=20
+
+2021-12-10T10:12:46.0020Z,INST_P,3803.379883,=20
+
+2021-12-10T10:12:46.0021Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:46.0022Z,SYS_ENRGY_IN,0.373393,=20
+
+2021-12-10T10:12:48.0999Z,DC_LINK_V,49,=20
+
+2021-12-10T10:12:49.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:12:49.0001Z,INST_P,3803.379883,=20
+
+2021-12-10T10:12:49.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:49.0003Z,SYS_ENRGY_IN,0.376563,=20
+
+2021-12-10T10:12:51.0999Z,DC_LINK_V,49,=20
+
+2021-12-10T10:12:52.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:12:52.0001Z,INST_P,3803.379883,=20
+
+2021-12-10T10:12:52.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:52.0003Z,SYS_ENRGY_IN,0.379732,=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_MOUNT,1,=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_PRESENT,1,=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_DEV_NAME,,/dev/sda1=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_TOTAL_IN_GB,29.408772,=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_UNUSED_IN_GB,29.407841,=20
+
+2021-12-10T10:12:52.0999Z,SDCARD_CENT_USED,0.003165,=20
+
+2021-12-10T10:12:54.0999Z,DC_LINK_V,49,=20
+
+2021-12-10T10:12:55.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:12:55.0001Z,INST_P,3803.379883,=20
+
+2021-12-10T10:12:55.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:55.0003Z,SYS_ENRGY_IN,0.382902,=20
+
+2021-12-10T10:12:57.0999Z,DC_LINK_V,49,=20
+
+2021-12-10T10:12:58.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:12:58.0001Z,INST_P,3803.379883,=20
+
+2021-12-10T10:12:58.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:12:58.0003Z,SYS_ENRGY_IN,0.386071,=20
+
+2021-12-10T10:13:00.0999Z,DC_LINK_V,49,=20
+
+2021-12-10T10:13:01.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:01.0001Z,INST_P,3803.379883,=20
+
+2021-12-10T10:13:01.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:01.0003Z,SYS_ENRGY_IN,0.389241,=20
+
+2021-12-10T10:13:04.0000Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:04.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:04.0001Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:04.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:04.0003Z,SYS_ENRGY_IN,0.392411,=20
+
+2021-12-10T10:13:07.0003Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:07.0003Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:07.0004Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:07.0005Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:07.0009Z,SYS_ENRGY_IN,0.395581,=20
+
+2021-12-10T10:13:09.0999Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:10.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:10.0001Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:10.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:10.0003Z,SYS_ENRGY_IN,0.398751,=20
+
+2021-12-10T10:13:13.0960Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:13.0962Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:13.0963Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:13.0965Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:13.0966Z,SYS_ENRGY_IN,0.401921,=20
+
+2021-12-10T10:13:15.0999Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:16.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:16.0001Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:16.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:16.0003Z,SYS_ENRGY_IN,0.405091,=20
+
+2021-12-10T10:13:18.0999Z,DC_LINK_V,49.009998,=20
+
+2021-12-10T10:13:19.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:19.0001Z,INST_P,3804.155762,=20
+
+2021-12-10T10:13:19.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:19.0003Z,SYS_ENRGY_IN,0.408261,=20
+
+2021-12-10T10:13:21.0999Z,DC_LINK_V,49.02,=20
+
+2021-12-10T10:13:22.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:22.0001Z,INST_P,3804.932129,=20
+
+2021-12-10T10:13:22.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:22.0003Z,SYS_ENRGY_IN,0.411432,=20
+
+2021-12-10T10:13:24.0999Z,DC_LINK_V,49.02,=20
+
+2021-12-10T10:13:25.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:25.0001Z,INST_P,3804.932129,=20
+
+2021-12-10T10:13:25.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:25.0003Z,SYS_ENRGY_IN,0.414603,=20
+
+2021-12-10T10:13:28.0007Z,DC_LINK_V,49.02,=20
+
+2021-12-10T10:13:28.0008Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:28.0009Z,INST_P,3804.932129,=20
+
+2021-12-10T10:13:28.0010Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:28.0032Z,SYS_ENRGY_IN,0.417774,=20
+
+2021-12-10T10:13:30.0999Z,DC_LINK_V,49.02,=20
+
+2021-12-10T10:13:31.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:31.0001Z,INST_P,3804.932129,=20
+
+2021-12-10T10:13:31.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:31.0003Z,SYS_ENRGY_IN,0.420944,=20
+
+2021-12-10T10:13:31.0004Z,EB,163104,=20
+
+2021-12-10T10:13:33.0999Z,DC_LINK_V,49.029999,=20
+
+2021-12-10T10:13:34.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:34.0001Z,INST_P,3805.708252,=20
+
+2021-12-10T10:13:34.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:34.0003Z,SYS_ENRGY_IN,0.424116,=20
+
+2021-12-10T10:13:34.0004Z,EB,163107,=20
+
+2021-12-10T10:13:36.0999Z,DC_LINK_V,49.029999,=20
+
+2021-12-10T10:13:37.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:37.0001Z,INST_P,3805.708252,=20
+
+2021-12-10T10:13:37.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:37.0003Z,SYS_ENRGY_IN,0.427287,=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_MOUNT,1,=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_PRESENT,1,=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_DEV_NAME,,/dev/sda1=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_TOTAL_IN_GB,29.408772,=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_UNUSED_IN_GB,29.407841,=20
+
+2021-12-10T10:13:38.0052Z,SDCARD_CENT_USED,0.003165,=20
+
+2021-12-10T10:13:39.0999Z,DC_LINK_V,49.029999,=20
+
+2021-12-10T10:13:40.0000Z,SYS_I,77.619995,=20
+
+2021-12-10T10:13:40.0001Z,INST_P,3805.708252,=20
+
+2021-12-10T10:13:40.0002Z,SYS_ENRGY_OUT,-5.890662,=20
+
+2021-12-10T10:13:40.0003Z,SYS_ENRGY_IN,0.430459,=20
+
+2021-12-10T10:13:43.0783Z,LAT,23.443171,=20
+
+2021-12-10T10:13:43.0783Z,LON,72.841301,=20
+
+2021-12-10T10:13:43.0818Z,APPS_LEGATO,319,=20
+
+2021-12-10T10:13:43.0819Z,APPS_TM,3710,=20
+
+2021-12-10T10:13:43.0819Z,APPS_RAS,1,=20
+
+2021-12-10T10:13:43.0820Z,DEV_TEMP,50,=20
+
+2021-12-10T10:13:43.0820Z,IMEI,,352913090360387=20
+
+2021-12-10T10:13:43.0821Z,VER_TM_APPS,,5.4.82=20
+
+2021-12-10T10:13:43.0823Z,VER_FRM_TCU,,1.0.7=20
+
+2021-12-10T10:13:43.0830Z,VER_FRM_MCU,,2.31=20
+
+2021-12-10T10:13:43.0834Z,VER_CFG_GUID,,1.0.0=20
+
+2021-12-10T10:13:43.0836Z,VER_CFG_TCU,,1.0.0=20
+
+2021-12-10T10:13:43.0838Z,VER_CFG_PARAM,,1.0.0=20
+
+2021-12-10T10:13:43.0841Z,VER_CFG_SLV,,1.0.2=20
+
+2021-12-10T10:13:43.0852Z,GSM_PWR,1,=20
+
+2021-12-10T10:13:43.0856Z,SIG_QUAL,3,=20
+
+2021-12-10T10:13:43.0864Z,IPv4,,10.219.157.152=20
+
+2021-12-10T10:13:43.0864Z,MCC,,404=20
+
+2021-12-10T10:13:43.0864Z,MNC,,98=20
+
+2021-12-10T10:13:43.0864Z,LAC,4294967296,=20
+
+2021-12-10T10:13:43.0864Z,SIGSTR,-80,=20
+
+2021-12-10T10:13:43.0880Z,DIR_SIZE_TEMP,0,=20
+
+2021-12-10T10:13:43.0901Z,DIR_SIZE_RFS,0,=20
+
+2021-12-10T10:13:43.0919Z,DIR_SIZE_SDCARD,0.999997,=20
+
+2021-12-10T10:13:43.0931Z,DIR_SIZE_SDCARD_OFFLINE,0.078125,=20
+
+2021-12-10T10:13:43.0941Z,DIR_SIZE_SDCARD_PARALLEL,0.843748, </pre>=20
+</div>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_42_1538973107.1704258449460--

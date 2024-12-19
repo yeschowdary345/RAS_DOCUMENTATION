@@ -1,0 +1,356 @@
+Date: Wed, 3 Jan 2024 05:41:33 +0000 (UTC)
+Message-ID: <158213542.127.1704260493634@d806889b90f2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_126_997835743.1704260493633"
+
+------=_Part_126_997835743.1704260493633
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>21.7 Public APIs for Asset Registration</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>21.7 Public APIs for Asset Registration</h1>
+    <div class=3D"Section1">
+        <h3 id=3D"id-21.7PublicAPIsforAssetRegistration-Descriptions:">Desc=
+riptions : </h3>
+<p>Created all the pubic APIs using swagger in RAS application.</p>
+<p> Listed out their request and response created for Asset registration</p=
+>
+<h3 id=3D"id-21.7PublicAPIsforAssetRegistration-ListofpublicAPIs:">List of =
+public APIs : </h3>
+<ol>
+<li><p><strong><u>/api/v1/Assets/RegisterAssets&nbsp;</u></strong></p></li>
+</ol>
+<p style=3D"margin-left: 30.0px;">a. This is to register assets along seria=
+l number<br>b. Handling the validation on serial number(unique serial numbe=
+r to be registered)<br>c. Asset-Serial mapping is being handled<br>d. Respo=
+nse with asset and serial required detail</p>
+<p style=3D"margin-left: 30.0px;">e. Registration for only single slave or =
+master hardware is possible</p>
+<p style=3D"margin-left: 30.0px;"><strong>Request</strong></p>
+<h5 style=3D"margin-left: 90.0px;" id=3D"id-21.7PublicAPIsforAssetRegistrat=
+ion-{&quot;SerialAssetMappings&quot;:[">{<br>"SerialAssetMappings": [</h5>
+<h5 style=3D"margin-left: 90.0px;" id=3D"id-21.7PublicAPIsforAssetRegistrat=
+ion-{&quot;AssetTypeId&quot;:10008,&quot;IsParent&quot;:true,&quot;SerialNu=
+mber&quot;:&quot;Nex000_TCU&quot;,&quot;OrderNumber&quot;:0},{&quot;AssetTy=
+peId&quot;:10008,&quot;IsParent&quot;:false,&quot;SerialNumber&quot;:&quot;=
+Nex001_BMS&quot;,&quot;OrderNumber&quot;:2},{&quot;AssetTypeId&quot;:10008,=
+&quot;IsParent&quot;:false,&quot;SerialNumber&quot;"> {<br> "AssetTypeId": =
+10008,<br> "IsParent": true,<br> "SerialNumber": "Nex000_TCU",<br> "OrderNu=
+mber": 0<br> },<br> {<br> "AssetTypeId": 10008,<br> "IsParent": false,<br> =
+"SerialNumber": "Nex001_BMS",<br> "OrderNumber": 2<br>},<br>{<br> "AssetTyp=
+eId": 10008,<br> "IsParent": false,<br> "SerialNumber": "Nex002_BMS",<br> "=
+OrderNumber": 3<br>}<br>],<br> "CompanyId": 20017<br>}</h5>
+<p style=3D"margin-left: 30.0px;"><strong>Response</strong></p>
+<h5 style=3D"margin-left: 90.0px;" id=3D"id-21.7PublicAPIsforAssetRegistrat=
+ion-{&quot;IsSuccess&quot;:true,&quot;ErrorMessage&quot;:null,&quot;Data&qu=
+ot;:[{&quot;AssetGUID&quot;:&quot;e3d0d845-d4f3-405d-95c3-82d674235ac6&quot=
+;,&quot;Password&quot;:&quot;9XkglgOxJHIB58nZyeG&quot;,&quot;SerialNumber&q=
+uot;:&quot;Nex000_TCU&quot;,&quot;AssetId&quot;:120537,&quot;IsParent&quot;=
+:true,&quot;AssetName&quot;:&quot;SerialAssetN">{ "IsSuccess": true, "Error=
+Message": null, "Data": [ { "AssetGUID": "e3d0d845-d4f3-405d-95c3-82d674235=
+ac6", "Password": "9XkglgOxJHIB58nZyeG", "SerialNumber": "Nex000_TCU", "Ass=
+etId": 120537, "IsParent": true, "AssetName": "SerialAssetNex000_TCU", "Ord=
+erNumber": 0 }, { "AssetGUID": "7cfeb681-6711-45a6-83e4-cbd7b822488b", "Pas=
+sword": "aM1ohBxLhBrYh2iwbtS", "SerialNumber": "Nex001_BMS", "AssetId": 120=
+538, "IsParent": false, "AssetName": "SerialAssetNex001_BMS", "OrderNumber"=
+: 2 }, { "AssetGUID": "16b534df-e52b-4c2f-8fa0-46d4a59cfb73", "Password": "=
+EBjMJmbCqnlbvXqFiOW", "SerialNumber": "Nex002_BMS", "AssetId": 120539, "IsP=
+arent": false, "AssetName": "SerialAssetNex002_BMS", "OrderNumber": 3 } ] }=
+</h5>
+<p style=3D"margin-left: 90.0px;"><strong>OR</strong></p>
+<h5 style=3D"margin-left: 90.0px;" id=3D"id-21.7PublicAPIsforAssetRegistrat=
+ion-{&quot;IsSuccess&quot;:false,&quot;ErrorMessage&quot;:&quot;Serialnumbe=
+r(s)TCU500,TCU500_SL001,TCU500_SL002,TCU500_SL003alreadyregistered&quot;,&q=
+uot;Data&quot;:null}">{<br>"IsSuccess": false,<br>"ErrorMessage": "Serial n=
+umber(s) TCU500,TCU500_SL001,TCU500_SL002,TCU500_SL003 already registered",=
+<br>"Data": null<br>}</h5>
+<p style=3D"margin-left: 60.0px;">2.<strong> <u>/api/v1/Assets/GetHardwareB=
+yCompanyandProduct</u></strong></p>
+<p style=3D"margin-left: 90.0px;">a. To get the list of all master hardware=
+ serial number by passing company and product Id</p>
+<h5 style=3D"margin-left: 90.0px;" id=3D"id-21.7PublicAPIsforAssetRegistrat=
+ion-Request"><strong>Request</strong></h5>
+<h5 style=3D"margin-left: 120.0px;" id=3D"id-21.7PublicAPIsforAssetRegistra=
+tion-{&quot;CompanyId&quot;:20017,&quot;ProductId&quot;:10006}">{<br>"Compa=
+nyId": 20017,<br>"ProductId": 10006<br>}</h5>
+<h5 style=3D"margin-left: 90.0px;" id=3D"id-21.7PublicAPIsforAssetRegistrat=
+ion-Response"><strong>Response</strong></h5>
+<h5 style=3D"margin-left: 120.0px;" id=3D"id-21.7PublicAPIsforAssetRegistra=
+tion-[{&quot;MasterHardwareId&quot;:158,&quot;MasterHardwareName&quot;:&quo=
+t;ION_BMS_PACK&quot;},{&quot;MasterHardwareId&quot;:167,&quot;MasterHardwar=
+eName&quot;:&quot;TEST_PACK_MASTER&quot;},{&quot;MasterHardwareId&quot;:170=
+,&quot;MasterHardwareName&quot;:&quot;TCU500&quot;}]">[<br>{<br>"MasterHard=
+wareId": 158,<br>"MasterHardwareName": "ION_BMS_PACK"<br>},<br>{<br>"Master=
+HardwareId": 167,<br>"MasterHardwareName": "TEST_PACK_MASTER"<br>},<br>{<br=
+>"MasterHardwareId": 170,<br>"MasterHardwareName": "TCU500"<br>}<br>]</h5>
+<p style=3D"margin-left: 60.0px;">3.<strong><u>/api/v1/Assets/GetAssetSeria=
+lListById</u></strong></p>
+<p style=3D"margin-left: 90.0px;">a. This is to get the list of all child h=
+ardware(serial numbers) by passing the master hardware<br>b. Parent-Child m=
+apping for hardware is taken care</p>
+<p style=3D"margin-left: 90.0px;"><strong>Request</strong></p>
+<h5 style=3D"margin-left: 120.0px;" id=3D"id-21.7PublicAPIsforAssetRegistra=
+tion-{&quot;MasterHardwareId&quot;:158}">{<br>"MasterHardwareId": 158<br>}<=
+/h5>
+<h5 style=3D"margin-left: 90.0px;" id=3D"id-21.7PublicAPIsforAssetRegistrat=
+ion-Response.1"><strong>Response</strong></h5>
+<h5 style=3D"margin-left: 120.0px;" id=3D"id-21.7PublicAPIsforAssetRegistra=
+tion-{&quot;AssetSerialMappedList&quot;:[{&quot;SerialNumberId&quot;:161,&q=
+uot;SerialNumber&quot;:&quot;ION_BMS_PACK_SL003&quot;,&quot;AssetName&quot;=
+:&quot;SerailAssetION_BMS_PACK_SL003&quot;,&quot;AssetId&quot;:100417},{&qu=
+ot;SerialNumberId&quot;:162,&quot;SerialNumber&quot;:&quot;ION_BMS_PACK_SL0=
+04&quot;,&quot;AssetName&quot;:&quot;">{<br>"AssetSerialMappedList": [<br>{=
+<br>"SerialNumberId": 161,<br>"SerialNumber": "ION_BMS_PACK_SL003",<br>"Ass=
+etName": "SerailAssetION_BMS_PACK_SL003",<br>"AssetId": 100417<br>},<br>{<b=
+r>"SerialNumberId": 162,<br>"SerialNumber": "ION_BMS_PACK_SL004",<br>"Asset=
+Name": "SerailAssetION_BMS_PACK_SL004",<br>"AssetId": 100418<br>}<br>],<br>=
+"AssetSerialUnMappedList": [<br>{<br>"SerialNumberId": 159,<br>"SerialNumbe=
+r": "ION_BMS_PACK_SL001",<br>"AssetName": "SerailAssetION_BMS_PACK_SL001",<=
+br>"AssetId": 100414<br>},<br>{<br>"SerialNumberId": 160,<br>"SerialNumber"=
+: "ION_BMS_PACK_SL002",<br>"AssetName": "SerailAssetION_BMS_PACK_SL002",<br=
+>"AssetId": 100416<br>}<br>]<br>}</h5>
+<p style=3D"margin-left: 60.0px;">4.<strong><u>/api/v1/Assets/AssetReMappin=
+g</u></strong></p>
+<p style=3D"margin-left: 90.0px;">a. This is to remap list of asset-serial =
+hardware(s)<br>b. Parent-Child remapping for hardware is being handled</p>
+<p style=3D"margin-left: 90.0px;"><strong>Request</strong></p>
+<h5 style=3D"margin-left: 120.0px;" id=3D"id-21.7PublicAPIsforAssetRegistra=
+tion-{&quot;Comments&quot;:&quot;string&quot;,&quot;ParentId&quot;:158,&quo=
+t;AssetSerialList&quot;:[{&quot;SerialNumberId&quot;:162,&quot;SerialNumber=
+&quot;:&quot;ION_BMS_PACK_SL004&quot;,&quot;AssetId&quot;:100418,&quot;Asse=
+tName&quot;:&quot;SerialAssetION_BMS_PACK_SL004&quot;,&quot;IsRegisteredWit=
+hMaster&quot;:false}]">{<br> "Comments": "string",<br> "ParentId": 158,<br>=
+ "AssetSerialList": [<br> {<br> "SerialNumberId": 162,<br> "SerialNumber": =
+"ION_BMS_PACK_SL004",<br> "AssetId": 100418,<br> "AssetName": "SerialAssetI=
+ON_BMS_PACK_SL004",<br> "IsRegisteredWithMaster": false<br> }<br> ]</h5>
+<p style=3D"margin-left: 90.0px;"><strong>Response</strong></p>
+<h5 style=3D"margin-left: 120.0px;" id=3D"id-21.7PublicAPIsforAssetRegistra=
+tion-{&quot;ResponseMessage&quot;:&quot;ION_BMS_PACK_SL004-unmapped/deregis=
+tered&quot;}">{<br>"ResponseMessage": "ION_BMS_PACK_SL004 - unmapped/deregi=
+stered"<br>}</h5>
+    </div>
+</body>
+</html>
+------=_Part_126_997835743.1704260493633--

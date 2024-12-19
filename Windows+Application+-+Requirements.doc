@@ -1,0 +1,300 @@
+Date: Wed, 3 Jan 2024 05:02:45 +0000 (UTC)
+Message-ID: <1378497211.55.1704258165657@19aa8add6f59>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_54_1713693595.1704258165657"
+
+------=_Part_54_1713693595.1704258165657
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Windows Application - Requirements</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Windows Application - Requirements</h1>
+    <div class=3D"Section1">
+        <p>A windows application needs to be developed to aid in registerin=
+g the assets in RAS and also store the RAS configuration in device. The app=
+lication will be deployed in the production area of the plant where all the=
+ devices manufactured are registered in RAS before going to outside world. =
+The application should be capable of following functionalities.</p>
+<ol>
+<li><p>Application should be able to connect device via following protocols=
+</p></li>
+</ol>
+<p style=3D"margin-left: 30.0px;">a. CAN</p>
+<p style=3D"margin-left: 30.0px;">b. Bluetooth</p>
+<p style=3D"margin-left: 30.0px;">c. USB</p>
+<p>2. It should be able to connect either BMS or Telemetry and perform regi=
+stration.</p>
+<p>3. It should be able to fetch the serial number and other details from t=
+he device . If not, then the application should have the provision to accep=
+t the serial number manually from the operator=E2=80=99s input.</p>
+<p>4. In some cases, the application should be able to generate unique seri=
+al number for the device based on the algorithm provided.</p>
+<p>5. The unique serial number has to be printed by the application.</p>
+<p>6. The device should also communicate to release system to get the requi=
+red details of the device.</p>
+<p>7. New table has to be designed and created in RAS database for storing =
+the serial number, model and manufacturing year.<br>8. Required changes in =
+existing public web API for storing the device information and auto generat=
+ion of GUID for the device </p>
+<h2 id=3D"WindowsApplication-Requirements-MinutesofmeetingwithRaveeshaon23-=
+March-2021"><strong>Minutes of meeting with Raveesha on 23-March-2021</stro=
+ng></h2>
+<p>Win SCP tool is currently used to copy the files currently.</p>
+<ol>
+<li><p>Identifying the number (barcode number)</p></li>
+<li><p>Generating files</p></li>
+<li><p>Transferring the files to the device.</p></li>
+</ol>
+<h3 id=3D"WindowsApplication-Requirements-Telemetry->Desktop->RAS">Telemetr=
+y -&gt; Desktop -&gt; RAS</h3>
+<ul>
+<li><p>How SCP protocol (ssh) can be developed in C#?</p></li>
+<li><p>How to generate the config files?</p></li>
+<li><p>Testing of communication with test server in production line need to=
+ be considered.</p></li>
+</ul>
+<p><u>Needs to be fetched from release system</u></p>
+<ol>
+<li><p>RAS communication will be common. (unless and until the IP changes)<=
+/p></li>
+<li><p>Variable settings may differ (based on system or customer)</p></li>
+<li><p>App config settings may differ (based on system or customer)</p></li=
+>
+</ol>
+<p><u>Needs to be generated through the C# application in runtime</u></p>
+<ol>
+<li><p>Guid settings will be unique.</p></li>
+</ol>
+<h3 id=3D"WindowsApplication-Requirements-Telemetry->RAS">Telemetry -&gt; R=
+AS</h3>
+<p>During production/fresh flashing, how to handle?</p>
+<h3 id=3D"WindowsApplication-Requirements-BMS->RAS">BMS -&gt; RAS</h3>
+<p>Based on vendor and feasibility of system access.</p>
+<p></p>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_54_1713693595.1704258165657--

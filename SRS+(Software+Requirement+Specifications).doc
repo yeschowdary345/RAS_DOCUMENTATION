@@ -1,0 +1,936 @@
+Date: Wed, 3 Jan 2024 05:15:19 +0000 (UTC)
+Message-ID: <18756963.91.1704258919123@d806889b90f2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_90_1566776777.1704258919123"
+
+------=_Part_90_1566776777.1704258919123
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>SRS (Software Requirement Specifications)</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>SRS (Software Requirement Specifications)</h1>
+    <div class=3D"Section1">
+        <p></p>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755050/1.+Reporting" data-linked=
+-resource-id=3D"83755050" data-linked-resource-version=3D"1" data-linked-re=
+source-type=3D"page">1. Reporting</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755016/1.1+Report+CRUD" data-lin=
+ked-resource-id=3D"83755016" data-linked-resource-version=3D"1" data-linked=
+-resource-type=3D"page">1.1 Report CRUD</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755644/1.2+Report+Scheduling" da=
+ta-linked-resource-id=3D"83755644" data-linked-resource-version=3D"1" data-=
+linked-resource-type=3D"page">1.2 Report Scheduling</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755568/1.2.1+Technical+Implement=
+ation" data-linked-resource-id=3D"83755568" data-linked-resource-version=3D=
+"1" data-linked-resource-type=3D"page">1.2.1 Technical Implementation</a></=
+li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755145/1.3+Report+Filters" data-=
+linked-resource-id=3D"83755145" data-linked-resource-version=3D"1" data-lin=
+ked-resource-type=3D"page">1.3 Report Filters</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755149/2.+Messaging" data-linked=
+-resource-id=3D"83755149" data-linked-resource-version=3D"1" data-linked-re=
+source-type=3D"page">2. Messaging</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755123/2.1+User+Communication" d=
+ata-linked-resource-id=3D"83755123" data-linked-resource-version=3D"1" data=
+-linked-resource-type=3D"page">2.1 User Communication</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755091/2.1.1+Technical+implement=
+ation" data-linked-resource-id=3D"83755091" data-linked-resource-version=3D=
+"1" data-linked-resource-type=3D"page">2.1.1 Technical implementation</a></=
+li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755084" data-linked-resource-id=
+=3D"83755084" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"page">2.1.2 User &amp; System Level Message Throttling</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755041/2.1.3+Display+user+alerts=
+" data-linked-resource-id=3D"83755041" data-linked-resource-version=3D"2" d=
+ata-linked-resource-type=3D"page">2.1.3 Display user alerts</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755110/2.2+System+Communication"=
+ data-linked-resource-id=3D"83755110" data-linked-resource-version=3D"1" da=
+ta-linked-resource-type=3D"page">2.2 System Communication</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755098/2.2.1+Message+Bus+Technic=
+al+Analysis" data-linked-resource-id=3D"83755098" data-linked-resource-vers=
+ion=3D"1" data-linked-resource-type=3D"page">2.2.1 Message Bus Technical An=
+alysis</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755220/2.2.2+RabbitMQ+Server+Set=
+up" data-linked-resource-id=3D"83755220" data-linked-resource-version=3D"3"=
+ data-linked-resource-type=3D"page">2.2.2 RabbitMQ Server Setup</a></li>
+</ul></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755228/3.+User+Interface" data-l=
+inked-resource-id=3D"83755228" data-linked-resource-version=3D"1" data-link=
+ed-resource-type=3D"page">3. User Interface</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755205/3.1+Organization+UX" data=
+-linked-resource-id=3D"83755205" data-linked-resource-version=3D"1" data-li=
+nked-resource-type=3D"page">3.1 Organization UX</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755178/3.1.1+The+options" data-l=
+inked-resource-id=3D"83755178" data-linked-resource-version=3D"1" data-link=
+ed-resource-type=3D"page">3.1.1 The options</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755192/3.1.2+Our+selection" data=
+-linked-resource-id=3D"83755192" data-linked-resource-version=3D"1" data-li=
+nked-resource-type=3D"page">3.1.2 Our selection</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755190/3.1.2.1+RAS+UI+organizati=
+on%3A+mock-up+of+agreed+proposal" data-linked-resource-id=3D"83755190" data=
+-linked-resource-version=3D"2" data-linked-resource-type=3D"page">3.1.2.1 R=
+AS UI organization: mock-up of agreed proposal</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755272/3.1.3+Search+boxes+in+RAS=
++UI+screens" data-linked-resource-id=3D"83755272" data-linked-resource-vers=
+ion=3D"2" data-linked-resource-type=3D"page">3.1.3 Search boxes in RAS UI s=
+creens</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755292/3.2+RAS+UI%3A+Input+Valid=
+ation" data-linked-resource-id=3D"83755292" data-linked-resource-version=3D=
+"1" data-linked-resource-type=3D"page">3.2 RAS UI: Input Validation</a></li=
+>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755260/4.+Filtering" data-linked=
+-resource-id=3D"83755260" data-linked-resource-version=3D"1" data-linked-re=
+source-type=3D"page">4. Filtering</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755237/4.1+Filter+CRUD" data-lin=
+ked-resource-id=3D"83755237" data-linked-resource-version=3D"1" data-linked=
+-resource-type=3D"page">4.1 Filter CRUD</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755490/4.2+Data+Aggregation" dat=
+a-linked-resource-id=3D"83755490" data-linked-resource-version=3D"2" data-l=
+inked-resource-type=3D"page">4.2 Data Aggregation</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755455/5.+Scheduled+Tasks" data-=
+linked-resource-id=3D"83755455" data-linked-resource-version=3D"1" data-lin=
+ked-resource-type=3D"page">5. Scheduled Tasks</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755458/5.1+Task+Scheduling" data=
+-linked-resource-id=3D"83755458" data-linked-resource-version=3D"1" data-li=
+nked-resource-type=3D"page">5.1 Task Scheduling</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755434/5.1.1+Technical+Implement=
+ation" data-linked-resource-id=3D"83755434" data-linked-resource-version=3D=
+"1" data-linked-resource-type=3D"page">5.1.1 Technical Implementation</a></=
+li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755448/5.2+Scheduled+Task+CRUD" =
+data-linked-resource-id=3D"83755448" data-linked-resource-version=3D"1" dat=
+a-linked-resource-type=3D"page">5.2 Scheduled Task CRUD</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755529/5.2.1+Technical+Implement=
+ation" data-linked-resource-id=3D"83755529" data-linked-resource-version=3D=
+"1" data-linked-resource-type=3D"page">5.2.1 Technical Implementation</a></=
+li>
+</ul></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755423/6.+Security" data-linked-=
+resource-id=3D"83755423" data-linked-resource-version=3D"1" data-linked-res=
+ource-type=3D"page">6. Security</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755429/6.1+Asset+Security" data-=
+linked-resource-id=3D"83755429" data-linked-resource-version=3D"1" data-lin=
+ked-resource-type=3D"page">6.1 Asset Security</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755379/6.1.1+Data+Sharing" data-=
+linked-resource-id=3D"83755379" data-linked-resource-version=3D"1" data-lin=
+ked-resource-type=3D"page">6.1.1 Data Sharing</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755495/6.1.1.1+Data+Sharing+Impl=
+ementation" data-linked-resource-id=3D"83755495" data-linked-resource-versi=
+on=3D"1" data-linked-resource-type=3D"page">6.1.1.1 Data Sharing Implementa=
+tion</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755462/6.1.2+Security+-+Mockups"=
+ data-linked-resource-id=3D"83755462" data-linked-resource-version=3D"1" da=
+ta-linked-resource-type=3D"page">6.1.2 Security - Mockups</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755507/6.1.3+Transferring+Owners=
+hip" data-linked-resource-id=3D"83755507" data-linked-resource-version=3D"1=
+" data-linked-resource-type=3D"page">6.1.3 Transferring Ownership</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755544/6.1.4+Security+Archive" d=
+ata-linked-resource-id=3D"83755544" data-linked-resource-version=3D"1" data=
+-linked-resource-type=3D"page">6.1.4 Security Archive</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755540/2017-09-22+Meeting+about+=
+item-level+security+alternative" data-linked-resource-id=3D"83755540" data-=
+linked-resource-version=3D"1" data-linked-resource-type=3D"page">2017-09-22=
+ Meeting about item-level security alternative</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755538/6.2+2FA" data-linked-reso=
+urce-id=3D"83755538" data-linked-resource-version=3D"1" data-linked-resourc=
+e-type=3D"page">6.2 2FA</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755312/6.2.1+Functional+Analysis=
+%3A+Two+Factor+Authentication" data-linked-resource-id=3D"83755312" data-li=
+nked-resource-version=3D"1" data-linked-resource-type=3D"page">6.2.1 Functi=
+onal Analysis: Two Factor Authentication</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755324/6.2.2+Technical+Analysis+=
+2FA" data-linked-resource-id=3D"83755324" data-linked-resource-version=3D"1=
+" data-linked-resource-type=3D"page">6.2.2 Technical Analysis 2FA</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755408/6.3+Authentication" data-=
+linked-resource-id=3D"83755408" data-linked-resource-version=3D"1" data-lin=
+ked-resource-type=3D"page">6.3 Authentication</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755578/6.3.1+Analysis+Authentica=
+tion" data-linked-resource-id=3D"83755578" data-linked-resource-version=3D"=
+2" data-linked-resource-type=3D"page">6.3.1 Analysis Authentication</a></li=
+>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755579/6.4+Authorization" data-l=
+inked-resource-id=3D"83755579" data-linked-resource-version=3D"1" data-link=
+ed-resource-type=3D"page">6.4 Authorization</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755567/6.4.1+Secure+Controller-A=
+ctions+by+Role" data-linked-resource-id=3D"83755567" data-linked-resource-v=
+ersion=3D"2" data-linked-resource-type=3D"page">6.4.1 Secure Controller-Act=
+ions by Role</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755557/6.4.2+Manage+Roles" data-=
+linked-resource-id=3D"83755557" data-linked-resource-version=3D"2" data-lin=
+ked-resource-type=3D"page">6.4.2 Manage Roles</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755616/6.4.3+Secure+asset+proper=
+ties+per+company" data-linked-resource-id=3D"83755616" data-linked-resource=
+-version=3D"2" data-linked-resource-type=3D"page">6.4.3 Secure asset proper=
+ties per company</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755608/6.4.4+Secure+assets+per+c=
+ompany" data-linked-resource-id=3D"83755608" data-linked-resource-version=
+=3D"2" data-linked-resource-type=3D"page">6.4.4 Secure assets per company</=
+a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755596" data-linked-resource-id=
+=3D"83755596" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"page">6.5 FTPS &amp; Firewalls</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755598/7.+Customer+Support" data=
+-linked-resource-id=3D"83755598" data-linked-resource-version=3D"1" data-li=
+nked-resource-type=3D"page">7. Customer Support</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755588" data-linked-resource-id=
+=3D"83755588" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"page">8. Data Analysis (DAE)</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755621/8.1+Data+Analysis" data-l=
+inked-resource-id=3D"83755621" data-linked-resource-version=3D"1" data-link=
+ed-resource-type=3D"page">8.1 Data Analysis</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755020/8.1.1+Technical+analysis"=
+ data-linked-resource-id=3D"83755020" data-linked-resource-version=3D"1" da=
+ta-linked-resource-type=3D"page">8.1.1 Technical analysis</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755014" data-linked-resource-id=
+=3D"83755014" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"page">Aggregates: database or server?</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755639/Data+Analysis+Engine+Arch=
+itecture" data-linked-resource-id=3D"83755639" data-linked-resource-version=
+=3D"1" data-linked-resource-type=3D"page">Data Analysis Engine Architecture=
+</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755648/Data+Analysis+Engine+Runn=
+er+Pseudocode" data-linked-resource-id=3D"83755648" data-linked-resource-ve=
+rsion=3D"1" data-linked-resource-type=3D"page">Data Analysis Engine Runner =
+Pseudocode</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755577/8.1.2+Examples" data-link=
+ed-resource-id=3D"83755577" data-linked-resource-version=3D"1" data-linked-=
+resource-type=3D"page">8.1.2 Examples</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755571/Example+1.+Aggregation" d=
+ata-linked-resource-id=3D"83755571" data-linked-resource-version=3D"1" data=
+-linked-resource-type=3D"page">Example 1. Aggregation</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755572/Example+2.+Limiting+the+n=
+umber+of+messages" data-linked-resource-id=3D"83755572" data-linked-resourc=
+e-version=3D"1" data-linked-resource-type=3D"page">Example 2. Limiting the =
+number of messages</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755570/Example+3.+Only+raise+whe=
+n+at+least+x+number+of+occurences" data-linked-resource-id=3D"83755570" dat=
+a-linked-resource-version=3D"1" data-linked-resource-type=3D"page">Example =
+3. Only raise when at least x number of occurences</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755625/Example+5.+Asset+Watchdog=
+" data-linked-resource-id=3D"83755625" data-linked-resource-version=3D"1" d=
+ata-linked-resource-type=3D"page">Example 5. Asset Watchdog</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755626/Example+6.+Asset+Property=
++Watchdog" data-linked-resource-id=3D"83755626" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"page">Example 6. Asset Property Watchd=
+og</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755143/Example+7.+Asset+Property=
++Value+Watchdog" data-linked-resource-id=3D"83755143" data-linked-resource-=
+version=3D"1" data-linked-resource-type=3D"page">Example 7. Asset Property =
+Value Watchdog</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755144/Example+8.+Simple+thresho=
+ld+evaluation" data-linked-resource-id=3D"83755144" data-linked-resource-ve=
+rsion=3D"1" data-linked-resource-type=3D"page">Example 8. Simple threshold =
+evaluation</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755158/Example+9.+Rising+and+fal=
+ling+thresholds" data-linked-resource-id=3D"83755158" data-linked-resource-=
+version=3D"1" data-linked-resource-type=3D"page">Example 9. Rising and fall=
+ing thresholds</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755157/Example+10.+Combining+agg=
+regations" data-linked-resource-id=3D"83755157" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"page">Example 10. Combining aggregatio=
+ns</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755122" data-linked-resource-id=
+=3D"83755122" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"page">Example 11. Heartbeat?</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755120/8.1.3+Data+Analysis+Defin=
+ition" data-linked-resource-id=3D"83755120" data-linked-resource-version=3D=
+"1" data-linked-resource-type=3D"page">8.1.3 Data Analysis Definition</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755090/8.1.3.1+Period+Determinat=
+ion" data-linked-resource-id=3D"83755090" data-linked-resource-version=3D"1=
+" data-linked-resource-type=3D"page">8.1.3.1 Period Determination</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755078/8.1.3.2+Actions" data-lin=
+ked-resource-id=3D"83755078" data-linked-resource-version=3D"1" data-linked=
+-resource-type=3D"page">8.1.3.2 Actions</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755093/8.1.4+Data+Analysis+Engin=
+e%3A+Item+Level+Security" data-linked-resource-id=3D"83755093" data-linked-=
+resource-version=3D"1" data-linked-resource-type=3D"page">8.1.4 Data Analys=
+is Engine: Item Level Security</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755037/8.1.7+RASQL" data-linked-=
+resource-id=3D"83755037" data-linked-resource-version=3D"1" data-linked-res=
+ource-type=3D"page">8.1.7 RASQL</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755025/8.1.7.1+RASQL+Functional+=
+Analysis%3A+Available+Functions" data-linked-resource-id=3D"83755025" data-=
+linked-resource-version=3D"1" data-linked-resource-type=3D"page">8.1.7.1 RA=
+SQL Functional Analysis: Available Functions</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755106/8.1.7.2+Data+Analysis+Eng=
+ine+Operational+Modi" data-linked-resource-id=3D"83755106" data-linked-reso=
+urce-version=3D"1" data-linked-resource-type=3D"page">8.1.7.2 Data Analysis=
+ Engine Operational Modi</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755102/8.1.7.3+RASQL+Available+V=
+ariables" data-linked-resource-id=3D"83755102" data-linked-resource-version=
+=3D"1" data-linked-resource-type=3D"page">8.1.7.3 RASQL Available Variables=
+</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755114/8.1.7.4+RASQL+Technical+A=
+nalysis" data-linked-resource-id=3D"83755114" data-linked-resource-version=
+=3D"1" data-linked-resource-type=3D"page">8.1.7.4 RASQL Technical Analysis<=
+/a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755118/8.1.7.5+RASQL%3A+Previous=
++versus+last+iteration+timestamp+values" data-linked-resource-id=3D"8375511=
+8" data-linked-resource-version=3D"1" data-linked-resource-type=3D"page">8.=
+1.7.5 RASQL: Previous versus last iteration timestamp values</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755218/8.1.8+Types+of+Data" data=
+-linked-resource-id=3D"83755218" data-linked-resource-version=3D"1" data-li=
+nked-resource-type=3D"page">8.1.8 Types of Data</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755210/8.1.9+The+Handling+of+cha=
+nging+DAE+Definitions" data-linked-resource-id=3D"83755210" data-linked-res=
+ource-version=3D"1" data-linked-resource-type=3D"page">8.1.9 The Handling o=
+f changing DAE Definitions</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755209/8.1.10+On+the+Documentati=
+on+of+RASQL+Functions" data-linked-resource-id=3D"83755209" data-linked-res=
+ource-version=3D"1" data-linked-resource-type=3D"page">8.1.10 On the Docume=
+ntation of RASQL Functions</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755204/8.1.11+Recalculation+when=
++DAD+changes" data-linked-resource-id=3D"83755204" data-linked-resource-ver=
+sion=3D"1" data-linked-resource-type=3D"page">8.1.11 Recalculation when DAD=
+ changes</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755215/8.2+Data+Analysis+UI" dat=
+a-linked-resource-id=3D"83755215" data-linked-resource-version=3D"1" data-l=
+inked-resource-type=3D"page">8.2 Data Analysis UI</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755171/8.2.1+Technical+Analysis+=
+DAE+UI" data-linked-resource-id=3D"83755171" data-linked-resource-version=
+=3D"1" data-linked-resource-type=3D"page">8.2.1 Technical Analysis DAE UI</=
+a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755134/8.2.2+Mockups" data-linke=
+d-resource-id=3D"83755134" data-linked-resource-version=3D"1" data-linked-r=
+esource-type=3D"page">8.2.2 Mockups</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755303/8.3+Research" data-linked=
+-resource-id=3D"83755303" data-linked-resource-version=3D"1" data-linked-re=
+source-type=3D"page">8.3 Research</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755289/8.4+Testing" data-linked-=
+resource-id=3D"83755289" data-linked-resource-version=3D"1" data-linked-res=
+ource-type=3D"page">8.4 Testing</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755271/Test+Results+2018-09-13" =
+data-linked-resource-id=3D"83755271" data-linked-resource-version=3D"1" dat=
+a-linked-resource-type=3D"page">Test Results 2018-09-13</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755291/8.5+Data+Exploration" dat=
+a-linked-resource-id=3D"83755291" data-linked-resource-version=3D"1" data-l=
+inked-resource-type=3D"page">8.5 Data Exploration</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755290/8.5.1+Preliminary+Researc=
+h%3A+Data+Analysis+Engine+Preview" data-linked-resource-id=3D"83755290" dat=
+a-linked-resource-version=3D"1" data-linked-resource-type=3D"page">8.5.1 Pr=
+eliminary Research: Data Analysis Engine Preview</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755252/8.5.2+Understanding+the+d=
+ata" data-linked-resource-id=3D"83755252" data-linked-resource-version=3D"2=
+" data-linked-resource-type=3D"page">8.5.2 Understanding the data</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755445/8.5.3+Data+Exploration+Pr=
+oposal" data-linked-resource-id=3D"83755445" data-linked-resource-version=
+=3D"1" data-linked-resource-type=3D"page">8.5.3 Data Exploration Proposal</=
+a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755494/8.5.4+DAE+Preview%3A+Tech=
+nical+Analysis" data-linked-resource-id=3D"83755494" data-linked-resource-v=
+ersion=3D"1" data-linked-resource-type=3D"page">8.5.4 DAE Preview: Technica=
+l Analysis</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755496/8.6+Technical+Presentatio=
+n" data-linked-resource-id=3D"83755496" data-linked-resource-version=3D"1" =
+data-linked-resource-type=3D"page">8.6 Technical Presentation</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755457/8.7+Multiple+Logstream+Ef=
+fect+on+DAE" data-linked-resource-id=3D"83755457" data-linked-resource-vers=
+ion=3D"1" data-linked-resource-type=3D"page">8.7 Multiple Logstream Effect =
+on DAE</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755435" data-linked-resource-id=
+=3D"83755435" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"page">8.8 "Stop &amp; Disable" behaviour</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/174489621/DAE+Bugs" data-linked-re=
+source-id=3D"174489621" data-linked-resource-version=3D"3" data-linked-reso=
+urce-type=3D"page">DAE Bugs</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755439/9.+Dashboards" data-linke=
+d-resource-id=3D"83755439" data-linked-resource-version=3D"1" data-linked-r=
+esource-type=3D"page">9. Dashboards</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755536/9.1+Time+filter+functiona=
+lity" data-linked-resource-id=3D"83755536" data-linked-resource-version=3D"=
+1" data-linked-resource-type=3D"page">9.1 Time filter functionality</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755533/9.1.1+Alternative+to+cust=
+om+implementation" data-linked-resource-id=3D"83755533" data-linked-resourc=
+e-version=3D"1" data-linked-resource-type=3D"page">9.1.1 Alternative to cus=
+tom implementation</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755397/9.2+Histograms+using+DAE"=
+ data-linked-resource-id=3D"83755397" data-linked-resource-version=3D"1" da=
+ta-linked-resource-type=3D"page">9.2 Histograms using DAE</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755402/9.3+Values2D+conversion" =
+data-linked-resource-id=3D"83755402" data-linked-resource-version=3D"1" dat=
+a-linked-resource-type=3D"page">9.3 Values2D conversion</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755400/10.+Compliance" data-link=
+ed-resource-id=3D"83755400" data-linked-resource-version=3D"1" data-linked-=
+resource-type=3D"page">10. Compliance</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755404/10.1+ePrivacy" data-linke=
+d-resource-id=3D"83755404" data-linked-resource-version=3D"1" data-linked-r=
+esource-type=3D"page">10.1 ePrivacy</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755366/10.2+GDPR+Compliance" dat=
+a-linked-resource-id=3D"83755366" data-linked-resource-version=3D"1" data-l=
+inked-resource-type=3D"page">10.2 GDPR Compliance</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755370/10.3+Toreon+report+review=
+" data-linked-resource-id=3D"83755370" data-linked-resource-version=3D"1" d=
+ata-linked-resource-type=3D"page">10.3 Toreon report review</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755414/10.4+Toreon+Report+Compli=
+ance+in+2018+Q2" data-linked-resource-id=3D"83755414" data-linked-resource-=
+version=3D"2" data-linked-resource-type=3D"page">10.4 Toreon Report Complia=
+nce in 2018 Q2</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755412/12.+Internationalization"=
+ data-linked-resource-id=3D"83755412" data-linked-resource-version=3D"1" da=
+ta-linked-resource-type=3D"page">12. Internationalization</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755427/12.1+Timezone+Support" da=
+ta-linked-resource-id=3D"83755427" data-linked-resource-version=3D"1" data-=
+linked-resource-type=3D"page">12.1 Timezone Support</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755430/15.+End+User+Documentatio=
+n" data-linked-resource-id=3D"83755430" data-linked-resource-version=3D"1" =
+data-linked-resource-type=3D"page">15. End User Documentation</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755399/15.1+Implementation" data=
+-linked-resource-id=3D"83755399" data-linked-resource-version=3D"1" data-li=
+nked-resource-type=3D"page">15.1 Implementation</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755383/15.2+Plan+for+quality+End=
++User+Documentation" data-linked-resource-id=3D"83755383" data-linked-resou=
+rce-version=3D"1" data-linked-resource-type=3D"page">15.2 Plan for quality =
+End User Documentation</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755393/16.+Public+API" data-link=
+ed-resource-id=3D"83755393" data-linked-resource-version=3D"1" data-linked-=
+resource-type=3D"page">16. Public API</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755501/16.1+Implementation+detai=
+ls" data-linked-resource-id=3D"83755501" data-linked-resource-version=3D"1"=
+ data-linked-resource-type=3D"page">16.1 Implementation details</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/668565653/21+Asset+Registration" d=
+ata-linked-resource-id=3D"668565653" data-linked-resource-version=3D"5" dat=
+a-linked-resource-type=3D"page">21 Asset Registration</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/668663958/21.1+Requirements" data-=
+linked-resource-id=3D"668663958" data-linked-resource-version=3D"19" data-l=
+inked-resource-type=3D"page">21.1 Requirements</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/668565675/21.2+Use+Cases" data-lin=
+ked-resource-id=3D"668565675" data-linked-resource-version=3D"8" data-linke=
+d-resource-type=3D"page">21.2 Use Cases</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/676138880/21.3+UI+Wireframe" data-=
+linked-resource-id=3D"676138880" data-linked-resource-version=3D"4" data-li=
+nked-resource-type=3D"page">21.3 UI Wireframe</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/675516122/21.4+Architecture+Diagra=
+m" data-linked-resource-id=3D"675516122" data-linked-resource-version=3D"11=
+" data-linked-resource-type=3D"page">21.4 Architecture Diagram</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/676334520/21.5+High+Level+Estimati=
+on" data-linked-resource-id=3D"676334520" data-linked-resource-version=3D"2=
+2" data-linked-resource-type=3D"page">21.5 High Level Estimation</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/736264193/21.6+Asset+Re-Mapping+on=
++Asset+Replacement" data-linked-resource-id=3D"736264193" data-linked-resou=
+rce-version=3D"9" data-linked-resource-type=3D"page">21.6 Asset Re-Mapping =
+on Asset Replacement</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/736624641/21.7+Public+APIs+for+Ass=
+et+Registration" data-linked-resource-id=3D"736624641" data-linked-resource=
+-version=3D"6" data-linked-resource-type=3D"page">21.7 Public APIs for Asse=
+t Registration</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/791019521" data-linked-resource-id=
+=3D"791019521" data-linked-resource-version=3D"6" data-linked-resource-type=
+=3D"page">21.8 Auto Registration / De-Registration</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/860913724/21.9+Individual+Asset+Up=
+date+functionality" data-linked-resource-id=3D"860913724" data-linked-resou=
+rce-version=3D"3" data-linked-resource-type=3D"page">21.9 Individual Asset =
+Update functionality</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1072627756/22.0+Asset+Registration=
++Tables" data-linked-resource-id=3D"1072627756" data-linked-resource-versio=
+n=3D"2" data-linked-resource-type=3D"page">22.0 Asset Registration Tables</=
+a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755481/17.+Assets" data-linked-r=
+esource-id=3D"83755481" data-linked-resource-version=3D"1" data-linked-reso=
+urce-type=3D"page">17. Assets</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755480" data-linked-resource-id=
+=3D"83755480" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"page">17.1 Assets &amp; Devices</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755502" data-linked-resource-id=
+=3D"83755502" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"page">17.2 Asset Types &amp; Hierarchies</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755522/17.3+Asset+Property+Manag=
+ement" data-linked-resource-id=3D"83755522" data-linked-resource-version=3D=
+"2" data-linked-resource-type=3D"page">17.3 Asset Property Management</a></=
+li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755521/17.4+Asset+Administrators=
+" data-linked-resource-id=3D"83755521" data-linked-resource-version=3D"1" d=
+ata-linked-resource-type=3D"page">17.4 Asset Administrators</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/83755539" data-linked-resource-id=
+=3D"83755539" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"page">17.5 Asset Statistics (Analysis)</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/227115037/17.6+Asset+Property+Meta=
++Data" data-linked-resource-id=3D"227115037" data-linked-resource-version=
+=3D"4" data-linked-resource-type=3D"page">17.6 Asset Property Meta Data</a>=
+</li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1024131085" data-linked-resource-i=
+d=3D"1024131085" data-linked-resource-version=3D"4" data-linked-resource-ty=
+pe=3D"page">17.7 Asset Grouping (Level1)</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1024131346/17.7.2+Mock+UI+-+Dashbo=
+ard+for+Asset+Grouping" data-linked-resource-id=3D"1024131346" data-linked-=
+resource-version=3D"5" data-linked-resource-type=3D"page">17.7.2 Mock UI - =
+Dashboard for Asset Grouping</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1024557061/17.7.3+Mock+UI+-+Filter=
++for+Asset+Grouping" data-linked-resource-id=3D"1024557061" data-linked-res=
+ource-version=3D"4" data-linked-resource-type=3D"page">17.7.3 Mock UI - Fil=
+ter for Asset Grouping</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1024492499/17.7.4+Approach+1" data=
+-linked-resource-id=3D"1024492499" data-linked-resource-version=3D"11" data=
+-linked-resource-type=3D"page">17.7.4 Approach 1</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1026031617/17.7.5+Approach+2+-+NO+=
+MORE+RELEVANT" data-linked-resource-id=3D"1026031617" data-linked-resource-=
+version=3D"13" data-linked-resource-type=3D"page">17.7.5 Approach 2 - NO MO=
+RE RELEVANT</a></li>
+</ul></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/180158578/18.+Version+Management+P=
+lanning" data-linked-resource-id=3D"180158578" data-linked-resource-version=
+=3D"25" data-linked-resource-type=3D"page">18. Version Management Planning<=
+/a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/181403661/Introduction+to+Paramete=
+r+Version+Management" data-linked-resource-id=3D"181403661" data-linked-res=
+ource-version=3D"1" data-linked-resource-type=3D"page">Introduction to Para=
+meter Version Management</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/181403670/Scope+and+Purpose" data-=
+linked-resource-id=3D"181403670" data-linked-resource-version=3D"3" data-li=
+nked-resource-type=3D"page">Scope and Purpose</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/181403649/Stakeholders+Involved" d=
+ata-linked-resource-id=3D"181403649" data-linked-resource-version=3D"2" dat=
+a-linked-resource-type=3D"page">Stakeholders Involved</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/181731484/Background+information+o=
+f+RAS+application" data-linked-resource-id=3D"181731484" data-linked-resour=
+ce-version=3D"2" data-linked-resource-type=3D"page">Background information =
+of RAS application</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/181731336/Solution+strategy" data-=
+linked-resource-id=3D"181731336" data-linked-resource-version=3D"20" data-l=
+inked-resource-type=3D"page">Solution strategy</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/181501979/Building+Block" data-lin=
+ked-resource-id=3D"181501979" data-linked-resource-version=3D"9" data-linke=
+d-resource-type=3D"page">Building Block</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/184385924/Data+Frames+and+applicat=
+ion+interface+with+RAS+application" data-linked-resource-id=3D"184385924" d=
+ata-linked-resource-version=3D"10" data-linked-resource-type=3D"page">Data =
+Frames and application interface with RAS application</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/184254469/Database+design+for+vers=
+ion+management" data-linked-resource-id=3D"184254469" data-linked-resource-=
+version=3D"14" data-linked-resource-type=3D"page">Database design for versi=
+on management</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1065615445" data-linked-resource-i=
+d=3D"1065615445" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"page">Solution strategy (Copy)</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/213647390/Scope+of+Configuration+P=
+arameter+Version+Management" data-linked-resource-id=3D"213647390" data-lin=
+ked-resource-version=3D"5" data-linked-resource-type=3D"page">Scope of Conf=
+iguration Parameter Version Management</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/214008168/Process+Flow+Diagram+of+=
+Parameter+configuration+versioning" data-linked-resource-id=3D"214008168" d=
+ata-linked-resource-version=3D"21" data-linked-resource-type=3D"page">Proce=
+ss Flow Diagram of Parameter configuration versioning</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/258081627/Parameter+Version+Manage=
+ment" data-linked-resource-id=3D"258081627" data-linked-resource-version=3D=
+"6" data-linked-resource-type=3D"page">Parameter Version Management</a></li=
+>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/257951010/Configuration+file+versi=
+on+management" data-linked-resource-id=3D"257951010" data-linked-resource-v=
+ersion=3D"4" data-linked-resource-type=3D"page">Configuration file version =
+management</a></li>
+</ul></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1025900631" data-linked-resource-i=
+d=3D"1025900631" data-linked-resource-version=3D"1" data-linked-resource-ty=
+pe=3D"page">19 Events / Alarm / Notification</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/221643856/19.1+RAS+System+Event-ba=
+sed+task+scheduler" data-linked-resource-id=3D"221643856" data-linked-resou=
+rce-version=3D"18" data-linked-resource-type=3D"page">19.1 RAS System Event=
+-based task scheduler</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/640188598" data-linked-resource-id=
+=3D"640188598" data-linked-resource-version=3D"16" data-linked-resource-typ=
+e=3D"page">19.2 Notifications for Invalid/unsuccessful data sent to RAS ser=
+ver</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/314572801" data-linked-resource-id=
+=3D"314572801" data-linked-resource-version=3D"5" data-linked-resource-type=
+=3D"page">19.3 Alarms &amp; Events Storage Algorithm</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/243304597" data-linked-resource-id=
+=3D"243304597" data-linked-resource-version=3D"4" data-linked-resource-type=
+=3D"page">20. OTA (Over-the-Air) / FOTA</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1069416458/OTA+Approach+1+-+HFS" d=
+ata-linked-resource-id=3D"1069416458" data-linked-resource-version=3D"5" da=
+ta-linked-resource-type=3D"page">OTA Approach 1 - HFS</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/268992591/20.1+FOTA+1.0+Implementa=
+tion++using+HFS" data-linked-resource-id=3D"268992591" data-linked-resource=
+-version=3D"5" data-linked-resource-type=3D"page">20.1 FOTA 1.0 Implementat=
+ion using HFS</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/605683713/20.2+FOTA+Communication+=
+between+RAS+and+Telemetry" data-linked-resource-id=3D"605683713" data-linke=
+d-resource-version=3D"19" data-linked-resource-type=3D"page">20.2 FOTA Comm=
+unication between RAS and Telemetry</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/375226369/20.3+Create+Mock+UI++Scr=
+eens+for+Firmware+Management" data-linked-resource-id=3D"375226369" data-li=
+nked-resource-version=3D"12" data-linked-resource-type=3D"page">20.3 Create=
+ Mock UI Screens for Firmware Management</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/608567301/20.4+OTA+Commands" data-=
+linked-resource-id=3D"608567301" data-linked-resource-version=3D"4" data-li=
+nked-resource-type=3D"page">20.4 OTA Commands</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/860913683/20.5+FOTA+Tables" data-l=
+inked-resource-id=3D"860913683" data-linked-resource-version=3D"7" data-lin=
+ked-resource-type=3D"page">20.5 FOTA Tables</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/652017742/20.6+FOTA+2.0" data-link=
+ed-resource-id=3D"652017742" data-linked-resource-version=3D"4" data-linked=
+-resource-type=3D"page">20.6 FOTA 2.0</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1057521665/To+upload+tested+config=
+uration+and+firmware+files+for+tested+Assets" data-linked-resource-id=3D"10=
+57521665" data-linked-resource-version=3D"5" data-linked-resource-type=3D"p=
+age">To upload tested configuration and firmware files for tested Assets</a=
+></li>
+</ul></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/258311723/OTA+Approach+2-+MQTT" da=
+ta-linked-resource-id=3D"258311723" data-linked-resource-version=3D"2" data=
+-linked-resource-type=3D"page">OTA Approach 2- MQTT</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/258311730/OTA+Approach+3-+FTP" dat=
+a-linked-resource-id=3D"258311730" data-linked-resource-version=3D"3" data-=
+linked-resource-type=3D"page">OTA Approach 3- FTP</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/324042773/OTA+Approach+4+-+SMS" da=
+ta-linked-resource-id=3D"324042773" data-linked-resource-version=3D"2" data=
+-linked-resource-type=3D"page">OTA Approach 4 - SMS</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/979501065/OTA+%28Over-To-Air%29+-+=
+Introduction" data-linked-resource-id=3D"979501065" data-linked-resource-ve=
+rsion=3D"3" data-linked-resource-type=3D"page">OTA (Over-To-Air) - Introduc=
+tion</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1061847041/OTA+-+Downgrade" data-l=
+inked-resource-id=3D"1061847041" data-linked-resource-version=3D"4" data-li=
+nked-resource-type=3D"page">OTA - Downgrade</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1063354369/FOTA+-+Discussion+Point=
+s" data-linked-resource-id=3D"1063354369" data-linked-resource-version=3D"1=
+" data-linked-resource-type=3D"page">FOTA - Discussion Points</a></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/846528525/22+Telecom+POC" data-lin=
+ked-resource-id=3D"846528525" data-linked-resource-version=3D"2" data-linke=
+d-resource-type=3D"page">22 Telecom POC</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/846495747/22.1+Requirements" data-=
+linked-resource-id=3D"846495747" data-linked-resource-version=3D"2" data-li=
+nked-resource-type=3D"page">22.1 Requirements</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/949551105/Server+Loading+Issue" da=
+ta-linked-resource-id=3D"949551105" data-linked-resource-version=3D"3" data=
+-linked-resource-type=3D"page">Server Loading Issue</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/952532993/Reproduce+Dashboard+Load=
+ing+Issue" data-linked-resource-id=3D"952532993" data-linked-resource-versi=
+on=3D"1" data-linked-resource-type=3D"page">Reproduce Dashboard Loading Iss=
+ue</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/956825675/Database+Handle" data-li=
+nked-resource-id=3D"956825675" data-linked-resource-version=3D"1" data-link=
+ed-resource-type=3D"page">Database Handle</a></li>
+</ul></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1026064514" data-linked-resource-i=
+d=3D"1026064514" data-linked-resource-version=3D"4" data-linked-resource-ty=
+pe=3D"page">25. Customer/Stakeholder's Requirements</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1011974253/Bharti+Airtel+-+POC" da=
+ta-linked-resource-id=3D"1011974253" data-linked-resource-version=3D"6" dat=
+a-linked-resource-type=3D"page">Bharti Airtel - POC</a>
+<ul class=3D"childpages-macro">
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1011974149/Requirements" data-link=
+ed-resource-id=3D"1011974149" data-linked-resource-version=3D"2" data-linke=
+d-resource-type=3D"page">Requirements</a></li>
+</ul></li>
+</ul></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/1068793857/26.+Implementation+of++=
+application+and+services+versioning" data-linked-resource-id=3D"1068793857"=
+ data-linked-resource-version=3D"1" data-linked-resource-type=3D"page">26. =
+Implementation of application and services versioning</a></li>
+<li><a href=3D"/wiki/spaces/RASNEX/pages/221643885/Product+requirements" da=
+ta-linked-resource-id=3D"221643885" data-linked-resource-version=3D"4" data=
+-linked-resource-type=3D"page">Product requirements</a></li>
+</ul>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_90_1566776777.1704258919123--

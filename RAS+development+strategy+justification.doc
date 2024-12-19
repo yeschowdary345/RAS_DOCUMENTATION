@@ -1,0 +1,349 @@
+Date: Wed, 3 Jan 2024 04:30:07 +0000 (UTC)
+Message-ID: <1938867709.35.1704256207066@825850ec0edf>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_34_1454821769.1704256207066"
+
+------=_Part_34_1454821769.1704256207066
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>RAS development strategy justification</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>RAS development strategy justification</h1>
+    <div class=3D"Section1">
+        <p><br></p>
+<p>Why do we need RAS?</p>
+<ul style=3D"list-style-type: square;">
+<li>O&amp;M: Monitor our customer=E2=80=99s assets to meet or exceed commit=
+ted performance</li>
+<li>Maximize the performance where possible, and capture part of that value=
+</li>
+<li>Manage our risks of premature failure, reducing warranty costs</li>
+<li>Intelligent reporting about &lt;0.1% of data</li>
+<li>Notification system that can detect anomalies and alert before a failur=
+e occurs</li>
+<li>Remotely diagnose assets for effective (one shot) maintenance</li>
+<li>Remote parameter <u>configuration</u>/tweaking</li>
+<li><u>Remote firmware update</u></li>
+<li>Remotely control assets (on/off/derate/geo-boundaries)</li>
+<li>Aggregate assets from BTM to Utility scale (fleet control)</li>
+<li>Enable demand side management services and revenues</li>
+<li>Provide responsive GUIs &amp; dashboards to end users (resi, mobile, ..=
+.)</li>
+<li>Data analytics, underpinning our value and technology</li>
+<li><u>Dashboards and reports</u></li>
+<li>A <u>unified</u> solution that matches the capabilities of our users</l=
+i>
+<li>Go downstream!</li>
+</ul>
+<p><br></p>
+<p>Why do we build RAS in-house?</p>
+<ul>
+<li>Evaluated countless third party solutions</li>
+<li><u>Generic</u>, rather than specific approach
+<ul>
+<li style=3D"margin-left: 0.0px;">Keeping the doors wide open for any IoT e=
+nabled asset
+<ul>
+<li style=3D"margin-left: 0.0px;">Yes =E2=80=93 Batteries, inverters, motor=
+s, transformers, meters, ...</li>
+<li style=3D"margin-left: 0.0px;">But also =E2=80=93 boilers, PV, wind, flo=
+w, CHP, microturbine, ...</li>
+<li style=3D"margin-left: 0.0px;">Or even =E2=80=93 vending machines, compa=
+nies, ... Literally anything that produces data</li>
+</ul></li>
+</ul></li>
+<li><u>Configurable</u>, not just programmable</li>
+<li>Ability to go <u>foggy</u>, not just cloud based</li>
+<li>Third party solutions are expensive and create <u>monthly costs</u></li=
+>
+<li>Flexibility to connect to third-party sources &amp; tools</li>
+<li>Create proprietary value, not only at the electro-chemistry level</li>
+<li>Cutting edge technology is not something you get off the shelve</li>
+<li>Do something that leaves the Koreans and Chinese lightyears behind us</=
+li>
+<li>Be(come) a software company, in addition to the hardware!</li>
+</ul>
+<p>We have investigated other data analysis technologies such as Hadoop, St=
+orm, DataTorrent and Polybase:</p>
+<ul>
+<li>These solutions are highly complex and designed for large scale. One co=
+uld say excessively powerful.</li>
+<li>They require a level of knowledge to build and maintain in service thes=
+e environments that is currently not available within the Leclanch=C3=A9 or=
+ganization.</li>
+<li>The current Leclanch=C3=A9 infrastructure does not support these techno=
+logies.</li>
+<li>These technologies are not suited for a foggy set-up.</li>
+<li>These solutions do no match the user profile</li>
+<li>These solutions do not integrate with our existing integrated technolog=
+y</li>
+</ul>
+<p>We therefore decided to develop RASQL, as it meets the requirements rega=
+rding data analysis and processing.</p>
+<p>Are we spending our money the right way?</p>
+<ul style=3D"list-style-type: square;">
+<li>Yes, this is the most economic way to develop such a solution if it has=
+ to be a unified solution, built for specific types of users.</li>
+</ul>
+<p>Difficult questions we should prepare for (so let's come up with answers=
+):</p>
+<ul style=3D"list-style-type: square;">
+<li>What is really meant with 'a unified solution'?
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">fully web-based</li>
+<li style=3D"margin-left: 0.0px;">single point of access (ras.leclanche.com=
+)</li>
+<li style=3D"margin-left: 0.0px;">consistent UI</li>
+<li style=3D"margin-left: 0.0px;">no use of external tools that cannot be f=
+ully integrated</li>
+</ul></li>
+<li>What is cost of alternative RAS designs?
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">&nbsp;big-data tech (Hadoop, Storm)
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">needs more, heavier hardware infrastructu=
+re</li>
+<li style=3D"margin-left: 0.0px;">more specific expertise needed</li>
+<li style=3D"margin-left: 0.0px;">foggy solution requirement: this excludes=
+ using cloud-based hosting</li>
+</ul></li>
+</ul></li>
+<li>Who is the 'specific type of user'?
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">Normal: For use of RAS without creating/e=
+diting new advanced objects (dashboards,reports): Microsoft Office user</li=
+>
+<li style=3D"margin-left: 0.0px;">Expert: For use of RAS with creating/edit=
+ing new advanced objects (dashboards, reports) : The user who is able to cr=
+eate an SQL query using MS Access query wizard, and who can create pivot ta=
+bles in Excel.</li>
+</ul></li>
+</ul>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_34_1454821769.1704256207066--

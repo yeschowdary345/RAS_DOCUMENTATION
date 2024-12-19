@@ -1,0 +1,369 @@
+Date: Wed, 3 Jan 2024 05:39:09 +0000 (UTC)
+Message-ID: <1457899531.115.1704260349948@825850ec0edf>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_114_841995893.1704260349948"
+
+------=_Part_114_841995893.1704260349948
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>16. Public API</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>16. Public API</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-16.PublicAPI-EXECUTIVESUMMARY"><span class=3D"legacy-c=
+olor-text-red2"><strong>EXECUTIVE SUMMARY</strong></span></h2>
+<ul>
+<li><span class=3D"legacy-color-text-red2">REST API for e.g. create assets =
+, insert data, triggers for automation (M2M) (asset management and live dat=
+a)</span></li>
+<li><span class=3D"legacy-color-text-red2">Authorization and security :&nbs=
+p; special permission, generated token, HTTPS</span></li>
+<li><span class=3D"legacy-color-text-red2">Implementation : 6 d&nbsp;</span=
+></li>
+</ul>
+<h2 id=3D"id-16.PublicAPI-Problemidentification"><strong>Problem identifica=
+tion</strong></h2>
+<p>Some tasks need automation capabilities i.e. Machine to Machine interfac=
+ing.&nbsp;</p>
+<p>Use cases :&nbsp;</p>
+<p>CREATE</p>
+<p>e.g. 1&nbsp; Manufacturer ( e.g. a Leclanche factory) produces a physica=
+l device that becomes an Asset.&nbsp; Currently it requires manual handling=
+ to add the asset to the system. If leclanche produces battery systems for =
+100 busses, or 100 e-ferries etc. It should not take forever to add the dev=
+ices to the system.&nbsp;&nbsp;</p>
+<p>INSERT</p>
+<p>e.g. 2 Live data insert : the only input at this point for data is throu=
+gh FTP log files. it should be easy to add an Asset Property Value for an a=
+sset into the system.</p>
+<p>FTP is costly&nbsp; (different processes ( CPU power waste) + duplicate =
+storage ( archive + database) ) )</p>
+<p>SIMPLE : it is NOT the goal to automate ALL features, only a limited set=
+ and a mechanism on which future features can be added.</p>
+<p>QUERY</p>
+<p>e.g. 3 simple export&nbsp; : output CSV data for a filter (same as UI)</=
+p>
+<p>OTHER ?</p>
+<p>e.g. 4 trigger scheduled task</p>
+<p>Might be usefull for an IFTTT&nbsp;</p>
+<p><br></p>
+<h2 id=3D"id-16.PublicAPI-Proposal"><strong>Proposal</strong></h2>
+<p>We add a "public" REST API with specific entry points.</p>
+<ul style=3D"list-style-type: square;">
+<li>Security :&nbsp;
+<ul style=3D"list-style-type: square;">
+<li>authorization : generate a TOKEN with a Timeout</li>
+<li>DDOS Attacks&nbsp; : throttling should be build in (limit on live data =
+traffic =E2=86=92 request per minute limit)&nbsp;</li>
+<li>extra security could be enforced with HTTPS to register specific device=
+s/scripts..</li>
+<li>specific permission to define which users may use the API&nbsp;&nbsp;</=
+li>
+</ul></li>
+<li>REST API ?
+<ul style=3D"list-style-type: square;">
+<li>JSON based REST protocol like our backend REST etc.&nbsp;</li>
+</ul></li>
+<li>Entry points (for now)&nbsp;<br>
+<ul style=3D"list-style-type: square;">
+<li>create asset&nbsp; &amp; return GUID&nbsp; + generate FTP passwd &amp; =
+return
+<ul style=3D"list-style-type: square;">
+<li>Note atomically: it should only be possible at create time. A major den=
+ial of service attack/issue is possible when&nbsp; re-generating FTP passwo=
+rd for random assets</li>
+<li>only admin&nbsp;&nbsp;</li>
+</ul></li>
+<li>insert data points for an asset&nbsp; (timestamp, property-name, value)=
+ ( Validation =E2=86=92 automatic, see prop metadata&nbsp;)&nbsp;</li>
+</ul></li>
+</ul>
+<p><br></p>
+<p><strong>NOT DOING</strong></p>
+<ul>
+<li>API for everything</li>
+<li>UI for token generation (we ARE doing permissions &amp; authorization)&=
+nbsp;</li>
+</ul>
+<p><br></p>
+<p><strong>Technicalities</strong></p>
+<ul>
+<li>HTTPS REST ( request/response)&nbsp;</li>
+<li>secure ?&nbsp;
+<ul>
+<li>https key-pairing?</li>
+<li>token generation (which library can we use =E2=86=92 ASP.NET build-in?)=
+</li>
+<li>could be spoofed if eaves-dropping (-&gt;https)&nbsp;</li>
+<li>attack-proof?
+<ul>
+<li>DDOS&nbsp;</li>
+<li>prevent flood of HTTP requests (also performance issue)</li>
+</ul></li>
+</ul></li>
+<li>UI :
+<ul>
+<li>how to get a token&nbsp;=E2=86=92 admin page?&nbsp;</li>
+<li>how to transport the token securely to the developer&nbsp;</li>
+</ul></li>
+<li>when inserting data in DB , the actions of pre-processor should also be=
+ done</li>
+<li>How do we manage the amount of calls for live traffic.
+<ul>
+<li>Do we allow bulk inserts? ( for performance yes)&nbsp;</li>
+<li>We assume JSON, however ASCII transport of number values is not efficie=
+nt ( but good for avoiding endianness issues)</li>
+<li>other formats ? later based on request&nbsp;</li>
+</ul></li>
+<li>for live data&nbsp; MQTT (smaller packet size, lower CPU requirements) =
+might be a better option than HTTP</li>
+<li>CRUD or JSON-RPC</li>
+</ul>
+<p><br></p>
+<p><strong>Implementations</strong>&nbsp;</p>
+<p><a class=3D"external-link" href=3D"https://blogs.mulesoft.com/dev/api-de=
+v/api-best-practices-series-intro/" rel=3D"nofollow">https://blogs.mulesoft=
+.com/dev/api-dev/api-best-practices-series-intro/</a></p>
+<p><a class=3D"external-link" href=3D"https://stackoverflow.com/questions/2=
+0817300/how-to-throttle-requests-in-a-web-api" rel=3D"nofollow">https://sta=
+ckoverflow.com/questions/20817300/how-to-throttle-requests-in-a-web-api</a>=
+</p>
+<p><br></p>
+<h2 id=3D"id-16.PublicAPI-FurtherAnalysis">Further Analysis</h2>
+<p>Reusing the existing authentication token is a problem for users whom ha=
+ve 2FA enabled (they would need to generate a TOTP token with their secret =
+which is not convenient).</p>
+<p>And in the end we'd have remove all of that when we do API authenticatio=
+n the right way. Let's do it the right way from the start and invest a few =
+more days.</p>
+<h3 id=3D"id-16.PublicAPI-Applicationtokens">Application tokens</h3>
+<p>Provide a UI where a logged in user can create applications along with a=
+n application id and application secret.</p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_114_841995893.1704260349948--

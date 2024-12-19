@@ -1,0 +1,317 @@
+Date: Wed, 3 Jan 2024 04:42:32 +0000 (UTC)
+Message-ID: <1143007385.55.1704256952004@9c4c96a6ba92>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_54_1469729595.1704256952003"
+
+------=_Part_54_1469729595.1704256952003
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>SFTP procedure</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>SFTP procedure</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"SFTPprocedure-Procedure">Procedure</h2>
+<h2 id=3D"SFTPprocedure-TosetupSFTPserver">To setup SFTP server</h2>
+<p>Microsoft IIS server does not support SFTP (or SSH) at all, on any versi=
+on of IIS or Windows.</p>
+<p>Below are the steps to installing and configuring OpenSSH for Windows.</=
+p>
+<ol>
+<li><p>Download =E2=80=9DOpenSSH-Win64.zip=E2=80=9D from <a class=3D"extern=
+al-link" href=3D"https://github.com/PowerShell/Win32-OpenSSH/releases" rel=
+=3D"nofollow">https://github.com/PowerShell/Win32-OpenSSH/releases</a></p><=
+/li>
+<li><p>Extract downloaded zip file</p></li>
+<li><p>Create folder =E2=80=9DC:\Program Files (x86)\OpenSSH-Win64\=E2=80=
+=9D and copy the extracted files there</p></li>
+<li><p>Run below in cmd (run cmd as admin):<br><em>powershell.exe -file =E2=
+=80=9DC:\Program Files (x86)\OpenSSH-Win64\install-sshd.ps1=E2=80=9D</em></=
+p></li>
+<li><p>Run services.msc and change Startup Type from Manual to Automatic fo=
+r the two new services =E2=80=9DOpenSSH Authentication Agent=E2=80=9D and =
+=E2=80=9DOpenSSH SSH Server=E2=80=9D</p></li>
+<li><p>Edit file =E2=80=9DC:\ProgramData\ssh\sshd_config=E2=80=9D in notepa=
+d and add below text at top of file. Note that any group names and folder p=
+aths specified in the config must be specified using lowercase letters (but=
+ whether the real group/folder names are lowercase or not doesn=E2=80=99t m=
+atter). See <a class=3D"external-link" href=3D"https://github.com/PowerShel=
+l/Win32-OpenSSH/wiki/sshd_config" rel=3D"nofollow">https://github.com/Power=
+Shell/Win32-OpenSSH/wiki/sshd_config</a> for more info</p></li>
+<li><p>Restart service =E2=80=9DOpenSSH SSH Server=E2=80=9D (any changes to=
+ config file above won=E2=80=99t take effect until service is restarted)</p=
+></li>
+<li><p>Optional: Open port 22 in the Windows Firewall on the backend server=
+ so Netscaler can communicate with it.</p></li>
+<li><p>Now you can use SFTP to connect to this server using AD credentials =
+(just entering sAMAccountName is sufficient). Only users in AD grup =E2=80=
+=99mydomain\SomeRandomADGroup=E2=80=99 are allowed to logon. Access to any =
+subfolders in C:\inetpub\wwwroot\ftp\ through SFTP will be dictated by NTFS=
+ rights. I suggest using AD groups + NTFS rights to control which sub folde=
+rs the users should be able to read/write to.</p></li>
+</ol>
+<h2 id=3D"SFTPprocedure-HowtoConnectwithSFTPclient">How to Connect with SFT=
+P client</h2>
+<p>By default, SFTP uses the SSH protocol to authenticate and establish a s=
+ecure connection. Because of this, the same authentication methods are avai=
+lable that are present in SSH.</p>
+<p>Although passwords are easy to use and set up by default, we recommend y=
+ou create SSH keys and transfer your public key to any system that you need=
+ to access. This is much more secure and can save you time in the long run.=
+</p>
+<ol>
+<li><p>Using WinSCP</p></li>
+<li><p>Using SFTP Client (Cyberduck)</p></li>
+</ol>
+<h2 id=3D"SFTPprocedure-UsingFilezillaclient">Using Filezilla client</h2>
+<ol>
+<li><p>Open <strong>FileZilla</strong></p></li>
+<li><p>Enter the address of the server in the field <strong>Host</strong>, =
+located in the <strong>Quickconnect</strong> bar.</p>
+<ul>
+<li><p>(<a class=3D"external-link" href=3D"http://sftp.example.com" rel=3D"=
+nofollow">sftp.example.com</a> - make sure to enter</p></li>
+</ul><p><strong>sftp</strong> to connect securely via SFTP)</p></li>
+<li><p>Enter your username</p>
+<ul>
+<li><p>(<a class=3D"external-link" href=3D"http://example.com" rel=3D"nofol=
+low">example.com</a> - keep it lowercase and without "www.")</p></li>
+</ul></li>
+<li><p>Enter your password</p>
+<ul>
+<li><p>(the one you chose for SSH in your Control Panel)</p></li>
+</ul></li>
+<li><p>Enter the port number.</p>
+<ul>
+<li><p>(port</p></li>
+</ul><p><strong>22</strong> for SFTP)</p></li>
+<li><p>Click on <strong>Quickconnect</strong> or press <strong>Enter</stron=
+g> to connect to the server.</p></li>
+<li><p>Click <strong>OK</strong> when you get a warning about an unknown ho=
+st key.</p></li>
+</ol>
+    </div>
+</body>
+</html>
+------=_Part_54_1469729595.1704256952003--

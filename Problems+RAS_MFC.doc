@@ -1,0 +1,415 @@
+Date: Tue, 2 Jan 2024 09:40:59 +0000 (UTC)
+Message-ID: <1464251983.19.1704188459848@174ae42202db>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_18_1815128922.1704188459847"
+
+------=_Part_18_1815128922.1704188459847
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Problems RAS/MFC</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Problems RAS/MFC</h1>
+    <div class=3D"Section1">
+        <p>See&nbsp; <span class=3D"confluence-jim-macro jira-issue" data-j=
+ira-key=3D"RAS-499"> <a href=3D"https://nexchargeapplications.atlassian.net=
+/browse/RAS-499?src=3Dconfmacro" class=3D"jira-issue-key">RAS-499</a> </spa=
+n> </p>
+<p><br></p>
+<p>We need a list of =E2=80=98problems ras/mfc=E2=80=99.</p>
+<p>Without talking about solutions (at this point) we need to identify the =
+problems we have been faced with up-to-now.</p>
+<p>Once we have this list, we can start think about solutions.</p>
+<p>To validate the solutions, we validate if they fix the problems identifi=
+ed earlier.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+<li>Als geen datapunt (mfc weg) dan vult devexpress aan en creeert schuine =
+lijn. Die schuine lijn klopt niet</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+<li>Calculated averages are not correct.
+<ul>
+<li>2017/11/23 15:45:43 temp 30</li>
+<li>2017/11/24 23:50:00 temp 35</li>
+<li>2017/11/25 00:15:00 temp 30</li>
+<li>&nbsp;</li>
+</ul></li>
+<ul>
+<li>Dataset:</li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+<li>Log files may be uploaded out of sequence
+<ul>
+<li>Date in filename + index, e.g. 20171125.0012.log</li>
+</ul>
+<ul>
+<li>What if that file is simply gone?</li>
+<li>What if one of the =E2=80=98wrong=E2=80=99 next file contains data base=
+d on which a catastrophe can be averted?</li>
+<li>=E2=80=A6</li>
+<li>&nbsp;</li>
+</ul></li>
+<ul>
+<li>Example scenario: files are created in the following order: F1, F2, F3;=
+ files are uploaded in the following order: F3, F2, F1</li>
+<li>Reason: FTP upload just takes files using mask (*data.log and *system.l=
+og), result has undefined sequence</li>
+<li>Fixes (?)</li>
+<li>Hold-off calculation until the =E2=80=98right=E2=80=99 next file is see=
+n?</li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+<li>Log files may be re-uploaded
+<ul>
+<li>Original file marked as =E2=80=98import failed=E2=80=99 in RAS.</li>
+</ul>
+<ul>
+<li>Original file marked as =E2=80=98imported OK=E2=80=99 in RAS</li>
+<li>Is this possible? If a file is uploaded (from MFC to RAS) it is gone (i=
+.e. off of MFC), right? So no manipulation possible=E2=80=A6</li>
+</ul></li>
+<ul>
+<li>Original log file was corrupt. Fixed file is uploaded.</li>
+<li>Original log file was fine (and uploaded OK). was modified by service e=
+ngineer</li>
+<li>Other scenarios?</li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+<li>Event engine must support multiple parameters: not possible to have val=
+ues of two parameters at same timestamp</li>
+<ul>
+<li>E.g. We want event to be created when SOC &lt; 20 and temperature &gt; =
+90.</li>
+<li>Mfc only logs values when they change</li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+<li>DevExpress dashboards have a maximum limit on the number of data points
+<ul>
+<li>Question: what is exactly the limit? Or is there no fixed limit and onl=
+y a practical limit that is simply takes too long=E2=80=A6?</li>
+</ul></li>
+<ul>
+<li>In case there are many data points for a parameter, this means you cann=
+ot span a long period of time</li>
+<li>E.g. suppose there are millions of batcurrent records per year: not pos=
+sible to show dashboard covering a year because there is a limit to the num=
+ber of records that can be provided to devexpress</li>
+<li>Some aggregation will be required when providing data to devexpress? (d=
+ynamically determine resolution-scale?)</li>
+<li>Not RAS/MFC-related=E2=80=A6</li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Data integrity</li>
+<ul>
+<li>Do we have to prevent tampering of log files? E.g. manually editing of =
+log files?</li>
+<li>Do we have to drag this topic in the discussion at this time?</li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Timestamp in MFC loggings
+<ul>
+<li>drift</li>
+</ul>
+<ul>
+<li>Some =E2=80=98special values=E2=80=99 have been detected=E2=80=A6 (on r=
+as (pre-processor timothy) side; if date =3D=3D x then =E2=80=A6)</li>
+<li>Initialized to some (other) special value (special value)</li>
+</ul></li>
+<ul>
+<li>Reliable?</li>
+<li>Correct?</li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Values are not always =E2=80=98correct=E2=80=99</li>
+<ul>
+<li>E.g. SOC loggings; when the system starts up the SOC is =E2=80=98constr=
+ucted=E2=80=99 by processing multiple messages from the different subsystem=
+s about the SOC: for each message a SOC logging is generated (e.g. SOC 10, =
+then SOC 12, etc) but only when another variable (BMSSTATE) has a certain v=
+alue, can the SOC record be interpreted as being the actual SOC.</li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+<li>SOC duration
+<ul>
+<li>MFC is configured to calculate SOC duration</li>
+<li>mfc sends bad data for SOC (bigger 100)</li>
+<li>so in RAS we use filter to limit SOC values to 0-100</li>
+<li>but this doesn=E2=80=99t filter the corresponding SOC duration values!!=
+!!!!!</li>
+</ul></li>
+<ul>
+<li>2017-12-4</li>
+<li>using the duration mechanism was NOT a good idea</li>
+<li>situation:</li>
+</ul>
+</ul>
+<p><br></p>
+<ul style=3D"list-style-type: square;">
+<li>log file corrupt</li>
+<li>missing data</li>
+<li>missing log file</li>
+<li>SD card full</li>
+<li>broken FTP upload</li>
+</ul>
+<p><br></p>
+<ul style=3D"list-style-type: square;">
+<li>datalog and syslog streams<br>
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;"> <span class=3D"confluence-jim-macro jira=
+-issue" data-jira-key=3D"RAS-664"> <a href=3D"https://nexchargeapplications=
+.atlassian.net/browse/RAS-664?src=3Dconfmacro" class=3D"jira-issue-key">RAS=
+-664</a> </span> </li>
+</ul></li>
+</ul>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_18_1815128922.1704188459847--

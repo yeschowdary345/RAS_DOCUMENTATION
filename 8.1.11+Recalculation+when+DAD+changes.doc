@@ -1,0 +1,317 @@
+Date: Wed, 3 Jan 2024 05:33:20 +0000 (UTC)
+Message-ID: <38518173.119.1704260000305@d806889b90f2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_118_856137846.1704260000305"
+
+------=_Part_118_856137846.1704260000305
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>8.1.11 Recalculation when DAD changes</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>8.1.11 Recalculation when DAD changes</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-8.1.11RecalculationwhenDADchanges-Introduction&amp;Pro=
+blemstatement">Introduction &amp; Problem statement</h2>
+<p>Initially the requirement was made that upon any change the DAD is recal=
+culated fully. A part of this calculation is the transmission of messages (=
+eg emails, webnotifications).&nbsp;</p>
+<p>These messages are usually used to notify people something went wrong or=
+ to periodically send a report.&nbsp;</p>
+<p>In the future, it will also be possible to send HTTP requests through th=
+e DAE. Depending on the use case, this either should or should not happen f=
+or historic events.</p>
+<p>A scenario in which this should happen is one where some data is written=
+ to an external database. A change in the algorithm means the new data shou=
+ld be provided to the external database.&nbsp;</p>
+<p>A scenario in which HTTP requests should not be repeated is one where me=
+asurements are used to drive some real-life motor. For example, putting up =
+the blinds when the sun is out. There's no point in doing this for historic=
+ data.&nbsp;</p>
+<h2 id=3D"id-8.1.11RecalculationwhenDADchanges-Generalissue">General issue<=
+/h2>
+<p>A serious issue with this entire analysis is that when a user opts to re=
+send, he may as well click an option reading "annihilate my quotums". Becau=
+se resending messages that are usually sent over years and years in a few m=
+inutes is pretty much guaranteed to exceed all quotums. Meaning that the mo=
+st recent messages (usually most relevant) will not arrive for that user.&n=
+bsp;</p>
+<p>We will therefore recommend that the default is&nbsp;<em>not</em> to res=
+end. Only in exceptional situations should the user resend.&nbsp;</p>
+<h2 id=3D"id-8.1.11RecalculationwhenDADchanges-Fromwhentostartsendingagain"=
+>From when to start sending again</h2>
+<p>At some point we will have to start sending messages again. There are se=
+veral points in time when we can do that:</p>
+<ul style=3D"list-style-type: square;">
+<li>When the current iteration record time &gt; processedUpto time for the =
+previous version of the DAD</li>
+<li>When the current iteration record time &gt; wall clock time used for pu=
+blishing</li>
+</ul>
+<p>The second option is dangerous because a device's clock may be off by a =
+lot. And if it is, users will not receive any (potentially important) alert=
+s. We therefor recommend the first option.&nbsp;</p>
+<p>Note that devices that suddenly skip back in time will still break thing=
+s, but that is to be expected in a time series database.</p>
+<h2 id=3D"id-8.1.11RecalculationwhenDADchanges-Possibilities">Possibilities=
+</h2>
+<h3 id=3D"id-8.1.11RecalculationwhenDADchanges-Userinterface">User interfac=
+e</h3>
+<p>The most obvious method would be to prompt the user when he publishes a =
+new version whether or not he wants to&nbsp;</p>
+<ul style=3D"list-style-type: square;">
+<li>resend notifications</li>
+<li>resend emails</li>
+<li>re-execute HTTP requests</li>
+</ul>
+<p>This can be shown using checkboxes.&nbsp;</p>
+<p>Advantages:</p>
+<p>&nbsp;- User thinks about whether or not to send each and every time</p>
+<p>Disadvantages:</p>
+<p>&nbsp;- User&nbsp;<em>has</em> to think about it every time.&nbsp;<br>&n=
+bsp;- Need to explain to users that this is something which has negative co=
+nsequences. Not a good idea to put a whole block of text in an alert, but s=
+ome explanation should be given.&nbsp;</p>
+<p>We can make this option more user friendly by detecting if the old state=
+ment contains any notifications/emails/http requests and to only show the p=
+rompt if it does (and only with the relevant checkboxes).&nbsp;</p>
+<h3 id=3D"id-8.1.11RecalculationwhenDADchanges-OptioninRASQL">Option in RAS=
+QL</h3>
+<p>Another option would be to add a clause to RASQL, something like&nbsp;</=
+p>
+<p>WITH ASSET(1) as a<br>DEFINE EVERY(a.prop) as prop<br>WHEN TRUE THEN EMA=
+IL('templ')<br>RESEND (EMAIL, WEBNOTIFICATION)</p>
+<p>Advantages:<br>- Users normally don't need to know about this. So they'r=
+e not bothered by it unless necessary.&nbsp;<br><br>Disadvantages:<br>&nbsp=
+;- Adds to language syntax (not much work, but clutters up the grammar)</p>
+<h1 id=3D"id-8.1.11RecalculationwhenDADchanges-Recommendation"><s>Recommend=
+ation</s></h1>
+<p><s>The author recommends the RASQL option. The default will be not to re=
+send any actions. When the user specifies the RESEND option, only the given=
+ parameters will be resent from the beginning.&nbsp;</s></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_118_856137846.1704260000305--

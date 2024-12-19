@@ -1,0 +1,488 @@
+Date: Wed, 3 Jan 2024 05:32:23 +0000 (UTC)
+Message-ID: <1039398178.67.1704259943992@01146b9ad81d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_66_346569097.1704259943992"
+
+------=_Part_66_346569097.1704259943992
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>8.1.7 RASQL</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>8.1.7 RASQL</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-8.1.7RASQL-Someexamples">Some examples</h2>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">WITH AS=
+SET("Toll Plaza") AS Tollplaza
+DEFINE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; AVG(Tollplaza.TEMPF1) AS AverageTempA,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; AVG(Tollplaza.TEMPF2) AS AverageTempB
+WITH PERIOD(10, DAY)
+CALCULATE (((AverageTempA + AverageTempB) / 2) - 32) / 1.8 AS result
+WHEN result &gt; 50 THEN WEBNOTIFICATION("gotcha")
+WHEN result &gt; 50 THEN MAILNOTIFICATION("woop") THROTTLE BY MAX 5 PER WEE=
+K</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">WITH AS=
+SET("Toll Plaza") AS Tollplaza
+DEFINE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; AVG(Tollplaza.TEMPF1) AS AverageTempA,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; AVG(Tollplaza.TEMPF2) AS AverageTempB
+WITH PERIOD(1, DAY)
+CALCULATE (((AverageTempA + AverageTempB) / 2) - 32) / 1.8 AS result
+WHEN result &gt; 50 THEN WEBNOTIFICATION("gotcha")
+WHEN result &gt; 50 THEN MAILNOTIFICATION("woop") THROTTLE BY MAX(5, WEEK) =
+AND MIN(3, WEEK)</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">WITH AS=
+SET("Toll Plaza") AS Tollplaza
+DEFINE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; AVG(Tollplaza.TEMPF1) AS AverageTempA,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; AVG(Tollplaza.TEMPF2) AS AverageTempB
+WITH PERIOD(1, DAY)
+CALCULATE (((AverageTempA + AverageTempB) / 2) - 32) / 1.8 AS result
+WHEN result &gt; 50 THEN WEBNOTIFICATION("gotcha")
+WHEN result &gt; 50 THEN MAILNOTIFICATION("woop") THROTTLE BY MIN 5 PER WEE=
+K </pre>=20
+</div>
+</div>
+<p><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">WITH =
+=09ASSET(18) as Turnhout,
+=09=09ASSET(19) as Willstat,
+DEFINE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; AVG(Turnhout.TEMP_F) AS AverageTempA,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; AVG(Willstat.TEMP_F)) AS AverageTempB
+USING PERIOD(1, WEEK)
+CALCULATE (((AverageTempA + AverageTempB) / 2) - 32) / 1.8 AS result
+WHEN result &gt; 50 THEN WEBNOTIFICATION("gotcha")
+WHEN result &gt; 50 &amp;&amp; TIMES_ACTION_FIRED(5, DAYS) =3D=3D 0 THEN MA=
+ILNOTIFICATION("woop </pre>=20
+</div>
+</div>
+<p><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">WITH AS=
+SET(4) as tollplaza
+DEFINE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; every(tollplaza.temp=
+) AS Temp
+WHEN THRESHOLD_STATE_CHANGE("x", Temp, 55, 60, +1) THEN MAILNOTIFICATION() =
+THROTTLE BY MAX(3, WEEK)</pre>=20
+</div>
+</div>
+<p><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// Prop=
+erty watchdog
+// Note that this will only work if at least one value has been received al=
+ready! No data means no timestamp means no execution means no messages!
+SCHEDULE EVERY 1 DAY=20
+WITH ASSET("Toll Plaza") AS Tollplaza
+DEFINE EVERY(Tollplaza.heartbeat) AS heartbeat
+WHEN timestamp &lt; DATEADD(NOW(), -5, DAY)
+THEN MAILNOTIFICATION() THROTTLE BY MAX 1 PER WEEK</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// Asse=
+t watchdog
+SCHEDULE EVERY 30 MINUTES=20
+WITH ASSET("Toll Plaza") AS Tollplaza
+DEFINE ASSETWATCHDOG(Tollplaza) AS lkv
+WHEN TIMESTAMP() &lt; DATEADD(NOW(), -30, MINUTES)
+THEN MAILNOTIFICATION() THROTTLE BY MAX 1 PER DAY </pre>=20
+</div>
+</div>
+<p><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// Perc=
+entage data coverage (voorbeeld van unified notification engine/postprocess=
+or)
+WITH ASSET("MFC") as mfc
+DEFINE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; COUNT(mfc.HEARTBEAT)) AS numbeats,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; MAX(mfc.TIME_BETWEEN_HEARTBEATS)) as diffT
+USING PERIOD(1, DAY)
+CALCULATE 100 - (100*24*60)/(numbeats*diffT) as result
+WHEN TRUE THEN WRITEVALUE(result, "DATA_COMPLETENESS")</pre>=20
+</div>
+</div>
+<p><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// Seco=
+nd, we can provide a specific helper
+WITH ASSET(18) as mfc
+DEFINE every(mfc.SOC) as SOC
+WHEN SOC &lt; 20 THROTTLE BY MIN 3 PER WEEK</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">WITH =
+=09ASSET(4) as tollplaza
+DEFINE&nbsp;&nbsp;every(tollplaza.temp) AS Temp,
+=09=09=09every(tollplaza.temp_threshold) as old_threshold_state
+CALCULATE =09THRESHOLDSTATE(temp, 50, 60) as new_threshold_state,
+=09=09=09THRESHOLDSTATERISING(old_threshold_state, new_threshold_state) as =
+state_changed
+WHEN state_changed THEN MAILNOTIFICATION(), WRITEVALUE(tollplaza.temp_thres=
+hold, new_threshold_state)</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// Exam=
+ple of only sending upon the first instance of an alarm condition
+WITH ASSET(15) as asset
+DEFINE every(asset.TEMPERATURE) as temp,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;every(asset.VOLTAGE) as voltage,
+=09   every(asset.ALARM_STATE) DEFAULT 0 as prev_alarm
+CALCULATE temp &gt; 90 || voltage &gt; 240 as alarm,
+          prev_alarm !=3D alarm as changed
+WHEN changed &amp;&amp; alarm THEN EMAIL()
+WHEN changed THEN WRITEVALUE(asset.ALARM_STATE, alarm)</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// Some=
+ idea of how to implement _DURATION in RASQL=20
+with asset(14) as tp=20
+define every(tp.SOC) as soc,
+ previous(tp.SOC) as previous_soc
+ when true then writevalue(tp.soc_duration, timestamp - PREVIOUSTIMESTAMP, =
+PREVIOUSTIMESTAMP)</pre>=20
+</div>
+</div>
+<p><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">// Test=
+ mathematical integration
+with asset(10) as tp
+define=09every(tp.power) as p2
+=09=09previous(tp.power) as p1
+calculate (TIMESTAMP-PREVIOUSTIMESTAMP)*p1 as energy
+when true then writevalue(tp.energy, energy/3600, PREVIOUSTIMESTAMP)
+
+// Now suppose we want to aggregate by month
+with asset(10) as tp
+define sum(tp.energy) as energy
+when true then writevalue(tp.energy_per_month, energy)</pre>=20
+</div>
+</div>
+<p><br></p>
+<h2 id=3D"id-8.1.7RASQL-Generalremarks">&nbsp;General remarks</h2>
+<ul>
+<li>&nbsp;In case of "only raise when event occurs at least x times", are w=
+e going to fire every time the condition is true? Probably a bad idea becau=
+se the user has no idea how often the event will occur as this depends on M=
+FC settings.&nbsp;</li>
+</ul>
+<h2 id=3D"id-8.1.7RASQL-SubtledifferenceswithPQL(Peter'sQueryLanguage)">Sub=
+tle differences with PQL (Peter's Query Language)</h2>
+<ul>
+<li>Multiple WHEN - THEN statements are possible</li>
+<li>Calculation results can be named. These names can be used in WHEN THEN =
+statements.&nbsp;</li>
+<li>Boolean calculations are also possible in CALCULATE. Calculation result=
+s can be used multiple times.&nbsp;</li>
+<li>Provide a function CHANGED, which works similar to ROSE_ABOVE_THRESHOLD=
+. It works as follows:
+<ul>
+<li style=3D"margin-left: 0.0px;">If no stored value is present, store a va=
+lue and return TRUE</li>
+<li style=3D"margin-left: 0.0px;">If the given value is different from the =
+stored value, change the stored value and return TRUE</li>
+<li style=3D"margin-left: 0.0px;">If the given value does not differ from t=
+he stored value, return FALSE</li>
+</ul></li>
+<li style=3D"margin-left: 0.0px;">Provide a function TIMES_OCCURRED, which =
+functions similarly to CHANGED. It works as follows:
+<ul>
+<li style=3D"margin-left: 0.0px;">Look in the database in a specific table =
+how often this TIMES_OCCURRED wrote to it in the given period, and return t=
+his value.&nbsp;</li>
+<li style=3D"margin-left: 0.0px;">Just before returning, write a new record=
+ to the table.&nbsp;</li>
+</ul></li>
+</ul>
+<p><br></p>
+<h2 id=3D"id-8.1.7RASQL-RemarksregardingRASQL">Remarks regarding RASQL</h2>
+<ul>
+<li>We need a better syntax for raw values =3D&gt; every(tp.SOC) ?&nbsp;</l=
+i>
+<li>How will EMAIL, WEBNOTIFICATION, etc work. Will we work with placeholde=
+rs based on templates? =3D&gt; being investigated by PM</li>
+<li>How do we refer to assets? By ID isn't ideal, perhaps we should allow b=
+oth by name and by id. =3D&gt; both is allowed</li>
+<li>How does the state storage in WHEN statements work? Every CHANGED, ROSE=
+_ABOVE_THRESHOLD etc must have its own storage which cannot be mixed with o=
+ther instances storage. Perhaps using named keys?&nbsp;</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_66_346569097.1704259943992--

@@ -1,0 +1,550 @@
+Date: Wed, 3 Jan 2024 05:58:34 +0000 (UTC)
+Message-ID: <2138879554.87.1704261514726@01146b9ad81d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_86_1842574708.1704261514726"
+
+------=_Part_86_1842574708.1704261514726
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Product requirements</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Product requirements</h1>
+    <div class=3D"Section1">
+        <p style=3D"text-align: right;"><button class=3D"aui-button create-=
+from-template-button" data-space-key=3D"RASNEX" href=3D"https://nexchargeap=
+plications.atlassian.net/wiki?createDialogSpaceKey=3DRASNEX&amp;createDialo=
+gBlueprintId=3Dcc524bf0-0107-4b2b-bd67-f81f1eb7cf6b" data-content-blueprint=
+-id=3D"cc524bf0-0107-4b2b-bd67-f81f1eb7cf6b" disabled=3D"true">Add Product =
+requirements</button></p>
+<hr>
+<div class=3D"table-wrap">
+<table class=3D"aui metadata-summary-macro requirements" data-cql=3D"label =
+=3D &quot;requirements&quot; and space =3D currentSpace ( )" data-first-col=
+umn-heading=3D"Title" data-count-comments=3D"false" data-count-likes=3D"fal=
+se" data-total-pages=3D"1" data-page-size=3D"1000" data-sort-by=3D"null" da=
+ta-reverse-sort=3D"false" data-blueprint-present=3D"false" data-current-spa=
+ce-key=3D"RASNEX" data-current-content-id=3D"221643885" data-analytics-key=
+=3D"requirements">
+<thead>
+<tr>
+<th>Title</th>
+<th><p xmlns=3D"http://www.w3.org/1999/xhtml">Designer</p></th>
+<th>Developers</th>
+<th><p xmlns=3D"http://www.w3.org/1999/xhtml"><strong>Document owner</stron=
+g></p></th>
+<th><p xmlns=3D"http://www.w3.org/1999/xhtml"><strong>Document status</stro=
+ng></p></th>
+<th><p xmlns=3D"http://www.w3.org/1999/xhtml"><strong>Epic</strong></p></th=
+>
+<th><p xmlns=3D"http://www.w3.org/1999/xhtml"><strong>QA</strong></p></th>
+<th><p xmlns=3D"http://www.w3.org/1999/xhtml">Target release</p></th>
+<th><p xmlns=3D"http://www.w3.org/1999/xhtml">Tech lead</p></th>
+<th><p xmlns=3D"http://www.w3.org/1999/xhtml">Technical writers</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=3D"title" data-content-id=3D"1091567617"><a href=3D"/wiki/spaces/=
+RASNEX/pages/1091567617/MQTT">MQTT</a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"6243e55ff3824d006a57b6fb" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/6243e55ff3824d006a57b6fb=
+?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"1082359810"=
+ data-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" =
+data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">rahul ra=
+njan</a> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><span class=3D"status-macro a=
+ui-lozenge">DRAFT</span></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <span class=3D"confluence-ji=
+m-macro jira-issue" data-jira-key=3D"RASP-372"> <a href=3D"https://nexcharg=
+eapplications.atlassian.net/browse/RASP-372" class=3D"jira-issue-key"><img =
+class=3D"icon" src=3D"https://nexchargeapplications.atlassian.net/rest/api/=
+2/universal_avatar/view/type/issuetype/avatar/10318?size=3Dmedium">RASP-372=
+</a> - <span class=3D"summary">Explore and create confluence page for MQTT<=
+/span> <span class=3D"aui-lozenge aui-lozenge-subtle aui-lozenge-success ji=
+ra-macro-single-issue-export-pdf">Done</span> </span> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"1026064514"><a href=3D"/wiki/spaces/=
+RASNEX/pages/1026064514">25. Customer/Stakeholder's Requirements</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td>&nbsp;</td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"5f733773837bb800680baa8f" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/5f733773837bb800680baa8f=
+?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeappl=
+ications.atlassian.net/wiki">Gautam Kumar (Unlicensed)</a></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><span class=3D"status-macro a=
+ui-lozenge">DRAFT</span></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"83755608"><a href=3D"/wiki/spaces/RA=
+SNEX/pages/83755608/6.4.4+Secure+assets+per+company">6.4.4 Secure assets pe=
+r company</a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"557058:=
+c030efa3-3ea9-4672-b854-6a55d0faad73" href=3D"https://nexchargeapplications=
+.atlassian.net/wiki/people/557058:c030efa3-3ea9-4672-b854-6a55d0faad73?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">Peter Meir (Unlicensed)</a></p>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<span class=3D"status-macro aui-lozenge">DRAFT</span>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-25=
+2"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-252?s=
+rc=3Dconfmacro" class=3D"jira-issue-key">RAS-252</a> </span> </p>
+</div></td>
+<td>&nbsp;</td>
+<td>v1.0</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"83755578"><a href=3D"/wiki/spaces/RA=
+SNEX/pages/83755578/6.3.1+Analysis+Authentication">6.3.1 Analysis Authentic=
+ation</a></td>
+<td>&nbsp;</td>
+<td><a class=3D"unresolved" href=3D"#">327881</a></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"557058:=
+c030efa3-3ea9-4672-b854-6a55d0faad73" href=3D"https://nexchargeapplications=
+.atlassian.net/wiki/people/557058:c030efa3-3ea9-4672-b854-6a55d0faad73?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">Peter Meir (Unlicensed)</a></p>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<span class=3D"status-macro aui-lozenge">DRAFT</span>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-24=
+7"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-247?s=
+rc=3Dconfmacro" class=3D"jira-issue-key">RAS-247</a> </span> </p>
+</div></td>
+<td>&nbsp;</td>
+<td>v1.0.0</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"83755616"><a href=3D"/wiki/spaces/RA=
+SNEX/pages/83755616/6.4.3+Secure+asset+properties+per+company">6.4.3 Secure=
+ asset properties per company</a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"557058:=
+c030efa3-3ea9-4672-b854-6a55d0faad73" href=3D"https://nexchargeapplications=
+.atlassian.net/wiki/people/557058:c030efa3-3ea9-4672-b854-6a55d0faad73?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">Peter Meir (Unlicensed)</a></p>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<span class=3D"status-macro aui-lozenge">DRAFT</span>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-25=
+1"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-251?s=
+rc=3Dconfmacro" class=3D"jira-issue-key">RAS-251</a> </span> </p>
+</div></td>
+<td>&nbsp;</td>
+<td>v1.0</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"83755567"><a href=3D"/wiki/spaces/RA=
+SNEX/pages/83755567/6.4.1+Secure+Controller-Actions+by+Role">6.4.1 Secure C=
+ontroller-Actions by Role</a></td>
+<td>&nbsp;</td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<a class=3D"confluence-userlink user-mention" data-account-id=3D"557058:c03=
+0efa3-3ea9-4672-b854-6a55d0faad73" href=3D"https://nexchargeapplications.at=
+lassian.net/wiki/people/557058:c030efa3-3ea9-4672-b854-6a55d0faad73?ref=3Dc=
+onfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplications=
+.atlassian.net/wiki">Peter Meir (Unlicensed)</a>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"557058:=
+c030efa3-3ea9-4672-b854-6a55d0faad73" href=3D"https://nexchargeapplications=
+.atlassian.net/wiki/people/557058:c030efa3-3ea9-4672-b854-6a55d0faad73?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">Peter Meir (Unlicensed)</a></p>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<span class=3D"status-macro aui-lozenge">DRAFT</span>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-24=
+9"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-249?s=
+rc=3Dconfmacro" class=3D"jira-issue-key">RAS-249</a> </span> </p>
+</div></td>
+<td>&nbsp;</td>
+<td>v1.0</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"83755557"><a href=3D"/wiki/spaces/RA=
+SNEX/pages/83755557/6.4.2+Manage+Roles">6.4.2 Manage Roles</a></td>
+<td>&nbsp;</td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<a class=3D"confluence-userlink user-mention" data-account-id=3D"557058:c03=
+0efa3-3ea9-4672-b854-6a55d0faad73" href=3D"https://nexchargeapplications.at=
+lassian.net/wiki/people/557058:c030efa3-3ea9-4672-b854-6a55d0faad73?ref=3Dc=
+onfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplications=
+.atlassian.net/wiki">Peter Meir (Unlicensed)</a>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"557058:=
+c030efa3-3ea9-4672-b854-6a55d0faad73" href=3D"https://nexchargeapplications=
+.atlassian.net/wiki/people/557058:c030efa3-3ea9-4672-b854-6a55d0faad73?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">Peter Meir (Unlicensed)</a></p>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<span class=3D"status-macro aui-lozenge">DRAFT</span>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-24=
+8"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-248?s=
+rc=3Dconfmacro" class=3D"jira-issue-key">RAS-248</a> </span> </p>
+</div></td>
+<td>&nbsp;</td>
+<td>v1.0</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"83755041"><a href=3D"/wiki/spaces/RA=
+SNEX/pages/83755041/2.1.3+Display+user+alerts">2.1.3 Display user alerts</a=
+></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"557058:=
+c030efa3-3ea9-4672-b854-6a55d0faad73" href=3D"https://nexchargeapplications=
+.atlassian.net/wiki/people/557058:c030efa3-3ea9-4672-b854-6a55d0faad73?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">Peter Meir (Unlicensed)</a></p>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<span class=3D"status-macro aui-lozenge">DRAFT</span>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-25=
+0"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-250?s=
+rc=3Dconfmacro" class=3D"jira-issue-key">RAS-250</a> </span> </p>
+</div></td>
+<td>&nbsp;</td>
+<td>v1.0</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"221840354"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/221840354/Requirements-+Assets+Registration">Requirements- Asse=
+ts Registration</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td>&nbsp;</td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"5d3e751d982c2b0db298708e" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/5d3e751d982c2b0db298708e=
+?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"32799" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Awnindera Shu=
+kla</a></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><span class=3D"status-macro a=
+ui-lozenge">DRAFT</span></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"83755458"><a href=3D"/wiki/spaces/RA=
+SNEX/pages/83755458/5.1+Task+Scheduling">5.1 Task Scheduling</a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<p><a class=3D"confluence-userlink user-mention" data-account-id=3D"557058:=
+c030efa3-3ea9-4672-b854-6a55d0faad73" href=3D"https://nexchargeapplications=
+.atlassian.net/wiki/people/557058:c030efa3-3ea9-4672-b854-6a55d0faad73?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">Peter Meir (Unlicensed)</a></p>
+</div></td>
+<td>
+<div xmlns=3D"http://www.w3.org/1999/xhtml" class=3D"content-wrapper">
+<span class=3D"status-macro aui-lozenge">DRAFT</span>
+</div></td>
+<td><br></td>
+<td>&nbsp;</td>
+<td>1.0</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_86_1842574708.1704261514726--

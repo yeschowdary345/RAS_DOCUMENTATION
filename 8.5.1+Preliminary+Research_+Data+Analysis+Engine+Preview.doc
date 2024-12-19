@@ -1,0 +1,341 @@
+Date: Wed, 3 Jan 2024 05:36:33 +0000 (UTC)
+Message-ID: <1345771199.83.1704260193020@89ec1521d75b>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_82_1009113320.1704260193020"
+
+------=_Part_82_1009113320.1704260193020
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>8.5.1 Preliminary Research: Data Analysis Engine Preview</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>8.5.1 Preliminary Research: Data Analysis Engine Preview</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-8.5.1PreliminaryResearch:DataAnalysisEnginePreview-Int=
+roduction">Introduction</h2>
+<p>We would like to provide our users with the ability to&nbsp;</p>
+<ul style=3D"list-style-type: square;">
+<li>Have some idea of what a DAD will do before executing</li>
+<li>Have some idea of the data that will be provided to the DAD on executio=
+n</li>
+<li>Have some idea of the output that a DAD will produce given some inputs<=
+/li>
+</ul>
+<p>The preview functionality should encompass all of these requirements.&nb=
+sp;</p>
+<h2 id=3D"id-8.5.1PreliminaryResearch:DataAnalysisEnginePreview-Proposal">P=
+roposal</h2>
+<p>The author's proposal contains several components:</p>
+<ul style=3D"list-style-type: square;">
+<li>Data input. Users can either read data from the database (based on thei=
+r current DAD), or they can input data themselves</li>
+<li>DAD output. Users can see what effects the execution of the DAD would h=
+ave.&nbsp;</li>
+</ul>
+<h2 id=3D"id-8.5.1PreliminaryResearch:DataAnalysisEnginePreview-Prerequisit=
+es">Prerequisites</h2>
+<p>The functionality to save, but not publish, a DAD is required before thi=
+s can be implemented. It should be possible to run simulations on saved but=
+ not-published DADs.&nbsp;</p>
+<h2 id=3D"id-8.5.1PreliminaryResearch:DataAnalysisEnginePreview-Open">Open<=
+/h2>
+<p>The simulation mode can be started by clicking a link in the main edit s=
+creen "Simulate". This will open the data input screen (in the same aurelia=
+ app).&nbsp;</p>
+<h2 id=3D"id-8.5.1PreliminaryResearch:DataAnalysisEnginePreview-Assumptions=
+">Assumptions</h2>
+<p>User knows &amp; understands the properties of an asset.&nbsp;</p>
+<p><br></p>
+<h2 id=3D"id-8.5.1PreliminaryResearch:DataAnalysisEnginePreview-DataInput">=
+Data Input</h2>
+<p>After entering simulation mode, the user's DAD is automatically saved. T=
+he user is then shown the top pane &amp; simulate button in the mockup belo=
+w. The server parses the DAD and determines what its inputs are. Upon click=
+ing the Simulate button, the data entered in the grid view is uploaded to t=
+he server and a (indeterminate time) progress indicator is shown. The serve=
+r quickly runs the simulation and returns a description of all events produ=
+ced &amp; records written.&nbsp;&nbsp;</p>
+<p>A new pane appears below the simulate button, containing a list of all e=
+mails sent, all messages sent and all records written to the database.&nbsp=
+;</p>
+<p>The grid near the top remains editable; when the user changes data point=
+s and presses the simulate button, the same process (progress indicator etc=
+) repeats.&nbsp;</p>
+<p> </p>
+<div style=3D"width: 100.0%;height: 100.0%;text-align: center;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/551747600/=
+balsamiq_2278E287-509B-183B-1098-2EC38DDDB7D8_Master.png">
+</div>=20
+<p></p>
+<h2 id=3D"id-8.5.1PreliminaryResearch:DataAnalysisEnginePreview-Consequence=
+s">Consequences</h2>
+<p>When changing the DAD, the data input screen, and the columns it shows, =
+will need to change.&nbsp;</p>
+<p><br></p>
+<h2 id=3D"id-8.5.1PreliminaryResearch:DataAnalysisEnginePreview-Questionsto=
+team">Questions to team</h2>
+<ul style=3D"list-style-type: square;">
+<li>We need to think about the development process used when creating DAD's=
+. How do we allow users to explore the data that is available for use in a =
+DAD? Options:
+<ul style=3D"list-style-type: square;">
+<li>Expand RASQL (select, count, ...) and provide some easy way to handle m=
+ultiple DAD's:<br>
+<ul style=3D"list-style-type: square;">
+<li>Script-like edititing (see SSMS)&nbsp;+ provide data display window</li=
+>
+<li>Tabs in editor + provide data display window</li>
+<li>Use browser tabs + provide data display window</li>
+<li>Tensorflow editor-like which provides inline output using script blocks=
+</li>
+</ul></li>
+<li>Generate dashboards from the Asset detail page (link next to each prope=
+rty).&nbsp;</li>
+</ul></li>
+<li>Do we add a pane containing current state for variables (GETVARIABLE) t=
+o the simulator? This is covered by adding a log output pane to DAD edit.&n=
+bsp;</li>
+<li>Do we make this entire thing a side-pane, so the user can still edit th=
+e DAD when doing simulations? Yes.&nbsp;</li>
+<li>Do we make the entered data persistent, so the user does not have to re=
+enter it upon subsequent simulations? Note that this may not be easy if the=
+ DAD changes even a little. Use localstorage to make input data persistent.=
+ Check browser support. Import &amp; export of input data to e.g. Excel is =
+not supported.&nbsp;</li>
+<li>Do we already provide functionality to load data from the database into=
+ the top data pane? Maybe make it future functionality? We provide this fun=
+ctionality from the start. It is triggered by a "load data" button.&nbsp;</=
+li>
+</ul>
+<h2 id=3D"id-8.5.1PreliminaryResearch:DataAnalysisEnginePreview-NextSteps">=
+Next Steps</h2>
+<ol>
+<li>Create new task for data exploration.</li>
+<li>Create mockups of preview functionality to show to SL.&nbsp;</li>
+</ol>
+    </div>
+</body>
+</html>
+------=_Part_82_1009113320.1704260193020--

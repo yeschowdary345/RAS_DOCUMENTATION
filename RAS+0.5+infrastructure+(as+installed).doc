@@ -1,0 +1,295 @@
+Date: Wed, 3 Jan 2024 04:16:00 +0000 (UTC)
+Message-ID: <1998578230.41.1704255360813@d806889b90f2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_40_1911204250.1704255360813"
+
+------=_Part_40_1911204250.1704255360813
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>RAS 0.5 infrastructure (as installed)</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>RAS 0.5 infrastructure (as installed)</h1>
+    <div class=3D"Section1">
+        <p>Note: there is currently no separation between back-end and fron=
+t-end! Security?</p>
+<h1 id=3D"RAS0.5infrastructure(asinstalled)-Servers">Servers</h1>
+<ul style=3D"list-style-type: square;">
+<li>SQL server
+<ul style=3D"list-style-type: square;">
+<li>located in CH</li>
+<li><p>IP : 192.168.1.20</p></li>
+<li><p>DNS Name : <a class=3D"external-link" href=3D"http://DOHA.lsanet.com=
+" rel=3D"nofollow">DOHA.lsanet.com</a></p></li>
+<li><p>Instance SQL : DOHA\ras</p></li>
+<li><p>User: same as your domain user</p></li>
+<li>[=E2=80=8E20/=E2=80=8E06/=E2=80=8E2017 17:02]&nbsp; FRAGNIERE Emmanuel:=
+ <em>'It=E2=80=99s an instance dedicated to you. Please do not turn off the=
+ sql service or other application will be impacted.'</em></li>
+<li>Server is not dedicated!
+<ul style=3D"list-style-type: square;">
+<li>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>From: FRAGNIERE Emmanuel <br>Sent: dinsdag 27=
+ juni 2017 15:45<br>To: DIJCK Bob &lt;Bob.Dijck@<a class=3D"external-link" =
+href=3D"http://leclanche.com" rel=3D"nofollow">leclanche.com</a>&gt;<br>Sub=
+ject: RE: SQL Server Credential</p><p>Both,</p><p>Other Database with other=
+ application.</p><p>SharePoint, In the future we will have Navision Databas=
+e inside.</p><p>Best Regards,</p><p>Emmanuel</p><p>From: DIJCK Bob <br>Sent=
+: mardi 27 juin 2017 14:05<br>To: FRAGNIERE Emmanuel &lt;emmanuel.fragniere=
+@<a class=3D"external-link" href=3D"http://leclanche.com" rel=3D"nofollow">=
+leclanche.com</a>&gt;<br>Cc: VANDERFLAAS Ives &lt;Ives.V<a class=3D"externa=
+l-link" href=3D"mailto:ANDERFLAAS@leclanche.com" rel=3D"nofollow">ANDERFLAA=
+S@leclanche.com</a>&gt;<br>Subject: RE: SQL Server Credential</p><p>Hello E=
+mmanuel,</p><p>I have one more question about what you mentioned below.<br>=
+You mention: =E2=80=98It=E2=80=99s an instance dedicated to you. Please do =
+not turn off the sql service or other application will be impacted.=E2=80=
+=99<br>Do you mean that the SQL server also hosts other databases? And/or t=
+hat the VM is also used for other applications?</p><p>Best regards,<br>Bob<=
+/p></td>
+</tr>
+</tbody>
+</table>
+</div></li>
+</ul></li>
+</ul></li>
+<li>IIS server (single server for front-end &amp; back-end)
+<ul style=3D"list-style-type: square;">
+<li><p>hostname: Astana</p></li>
+<li><p>IP : 192.168.1.22</p></li>
+<li><p>[=E2=80=8E23/=E2=80=8E06/=E2=80=8E2017 11:01]&nbsp; FRAGNIERE Emmanu=
+el:&nbsp;<em>'Astana will be used only by you. but we will update all serve=
+r. it's mean 2 time per month a restard will be done'</em></p></li>
+</ul></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_40_1911204250.1704255360813--

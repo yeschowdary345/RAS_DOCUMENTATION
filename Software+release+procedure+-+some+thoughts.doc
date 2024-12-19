@@ -1,0 +1,514 @@
+Date: Wed, 3 Jan 2024 04:20:15 +0000 (UTC)
+Message-ID: <1206765668.25.1704255615540@0564475b91b8>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_24_775895349.1704255615540"
+
+------=_Part_24_775895349.1704255615540
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Software release procedure - some thoughts</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Software release procedure - some thoughts</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"Softwarereleaseprocedure-somethoughts-Introduction">Intro=
+duction</h2>
+<p>RAS is not static software. RAS will be subject to change: there are sev=
+eral reasons why updating RAS might be required:</p>
+<ul style=3D"list-style-type: square;">
+<li>new functionality</li>
+<li>updated functionality</li>
+<li>fixes</li>
+<li>...</li>
+</ul>
+<p>When there are real customers (business users) that rely on RAS for thei=
+r business, we should be very careful that we do not break the production e=
+nvironment. New/updated functionality should work/continue to work as desig=
+ned and the reported bugs should be fixed without introducing new ones.</p>
+<p>We need some formal procedure to minimize the risk of breaking the produ=
+ction environment.</p>
+<p>Such a procedure does not exist in isolation.&nbsp;A software release pr=
+ocedure touches several other aspects of software:</p>
+<ul style=3D"list-style-type: square;">
+<li>documentation
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">testing</li>
+</ul></li>
+<li>testing expertise</li>
+<li>QOS</li>
+<li>development model</li>
+<li>release model</li>
+<li>branching strategy</li>
+<li>roll-out strategy of new functionality</li>
+<li>support organization</li>
+<li>...</li>
+</ul>
+<p>For RAS, a lot of these areas still have a blank canvas, though they hav=
+e a great impact on the software release procedure. Therefore, this documen=
+t is a first step in creating the release procedure without talking too muc=
+h about all the possibly affected areas. It is expected that, as the organi=
+zation grows and the number of users increases, this procedure too will gro=
+w accordingly.</p>
+<h2 id=3D"Softwarereleaseprocedure-somethoughts-Stages">Stages&nbsp;</h2>
+<p>Ideally, the following environments are involved in software delivery (f=
+rom left to right):</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">DEV</th>
+<th class=3D"confluenceTh">QA</th>
+<th class=3D"confluenceTh">UAT</th>
+<th class=3D"confluenceTh">PROD</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">SW development</td>
+<td class=3D"confluenceTd">QA team</td>
+<td class=3D"confluenceTd">test by business users or customers (or their re=
+presentatives)</td>
+<td class=3D"confluenceTd">actual live environment</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>As a software release is delivered it goes from DEV to QA to UAT to PROD=
+.</p>
+<p>Applied to current RAS environment nomenclature:</p>
+<ul style=3D"list-style-type: square;">
+<li>DEV is 'master'</li>
+<li>there is no separate QA and UAT; there is 'demo' but this is not really=
+ the same as QA + UAT</li>
+<li>PROD is 'production'</li>
+<li>note that the production environment is the only one that is publicly a=
+ccessible
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">so access to demo is restricted to the Le=
+clanch=C3=A9 network;&nbsp;if this needs to change, than we need an extra e=
+nvironment</li>
+</ul></li>
+</ul>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">master</th>
+<th class=3D"confluenceTh">demo</th>
+<th class=3D"confluenceTh">production</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">SW development</td>
+<td class=3D"confluenceTd"><p>internal test</p><p>external test</p><p>demo<=
+/p></td>
+<td class=3D"confluenceTd">live</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"Softwarereleaseprocedure-somethoughts-Stagesandtransitions">Stage=
+s and transitions</h2>
+<p>General comment:</p>
+<ul style=3D"list-style-type: square;">
+<li>some form of automated testing is installed in all environments (CI)
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">smoke tests</li>
+<li style=3D"margin-left: 0.0px;">unit tests</li>
+<li style=3D"margin-left: 0.0px;">integration tests</li>
+<li style=3D"margin-left: 0.0px;">see&nbsp;<a href=3D"/wiki/spaces/RASNEX/p=
+ages/83755277/Continuous+Integration" data-linked-resource-id=3D"83755277" =
+data-linked-resource-version=3D"1" data-linked-resource-type=3D"page">Conti=
+nuous Integration</a></li>
+</ul></li>
+</ul>
+<h3 id=3D"Softwarereleaseprocedure-somethoughts-Frommastertodemo">From mast=
+er to demo</h3>
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">by merging code from master branch, the d=
+emo environment is updated</li>
+<li style=3D"margin-left: 0.0px;">updated when a piece of development is re=
+ady for testing
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">new/updated functionality</li>
+<li style=3D"margin-left: 0.0px;">bugfix</li>
+</ul></li>
+</ul>
+<h3 id=3D"Softwarereleaseprocedure-somethoughts-Ondemo">On demo</h3>
+<ul>
+<li>internal and external testing
+<ul>
+<li style=3D"margin-left: 0.0px;">external testing is optional, internal te=
+sting is not</li>
+</ul></li>
+<li>internal testing must be twofold
+<ul>
+<li style=3D"margin-left: 0.0px;">specific testing: specific functionality,=
+ bugfix</li>
+<li style=3D"margin-left: 0.0px;">general testing: regression</li>
+</ul></li>
+<li style=3D"margin-left: 0.0px;">internal testing should use test plan
+<ul>
+<li style=3D"margin-left: 0.0px;">list of tests (description of steps, expe=
+cted results, etc.)</li>
+<li style=3D"margin-left: 0.0px;">execution of tests should be documented (=
+trace)</li>
+<li style=3D"margin-left: 0.0px;">failing tests should be logged into ticke=
+ting system (Jira?)</li>
+</ul></li>
+<li style=3D"margin-left: 0.0px;">external testing
+<ul>
+<li style=3D"margin-left: 0.0px;">up to customer or its representative</li>
+</ul></li>
+</ul>
+<h3 id=3D"Softwarereleaseprocedure-somethoughts-Fromdemotoproduction">From =
+demo to production</h3>
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">this is the environment we should be most=
+ careful with</li>
+<li>usually triggered by merging code from demo branch
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">build should not be automatically trigger=
+ed by commit, but by manually pushing a button</li>
+<li>only in exceptional circumstances should code be merged from another-th=
+an-demo branch (hotfix branch meant to restore broken functionality)
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">this is very risky and very, very difficu=
+lt to test</li>
+</ul></li>
+</ul></li>
+<li>transition requirement:
+<ul>
+<li>sign-off required by QA (ideally by software tester)</li>
+<li>sign-off required by UAT (business user/tester)</li>
+</ul></li>
+<li>we should have a trace of what has been updated, of what is included in=
+ a specific production release
+<ul>
+<li>not just git log</li>
+<li>a clear overview of what is included in the release</li>
+</ul></li>
+<li style=3D"margin-left: 0.0px;">build number (or commit tag) should be vi=
+sible on UI
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">on all environments</li>
+<li style=3D"margin-left: 0.0px;">ideally, the different environment are di=
+stinguishable by their visual appearance</li>
+</ul></li>
+<li style=3D"margin-left: 0.0px;">sign-off must be done formally
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">e-mail, including approval, including bui=
+ld number</li>
+</ul></li>
+</ul>
+<h2 id=3D"Softwarereleaseprocedure-somethoughts-Staffingimpact">Staffing im=
+pact</h2>
+<p>It is clear that we need <em>way</em> more resources if we want to do al=
+l this...&nbsp;<img class=3D"emoticon emoticon-wink" data-emoji-id=3D"1f609=
+" data-emoji-shortname=3D":wink:" data-emoji-fallback=3D"=F0=9F=98=89" src=
+=3D"e934da6a7d9750c5e5070dcd9783cf29" width=3D"16" height=3D"16" data-emoti=
+con-name=3D"wink" alt=3D"(wink)"></p>
+<h2 id=3D"Softwarereleaseprocedure-somethoughts-Conclusions">Conclusions</h=
+2>
+<p>It is not feasible to define a fully comprehensive software release proc=
+edure for RAS at this time, as explained above.</p>
+<p>But, by analyzing the requirements and context of such a release procedu=
+re, we have already identified some actions that we need to take at this po=
+int in time:</p>
+<ul style=3D"list-style-type: square;">
+<li><strong>test documentation should be created</strong>
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">specific: to cover the specific functiona=
+lity or bugfix in the software that is released</li>
+<li style=3D"margin-left: 0.0px;">general: to cover regression</li>
+<li style=3D"margin-left: 0.0px;">the test plan for the first production re=
+lease can serve as a starting point for the regression tests of future rele=
+ases</li>
+<li style=3D"margin-left: 0.0px;">test plan properties
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">list of tests (description of steps, expe=
+cted results, etc.)</li>
+<li style=3D"margin-left: 0.0px;">execution of tests should be documented (=
+trace)</li>
+<li style=3D"margin-left: 0.0px;">failing tests should be logged into ticke=
+ting system</li>
+</ul></li>
+</ul></li>
+<li>once customers start using RAS, <strong>formal signoff</strong> is requ=
+ired to update production
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">from internal testers (or someone able to=
+ take on that role)</li>
+<li style=3D"margin-left: 0.0px;">from external business users&nbsp;(or som=
+eone able to take on that role)</li>
+</ul></li>
+<li><strong>no automatic build &amp; deployment on production anymore</stro=
+ng>
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">manually triggered instead of source code=
+ check-in</li>
+</ul></li>
+</ul>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_24_775895349.1704255615540
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/e934da6a7d9750c5e5070dcd9783cf29
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAKfwAACn8AG1cEgF
+AAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpu
+czptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9
+Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRm
+OkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8v
+bnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3Rp
+ZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+Cjwv
+eDp4bXBtZXRhPgpMwidZAAAC1klEQVQ4EV1TS08TURT+zp1HHyAPaYgNLmpCYnSFGjExrqRhZUF/
+AC7YVP0BRne4IS5Y6EKRGI2JK+PGR4wJARYGQ8BQ0OjCUGMMQgkRaK2lnencez130IjM887M+b7z
+nW/OIfCm9ZAgGlLhevF8N5QcBKiHP6SgQRD0la9TIPGAup7N7cbQX7DmQJnLjFqulUXcBip1wA85
+AUcAMQuoSSDAGI49v0zE9CbxDhtIL/SNU3s0rdeq6sdWVbY2RS3bJqGZg4MNk1RKWyIRFSj5E+h6
+0WtImBpQnNmAP02veiP3c/T09RdnuxYIg+QDXIKARY6I24Si76HJSWOhf9RgyX93rttpdGffvllW
+UzPf6MpAF7UlYkDdpGbVnsSTV3mUKx5SB1uQPt2hozFHQ/Cu6ZRwLGsQDqEh7sir2ZPU2uRia6Nm
+srK7gG0JZHpSuHjhCPY3RzB8d45KJTajgX1is0nn+pZYXidrVQiUuPP4Az4vFXDz2lnEYxzEBKVi
+DbPv13G0s5WdYz8jtkok40J7Ki+g9KFQri9FrRZgKV9AbsJD8acHuBY2N6u4/WgBuY9rGBmbQaVa
+R+JAXKjtgCvUKdLzmTpLtQ0zsUcT09+xXChjoP8wbFvgV8U3lWAfy5fsR6nsh6UYA5kh+FdCXZlf
+FToPJgrtD/iVxWvjhzFVMZV5lvxzHSH4nuciaZKbpBN1LbkzBHG/rKyU2fU6ku3x0MjV9W00Nbro
+SDZAMymRkIxheXLSZvaH3GFZjrRMY/BO0YiN68NTWF8JhaK9A7h1ozd8CGM4NuxKxrIehuYy99AS
+yWLT85jBJduijY0qpucLIejMiSTa2mKcXWpuLTYhEkHRG6PjLy/tEJiBWewbR7ObZhLFhkqyhRU2
+i6FQXH2gJGe3GPx/K+8MEwvn3jascIWgZscxYO1LmNOsw3f8LYz5Mwe7hmlozzhrHmf9/zgbs03N
+e8b5N97yXqEQUVj4AAAAAElFTkSuQmCC
+------=_Part_24_775895349.1704255615540--

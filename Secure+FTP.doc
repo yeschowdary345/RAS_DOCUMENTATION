@@ -1,0 +1,532 @@
+Date: Wed, 3 Jan 2024 04:41:59 +0000 (UTC)
+Message-ID: <1733611539.33.1704256919201@01146b9ad81d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_32_435487977.1704256919201"
+
+------=_Part_32_435487977.1704256919201
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Secure FTP</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Secure FTP</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"SecureFTP-Overview">Overview</h1>
+<p>File Transfer Protocol (FTP) is a standard network protocol used to tran=
+sfer files between computers over the Internet. FTP is built on client-serv=
+er architecture and was developed by Abhay Bhushan in 1971. The protocol is=
+ still commonly used today, but FTP security is a major concern that can li=
+mit its usage when not addressed.</p>
+<p>FTP was not built to be secure. It is generally considered to be an inse=
+cure protocol because it relies on clear-text usernames and passwords for a=
+uthentication and does not use encryption. Data sent via FTP is vulnerable =
+to sniffing, spoofing, and brute force attacks, among other basic attack me=
+thods.</p>
+<p></p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-=
+manual-size"><img class=3D"confluence-embedded-image confluence-external-re=
+source" height=3D"201" width=3D"461" src=3D"632a0046944d5a48790f793d123c835=
+a" data-image-src=3D"/wiki/download/attachments/116359750/FTP.drawio.png?ap=
+i=3Dv2" loading=3D"lazy"></span>
+<h1 id=3D"SecureFTP-Solution">Solution</h1>
+<p>There are several common approaches to addressing these challenges and s=
+ecuring FTP usage. FTPS is an extension of FTP that can encrypt connections=
+ at the client=E2=80=99s request. Transport Layer Security (TLS), Secure So=
+cket Layer (SSL), and SSH File Transfer Protocol (also known as Secure File=
+ Transfer Protocol or SFTP) are often used as more secure alternatives to F=
+TP because they use encrypted connections.</p>
+<h2 id=3D"SecureFTP-ProsandCons">Pros and Cons</h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 130.0px;">
+<col style=3D"width: 126.0px;">
+<col style=3D"width: 126.0px;">
+<col style=3D"width: 126.0px;">
+<col style=3D"width: 126.0px;">
+<col style=3D"width: 126.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td colspan=3D"2" class=3D"confluenceTd"><p>Explicit FTPS Mode</p></td>
+<td colspan=3D"2" class=3D"confluenceTd"><p>Implicit FTPS Mode</p></td>
+<td colspan=3D"2" class=3D"confluenceTd"><p>SFTP</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Pros&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Cons</p></td>
+<td class=3D"confluenceTd"><p>Pros</p></td>
+<td class=3D"confluenceTd"><p>Cons</p></td>
+<td class=3D"confluenceTd"><p>Pros</p></td>
+<td class=3D"confluenceTd"><p>Cons</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Explicit FTPS is the newer method of FTPS tra=
+nsfer and has generally overtaken implicit FTPS use</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>When an implicit FTPS connection is started, =
+an SSL connection is instantaneously established over the default port of 9=
+90 prior to being granted access to the FTP server.</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;it has now been deprecated. Some legacy=
+ systems may still make use of it, hence it still being around.</p></td>
+<td class=3D"confluenceTd"><p>Single data connection makes it easy to use b=
+ehind a firewall</p></td>
+<td class=3D"confluenceTd"><p>No built-in support in .NET framework</p></td=
+>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>prior to the connection prompting for a login=
+, the unencrypted connection is upgraded to a secure SSL connection over po=
+rt 21.</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>the entire FTP session is encrypted, in contr=
+ast to flexibility you have when using explicit FTPS</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Can perform file system operations, such as f=
+ile lock, permission and attribute manipulation, and symbolic link creation=
+</p></td>
+<td class=3D"confluenceTd"><p>Validation and management of SSH keys are mor=
+e complex.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>It uses standard FTP ports meaning that there=
+ is no need to open addition ports in firewalls when upgrading from FTP to =
+FTPS.</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>SFTP is supported by Linux and UNIX servers b=
+y default</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"SecureFTP-Conclusion:">Conclusion:</h2>
+<p>In our project we are going to implement Explicit FTPS because of it=E2=
+=80=99s huge advantage, Hence Implicit FTPS is outdated. Furter in future i=
+t is better to implement with SFTP due to it=E2=80=99s high security and lo=
+ts of features. </p>
+    </div>
+</body>
+</html>
+------=_Part_32_435487977.1704256919201
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/632a0046944d5a48790f793d123c835a
+
+iVBORw0KGgoAAAANSUhEUgAAAc0AAADJCAYAAABBo2m/AAAgAElEQVR4Xu2deZxU5Znvf90UEFoB
+gUYJjAjoRYIoS0ADCFeJikTvzCgISQBHxyRI4HaL0BkExJZtnBCC9AWRJIwawAwIcTJXg1uMF9mM
+pAFFolwFxIGA7IuNQNE9n6c8b8/pQy3vqXPqbPU7/4hV7/p93n5+9bzbKQBQAz5RJ1AQ9Q6yfyQQ
+EAL0pwExRK6aIc60pqaGds4VYL/LLShI6CVF029DsP58IUB/GmFLiz+laEbYwAm1pGhG3MLsXsAI
+UDQDZhA3m0PRdJNmQMuiaAbUMGxWVAlQNKNqWSMIYaQZYQMz0oy4cdm9IBKgaAbRKi61iZGmSyCD
+XAwjzSBbh22LIAGKZgSNqrpE0Yywcc1G5kagtIYeDmBpkhQ3AjgEoBzAWAA/BrATwDLNYdMXwNoU
+aaXsdZrlZJPsagDLAXQFkOu6smlflPNQNCNsXYpmhI1L0dQ2rohmPwDjAJxOk+tRm6JpLkryyjNd
+u1XOEopgD/CwPmetjVZuima07FmnNxTNCBuXoqlt3HSiKRFbskizEYC5AEYZtWSK5qyiKeVWGHnl
+vJe0oZMlMlVligBKpCvPdwFsBTAMwEcAzBGl+rzYVM4i48dAjySfyQ8Eadc1RnkjbETR2nDzMCFF
+M8JGp2hG2LgUTW3jZiOaZhEUUVtgErJkFScTTZk+HWNM0yoRLTHE0NwmJXgiopWGWO8F8DPj30uM
+MszRpfx7pCGYbQ2BlrL3mPJL1CvtaqMRZWvDZEKee4/yGKBoRtm6Rt+4ESijkZOtaaqoK1mk+YoR
+kYnoyLqkijqVeOmKpkSaSiStecyiJ6Ip4ibtPGz8t0MS0TSXYc5/t2X62fzdBCOTV9PGGY0RgQSM
+NCNgxFRdoGhG2LiMNLWNazfSVKI50FJDuunNZJGmmvYVIZRH0kwzlWmeWlVRo0ypSntFNEXoWhgC
+Lm151SSsVtG0bnRSae1ubtKGmscJKZoRNj5FM8LGpWhqGzcb0ZxvrHXKuqLOk0k0ReTM0aQ10kwl
+mqmiS4lOVR6JNJXIWtvqZHOTTr/zMQ1FM8JWp2hG2LgUTW3j2hVNOXJiFkG1GUetTyar2I5oVhnr
+jlKO7Og1C6A50nwKgFm8ddY0ReTN65gyPWvnGI021DxOSNGMsPEpmhE2bo5E804AL0UMWzaiad09
+m2nnaSbRNJcnu2AfM3bKyq5Z2VWbKtI0nwVNNT0rQpsqHSPNrwazm+OaohkxB2HuDkUzwsbNgWg+
+BGAWgBeNtbM8oMcu5gGB5wH8PYBJAJ50ob8UTRcgBrUIimZQLeNiu1zaPSvTgD0BvGvs4JRNLHxI
+IAoEZCzLhqpeADaZzsRm2zeKZrbkQpCPohkCIzltokPRbAXgOQAHAfyDaS2PounUMMwfFAJqLMtu
+ZBnrLY2xvj/LBlI0swQXhmwUzTBYyWEbHYimHKYXJ/JrAI8bzVAOhqLp0C7MHhgC1jEt/y9ryPIj
+MdXdwekaT9EMjGndbwhF032mgSsxS9G8D8CvDMdhvqCcohk4C7NBDgkkG9OyOUx+MP4AwLM2y6do
+2gQWpuQUzTBZK8u2ZiGaMwEMNgTzHUu1FM0s7cBsgSWQakzfYAjnKgCTbbSeomkDVtiSUjTDZrEs
+2mtDNL9mOIkiQzCPJKlOjkLIo6Zrs2gRs5BAoAik+yHY3Fie+ML4m/hSo+UUTQ1IYU1C0Qyr5Wy0
+W1M0uxjO4f8ZB+pT1UDRtMGeSUNBQGf2RN5o098Qzm0ZekXRDIXZs2skRTM7bqHKpSGadxkR5iPG
+2zrS9Y+iGSrrs7EaBHREU4qRG5/+2RBOOauc6qFoakAPaxKKZlgtZ6PdGUSzDMB4APcCeE2jWF0H
+o1EUk5BAIAjYGdO3GTMycwDMTtF6imYgzJqbRlA0c8M1UKWmEc1fAPiG8ctZ7h/VecTBqGhTJz3T
+kEAYCMgave4xKrn8XnbWbje9hNzcR4pmGCyeZRsDIZofffQRhg0bhq1b5crN/36mTfvqLUlTp069
+oHsDBw7EsmXL8NRTT13wvfquRQu55OPCR/KNGCFXhX71rF27Fn379sXp06cxbtw4jBw5EsXFxSgv
+L8f8+fORqpx0zA8fPoyxY8cmyrj6arnP278niWhebvzRfwrgfv9axppJINQEngFwhfGj8zNTT3wR
+zenTp1/gC7t27YrnnnsOCxcuxKJF8qa5us+oUaPw6KOP4oEHHsCrr8rVxXX9r3yX7LHWpXxoqK2p
+2fjAiGZJSQkqKipSCoyI0PDhwxMGFoFTjxhPHrNxRRR37txZ5zOVXr5bsmRJQnBFDM3l9ujRo1Y0
+zXVosqyTLMCiebMxvbTQuEc2m+4xDwmQwFcE5L7aBw3h/KMBxTfRtPpCq5EkQLH62mS+1RxAWH2h
++Ny9e/di7ty5aNSoEVTQs2DBgjq+OaoDJJKiuW7duoQwKqMq46USXpV+1qxZmDRpUtJIU9LceKNc
+kAPIrzMpWx6JTNu0aVP7C0+i4wkTJiQ+l1928ktv+fLlvkabpkjzRwDmGX/gK6I6qNkvEvCYwFBj
+5qYEwC8BhF40hZ+IY4cOHRLBinqUmPbr16/O5+bgRaVRka2KQpVgS1nik7p3744uXbrUlmMOdsyz
+j+aZQ/HD4mMPHDiAb33rWxf4eC/sHknRTBZ9CkwBLt+pKNMKONX07KFDh2p/nbVt27ZWKJU4Sjki
+opWVlRgzZkxCJGV6N2DTs7JpYZAhmJVeDC7WQQJ5REDeeSrrnKsBlNXU1Hje9VR+z9wQ3UgzVYAh
+ZanlLRGvZNO35naIz1U+UfLKMpyKSM3BjQpAZGmsU6dOdWYVzZGt2cf6tewVGNG0rmmqaE7Cf3nS
+Tc9a1zytedWgSRWBWn9FWdc0X3nlFbz99tu1v2qskan61WWekg2gaO4z3uIg/+VDAiTgPoHWxluA
+WvslmlZfaF1rTCea1jXNpUuX1okmzbiUP1Z5lIBa/bQ1EDFPDZvbImWrPSQffvhhneBG0qX6zn0T
+Zi4xMKLp5ppmqm5nG2mKaJo3Dkn5MmWwePHihHFFZGXeP+CiyUgz898DU5BAtgQiFWnagWCesr39
+9tsTQptMgHv27Flnc6VZUHfv3l27D8W8FKbaoZa5ZNYv2dKbnfY6TZtXopkqWpVfMiKAEydOTLqm
+KaKZbGORdbE84KJZAOCHACq4pun0z4b5SaAOAbWmWQpAjnFFYk0zmY3Fx02ePBkzZ86sc6pArUf+
++Mc/TrksZY4Y1YkElU/qGjBgQCL4SDcjmGm20ItxmVeiKUBT7Z6VaPHuu+9OeuTEvKYp8+hqjt28
+cSgEkaaIpjyye1bWXp7m7lkv/sRYR8QJyO7Z0cblIJHZPZvOZta1UxWMiA+VKNP8vXlnbbJjfOr7
+Vq1aJT3RIH7V7LNl6paRJpDYsuzF9KwaCNZzmmruPt05TfOUgdrNVVRUVOeIijnSVBuGNm7cGKTd
+swoBz2lG3JOze54QCNw5Tel1qrOV8p3uRqBM9KznNM3rn9bds+q7ZJGmSisnEMztNu+eNZ9AYKSZ
+yTL83hUCaW4EktPOnXkjkCuYWUi4CWRzI9BfAMgxLuvjy/RsuPGHp/WBmJ4ND65wtpR3z4bTbmy1
+ZwR496xnqMNfEUUz/DbM2AOX33Jix8FkbBsTkEAACOiOab7lJADG8rsJFE2/LeBB/RqiKa2Q92nK
+BqE1Gd6nqetgPOgZqyABVwjojGm5Aux/Ght++D5NV7CHsxCKZjjtZqvVmqIpZX7NEM6LDOdwJElF
+Og7GVvuYmAR8JpBuTDc3/iaqjLX/LzXayjVNDUhhTULRDKvlbLTbhmiqUmcCGGw4iXcsVVE0bbBn
+0lAQSDWmbzAEcxWAyTZ6QtG0AStsSSmaYbNYFu3NQjSllvsA/MoQzmWmaimaWdiAWQJNINmYllvK
+ZbniBwCetdl6iqZNYGFKTtEMk7WybGuWoim1yWtdxHEsMb2gV72AWrbo8yGBKBCwiqaM8XuNH4xr
+s+ggRTMLaGHJQtEMi6UctNOBaEqtrQzhPGg4EfVWWt233DtoObOSgCcE1FiWl/PKj8SWxljfn2Xt
+FM0swYUhG0UzDFZy2EaHoqlqnw+gp/EWh0MAGGk6tAuzB4aAiGYL4y1AmwCMddgyiqZDgEHOTtEM
+snVcaptLoimteci4r/ZFAP/9ZlqX2sliSMAnArJmfxcAuUf2SRfaQNF0AWJQi6BoBtUyLrbLRdGU
+Vt0J4CUXm8eiSCAIBNwc1xTNIFg0R22gaOYIbJCKdVk0g9Q1toUEgkiAohlEq7jUJoqmSyCDXAxF
+M8jWYdsiSICiGUGjqi5RNCNsXLORAaj3aeZBj9lFEvCVAEXTV/y5rZyimVu+gSidkaa+GV4Z8vc1
++qmjkfL2lf/OH1TumpKi6S7PQJVG0QyUOXLTGIqmPlcRzZsmTdHPEPKUb82aAYqm60akaLqONDgF
+UjSDY4uctYSiqY+WoqnPiilTEqBoRnhwUDQjbFyuado3LkXTPjPmuIAARTPCg4KiGWHjUjTtG5ei
+aZ8Zc1A082kMUDTzwNqcntU3MkVTnxVTcno2H8cARTMPrE7R1DdyOtE8cvw4HnriXzBl1Ch0bHeF
+fqEBTsmNQDkxDqdnc4I1GIVSNINhh5y2gqKpj5eiqc+KKRlp5uMYoGjmgdUpmvpG1hXNy7/eCmU/
+m4PWl16KaQufTlQwdfSDmPRDeWcxMOuXv0r6+Y7dn2LExEfw3o4duLV3bzw3awaaN22ayGP+7geD
+78bsCeOx5S8fYtnLLyf+3ahhQ/zm96uxa+9ejLt3ZKL+4ydP4YXXXsMf/3Uxun2jU+KzX636baI8
++ax3t65pO89IU39s2EjJSNMGrLAlpWiGzWJZtJeiqQ/NrmhKyUrcSp/4Fyx94p9x+NixWqGT76c/
+vQj3/d3fobjZJfiHSVMSwipiJsK67/PPE/lPf/llnalf+a59mzZo17p1WtEU0TYLtdQn/79hy1ao
+9qSbSqZo6o8NGykpmjZghS1prWiGreFsr20CvPVFA5ld0ezbvTu+951BMK93mkVTokP1iJCJGKro
+UiLLGYsW4cmJ/4SPdu2uI47mPOkiTXP9ZkE+feZMIuocfscdaaNNiqbGoLCfJO9ulbKPKNw58s2Z
+/tR4F6S8Q+8n4TYdW+82AbuiqUTJuklIplHvn/JoonnPzJieEFYRzZv/8YE6Tb6uY8dEdPrn7dux
+bvPm2mlYXdE01y+i+fqGDXXKV3Wn4kTRdHsE5V15eelP80k0fwigBMBAAK8C+D8AfpF3w5wdTknA
+LdFUFZgjPvnMHDWaGyGCmuw76+cSqcqj1jRTibauiSmauqSYLgmBvPWn+SKaNwP4PYC+ACoB9ACw
+DsB3ZM8E/yRIQAi4IZoSNcpmHVlbFNFMtaYp0ejzL/8+MV176OgxPDx7Nn5eVpY4zqLE8eZevWrX
+JtWaqKyHWkVT2q7ySL1qU9G8if/E6VkO7VwQyGt/mg+iebkhkBMArDCNoKEA5gDoA+CzXIwslhku
+Am6IptpZq3axmqdIzTtk1dSs2qhjnr5Vu2dlTVTtxJXdtrf26Y1TVVVJRVNFtcnq5fRsuMZhwFub
+9/40H0TzTQBvyI/xJINxEoBbAAwI+EBl8zwgwBuBPIDMKsJOIO/9adRFcxGABgDuTzNSnwFwDsCP
+wj6a2X5nBCiazvgxd+QJ0J8CiLJolgH4WwD9NIby2wD+Q47daaRlkogSoGhG1LDslhsE6E8NilEV
+zbsALDTWK3dqjJgOANYDGA3gRY30TBJBAhTNCBqVXXKDAP2piWIURbOLIYBDALxmY8TcBmClIbTb
+bORj0ogQoGhGxJDshpsE6E8tNKMmml8zdsr+K4AFWYycMQDkBLrsqP0yi/zMEmICIpohbn5WTb99
+5b9HzQdkxYGZkhKgP02CJWp/MMsB7JPz3w7+COYCaA1gmIMymJUESIAEwk6A/jTiojkTgLzW4U4X
+Rur/BfAegMkulMUiSIAESCBsBOhPU1gsKpHmfQAmGtOqR1wYnc2NddEnADzrQnksggRIgATCQoD+
+NI2loiCaNwJ4y7gi7x0XR+UNxvroTQDWulguiyIBEiCBoBKgP81gmbCLZitD2KbKfdg5GIXDAUwz
+BHl/DspnkSRAAiQQFAL0pxqWCLtoyttK5H1I5Rp9zTbJY8a0r7wdhQ8JkAAJRJUA/amGZcMsmvMB
+XAJghEY/nSZZCuAYgLFOC2J+EiABEgggAfpTTaOEVTQfAvBdY9r0vGZfnSSrZ0wD/xuAJ50UxLwk
+QAIkEDAC9Kc2DBJG0ZQjJfKKr8UADqfpqxxUl/7pTN2mS6PKaWFcfCCvFHvJBmMmJQESIIGgEqA/
+tWmZMIqmdFE2/ewwRFGJWrKuy3qkTh+ljMcBmG+ESZbvfwCQzUF8SIAESCAqBOhPbVhSR1BsFBe4
+pOkE1dxY3XSB6yAbRAIkQAIeEdD1k7rpPGq2u9VQNL/iGWkjuztkWBoJkECeEtD1k7rpQomRoknR
+DOXAZaNJgAQ8J6ArhrrpPO+AGxVSNCmabowjlkECJBB9ArpiqJsulMQomhTNUA5cNpoESMBzArpi
+qJvO8w64USFFk6LpxjhiGSRAAtEnoCuGuulCSYyiSdEM5cBlo0mABDwnoCuGuuk874AbFVI0KZpu
+jCOWQQIkEH0CumKomy6UxCiaFM1QDlw2mgRIwHMCumKom87zDrhRIUWTounGOGIZJEAC0SegK4a6
+6UJJjKJJ0QzlwGWjSYAEPCegK4a66TzvgBsVUjQpmm6MI5ZBAiQQfQK6YqibLpTEKJoUzVAOXDaa
+BEjAcwK6YqibzvMOuFEhRZOi6cY4YhkkQALRJ6ArhrrpQkmMoknRDOXAZaNJgAQ8J6ArhrrpPO+A
+GxVSNCmabowjlkECJBB9ArpiqJsulMQomhTNUA5cNpoESMBzArpiqJvO8w64USFFk6LpxjhiGSRA
+AtEnoCuGuulCSYyiSdEM5cBlo0mABDwnoCuGuuk874AbFYZVNJcB+P8GgHQGegyATh+ljHKNtB0B
+fN8N8CyDBEiABAJCgP7UhiF0BMVGcZ4kvRPACgCLARy21Cjipx7VNxHDTE+6NEqUWwB4AMBQAC9l
+KpDfkwAJkEAICNCf2jRSGEVTuvgQgO8C6AvgvM0+Z5O8HoB1AP4NwJPZFMA8JEACJBBQAvSnNgwT
+VtGULs4HcAmAETb6m23SpQCOARibbQHMRwIkQAIBJkB/qmmcMIumdPFVAOsBPK7Z32ySydRtbwAD
+s8nMPCRAAiQQEgL0pxqGCrtotjKmTacCkMVst5/hAKYZ08D73S6c5ZEACZBAgAjQn2oYI+yiKV28
+EcBbhrC9o9Fn3SQ3GIJ8E4C1upmYjgRIgARCTID+NIPxoiCa0sX7AEwE0AfAERcGbHNj2vcJAM+6
+UB6LIAESIIGwEKA/TWOpqIimdHEmgOsA/C8XRqYcKdkKYLILZbEIEiABEggbAfrTFBaLkmhKF5cD
+2AdgnIMROhdAawDDHJTBrCRAAiQQdgL0p0ksGDXR/JoxrSoXHyzIYsSOAfCPxvrol1nkZxYSIAES
+iAoB+tM8EE3pYhdDOIcAeM3G6L0NwEpjXXSbjXxMSgIkQAJRJUB/arFs1CJN1b27ACw0BHCnxmju
+YAjtaAAvaqRnEhIgARLIFwL0pyZLR1U0pYtlAP4WQD+Nkf02gP8AMFsjLZOQAAmQQL4RoD81LB5l
+0ZQu/gJAfQD3pxnhzwA4C2BUvv0VsL8kQAIkYIMA/anGq7Bs8Axs0jcBvAFgVpIWTgJwC4ABgW09
+G0YCJEACwSGQ9/406pGmDLXLjfXK8cYrxdTwk1d8/czYKftZcMYkW0ICJEACgSWQ9/40H0RTRt/N
+AH5vCGQlgB7GFXnfAfDHwA5PNowESIAEgkcgr/1pvoimDLsfAfjfxttK5Db/CgC/DN54ZItIgARI
+IPAE8taf5pNoyij8KQB5c4m8EeUngR+WbCAJkAAJBJdAXvrTqIim7JC9FkAnAFc1a9ascywWuyIe
+j7eMx+NNz507VxSPx+ufP38+VlNTg4KCAtSrVy8ei8XO1a9fvyoWix2PxWIH4/H4p0ePHt0O4GMA
+HwJ4H8C54I5ZtowESIAEXCdAf5oGaVhFs6XseG3atOlthYWF/Y8ePXpV+/btj3fp0qXg2muvvbh9
++/aFbdq0wWWXXYbmzZujSZMmKCoqQoMGDVBYWIjq6mqcPXsWVVVVOHHiBI4cOYIDBw5g79692LVr
+V/X7779/atu2bTW7du1q2qxZs4+rq6vXHD9+XG4Xkp1jB10foiyQBEiABPwjQH9qg32YRLMdgMHF
+xcX3njhx4hv9+/evGjRoUNPevXujV69eiMViNrqtlzQej+Pdd9/Fhg0bsHr16uNr1qwpatKkyV8O
+HTr0awCrAOzWK4mpSIAESCBQBOhPszRHGERzSMuWLR86depUz6FDh54fNmxY0aBBg7LsrvNsq1ev
+xvLly6tWrFhR7+KLL9508ODBJ407a50XzhJIgARIILcE6E8d8g2yaJY2btz4Jx07diwqLS29ZOTI
+kQ676n72JUuWYN68ecd27NhRdfLkSVkUn+d+LSyRBEiABBwToD91jPCrAoIomiMaNGgwo0+fPrEZ
+M2a06du3r0tdzV0x69atw5QpU/auX78+fvbs2SkAluauNpZMAiRAAtoE6E+1UeklDJJoXgTg6Vat
+WvVfsmRJ21tukdvtwvW88cYbGDly5J79+/evAfAggC/C1QO2lgRIICIE6E9zZMigiOZVcsXd4MGD
+G6xcufKaHPXVs2KHDBnywapVq+QSeLmqT46v8CEBEiABrwjQn+aQdBBEs3UsFntr8uTJjcrLy/8m
+h331tOjy8vL/nDlz5ul4PH4TgH2eVs7KSIAE8pUA/WmOLe+7aBYUFLw+fvz4zrNnz26d4756XnxZ
+Wdm+OXPmbK+pqbnV88pZIQmQQN4RoD/Nvcn9Fs2Hu3XrNnrz5s0ynRDJp3v37h9v2bJlIYCfR7KD
+7BQJkEBQCNCfemAJP0WzoLCw8PNNmzYVd+/e3YOu+lPF5s2b0bNnz0PV1dWXAqjxpxWslQRIIOIE
+6E89MrCfojnyuuuum7R161a5LzbST9euXT9877335CXYSyLdUXaOBEjALwL0px6R91M0l82bN++m
+kpKSyK1lWm1XUVGxr7S09C3jDSsemZbVkAAJ5BEB+lOPjO2baDZs2PCTysrKDp07d/aoq/5Vs337
+dvTo0WPnmTNnrvSvFayZBEggqgToT72zrG+iWa9evTMnT55s0KhRI+9661NNp0+fRuPGjc+eP3++
+oU9NYLUkQAIRJkB/6p1x/RLNQgDn5d2W+fLIOzwDem1hvpiA/SSBqBKgP/XQsn6JpnSx5uDBgygu
+Lvawu/5UdejQIbRsKa+sC+Rdv/5AYa0kQAJuEqA/dZNmmrJ8Fc3f/va3uOuuuzzqqn/VvPjii7j7
+7rspmv6ZgDWTQNQJ1NCfemNiX0XzjjvuwEsvveRNT32s5c4778TLL79M0fTRBqyaBCJOoIb+1BsL
++yqaN9xwA+677z48+KC8ECSaz9NPP41nn30W77zzDkUzmiZmr0ggCARq6E+9MYOvollZWYlvf/vb
+8iJneaWWNz32sBZ5SXVpaSn+8Ic/yJETiqaH7FkVCeQZgRr6U28s7qtoyu7Z9evXJwTznnvuwRNP
+POFNrz2oZeLEiXjhhRcgwtmnTx9w96wH0FkFCeQvgRr6U2+M77toSjc///xzlJWVYcOGDXjkkUdw
+//33e9P7HNTyzDPPYNasWQmhnD17Ni69VK6cBUUzB6xZJAmQQC2BhGia/akEJJMmTaI/dXmQBEI0
+VZ9effXVxFTtBx98kDD097//fXTs2NHlLrtf3I4dO/D8889DBPOaa65JTMkOHDiwTkWMNN3nzhJJ
+gAQuFE3609yOikCJpurqn/70J/zmN7+BbKGWc5yy+1RESKK3oDzyK05EXnb/yjlMOVLyve99D9df
+f33SJlI0g2I5toMEIkmgNtK09o7+1F17B1I0zV1cs2ZN4rjG66+/jl27dqFfv37o3bu3vG4L3bp1
+U5cGuEvFUppcwrBlyxZs2rQpMYX89ttvo3379rj11lsh27z79++fsX6KZkZETEACJJA9gZSiSX+a
+PdRkOQMvmuZG//Wvf8W6desSxzf+/Oc/Y+vWrWjYsCGuvvpqXHnllbjiiivQpk0btGrVKiGmzZo1
+kztfcdFFFyXS1a9fv7a4c+fO4cyZM/jiiy9w8uRJHD16FCKO+/fvx969e/Hpp5/ik08+wUcffZRI
+17VrV3zzm9+EbOvu27cvvv71r9uyBEXTFi4mJgESsEdASzTpT+1BDb1oJuvAZ599BllT3LlzJ/bs
+2ZMQPBE+mTI9duwYTpw4gaqqqoTwiVDKYrkImAioCGlRURGaNGmCSy65JDEVLIIrwtu2bVt06NAh
+saZ6+eWXOyZN0XSMkAWQAAmkJmBbNOlPsxtOoYo0s+ti3VxKNN0oy04ZFE07tJiWBEjAJgFXRNNm
+nbVBiN18TtP76U/zTjSdGivb/H4aOds2Mx8JkEBoCPgimn7R8dOfUjQ9srqfRvaoi6yGBEjAPwIU
+TY/YUzS9As33aXpEmtWQQF4SoGh6ZHaKplegKZoekWY1JJCXBCiaHpmdoukVaIqmR6RZDQnkJYGM
+onn48GEMHz48cSmL+Rk1ahTmzp2LRo0a5RSc1D927FiUl5cnjgk6efxc7qJoOrGcjbx+GtlGM5mU
+BEggnAS0RfPRRx9NnDWX5/Tp0xg3blzi0hgR1Fw+FE3ndDMa2XkVwSmBohkcW7AlJBBBAhn9qYo0
+zaIpHJYtW5Y45y6fyyMXyNx4442Jf6soVP4t4iqvOHzqqacSF8ssXbo0kW/q1KmJa06lnBYtWtQK
+8aJFixJlrF27NpFP8stnclHM8uXLE2fh1VZGGrsAAArNSURBVGcqnRLzTPbx058y0sxkHZe+99PI
+LnWBxZAACQSXQFaiaY005Qa0kpISVFRU1IqaXPYyYcKEhMDJI1O58u5OEVYRTrl32xytTp8+PXHJ
+jEo3ZsyYhEjK5THm6VlJJ4+ItQi1SqczdeunP6VoevRH4KeRPeoiqyEBEvCPgLZoWtc0p02bVhtl
+SrQod2urNU4RM3knsLzuUF4zpqZxRVxlbXL+/PmJ6FIEUG5QUwIq70iWqNEsyrfffnutaIqAynSw
+inpVOpUvE0Y//SlFM5N1XPreTyO71AUWQwIkEFwC2qKphMocVaroTkRzxIgRdXopU6+LFy9OCKMS
+tVSiKcJoFkMpSAlqMtG0CrhErjprq376U4qmR38EfhrZoy6yGhIgAf8I2BZNaaqIpESSaj3Sur6p
+umONBN2INJ3spPXTnwZKNM1z3Lkae+mmAaR+WdQ2P2rRWi6AN09T6E4jqLL8NHKuWLJcEiCBwBDI
+SjTTrWlK9KnWJ9X0bKZIU6LEbNY0RYSHDRuGBQsW1O7sTUfWT39K0TRZRke07c69UzQD41TYEBKI
+MoGsRFOAWDfhmHfPql2x8jYo2eyjI5rKR5p3z5rXNzdu3Jh096zu1Ky0maJpDOV0oqV+ichWZ/P2
+Zslq/s58UNc8P2/d5pwsUkxXv3VB3Dx45BdSsnaZ/0L9NHKUPQX7RgIkkCCQUTSjxMlPfxqKSFOd
+LxKhsob/8q5M6zZm2cXVrl27xDSBmqtXgqi2Trshmp06daqz6G2elrDeruGnkaP0x8K+kAAJJCVA
+0fRoYIRCNK2LzuZdX2qtMdM1UGqBO5NoWtc05WCuTC0kizTFRmZhtraTkaZHo5jVkAAJUDQ9GgOh
+EE0RLLM4ma9j2rRpU51zRYqbdV5dPpfzSJlEU9KpmzHMNkglmurmDJVWTQNbD+gy0vRoRLMaEshP
+AhRNj+weCtHMJtK0HtLVjTTtiqbsqM0U5UqZFE2PRjSrIYH8JEDR9MjuoRDNdGuae/bsqb32SW2R
+FnayrqlutpB1T1kLlWlWNyNN65qm9cwTp2c9GsWshgRIwHXRzOURPKfm8jMICZxoWtcU1RVP6XbP
+JrtgWAml3Dghu21Hjx6N1atX114H5cZGIBFhc7tSTc0y0nT6J8L8JEACGQjkRDRTzbxZl8Hsnlt3
+ak2KplOCIcjvp5FDgIdNJAEScEbAU9F0egTPWVf9Xe4KVKTpFGSQ81M0g2wdto0EQk/Ad9G0cwTP
+KW0//SlF06n1NPP7aWTNJjIZCZBAeAnkRDRzdQTPKWY//SlF06n1NPP7aWTNJjIZCZBAeAnkRDQF
+Ry6O4DnF7Kc/pWg6tZ5mfj+NrNlEJiMBEggvgUCIpu4RPKeY/fSnoRBNdeREvXvNevesHQOYL0bQ
+eUO4nbLTpfXTyG71geWQAAkEloDvomnnCJ5Tin7608CLpvWMpsBOdx4ykzEompkI8XsSIIEQEvBd
+NO0cwXPKl6KZhmCyt4srIZW59jfffDNxkYF627cIqjzqYne1kG2+Qk9eWWN964n1NTbqFqLrr78e
+Dz/8cCK9vOtNDvxKxKvOj+oa308j67aR6UiABEJLwHXRDDIJP/1p4CNN8x2y6vJ0szHVeSG5yk6e
+xx57DA888ADMF7mbPy8uLr7grSjyvQiw+b1y8pm88qusrKxWgFetWpV4D5w8JSUlqKiogO4Ur59G
+DvLgZ9tIgARcIUDRdAVj5kICL5qqC+Zbf+QzJaASdU6ePBkzZ85MCOXixYvx+OOPo7KyEskWpc3T
+syKgEpGKYJpfkiq3W8h3ZmFUd9dK2mymeCmamQcjU5AACWRNgKKZNTp7GUMjmuZuWadsZcp0wIAB
+2L17dyKZeap2xIgRic/UW8GTiabaYKTqkLQ9e/ZEeXk55s+fjxYtWiTWUXfu3JkQWIqmvUHG1CRA
+AjknQNHMOeKvKgi8aEqEKeuW5rNCaspW3XcoaX73u98lOiRTs9YpU3N62eGlXlptnaq1CjNF06NR
+yGpIgAScEqBoOiWomT/womne9CNTqPKY1x5FIFWadu3a1b6myxwZimiqtc50a5rq8nXZ8CPpKJqa
+o4jJSIAE/CagLZo8wufMVIEXTeme1cjJ3iYiU7TmXbTWl1Cr6Vn1+caNGxObetq2bYtx48ZB7Z5V
+6azv8OT0rLOBxtwkQAI5JaAlmjzC59wGvonmPffc88cVK1bc5LwLX4mqmnLV3c3qRr12yhg6dOhb
+L7zwws128jAtCZAACegQ0PWnUTnC56c/9U0069Wrd+bkyZMNGjVqpDMmUqZRU6rqaIijwnKUWaLb
+xo0bnz1//nzDHFXBYkmABPKYgK4/jcIRPnlXcpMmTXzzp76JZsOGDT+prKzs0Llz58gP9e3bt6NH
+jx47z5w5c2XkO8sOkgAJeE7Arj8N8xE+v/2pb6Ipt+HNmzfvppKSktaejzCPK6yoqNhXWlr6lpyG
+8bhqVkcCJJAfBLL2p2E7wue3P/VTNEded911k7Zu3dop6mO6a9euH7733nuzACyJel/ZPxIgAV8I
+aPnTKBzh89uf+imaBYWFhZ9v2rSpuHv37r6MMi8q3bx5s1yUcKi6uvpSADVe1Mk6SIAE8o6Alj8N
++xG+IPhTP0VTRvXD3bp1G7158+arojrEu3fv/vGWLVsWAvh5VPvIfpEACQSCgJY/DfMRviD4U79F
+EwUFBa+PHz++8+zZsyO3tllWVrZvzpw522tqam4NxJ8UG0ECJBBpAm7406Ae4QuKP/VdNAG0jsVi
+b02ePLlReXn530RlRJeXl//nzJkzT8fjcTmLui8q/WI/SIAEAk3AkT8N6hG+IPnTIIimjECZnl0x
+ePDgBitXrrwm0ENSo3FDhgz5YNWqVWcBDAXwsUYWJiEBEiABtwjQn7pFMkk5QRFNadpFAJ5u1apV
+/yVLlrS95ZZbctjt3BT9xhtvYOTIkXv279+/BsCDAL7ITU0slQRIgATSEqA/zdEACZJoqi6OaNCg
+wYw+ffrEZsyY0UZd0p6j/rtSrGzjnjJlyt7169fHz549O0XeROZKwSyEBEiABJwRoD91xu+C3EEU
+TdXI0saNG/+kY8eORaWlpZfIa8CC9shLrufNm3dsx44dVSdPnvwpgHlBayPbQwIkQAIA6E9dGgZB
+Fk3VxSEtW7Z86NSpUz2HDh16ftiwYUWDBg1yqfv2i1m9erW8HaVqxYoV9S6++OJNBw8efBLASvsl
+MQcJkAAJeE6A/tQh8jCIpupiOwCDi4uL7z1x4sQ3+vfvXzVo0KCmvXv3Rq9evRCLxRyiuDB7PB7H
+u+++iw0bNmD16tXH16xZU9SkSZO/HDp06NcAVgHY7XqlLJAESIAEck+A/jRLxmESTXMXWwIY0LRp
+09sKCwv7Hz169Kr27dsf79KlS8G11157cfv27QvbtGmDyy67DM2bN5cb8VFUVIQGDRqgsLAQ1dXV
+OHv2LOS2/BMnTuDIkSM4cOAA9u7di127dlW///77p7Zt21aza9eups2aNfu4urp6zfHjx18D8CaA
+g1myZjYSIAESCCIB+lMbVgmraFq7WB/AtQDkHturmjVr1jkWi10Rj8dbxuPxpufOnSuKx+P1z58/
+H6upqZELFVCvXr14LBY7V79+/apYLHY8FosdjMfjnx49enS7cUzkQwDvAzhngyeTkgAJkEDYCdCf
+prHgfwH4xRgE2E4/EQAAAABJRU5ErkJggg==
+------=_Part_32_435487977.1704256919201--

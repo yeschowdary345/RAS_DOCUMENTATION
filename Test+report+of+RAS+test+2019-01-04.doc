@@ -1,0 +1,335 @@
+Date: Wed, 3 Jan 2024 04:27:10 +0000 (UTC)
+Message-ID: <616672402.33.1704256030173@19aa8add6f59>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_32_1595904764.1704256030172"
+
+------=_Part_32_1595904764.1704256030172
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Test report of RAS test 2019-01-04</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Test report of RAS test 2019-01-04</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"TestreportofRAStest2019-01-04-Timeperiodoftest">Time peri=
+od of test</h2>
+<p>2019-01-04 09:00:00 - 2019-01-04 16:38:00</p>
+<h2 id=3D"TestreportofRAStest2019-01-04-Testbookused">Test book used</h2>
+<p>v0.14</p>
+<h2 id=3D"TestreportofRAStest2019-01-04-Newissuesfound">New issues found</h=
+2>
+<p> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-12=
+26"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-1226=
+?src=3Dconfmacro" class=3D"jira-issue-key">RAS-1226</a> </span> <br> <span =
+class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-1242"> <a hr=
+ef=3D"https://nexchargeapplications.atlassian.net/browse/RAS-1242?src=3Dcon=
+fmacro" class=3D"jira-issue-key">RAS-1242</a> </span> <br> <span class=3D"c=
+onfluence-jim-macro jira-issue" data-jira-key=3D"RAS-1241"> <a href=3D"http=
+s://nexchargeapplications.atlassian.net/browse/RAS-1241?src=3Dconfmacro" cl=
+ass=3D"jira-issue-key">RAS-1241</a> </span> <br> <span class=3D"confluence-=
+jim-macro jira-issue" data-jira-key=3D"RAS-1240"> <a href=3D"https://nexcha=
+rgeapplications.atlassian.net/browse/RAS-1240?src=3Dconfmacro" class=3D"jir=
+a-issue-key">RAS-1240</a> </span> <br> <span class=3D"confluence-jim-macro =
+jira-issue" data-jira-key=3D"RAS-1239"> <a href=3D"https://nexchargeapplica=
+tions.atlassian.net/browse/RAS-1239?src=3Dconfmacro" class=3D"jira-issue-ke=
+y">RAS-1239</a> </span> <br> <span class=3D"confluence-jim-macro jira-issue=
+" data-jira-key=3D"RAS-1238"> <a href=3D"https://nexchargeapplications.atla=
+ssian.net/browse/RAS-1238?src=3Dconfmacro" class=3D"jira-issue-key">RAS-123=
+8</a> </span> <br> <span class=3D"confluence-jim-macro jira-issue" data-jir=
+a-key=3D"RAS-1237"> <a href=3D"https://nexchargeapplications.atlassian.net/=
+browse/RAS-1237?src=3Dconfmacro" class=3D"jira-issue-key">RAS-1237</a> </sp=
+an> <br> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"R=
+AS-1236"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS=
+-1236?src=3Dconfmacro" class=3D"jira-issue-key">RAS-1236</a> </span> <br> <=
+span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-1235"> =
+<a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-1235?src=
+=3Dconfmacro" class=3D"jira-issue-key">RAS-1235</a> </span> <br> <span clas=
+s=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-1234"> <a href=
+=3D"https://nexchargeapplications.atlassian.net/browse/RAS-1234?src=3Dconfm=
+acro" class=3D"jira-issue-key">RAS-1234</a> </span> <br> <span class=3D"con=
+fluence-jim-macro jira-issue" data-jira-key=3D"RAS-1233"> <a href=3D"https:=
+//nexchargeapplications.atlassian.net/browse/RAS-1233?src=3Dconfmacro" clas=
+s=3D"jira-issue-key">RAS-1233</a> </span> <br> <span class=3D"confluence-ji=
+m-macro jira-issue" data-jira-key=3D"RAS-1232"> <a href=3D"https://nexcharg=
+eapplications.atlassian.net/browse/RAS-1232?src=3Dconfmacro" class=3D"jira-=
+issue-key">RAS-1232</a> </span> <br> <span class=3D"confluence-jim-macro ji=
+ra-issue" data-jira-key=3D"RAS-1231"> <a href=3D"https://nexchargeapplicati=
+ons.atlassian.net/browse/RAS-1231?src=3Dconfmacro" class=3D"jira-issue-key"=
+>RAS-1231</a> </span> <br> <span class=3D"confluence-jim-macro jira-issue" =
+data-jira-key=3D"RAS-1229"> <a href=3D"https://nexchargeapplications.atlass=
+ian.net/browse/RAS-1229?src=3Dconfmacro" class=3D"jira-issue-key">RAS-1229<=
+/a> </span> <br> <span class=3D"confluence-jim-macro jira-issue" data-jira-=
+key=3D"RAS-1228"> <a href=3D"https://nexchargeapplications.atlassian.net/br=
+owse/RAS-1228?src=3Dconfmacro" class=3D"jira-issue-key">RAS-1228</a> </span=
+> <br> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS=
+-1227"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-1=
+227?src=3Dconfmacro" class=3D"jira-issue-key">RAS-1227</a> </span> <br> <sp=
+an class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-1225"> <a=
+ href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-1225?src=3D=
+confmacro" class=3D"jira-issue-key">RAS-1225</a> </span> <br> <span class=
+=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-1224"> <a href=3D=
+"https://nexchargeapplications.atlassian.net/browse/RAS-1224?src=3Dconfmacr=
+o" class=3D"jira-issue-key">RAS-1224</a> </span> <br> <span class=3D"conflu=
+ence-jim-macro jira-issue" data-jira-key=3D"RAS-1223"> <a href=3D"https://n=
+exchargeapplications.atlassian.net/browse/RAS-1223?src=3Dconfmacro" class=
+=3D"jira-issue-key">RAS-1223</a> </span> </p>
+<h2 id=3D"TestreportofRAStest2019-01-04-Existingissuesfound">Existing issue=
+s found</h2>
+<p> <span class=3D"confluence-jim-macro jira-issue" data-jira-key=3D"RAS-11=
+97"> <a href=3D"https://nexchargeapplications.atlassian.net/browse/RAS-1197=
+?src=3Dconfmacro" class=3D"jira-issue-key">RAS-1197</a> </span> </p>
+<h2 id=3D"TestreportofRAStest2019-01-04-Fulltestreport">Full test report</h=
+2>
+<p><a href=3D"/wiki/download/attachments/83755119/testrun_20190104.pdf?vers=
+ion=3D1&amp;modificationDate=3D1581406797380&amp;cacheVersion=3D1&amp;api=
+=3Dv2" data-linked-resource-id=3D"83757862" data-linked-resource-version=3D=
+"1" data-linked-resource-type=3D"attachment" data-linked-resource-default-a=
+lias=3D"testrun_20190104.pdf" data-nice-type=3D"PDF Document" data-linked-r=
+esource-content-type=3D"application/pdf" data-linked-resource-container-id=
+=3D"83755119" data-linked-resource-container-version=3D"2">testrun_20190104=
+.pdf</a></p>
+<h2 id=3D"TestreportofRAStest2019-01-04-Testedversion">Tested version</h2>
+<div class=3D"table-wrap">
+<table class=3D"statusTable failureStatusBlock confluenceTable">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><span class=3D"revisionNum"><a class=3D"external=
+-link" href=3D"https://bitbucket.org/leclanche/ras/commits/485e05b2f768ced3=
+de3fd552eeb23d02eb34c834?at=3Ddemo" rel=3D"nofollow">https://bitbucket.org/=
+leclanche/ras/commits/485e05b2f768ced3de3fd552eeb23d02eb34c834?at=3Ddemo</a=
+></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"TestreportofRAStest2019-01-04-Conclusion">Conclusion</h2>
+<p>One blocking issue concerning filters. We'll therefore postpone the rele=
+ase until end of next sprint.</p>
+    </div>
+</body>
+</html>
+------=_Part_32_1595904764.1704256030172--

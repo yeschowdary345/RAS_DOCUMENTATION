@@ -1,0 +1,769 @@
+Date: Wed, 3 Jan 2024 06:01:32 +0000 (UTC)
+Message-ID: <533106055.93.1704261692604@01146b9ad81d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_92_457081713.1704261692604"
+
+------=_Part_92_457081713.1704261692604
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>2020-08-14 Retrospective - Sprint #4</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>2020-08-14 Retrospective - Sprint #4</h1>
+    <div class=3D"Section1">
+        <p></p>
+<div class=3D"plugin-tabmeta-details">
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 123.0px;">
+<col style=3D"width: 603.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Date</p></th>
+<td class=3D"confluenceTd"><p><time datetime=3D"2020-07-15" class=3D"date-p=
+ast">15 Jul 2020</time></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh"><p>Team</p></th>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://ne=
+xchargeapplications.atlassian.net/people/team/c3ea6394-fb71-4808-8007-acf89=
+5f1decf?ref=3Dconfluence&amp;src=3Dretrospective-blueprint" rel=3D"nofollow=
+">RAS Development</a></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh"><p>Jira</p></th>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"https://ne=
+xchargeapplications.atlassian.net/secure/RapidBoard.jspa?rapidView=3D18&amp=
+;projectKey=3DRASP&amp;view=3Dreporting&amp;chart=3DsprintRetrospective&amp=
+;sprint=3D21&amp;atlOrigin=3DeyJpIjoiNDQwOWUzMzBlNDE0NDM5Mzk0ZDhlYmZkYTcyMz=
+VkYWIiLCJwIjoiaiJ9" rel=3D"nofollow">JIRA Reports</a></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh"><p>Participants</p></th>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluenc=
+e" target=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource=
+-version=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"http=
+s://nexchargeapplications.atlassian.net/wiki">Awnindera Shukla</a>&nbsp;<a =
+class=3D"confluence-userlink user-mention" data-account-id=3D"5da7fdaf07715=
+40c26a015ea" href=3D"https://nexchargeapplications.atlassian.net/wiki/peopl=
+e/5da7fdaf0771540c26a015ea?ref=3Dconfluence" target=3D"_blank" data-base-ur=
+l=3D"https://nexchargeapplications.atlassian.net/wiki">Manjunath (Unlicense=
+d)</a>&nbsp;<a class=3D"confluence-userlink user-mention" data-account-id=
+=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeapplications.atlassi=
+an.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluence" target=3D"_bl=
+ank" data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Pan=
+dey.Vartika (Unlicensed)</a>&nbsp;<a class=3D"confluence-userlink user-ment=
+ion" data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexcharge=
+applications.atlassian.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfl=
+uence" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atl=
+assian.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h2 id=3D"id-2020-08-14Retrospective-Sprint#4-Status">Status</h2>=20
+<div id=3D"two-dimensional-chart-$chartId" class=3D"two-dimensional-chart-m=
+odule">=20
+<div class=3D"two-dimensional-chart   view-mode ">=20
+<div class=3D"chart-border">=20
+<table class=3D"two-dimensional-chart-table">=20
+<tbody>=20
+<tr>=20
+<th rowspan=3D"2">Assignee</th>=20
+<th colspan=3D"2">Status</th>=20
+</tr>=20
+<tr>=20
+<th class=3D""><span class=3D" jira-issue-status-lozenge aui-lozenge jira-i=
+ssue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle=
+ jira-issue-status-lozenge-max-width-medium" data-tooltip=3D"<span class=3D=
+&quot;jira-issue-status-tooltip-title&quot;>Done</span>">Done</span></th>=
+=20
+<th class=3D"">T:</th>=20
+</tr>=20
+<tr>=20
+<td class=3D""> Manjunath </td>=20
+<td class=3D""> <a href=3D"https://nexchargeapplications.atlassian.net/issu=
+es/?jql=3Dproject+%3D+RASP+AND+issuetype+in+%28Story%2C+Task%29+AND+Sprint+=
+%3D+29+AND+assignee+in+%285da7fd980771540c26a015e7%2C+5da7fdaf0771540c26a01=
+5ea%2C+5efed4ee7295050bad7a9d11%29+AND+assignee+%3D+5da7fdaf0771540c26a015e=
+a+AND+status+%3D+Done+ORDER+BY+priority+DESC">4</a> </td>=20
+<td class=3D"totals"> <a href=3D"https://nexchargeapplications.atlassian.ne=
+t/issues/?jql=3Dproject+%3D+RASP+AND+issuetype+in+%28Story%2C+Task%29+AND+S=
+print+%3D+29+AND+assignee+in+%285da7fd980771540c26a015e7%2C+5da7fdaf0771540=
+c26a015ea%2C+5efed4ee7295050bad7a9d11%29+AND+assignee+%3D+5da7fdaf0771540c2=
+6a015ea+ORDER+BY+priority+DESC">4</a> </td>=20
+</tr>=20
+<tr>=20
+<td class=3D""> Pandey.Vartika </td>=20
+<td class=3D""> <a href=3D"https://nexchargeapplications.atlassian.net/issu=
+es/?jql=3Dproject+%3D+RASP+AND+issuetype+in+%28Story%2C+Task%29+AND+Sprint+=
+%3D+29+AND+assignee+in+%285da7fd980771540c26a015e7%2C+5da7fdaf0771540c26a01=
+5ea%2C+5efed4ee7295050bad7a9d11%29+AND+assignee+%3D+5da7fd980771540c26a015e=
+7+AND+status+%3D+Done+ORDER+BY+priority+DESC">5</a> </td>=20
+<td class=3D"totals"> <a href=3D"https://nexchargeapplications.atlassian.ne=
+t/issues/?jql=3Dproject+%3D+RASP+AND+issuetype+in+%28Story%2C+Task%29+AND+S=
+print+%3D+29+AND+assignee+in+%285da7fd980771540c26a015e7%2C+5da7fdaf0771540=
+c26a015ea%2C+5efed4ee7295050bad7a9d11%29+AND+assignee+%3D+5da7fd980771540c2=
+6a015e7+ORDER+BY+priority+DESC">5</a> </td>=20
+</tr>=20
+<tr>=20
+<td class=3D""> Siva Prakash Chinnanai </td>=20
+<td class=3D""> <a href=3D"https://nexchargeapplications.atlassian.net/issu=
+es/?jql=3Dproject+%3D+RASP+AND+issuetype+in+%28Story%2C+Task%29+AND+Sprint+=
+%3D+29+AND+assignee+in+%285da7fd980771540c26a015e7%2C+5da7fdaf0771540c26a01=
+5ea%2C+5efed4ee7295050bad7a9d11%29+AND+assignee+%3D+5efed4ee7295050bad7a9d1=
+1+AND+status+%3D+Done+ORDER+BY+priority+DESC">3</a> </td>=20
+<td class=3D"totals"> <a href=3D"https://nexchargeapplications.atlassian.ne=
+t/issues/?jql=3Dproject+%3D+RASP+AND+issuetype+in+%28Story%2C+Task%29+AND+S=
+print+%3D+29+AND+assignee+in+%285da7fd980771540c26a015e7%2C+5da7fdaf0771540=
+c26a015ea%2C+5efed4ee7295050bad7a9d11%29+AND+assignee+%3D+5efed4ee7295050ba=
+d7a9d11+ORDER+BY+priority+DESC">3</a> </td>=20
+</tr>=20
+<tr>=20
+<td class=3D"totals"> Total Unique Issues: </td>=20
+<td class=3D"totals"> <a href=3D"https://nexchargeapplications.atlassian.ne=
+t/issues/?jql=3Dproject+%3D+RASP+AND+issuetype+in+%28Story%2C+Task%29+AND+S=
+print+%3D+29+AND+assignee+in+%285da7fd980771540c26a015e7%2C+5da7fdaf0771540=
+c26a015ea%2C+5efed4ee7295050bad7a9d11%29+AND+status+%3D+Done+ORDER+BY+prior=
+ity+DESC">12</a> </td>=20
+<td class=3D"totals"> <a href=3D"https://nexchargeapplications.atlassian.ne=
+t/issues/?jql=3Dproject+%3D+RASP+AND+issuetype+in+%28Story%2CTask%29+AND+Sp=
+rint+%3D+29+AND+assignee+in+%285da7fd980771540c26a015e7%2C+5da7fdaf0771540c=
+26a015ea%2C5efed4ee7295050bad7a9d11%29+ORDER+BY+priority+DESC">12</a> </td>=
+=20
+</tr>=20
+</tbody>=20
+</table>=20
+<div class=3D"chart-summary">
+ Showing <strong>3</strong> of <strong>3</strong> statistics.=20
+<br> <a href=3D"https://nexchargeapplications.atlassian.net/secure/IssueNav=
+igator.jspa?reset=3Dtrue&amp;mode=3Dhide&amp;jqlQuery=3Dproject+%3D+RASP+AN=
+D+issuetype+in+%28Story%2CTask%29+AND+Sprint+%3D+29+AND+assignee+in+%285da7=
+fd980771540c26a015e7%2C+5da7fdaf0771540c26a015ea%2C5efed4ee7295050bad7a9d11=
+%29+ORDER+BY+priority+DESC">View in JIRA</a>=20
+</div>=20
+</div>=20
+</div>=20
+</div>=20
+<h2 id=3D"id-2020-08-14Retrospective-Sprint#4-Background">Background</h2>
+<p></p>
+<p></p>
+<h2 id=3D"id-2020-08-14Retrospective-Sprint#4-Agenda">Agenda</h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 178.0px;">
+<col style=3D"width: 368.0px;">
+<col style=3D"width: 274.0px;">
+<col style=3D"width: 140.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Assignee</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Backlogs</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Remarks</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Approval</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-276" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/browse=
+/RASP-276</a> </p></td>
+<td class=3D"confluenceTd"><p><a href=3D"/wiki/spaces/RASNEX/pages/15037236=
+5" data-linked-resource-id=3D"150372365" data-linked-resource-version=3D"4"=
+ data-linked-resource-type=3D"page">Testing result- Implementation of datat=
+ypes "DateTime" and "Bool"</a> </p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"134381644">
+<li data-inline-task-id=3D"4"><span>&nbsp;</span></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p> <a class=3D"external-link" data-card-appeara=
+nce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/R=
+ASP-243" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brows=
+e/RASP-243</a> </p></td>
+<td class=3D"confluenceTd"><p><a href=3D"/wiki/spaces/RASNEX/pages/10318643=
+3/Prevent+Data+Duplication" data-linked-resource-id=3D"103186433" data-link=
+ed-resource-version=3D"20" data-linked-resource-type=3D"page">Prevent Data =
+Duplication</a> </p><p><a href=3D"/wiki/spaces/RASNEX/pages/149061633/Test+=
+Cases+-+Data+Deduplication" data-linked-resource-id=3D"149061633" data-link=
+ed-resource-version=3D"7" data-linked-resource-type=3D"page">Test Cases - D=
+ata Deduplication</a> </p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"134381644">
+<li data-inline-task-id=3D"5"><span>&nbsp;</span></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-268?atlOrigin=3DeyJpIjoiMzA2YzkwOGE3Y2JkNGFjMjk5N2ViZTRmNTg1ZDBhMzEiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-268?atlOrigin=3DeyJpIjoiMzA2YzkwOGE3Y2JkNGFjMjk5N2ViZTRmNTg1ZDBhMzE=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p> <a data-card-appearance=3D"inline" href=3D"h=
+ttps://nexchargeapplications.atlassian.net/wiki/spaces/RASNEX/pages/1376911=
+37/KT+and+Understanding+on+RAS" rel=3D"nofollow">https://nexchargeapplicati=
+ons.atlassian.net/wiki/spaces/RASNEX/pages/137691137/KT+and+Understanding+o=
+n+RAS</a> </p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"134381644">
+<li data-inline-task-id=3D"6"><span>&nbsp;</span></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-238" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/browse=
+/RASP-238</a> </p></td>
+<td class=3D"confluenceTd"><p><a href=3D"/wiki/spaces/RASNEX/pages/14909445=
+0/Arranging+Invalid+data+interchange+format+files+to+specific+directory" da=
+ta-linked-resource-id=3D"149094450" data-linked-resource-version=3D"1" data=
+-linked-resource-type=3D"page">Arranging Invalid data interchange format fi=
+les to specific directory</a> </p><p>Almost zero probability to send an inv=
+alid file extension.</p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"134381644">
+<li data-inline-task-id=3D"14"><span class=3D"placeholder-inline-tasks">0.1=
+ % chance </span></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fdaf0771540c26a015ea" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fdaf0771540c26a015ea?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Manjunath (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-250" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/browse=
+/RASP-250</a> </p></td>
+<td class=3D"confluenceTd"><p></p><p></p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"134381644">
+<li data-inline-task-id=3D"7"><span>&nbsp;</span></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fdaf0771540c26a015ea" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fdaf0771540c26a015ea?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Manjunath (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-213" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/browse=
+/RASP-213</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluenc=
+e" target=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource=
+-version=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"http=
+s://nexchargeapplications.atlassian.net/wiki">Awnindera Shukla</a> raised P=
+R request for SSL.</p><p>Almost 90% is done.</p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"134381644">
+<li data-inline-task-id=3D"10"><span>&nbsp;</span></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fdaf0771540c26a015ea" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fdaf0771540c26a015ea?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Manjunath (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-267?atlOrigin=3DeyJpIjoiMzc3NzRiMjEwNTI5NDY3NDk0NDQ2MGZlNmUwZGU4NTIiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-267?atlOrigin=3DeyJpIjoiMzc3NzRiMjEwNTI5NDY3NDk0NDQ2MGZlNmUwZGU4NTI=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p><a data-card-appearance=3D"inline" href=3D"ht=
+tps://nexchargeapplications.atlassian.net/wiki/spaces/RASNEX/pages/13769113=
+7/KT+and+Understanding+on+RAS" rel=3D"nofollow">https://nexchargeapplicatio=
+ns.atlassian.net/wiki/spaces/RASNEX/pages/137691137/KT+and+Understanding+on=
++RAS</a> </p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fdaf0771540c26a015ea" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fdaf0771540c26a015ea?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Manjunath (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-175?atlOrigin=3DeyJpIjoiYTYxOWUxZjJhYjEyNGNlMTg4MDIyZWM0NWZmOTA1NTAiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-175?atlOrigin=3DeyJpIjoiYTYxOWUxZjJhYjEyNGNlMTg4MDIyZWM0NWZmOTA1NTA=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"134381644">
+<li data-inline-task-id=3D"8"><span>&nbsp;</span></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fdaf0771540c26a015ea" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fdaf0771540c26a015ea?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Manjunath (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-221?atlOrigin=3DeyJpIjoiNDc2OWE2ZmU2M2MwNGU5ZDgyZDIyYmRkY2VjZWFlNzQiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-221?atlOrigin=3DeyJpIjoiNDc2OWE2ZmU2M2MwNGU5ZDgyZDIyYmRkY2VjZWFlNzQ=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>Due to some other high priority task, didn=E2=
+=80=99t spend expected time on it.</p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"134381644">
+<li data-inline-task-id=3D"9"><span>&nbsp;</span></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-260" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/browse=
+/RASP-260</a> </p></td>
+<td class=3D"confluenceTd"><p><a href=3D"/wiki/spaces/RASECB/pages/14316339=
+4" data-linked-resource-id=3D"143163394" data-linked-resource-version=3D"4"=
+ data-linked-resource-type=3D"page">/wiki/spaces/RASECB/pages/143163394</a>=
+ </p><p><a href=3D"/wiki/spaces/RASECB/pages/145522713" data-linked-resourc=
+e-id=3D"145522713" data-linked-resource-version=3D"2" data-linked-resource-=
+type=3D"page">/wiki/spaces/RASECB/pages/145522713</a> </p><p><a href=3D"/wi=
+ki/spaces/RASECB/pages/137756683" data-linked-resource-id=3D"137756683" dat=
+a-linked-resource-version=3D"5" data-linked-resource-type=3D"page">/wiki/sp=
+aces/RASECB/pages/137756683</a> </p></td>
+<td class=3D"confluenceTd">
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"134381644">
+<li data-inline-task-id=3D"13"><span>&nbsp;</span></li>
+</ul></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-284?atlOrigin=3DeyJpIjoiNjAwYzE1ODZiM2FiNGNhNGJkM2IyNTg2MWQ2ZDM4MTUiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-284?atlOrigin=3DeyJpIjoiNjAwYzE1ODZiM2FiNGNhNGJkM2IyNTg2MWQ2ZDM4MTU=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-294?atlOrigin=3DeyJpIjoiYTZlMThkNjBmNzk1NDUyN2I1NWRhMjBmZjQ2YTc4YTUiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-294?atlOrigin=3DeyJpIjoiYTZlMThkNjBmNzk1NDUyN2I1NWRhMjBmZjQ2YTc4YTU=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p><a href=3D"/wiki/spaces/RASECB/pages/14680064=
+1" data-linked-resource-id=3D"146800641" data-linked-resource-version=3D"3"=
+ data-linked-resource-type=3D"page">/wiki/spaces/RASECB/pages/146800641</a>=
+ </p><p><a href=3D"/wiki/spaces/RASECB/pages/150372476" data-linked-resourc=
+e-id=3D"150372476" data-linked-resource-version=3D"1" data-linked-resource-=
+type=3D"page">/wiki/spaces/RASECB/pages/150372476</a> </p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-2020-08-14Retrospective-Sprint#4-Retrospective">Retrospective<=
+/h2>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>About this sprint : In this sprint we are aiming to complete pending aut=
+omated test cases, production server deployment, adding security to FTP/HTT=
+P and CI/CD integration.</p>
+</div>
+</div>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 465.0px;">
+<col style=3D"width: 495.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour=3D"#e3fcef" class=3D"confluenceTh"><p><strong>Wha=
+t did we do well?</strong></p></th>
+<th data-highlight-colour=3D"#ffebe6" class=3D"confluenceTh"><p><strong>Wha=
+t didn=E2=80=99t go well?</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Standard practices are being followed :-</p>
+<ul>
+<li><p>Logging the time against JIRA tasks on daily basis</p></li>
+<li><p>Reviewed each task and updated the status everyday</p></li>
+<li><p>Created the Confluence page to elaborate the JIRA backlog</p></li>
+<li><p>Logging the time against Task discussion</p></li>
+<li><p>All the sub tasks were properly defined and estimated</p></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Could not able to complete the sprint task as the other new priority=
+ tasks had come in between</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 453.0px;">
+<col style=3D"width: 466.0px;">
+<col style=3D"width: 381.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour=3D"#e3fcef" class=3D"confluenceTh"><p><strong>Wha=
+t should we start doing?</strong></p></th>
+<th data-highlight-colour=3D"#ffebe6" class=3D"confluenceTh"><p><strong>Wha=
+t should we stop doing?</strong></p></th>
+<th data-highlight-colour=3D"#eae6ff" class=3D"confluenceTh"><p><strong>Wha=
+t should we keep doing?</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Sneak peak of features/bug fixes/POCs should be presented to the tea=
+m members</p></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Should minimize the meeting hours wherever it is possible</p></li>
+</ul></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Feel free to consult with other team members or expertise if get stu=
+ck in any Sprint task </p></li>
+<li><p>Learning or implementations can be documented in Confluence (<a href=
+=3D"/wiki/spaces/NU">https://nexchargeapplications.atlassian.net/wiki/space=
+s/NU/overview</a> )</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 253.0px;">
+<col style=3D"width: 259.0px;">
+<col style=3D"width: 247.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Pending Backlogs</strong></p></th>
+<th class=3D"confluenceTh"><p><strong> Why ?</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>When ?</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Explore the TeamCity Server for CI/CD</p></td=
+>
+<td class=3D"confluenceTd"><p>Allocated with other priority task</p></td>
+<td class=3D"confluenceTd"><p>To the next sprint</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-2020-08-14Retrospective-Sprint#4-Actionitems">Action items</h2=
+>
+<p></p>
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"134381644">
+<li data-inline-task-id=3D"1"><span class=3D"placeholder-inline-tasks"><a c=
+lass=3D"confluence-userlink user-mention" data-account-id=3D"5da7fd98077154=
+0c26a015e7" href=3D"https://nexchargeapplications.atlassian.net/wiki/people=
+/5da7fd980771540c26a015e7?ref=3Dconfluence" target=3D"_blank" data-base-url=
+=3D"https://nexchargeapplications.atlassian.net/wiki">Pandey.Vartika (Unlic=
+ensed)</a></span></li>
+<li data-inline-task-id=3D"2"><span class=3D"placeholder-inline-tasks"><a c=
+lass=3D"confluence-userlink user-mention" data-account-id=3D"5da7fdaf077154=
+0c26a015ea" href=3D"https://nexchargeapplications.atlassian.net/wiki/people=
+/5da7fdaf0771540c26a015ea?ref=3Dconfluence" target=3D"_blank" data-base-url=
+=3D"https://nexchargeapplications.atlassian.net/wiki">Manjunath (Unlicensed=
+)</a></span></li>
+<li data-inline-task-id=3D"15"><span class=3D"placeholder-inline-tasks"><a =
+class=3D"confluence-userlink user-mention" data-account-id=3D"5efed4ee72950=
+50bad7a9d11" href=3D"https://nexchargeapplications.atlassian.net/wiki/peopl=
+e/5efed4ee7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-ur=
+l=3D"https://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnan=
+ai (Unlicensed)</a></span></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_92_457081713.1704261692604--

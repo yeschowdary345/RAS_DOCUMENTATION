@@ -1,0 +1,1361 @@
+Date: Tue, 2 Jan 2024 09:44:56 +0000 (UTC)
+Message-ID: <2042454738.65.1704188696455@4f4faab3f914>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_64_1823597715.1704188696455"
+
+------=_Part_64_1823597715.1704188696455
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Clone RAS repository</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Clone RAS repository</h1>
+    <div class=3D"Section1">
+        <p><style>[data-colorid=3Dri11rc58v9]{color:#ff5630} html[data-colo=
+r-mode=3Ddark] [data-colorid=3Dri11rc58v9]{color:#cf2600}</style>Need to in=
+stall the software as mentioned in RAS-Development Environment Document.</p=
+>
+<p>Note: <span data-colorid=3D"ri11rc58v9">There can be restriction factors=
+ in Bosch network</span></p>
+<p></p>=20
+<div class=3D"plugin_attachments_container">=20
+<div class=3D"plugin_attachments_table_container">=20
+<fieldset class=3D"hidden">=20
+<input type=3D"hidden" class=3D"plugin_attachments_macro_render_param" name=
+=3D"pageId" value=3D"1072988184">=20
+<input type=3D"hidden" class=3D"plugin_attachments_macro_render_param" name=
+=3D"totalPages" value=3D"1">=20
+<input type=3D"hidden" name=3D"deleteConfirmMessage" value=3D"Are you sure =
+you want to send the attached file " to=3D"" the=3D"" only=3D"" a=3D"" spac=
+e=3D"" administrator=3D"" can=3D"" undo=3D"" this=3D"">=20
+<input type=3D"hidden" name=3D"outputType" value=3D"word">=20
+</fieldset>=20
+<table class=3D"attachments aui" data-sort-by=3D"date" data-sort-order=3D""=
+ data-tablesorter-headers=3D"{&quot;0&quot;: {&quot;sorter&quot;: false}}">=
+=20
+<tbody>
+<tr class=3D"header-row">=20
+<th class=3D"expand-column attachment-summary-toggle">&nbsp;</th>=20
+<th class=3D"filename-column"> File </th>=20
+<th class=3D"modified-column"> Modified </th>=20
+</tr>=20
+</tbody>
+<tbody>=20
+<tr id=3D"attachment-1075052560" class=3D"attachment-row" data-attachment-i=
+d=3D"1075052560">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1075052560 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1075052560" data-attachment-fi=
+lename=3D"image-20220221-121146.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1075052560=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10750525=
+60" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121146.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121146.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121146.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1075052560" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121146.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121146.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121146.png" data-linked=
+-resource-id=3D"1075052560" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121146.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1211=
+46.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121146.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121146.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+511966"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1074921492" class=3D"attachment-row" data-attachment-i=
+d=3D"1074921492">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1074921492 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1074921492" data-attachment-fi=
+lename=3D"image-20220221-121159.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1074921492=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10749214=
+92" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121159.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121159.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121159.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1074921492" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121159.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121159.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121159.png" data-linked=
+-resource-id=3D"1074921492" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121159.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1211=
+59.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121159.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121159.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+522876"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1074921502" class=3D"attachment-row" data-attachment-i=
+d=3D"1074921502">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1074921502 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1074921502" data-attachment-fi=
+lename=3D"image-20220221-121216.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1074921502=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10749215=
+02" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121216.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121216.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121216.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1074921502" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121216.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121216.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121216.png" data-linked=
+-resource-id=3D"1074921502" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121216.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1212=
+16.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121216.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121216.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+540526"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1075118086" class=3D"attachment-row" data-attachment-i=
+d=3D"1075118086">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1075118086 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1075118086" data-attachment-fi=
+lename=3D"image-20220221-121228.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1075118086=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10751180=
+86" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121228.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121228.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121228.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1075118086" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121228.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121228.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121228.png" data-linked=
+-resource-id=3D"1075118086" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121228.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1212=
+28.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121228.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121228.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+551932"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1075118092" class=3D"attachment-row" data-attachment-i=
+d=3D"1075118092">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1075118092 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1075118092" data-attachment-fi=
+lename=3D"image-20220221-121238.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1075118092=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10751180=
+92" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121238.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121238.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121238.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1075118092" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121238.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121238.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121238.png" data-linked=
+-resource-id=3D"1075118092" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121238.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1212=
+38.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121238.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121238.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+562588"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1075085318" class=3D"attachment-row" data-attachment-i=
+d=3D"1075085318">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1075085318 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1075085318" data-attachment-fi=
+lename=3D"image-20220221-121252.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1075085318=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10750853=
+18" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121252.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121252.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121252.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1075085318" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121252.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121252.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121252.png" data-linked=
+-resource-id=3D"1075085318" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121252.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1212=
+52.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121252.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121252.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+576968"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1075085330" class=3D"attachment-row" data-attachment-i=
+d=3D"1075085330">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1075085330 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1075085330" data-attachment-fi=
+lename=3D"image-20220221-121727.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1075085330=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10750853=
+30" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121727.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121727.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121727.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1075085330" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121727.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121727.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121727.png" data-linked=
+-resource-id=3D"1075085330" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121727.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1217=
+27.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121727.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121727.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+851084"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div>=20
+<div class=3D"plugin_attachments_upload_container">=20
+<div class=3D"attachments-table-drop-zone">=20
+<li class=3D"drop-zone-text">=20
+<div class=3D"drop-zone-image"></div> <span>Drag and drop to upload or <a c=
+lass=3D"aui-button aui-button-link browse-files">browse for files</a></span=
+> <img src=3D"e140dbe1465a50eb99987446f6c02257" class=3D"plugin_attachments=
+_dropzone_uploadwaiticon" width=3D"16" height=3D"16"> </li>=20
+<form method=3D"POST" class=3D"plugin_attachments_uploadform aui hidden" ac=
+tion=3D"/wiki/pages/plugins/attachments/doattachfile.action?pageId=3D107298=
+8184" enctype=3D"multipart/form-data">=20
+<input type=3D"hidden" name=3D"atl_token" value=3D"bab760e0feea8ef7f4f82821=
+a145dac4a1918cac">=20
+<div class=3D"field-group"> <label>Upload file</label>=20
+<input type=3D"file" name=3D"file_0" size=3D"30">=20
+</div>=20
+<div class=3D"field-group"> <label>File description</label>=20
+<input type=3D"text" class=3D"blank-search text" name=3D"comment_0" size=3D=
+"20" placeholder=3D"Comment">=20
+<input type=3D"hidden" name=3D"labels" value=3D"$macroParams.labels">=20
+</div>=20
+<div class=3D"field-group">=20
+<input type=3D"submit" class=3D"submit aui-button" name=3D"confirm" value=
+=3D"Upload">=20
+</div> <iframe class=3D"plugin_attachments_uploadiframe hidden" name=3D"BBj=
+N76PlQEMhlSbU9XFIp46U2HUY0Aj1wYqIpxTXbw7wu7ZHNi3LW1mqRl8yZAuE" src=3D""></i=
+frame>=20
+</form>=20
+</div>=20
+</div>=20
+<div> <a class=3D"download-all-link" href=3D"/wiki/download/all_attachments=
+?pageId=3D1072988184" title=3D"Download all the latest versions of attachme=
+nts on this page as single zip file.">Download All</a>=20
+</div>=20
+</div>=20
+<p><strong>After that we need to setup the SSH as per the below steps:</str=
+ong></p>
+<ol>
+<li><p>Install Putty Key Generator.</p></li>
+</ol>
+<p> 2. Open the Putty Key generator and click on Generate button. It should=
+ appear like below</p><span class=3D"confluence-embedded-file-wrapper image=
+-center-wrapper"><img class=3D"confluence-embedded-image image-center" load=
+ing=3D"lazy" src=3D"https://nexchargeapplications.atlassian.net/wiki/downlo=
+ad/attachments/1072988184/image-20220221-121146.png?version=3D1&amp;modific=
+ationDate=3D1645445511966&amp;cacheVersion=3D1&amp;api=3Dv2" data-image-src=
+=3D"https://nexchargeapplications.atlassian.net/wiki/download/attachments/1=
+072988184/image-20220221-121146.png?version=3D1&amp;modificationDate=3D1645=
+445511966&amp;cacheVersion=3D1&amp;api=3Dv2" data-height=3D"512" data-width=
+=3D"709" data-unresolved-comment-count=3D"0" data-linked-resource-id=3D"107=
+5052560" data-linked-resource-version=3D"1" data-linked-resource-type=3D"at=
+tachment" data-linked-resource-default-alias=3D"image-20220221-121146.png" =
+data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki" data-lin=
+ked-resource-content-type=3D"image/png" data-linked-resource-container-id=
+=3D"1072988184" data-linked-resource-container-version=3D"3" data-media-id=
+=3D"2804719a-fefb-4b5b-843d-8feeec08aec4" data-media-type=3D"file"></span>
+<p></p>
+<p>&nbsp;</p>
+<p> 3. Copy the key highlighted in Blue.</p>
+<p> 4. Click on Save private key button</p><span class=3D"confluence-embedd=
+ed-file-wrapper image-center-wrapper"><img class=3D"confluence-embedded-ima=
+ge image-center" loading=3D"lazy" src=3D"https://nexchargeapplications.atla=
+ssian.net/wiki/download/attachments/1072988184/image-20220221-121159.png?ve=
+rsion=3D1&amp;modificationDate=3D1645445522876&amp;cacheVersion=3D1&amp;api=
+=3Dv2" data-image-src=3D"https://nexchargeapplications.atlassian.net/wiki/d=
+ownload/attachments/1072988184/image-20220221-121159.png?version=3D1&amp;mo=
+dificationDate=3D1645445522876&amp;cacheVersion=3D1&amp;api=3Dv2" data-heig=
+ht=3D"229" data-width=3D"709" data-unresolved-comment-count=3D"0" data-link=
+ed-resource-id=3D"1074921492" data-linked-resource-version=3D"1" data-linke=
+d-resource-type=3D"attachment" data-linked-resource-default-alias=3D"image-=
+20220221-121159.png" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki" data-linked-resource-content-type=3D"image/png" data-linked-re=
+source-container-id=3D"1072988184" data-linked-resource-container-version=
+=3D"3" data-media-id=3D"8a8c2b0d-1b0e-4e4a-b8a1-026023dae33f" data-media-ty=
+pe=3D"file"></span>
+<p></p>
+<p>5. Click on Save public key button and save that in the path specified i=
+n pointer 4.</p>
+<p>6. Now Add the key with your bit bucket account</p>
+<p>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open the URL <a class=3D"external-link"=
+ data-card-appearance=3D"inline" href=3D"https://bitbucket.org/nexcharge/" =
+rel=3D"nofollow">https://bitbucket.org/nexcharge/</a> and login with your c=
+redential</p>
+<p>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open Personal Settings as shown in the =
+below image</p>
+<p></p>
+<p>&nbsp;</p><span class=3D"confluence-embedded-file-wrapper image-center-w=
+rapper"><img class=3D"confluence-embedded-image image-center" loading=3D"la=
+zy" src=3D"https://nexchargeapplications.atlassian.net/wiki/download/attach=
+ments/1072988184/image-20220221-121216.png?version=3D1&amp;modificationDate=
+=3D1645445540526&amp;cacheVersion=3D1&amp;api=3Dv2" data-image-src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/1072988184=
+/image-20220221-121216.png?version=3D1&amp;modificationDate=3D1645445540526=
+&amp;cacheVersion=3D1&amp;api=3Dv2" data-height=3D"524" data-width=3D"410" =
+data-unresolved-comment-count=3D"0" data-linked-resource-id=3D"1074921502" =
+data-linked-resource-version=3D"1" data-linked-resource-type=3D"attachment"=
+ data-linked-resource-default-alias=3D"image-20220221-121216.png" data-base=
+-url=3D"https://nexchargeapplications.atlassian.net/wiki" data-linked-resou=
+rce-content-type=3D"image/png" data-linked-resource-container-id=3D"1072988=
+184" data-linked-resource-container-version=3D"3" data-media-id=3D"8e818d75=
+-022c-4f72-a26c-ea5faddc5f68" data-media-type=3D"file"></span>
+<p>c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Click On SSH Keys from left panel and c=
+lick on Add Key button</p><span class=3D"confluence-embedded-file-wrapper i=
+mage-center-wrapper"><img class=3D"confluence-embedded-image image-center" =
+loading=3D"lazy" src=3D"https://nexchargeapplications.atlassian.net/wiki/do=
+wnload/attachments/1072988184/image-20220221-121228.png?version=3D1&amp;mod=
+ificationDate=3D1645445551932&amp;cacheVersion=3D1&amp;api=3Dv2" data-image=
+-src=3D"https://nexchargeapplications.atlassian.net/wiki/download/attachmen=
+ts/1072988184/image-20220221-121228.png?version=3D1&amp;modificationDate=3D=
+1645445551932&amp;cacheVersion=3D1&amp;api=3Dv2" data-height=3D"291" data-w=
+idth=3D"590" data-unresolved-comment-count=3D"0" data-linked-resource-id=3D=
+"1075118086" data-linked-resource-version=3D"1" data-linked-resource-type=
+=3D"attachment" data-linked-resource-default-alias=3D"image-20220221-121228=
+.png" data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki" da=
+ta-linked-resource-content-type=3D"image/png" data-linked-resource-containe=
+r-id=3D"1072988184" data-linked-resource-container-version=3D"3" data-media=
+-id=3D"0f4ed450-c1be-4513-a678-ce93bf7658b3" data-media-type=3D"file"></spa=
+n>
+<p></p>
+<p>d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Provide a Name in the Label and paste t=
+he key which you copied in pointer 3. And then click on Add Key button.</p>=
+<span class=3D"confluence-embedded-file-wrapper image-center-wrapper"><img =
+class=3D"confluence-embedded-image image-center" loading=3D"lazy" src=3D"ht=
+tps://nexchargeapplications.atlassian.net/wiki/download/attachments/1072988=
+184/image-20220221-121238.png?version=3D1&amp;modificationDate=3D1645445562=
+588&amp;cacheVersion=3D1&amp;api=3Dv2" data-image-src=3D"https://nexchargea=
+pplications.atlassian.net/wiki/download/attachments/1072988184/image-202202=
+21-121238.png?version=3D1&amp;modificationDate=3D1645445562588&amp;cacheVer=
+sion=3D1&amp;api=3Dv2" data-height=3D"426" data-width=3D"631" data-unresolv=
+ed-comment-count=3D"0" data-linked-resource-id=3D"1075118092" data-linked-r=
+esource-version=3D"1" data-linked-resource-type=3D"attachment" data-linked-=
+resource-default-alias=3D"image-20220221-121238.png" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki" data-linked-resource-content-t=
+ype=3D"image/png" data-linked-resource-container-id=3D"1072988184" data-lin=
+ked-resource-container-version=3D"3" data-media-id=3D"b1ba4b30-204a-47a1-aa=
+21-c96c1d4dcd04" data-media-type=3D"file"></span>
+<p></p>
+<p>7. Download the Authy App in mobile and register according to do the Two=
+- step authentication.</p>
+<p>8. Set the App Password by clicking App Passwords in Access Management a=
+nd click on Create app password as in the image below</p><span class=3D"con=
+fluence-embedded-file-wrapper image-center-wrapper"><img class=3D"confluenc=
+e-embedded-image image-center" loading=3D"lazy" src=3D"https://nexchargeapp=
+lications.atlassian.net/wiki/download/attachments/1072988184/image-20220221=
+-121252.png?version=3D1&amp;modificationDate=3D1645445576968&amp;cacheVersi=
+on=3D1&amp;api=3Dv2" data-image-src=3D"https://nexchargeapplications.atlass=
+ian.net/wiki/download/attachments/1072988184/image-20220221-121252.png?vers=
+ion=3D1&amp;modificationDate=3D1645445576968&amp;cacheVersion=3D1&amp;api=
+=3Dv2" data-height=3D"377" data-width=3D"709" data-unresolved-comment-count=
+=3D"0" data-linked-resource-id=3D"1075085318" data-linked-resource-version=
+=3D"1" data-linked-resource-type=3D"attachment" data-linked-resource-defaul=
+t-alias=3D"image-20220221-121252.png" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki" data-linked-resource-content-type=3D"image/pn=
+g" data-linked-resource-container-id=3D"1072988184" data-linked-resource-co=
+ntainer-version=3D"3" data-media-id=3D"6b36d30a-5024-4031-a746-db90175a4dbc=
+" data-media-type=3D"file"></span>
+<p></p>
+<p>9. Fill in the Label name and check all the checkbox and then click on c=
+reate button.</p>
+<p></p>
+<p><strong>Creating Login for GIT</strong></p>
+<ol>
+<li><p>Install the Git.</p></li>
+<li><p>Use the below command to create the login</p></li>
+</ol>
+<p>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; git config --global http.proxy&nbsp;<a =
+class=3D"external-link" href=3D"http://ntid:password@rb-proxy-apac.bosch.co=
+m:8080/" rel=3D"nofollow">http://ntid:password@rb-proxy-apac.bosch.com:8080=
+</a></p>
+<p>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; git config --global https.proxy&nbsp;<a=
+ class=3D"external-link" href=3D"http://ntid:password@rb-proxy-apac.bosch.c=
+om:8080/" rel=3D"nofollow">http://ntid:password@rb-proxy-apac.bosch.com:808=
+0</a></p>
+<p>c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; git config --global http.sslVerify fals=
+e</p>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>Note: If your password contains '@' character, then replace the same wit=
+h %40 in your password in the steps 2(a) and 2(b)</p>
+</div>
+</div>
+<p><strong>Downloading the Source code from BitBucket</strong></p>
+<ol>
+<li><p>Create a folder in the path specified C:/Source_Code/ras_source</p><=
+/li>
+<li><p>Copy the below highlighted path</p></li>
+</ol><span class=3D"confluence-embedded-file-wrapper image-center-wrapper">=
+<img class=3D"confluence-embedded-image image-center" loading=3D"lazy" src=
+=3D"https://nexchargeapplications.atlassian.net/wiki/download/attachments/1=
+072988184/image-20220221-121727.png?version=3D1&amp;modificationDate=3D1645=
+445851084&amp;cacheVersion=3D1&amp;api=3Dv2" data-image-src=3D"https://nexc=
+hargeapplications.atlassian.net/wiki/download/attachments/1072988184/image-=
+20220221-121727.png?version=3D1&amp;modificationDate=3D1645445851084&amp;ca=
+cheVersion=3D1&amp;api=3Dv2" data-height=3D"378" data-width=3D"709" data-un=
+resolved-comment-count=3D"0" data-linked-resource-id=3D"1075085330" data-li=
+nked-resource-version=3D"1" data-linked-resource-type=3D"attachment" data-l=
+inked-resource-default-alias=3D"image-20220221-121727.png" data-base-url=3D=
+"https://nexchargeapplications.atlassian.net/wiki" data-linked-resource-con=
+tent-type=3D"image/png" data-linked-resource-container-id=3D"1072988184" da=
+ta-linked-resource-container-version=3D"3" data-media-id=3D"412ddc72-34de-4=
+3ab-9bd4-7b8ba3e18fe2" data-media-type=3D"file"></span>
+<p></p>
+<p>3. Open the command prompt in step 1 path and paste the yellow highlight=
+ed command. Press enter. This should download the code</p>
+<p><strong>Setting up of DB</strong></p>
+<ol>
+<li><p>It is necessary to install SSMS and Sql Server with Sql Server Authe=
+ntication and create the =E2=80=9Csa=E2=80=9D account and set password.</p>=
+</li>
+<li><p>Download the schema.sql from server database and run it in SSMS.</p>=
+</li>
+<li><p>Download the user.sql from server database to populate the local DB.=
+</p></li>
+</ol>
+<p><strong>Code setup for RAS</strong></p>
+<ol>
+<li><p>Open the Visual Studio 2019 in Admin Mode</p></li>
+<li><p>Open the project solution RAS.sln from C:\Source_Code\ras_source.</p=
+></li>
+<li><p>We basically need to modify the config file of below 3 project:</p><=
+/li>
+</ol>
+<p>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RAS.Backend.Preprocessor</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; i.&nbsp;&nbsp;&nbsp;&nbsp; App.config file should be modified lik=
+e below</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; ii.&nbsp;&nbsp;&nbsp;&nbsp;</p>=20
+<div class=3D"plugin_attachments_container">=20
+<div class=3D"plugin_attachments_table_container">=20
+<fieldset class=3D"hidden">=20
+<input type=3D"hidden" class=3D"plugin_attachments_macro_render_param" name=
+=3D"pageId" value=3D"1072988184">=20
+<input type=3D"hidden" class=3D"plugin_attachments_macro_render_param" name=
+=3D"totalPages" value=3D"1">=20
+<input type=3D"hidden" name=3D"deleteConfirmMessage" value=3D"Are you sure =
+you want to send the attached file " to=3D"" the=3D"" only=3D"" a=3D"" spac=
+e=3D"" administrator=3D"" can=3D"" undo=3D"" this=3D"">=20
+<input type=3D"hidden" name=3D"outputType" value=3D"word">=20
+</fieldset>=20
+<table class=3D"attachments aui" data-sort-by=3D"date" data-sort-order=3D""=
+ data-tablesorter-headers=3D"{&quot;0&quot;: {&quot;sorter&quot;: false}}">=
+=20
+<tbody>
+<tr class=3D"header-row">=20
+<th class=3D"expand-column attachment-summary-toggle">&nbsp;</th>=20
+<th class=3D"filename-column"> File </th>=20
+<th class=3D"modified-column"> Modified </th>=20
+</tr>=20
+</tbody>
+<tbody>=20
+<tr id=3D"attachment-1075052560" class=3D"attachment-row" data-attachment-i=
+d=3D"1075052560">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1075052560 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1075052560" data-attachment-fi=
+lename=3D"image-20220221-121146.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1075052560=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10750525=
+60" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121146.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121146.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121146.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1075052560" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121146.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121146.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121146.png" data-linked=
+-resource-id=3D"1075052560" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121146.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1211=
+46.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121146.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121146.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+511966"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1074921492" class=3D"attachment-row" data-attachment-i=
+d=3D"1074921492">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1074921492 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1074921492" data-attachment-fi=
+lename=3D"image-20220221-121159.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1074921492=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10749214=
+92" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121159.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121159.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121159.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1074921492" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121159.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121159.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121159.png" data-linked=
+-resource-id=3D"1074921492" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121159.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1211=
+59.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121159.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121159.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+522876"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1074921502" class=3D"attachment-row" data-attachment-i=
+d=3D"1074921502">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1074921502 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1074921502" data-attachment-fi=
+lename=3D"image-20220221-121216.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1074921502=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10749215=
+02" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121216.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121216.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121216.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1074921502" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121216.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121216.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121216.png" data-linked=
+-resource-id=3D"1074921502" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121216.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1212=
+16.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121216.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121216.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+540526"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1075118086" class=3D"attachment-row" data-attachment-i=
+d=3D"1075118086">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1075118086 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1075118086" data-attachment-fi=
+lename=3D"image-20220221-121228.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1075118086=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10751180=
+86" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121228.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121228.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121228.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1075118086" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121228.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121228.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121228.png" data-linked=
+-resource-id=3D"1075118086" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121228.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1212=
+28.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121228.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121228.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+551932"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1075118092" class=3D"attachment-row" data-attachment-i=
+d=3D"1075118092">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1075118092 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1075118092" data-attachment-fi=
+lename=3D"image-20220221-121238.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1075118092=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10751180=
+92" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121238.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121238.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121238.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1075118092" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121238.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121238.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121238.png" data-linked=
+-resource-id=3D"1075118092" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121238.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1212=
+38.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121238.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121238.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+562588"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1075085318" class=3D"attachment-row" data-attachment-i=
+d=3D"1075085318">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1075085318 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1075085318" data-attachment-fi=
+lename=3D"image-20220221-121252.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1075085318=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10750853=
+18" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121252.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121252.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121252.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1075085318" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121252.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121252.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121252.png" data-linked=
+-resource-id=3D"1075085318" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121252.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1212=
+52.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121252.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121252.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+576968"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+<tr id=3D"attachment-1075085330" class=3D"attachment-row" data-attachment-i=
+d=3D"1075085330">=20
+<td class=3D"attachment-summary-toggle"> <span class=3D"icon icon-section-c=
+losed" title=3D"Show more info" role=3D"button" aria-expanded=3D"false"></s=
+pan>=20
+<div class=3D"attachment-summary attachment-summary-1075085330 hidden attac=
+hment-details-wrapper" data-attachment-id=3D"1075085330" data-attachment-fi=
+lename=3D"image-20220221-121727.png">=20
+<div class=3D"attachment-image-preview"></div>=20
+<p class=3D"attachment-labels">Labels</p>=20
+<div class=3D"labels-section-content content-column" entityid=3D"1075085330=
+" entitytype=3D"attachment">=20
+<div class=3D"labels-content">=20
+<ul class=3D"label-list  has-pen">=20
+<li class=3D"no-labels-message"> No labels </li>=20
+<li class=3D"labels-edit-container"> <a aria-describedby=3D"attach-10750853=
+30" href=3D"#" class=3D"show-labels-editor" title=3D"Edit Labels" role=3D"b=
+utton"> <span class=3D"aui-icon aui-icon-small aui-iconfont-edit-small">Edi=
+t Labels</span> </a> </li>=20
+</ul>=20
+</div>=20
+</div>=20
+<div class=3D"attachment-history-wrapper"></div>=20
+<div class=3D"attachment-buttons"> <a class=3D"aui-button previewAttachment=
+Link" data-filename=3D"image-20220221-121727.png" data-file-src=3D"/wiki/do=
+wnload/attachments/1072988184/image-20220221-121727.png?api=3Dv2" data-link=
+ed-resource-default-alias=3D"image-20220221-121727.png" data-mime-type=3D"i=
+mage/png" data-linked-resource-container-id=3D"1072988184" data-linked-reso=
+urce-id=3D"1075085330" role=3D"button">Preview</a> <a class=3D"aui-button "=
+ href=3D"/wiki/download/attachments/1072988184/image-20220221-121727.png?ve=
+rsion=3D1" data-file-src=3D"/download/attachments/1072988184/image-20220221=
+-121727.png?version=3D1" data-linked-resource-container-id=3D"1072988184" d=
+ata-linked-resource-default-alias=3D"image-20220221-121727.png" data-linked=
+-resource-id=3D"1075085330" data-linked-resource-type=3D"attachment" role=
+=3D"button">View</a> <a class=3D"aui-button editAttachmentLink" href=3D"/wi=
+ki/pages/editattachment.action?pageId=3D1072988184&amp;fileName=3Dimage-202=
+20221-121727.png&amp;isFromPageView=3Dtrue" role=3D"button">Properties</a>=
+=20
+</div>=20
+</div> </td>=20
+<td class=3D"filename-column"> <p> <span class=3D"aui-icon content-type-att=
+achment-image" title=3D"PNG File" role=3D"img">PNG File</span> <a class=3D"=
+filename" href=3D"/wiki/download/attachments/1072988184/image-20220221-1217=
+27.png?api=3Dv2" title=3D"Download" data-filename=3D"image-20220221-121727.=
+png" data-type=3D"image/png" data-linked-resource-container-id=3D"107298818=
+4"> image-20220221-121727.png </a> </p> </td>=20
+<td class=3D"attachment-created modified-column" data-sort-value=3D"1645445=
+851084"> <span>Feb 21, 2022</span> <span>by</span> <a href=3D"/wiki/people/=
+5efed4ee7295050bad7a9d11" class=3D"url fn confluence-userlink" data-account=
+-id=3D"5efed4ee7295050bad7a9d11">Siva Prakash Chinnanai</a> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div>=20
+<div class=3D"plugin_attachments_upload_container">=20
+<div class=3D"attachments-table-drop-zone">=20
+<li class=3D"drop-zone-text">=20
+<div class=3D"drop-zone-image"></div> <span>Drag and drop to upload or <a c=
+lass=3D"aui-button aui-button-link browse-files">browse for files</a></span=
+> <img src=3D"e140dbe1465a50eb99987446f6c02257" class=3D"plugin_attachments=
+_dropzone_uploadwaiticon" width=3D"16" height=3D"16"> </li>=20
+<form method=3D"POST" class=3D"plugin_attachments_uploadform aui hidden" ac=
+tion=3D"/wiki/pages/plugins/attachments/doattachfile.action?pageId=3D107298=
+8184" enctype=3D"multipart/form-data">=20
+<input type=3D"hidden" name=3D"atl_token" value=3D"bab760e0feea8ef7f4f82821=
+a145dac4a1918cac">=20
+<div class=3D"field-group"> <label>Upload file</label>=20
+<input type=3D"file" name=3D"file_0" size=3D"30">=20
+</div>=20
+<div class=3D"field-group"> <label>File description</label>=20
+<input type=3D"text" class=3D"blank-search text" name=3D"comment_0" size=3D=
+"20" placeholder=3D"Comment">=20
+<input type=3D"hidden" name=3D"labels" value=3D"$macroParams.labels">=20
+</div>=20
+<div class=3D"field-group">=20
+<input type=3D"submit" class=3D"submit aui-button" name=3D"confirm" value=
+=3D"Upload">=20
+</div> <iframe class=3D"plugin_attachments_uploadiframe hidden" name=3D"Vja=
+qMka9QlmTOeJSQT59qF8FehWAKi8KBWo2C3SYddjJ6I2nOqTBiCe3jEO9YWQQ" src=3D""></i=
+frame>=20
+</form>=20
+</div>=20
+</div>=20
+<div> <a class=3D"download-all-link" href=3D"/wiki/download/all_attachments=
+?pageId=3D1072988184" title=3D"Download all the latest versions of attachme=
+nts on this page as single zip file.">Download All</a>=20
+</div>=20
+</div>=20
+<p>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RAS.Backend.REST</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; i.&nbsp;&nbsp;&nbsp;&nbsp; Web.config file should be modified lik=
+e below.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; ii.&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RAS.Private.UI</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; i.&nbsp;&nbsp;&nbsp;&nbsp; Web.config should be modified like bel=
+ow.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; ii.&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<ol>
+<li><p>Now build the code</p></li>
+<li><p>Set Multiple start up project&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;</p></li>
+</ol>
+<p>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RAS.Backend.Preprocessor</p>
+<p>b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RAS.Backend.REST</p>
+<p>c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RAS.Private.UI</p>
+<ol>
+<li><p>Now run the code and login with user specified in the DB(User table)=
+.</p></li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>Alternative way to Add SSH</strong></p>
+<p>To genarate and add SSH key into bitbucket</p>
+<p>&nbsp;</p>
+<p>open Gitbash and go to working directory (cd /c/users/svc5cob)<br>$ ssh-=
+keygen<br>$ eval $(ssh-agent)<br>$ ssh-add ~/.ssh/id_rsa<br>after adding id=
+entity<br>goto -&gt; C:\Users\svc5cob\.ssh -&gt; open in notepad -&gt;id_rs=
+a.pub -&gt;copy<br>open Bitbucket Account-&gt; Personal Settings-&gt;Add ke=
+y-&gt; paste the copied data -&gt; add key<br>Now you should be able to clo=
+ne</p>
+<p>&nbsp;</p>
+    </div>
+</body>
+</html>
+------=_Part_64_1823597715.1704188696455
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/e140dbe1465a50eb99987446f6c02257
+
+R0lGODlhEAAQAMQAAP///+7u7t3d3bu7u6qqqpmZmYiIiHd3d2ZmZlVVVURERDMzMyIiIhEREQAR
+AAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05F
+VFNDQVBFMi4wAwEAAAAh+QQFBwAQACwAAAAAEAAQAAAFdyAkQgGJJOWoQgIjBM8jkKsoPEzgyMGs
+CjPDw7ADpkQBxRDmSCRetpRA6Rj4kFBkgLC4IlUGhbNQIwXOYYWCXDufzYPDMaoKGBoKb886OjAK
+dgZAAgQkfCwzAgsDBAUCgl8jAQkHEAVkAoA1AgczlyIDczUDA2UhACH5BAUHABAALAAAAAAPABAA
+AAVjICSO0IGIATkqIiMKDaGKC8Q49jPMYsE0hQdrlABCGgvT45FKiRKQhWA0mPKGPAgBcTjsspBC
+AoH4gl+FmXNEUEBVAYHToJAVZK/XWoQQDAgBZioHaX8igigFKYYQVlkCjiMhACH5BAUHABAALAAA
+AAAQAA8AAAVgICSOUGGQqIiIChMESyo6CdQGdRqUENESI8FAdFgAFwqDISYwPB4CVSMnEhSej+Fo
+gNhtHyfRQFmIol5owmEta/fcKITB6y4choMBmk7yGgSAEAJ8JAVDgQFmKUCCZnwhACH5BAUHABAA
+LAAAAAAQABAAAAViICSOYkGe4hFAiSImAwotB+si6Co2QxvjAYHIgBAqDoWCK2Bq6A40iA4yYMgg
+NZKwGFgVCAQZotFwwJIF4QnxaC9IsZNgLtAJDKbraJCGzPVSIgEDXVNXA0JdgH6ChoCKKCEAIfkE
+BQcAEAAsAAAAABAADgAABUkgJI7QcZComIjPw6bs2kINLB5uW9Bo0gyQx8LkKgVHiccKVdyRlqjF
+SAApOKOtR810StVeU9RAmLqOxi0qRG3LptikAVQEh4UAACH5BAUHABAALAAAAAAQABAAAAVxICSO
+0DCQKBQQonGIh5AGB2sYkMHIqYAIN0EDRxoQZIaC6bAoMRSiwMAwCIwCggRkwRMJWKSAomBVCc5l
+UiGRUBjO6FSBwWggwijBooDCdiFfIlBRAlYBZQ0PWRANaSkED1oQYHgjDA8nM3kPfCmejiEAIfkE
+BQcAEAAsAAAAABAAEAAABWAgJI6QIJCoOIhFwabsSbiFAotGMEMKgZoB3cBUQIgURpFgmEI0EqjA
+CYXwiYJBGAGBgGIDWsVicbiNEgSsGbKCIMCwA4IBCRgXt8bDACkvYQF6U1OADg8mDlaACQtwJCEA
+IfkEBQcAEAAsAAABABAADwAABV4gJEKCOAwiMa4Q2qIDwq4wiriBmItCCREHUsIwCgh2q8MiyEKO
+DK7ZbHCoqqSjWGKI1d2kRp+RAWGyHg+DQUEmKliGx4HBKECIMwG61AgssAQPKA19EAxRKz4QCVIh
+ACH5BAUHABAALAAAAAAQABAAAAVjICSOUBCQqHhCgiAOKyqcLVvEZOC2geGiK5NpQBAZCilgAYFM
+ogo/J0lgqEpHgoO2+GIMUL6p4vFojhQNg8rxWLgYBQJCASkwEKLC17hYFJtRIwwBfRAJDk4Obwsi
+dEkrWkkhACH5BAUHABAALAAAAQAQAA8AAAVcICSOUGAGAqmKpjis6vmuqSrUxQyPhDEEtpUOgmgY
+ETCCcrB4OBWwQsGHEhQatVFhB/mNAojFVsQgBhgKpSHRTRxEhGwhoRg0CCXYAkKHHPZCZRAKUERZ
+MAYGMCEAIfkEBQcAEAAsAAABABAADwAABV0gJI4kFJToGAilwKLCST6PUcrB8A70844CXenwILRk
+IoYyBRk4BQlHo3FIOQmvAEGBMpYSop/IgPBCFpCqIuEsIESHgkgoJxwQAjSzwb1DClwwgQhgAVVM
+IgVyKCEAIfkECQcAEAAsAAAAABAAEAAABWQgJI5kSQ6NYK7Dw6xr8hCw+ELC85hCIAq3Am0U6JUK
+jkHJNzIsFAqDqShQHRhY6bKqgvgGCZOSFDhAUiWCYQwJSxGHKqGAE/5EqIHBjOgyRQELCBB7EAQH
+fySDhGYQdDWGQyUhADs=
+------=_Part_64_1823597715.1704188696455--

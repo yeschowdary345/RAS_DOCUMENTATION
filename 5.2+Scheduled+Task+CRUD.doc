@@ -1,0 +1,439 @@
+Date: Wed, 3 Jan 2024 05:23:19 +0000 (UTC)
+Message-ID: <1169305561.59.1704259399338@0564475b91b8>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_58_666626859.1704259399337"
+
+------=_Part_58_666626859.1704259399337
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>5.2 Scheduled Task CRUD</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>5.2 Scheduled Task CRUD</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-5.2ScheduledTaskCRUD-DescriptionandPriority">Descripti=
+on and Priority</h2>
+<p class=3D"level3text">A schedule defines a task to be executed at a recur=
+ring point in time. This feature describes managing schedules using an over=
+view and a create/edit screen.</p>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable">
+<colgroup>
+<col style=3D"width: 30.0px;">
+<col style=3D"width: 440.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th colspan=3D"1" class=3D"confluenceTh">#</th>
+<th class=3D"confluenceTh">Component</th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">1</td>
+<td class=3D"confluenceTd">Schedule overview</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">2</td>
+<td class=3D"confluenceTd">Create/Edit</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-5.2ScheduledTaskCRUD-Userinteractionanddesign">User interactio=
+n and design</h2>
+<h4 id=3D"id-5.2ScheduledTaskCRUD-Overview">Overview</h4>
+<p> </p>
+<div style=3D"width: 100.0%;height: 100.0%;text-align: left;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/58261549/b=
+alsamiq_2278E287-509B-183B-1098-2EC38DDDB7D8_Master.png">
+</div>=20
+<p></p>
+<h4 id=3D"id-5.2ScheduledTaskCRUD-Create/Edit1/4">Create/Edit 1/4</h4>
+<p> </p>
+<div style=3D"width: 100.0%;height: 100.0%;text-align: left;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/58261549/b=
+alsamiq_03A0FFD9-DD5E-A2C9-7D01-9F5AA35C650F_Master.png">
+</div>=20
+<p></p>
+<h4 id=3D"id-5.2ScheduledTaskCRUD-Create/Edit2/4">Create/Edit 2/4</h4>
+<p> </p>
+<div style=3D"width: 100.0%;height: 100.0%;text-align: left;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/58261549/b=
+alsamiq_CFF06B20-09D8-57DB-5C01-9FBC471620DB_Master.png">
+</div>=20
+<p></p>
+<h4 id=3D"id-5.2ScheduledTaskCRUD-Create/Edit3/4">Create/Edit 3/4</h4>
+<p> </p>
+<div style=3D"width: 100.0%;height: 100.0%;text-align: left;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/58261549/b=
+alsamiq_7F94ED29-4F14-98CC-B7ED-9FC822530201_Master.png">
+</div>=20
+<p></p>
+<h4 id=3D"id-5.2ScheduledTaskCRUD-Create/Edit4/4">Create/Edit 4/4</h4>
+<p> </p>
+<div style=3D"width: 100.0%;height: 100.0%;text-align: left;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/58261549/b=
+alsamiq_47C93E8A-5702-574B-0A84-9FD6C63D8027_Master.png">
+</div>=20
+<p></p>
+<h4 id=3D"id-5.2ScheduledTaskCRUD-Schedulingeditorpossibilities">Scheduling=
+ editor possibilities</h4>
+<p> </p>
+<div style=3D"width: 100.0%;height: 100.0%;text-align: left;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/58261549/b=
+alsamiq_F936B1E2-4E37-2445-DC2A-9F6DDF381975_Master.png">
+</div>=20
+<p></p>
+<h2 class=3D"level4" id=3D"id-5.2ScheduledTaskCRUD-FunctionalRequirements">=
+Functional Requirements</h2>
+<p class=3D"level3text"></p>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 46.=
+5601%;">
+<colgroup>
+<col style=3D"width: 10.0448%;">
+<col style=3D"width: 89.9253%;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">REQ #</th>
+<th class=3D"confluenceTh">Description</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">REQ01</td>
+<td class=3D"confluenceTd">Only one task can be selected per scheduled task=
+, but it is not required</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">REQ02</td>
+<td class=3D"confluenceTd">Scheduled tasks are stored per user, they can't =
+be shared (TBD Security)</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">REQ03</td>
+<td colspan=3D"1" class=3D"confluenceTd">Each of the creation tabpages have=
+ validation and one can not progress to the next tabpage before the validat=
+ion succeeds. The validation messages are written as clear as possible and =
+displayed as an error notification. See <a href=3D"/wiki/spaces/RASNEX/page=
+s/83755292/3.2+RAS+UI%3A+Input+Validation" data-linked-resource-id=3D"83755=
+292" data-linked-resource-version=3D"1" data-linked-resource-type=3D"page">=
+3.2 RAS UI: Input Validation</a></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">REQ04</td>
+<td colspan=3D"1" class=3D"confluenceTd">On tab 1. Schedule a valid schedul=
+e should be selected by default so no validation necessary</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">REQ05</td>
+<td colspan=3D"1" class=3D"confluenceTd">On tab 2. Task only one task has t=
+o be selected</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">REQ06</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>On tab 3. Messaging when email =
+is ticked:</p>
+<ul style=3D"list-style-type: square;">
+<li>a valid 'TO:' recipient should be present</li>
+<li>a valid Subject should be present</li>
+<li>a non empty message body should be present</li>
+</ul><p>when website notification is ticked</p>
+<ul style=3D"list-style-type: square;">
+<li>a valid 'TO:' RAS user should be present</li>
+<li>a non empty message body should be present</li>
+<li>the maximum length of the notification should be 300 characters</li>
+<li>the only allowed html tag is an &lt;a href&gt;</li>
+</ul></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">REQ07</td>
+<td colspan=3D"1" class=3D"confluenceTd">On tab 4. Complete scheduled task =
+a title is required</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">REQ08</td>
+<td colspan=3D"1" class=3D"confluenceTd">When selecting a website notificat=
+ion as the message format, the user can only select ras users which are a m=
+ember of the company the user is in. It should be possible to select the us=
+ers from a list using autocomplete functionality</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">REQ09</td>
+<td colspan=3D"1" class=3D"confluenceTd"><p>Each message should have a foot=
+er with the following information:</p>
+<ul style=3D"list-style-type: square;">
+<li>The owner of the task that generated the message</li>
+<li>The task that generated the message</li>
+<li>The moment of generation</li>
+</ul></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">REQ10</td>
+<td colspan=3D"1" class=3D"confluenceTd">For each type of task, internally,=
+ we should define a default template for the subject as well as the body of=
+ the email</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-5.2ScheduledTaskCRUD-BusinessRules">Business Rules</h2>
+<ul>
+<li>&nbsp;</li>
+</ul>
+<h2 id=3D"id-5.2ScheduledTaskCRUD-Questions">Questions</h2>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">#</th>
+<th class=3D"confluenceTh">Question</th>
+<th class=3D"confluenceTh">Outcome</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">1</td>
+<td class=3D"confluenceTd"></td>
+<td class=3D"confluenceTd"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-5.2ScheduledTaskCRUD-NotDoing">Not Doing</h2>
+<ul>
+<li><br><br></li>
+</ul>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_58_666626859.1704259399337--

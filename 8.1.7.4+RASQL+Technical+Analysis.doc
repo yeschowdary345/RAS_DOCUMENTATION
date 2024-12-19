@@ -1,0 +1,345 @@
+Date: Wed, 3 Jan 2024 05:32:49 +0000 (UTC)
+Message-ID: <1304322434.67.1704259969936@2fe592dbd4e0>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_66_1916199034.1704259969936"
+
+------=_Part_66_1916199034.1704259969936
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>8.1.7.4 RASQL Technical Analysis</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>8.1.7.4 RASQL Technical Analysis</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-8.1.7.4RASQLTechnicalAnalysis-Introduction">Introducti=
+on</h2>
+<p>RASQL is the language that was developed as a definition language for th=
+e Data Analysis Engine. RASQL is made to work well with time-driven data, a=
+nd to contain all necessary data processing and notification features. RASQ=
+L is what is called a "domain specific language".&nbsp;</p>
+<h1 id=3D"id-8.1.7.4RASQLTechnicalAnalysis-Technology">Technology</h1>
+<p>To convert RASQL to a data structure that defines the operations that ne=
+ed to be taken and their order, both a lexer and a parser are required. The=
+ lexer is responsible for converting plain input text to a series of symbol=
+s, while the parser converts this string of symbols to something called an =
+Abstract Syntax Tree. To help us with the development of RASQL, we've chose=
+n to rely on a library called ANTLR.&nbsp;</p>
+<p>ANTLR is able to receive a structured grammar written by, which defines =
+the RASQL, and generate both lexer and parser.&nbsp;</p>
+<h2 id=3D"id-8.1.7.4RASQLTechnicalAnalysis-Lexer">Lexer</h2>
+<p>As said previously, the lexer in itself is a rather simple piece of code=
+. It is the responsibility of the lexer to interpret a string of plain text=
+ characters and assign a relatively low-level meaning. The lexer does so no=
+t based on any context, but purely based on a simple order (priority) of ru=
+les.&nbsp;</p>
+<p>For example, given the simple expression "5+5", our lexer would generate=
+ three tokens. The first of the tokens would be INTEGER, with the underlyin=
+g text "5", the second would be "ADD", with the underlying text "+", and th=
+e third would be another INTEGER, with the underlying text "5". We'll also =
+configure our lexer to be whitespace insensitive. Meaning that (except for =
+in a literal string), whitespace is not converted into tokens. Furthermore,=
+ our lexer is also made to be case insensitive. All keywords, for which a t=
+oken is reserved, are accepted no matter their case. WHEN is the same as Wh=
+en, which is the same as WhEn as far as our lexer is concerned.&nbsp;</p>
+<h2 id=3D"id-8.1.7.4RASQLTechnicalAnalysis-Parser">Parser</h2>
+<p>The parser is the more advanced component of the two. It receives the st=
+ring of simple tokens created by the lexer and uses a set of rules to deter=
+mine their relationship. The parser will apply the given rules to the input=
+ token stream and attempt to match them to a logical tree as best as possib=
+le.&nbsp;</p>
+<p>By defining parser rules, we're defining the way in which symbols can be=
+ combined: which order they can appear in, which symbols can appear before =
+or after which other symbols, etcetera.&nbsp;</p>
+<p>A simple example would be a very easy calculator. We can say that a mult=
+iplication is some number, multiplied by another number, multiplied with an=
+other number, ... In our antlr grammar, the definition would be as follows:=
+</p>
+<p><em>multiplication: NUMBER (STAR NUMBER)*;</em></p>
+<p>The star in the end means that the part preceding it (between the braces=
+) can be repeated as many times as needed. So the former rule matches all a=
+nd any of the following:&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">5
+1*66
+2*4432*1</pre>=20
+</div>
+</div>
+<p>We can then define addition very similarly:</p>
+<p><em>addition: multiplication (+ multiplication)*;</em></p>
+<p>Note that we defined addition&nbsp;<em>in terms of multiplication</em>. =
+This means that an addition can contain many multiplications. "But", I hear=
+ you think, "how can we add just normal numbers, like 5+5". Well, remember =
+how in the rule for multiplication, we wrote that the part between the brac=
+es can appear as many times as we like? It can also appear 0 times, which m=
+eans that the rule for multiplication also matches single numbers. So the f=
+ollowing are valid additions according to the rules we mentioned here:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">3+3
+8
+2+5*27
+8*3+2*2</pre>=20
+</div>
+</div>
+<p>In our RASQL syntax, we'll expand greatly on these rules, and allow many=
+ more constructs, including comparative operators, equality operators etcet=
+era.&nbsp;</p>
+<h2 id=3D"id-8.1.7.4RASQLTechnicalAnalysis-ANTLRDetails">ANTLR Details</h2>
+<p>We've chosen to use a combined grammar, which contains both parser and l=
+exer rules. Their syntax is slightly different. All symbols used by the par=
+ser should be declared explicitly in the lexer section. A large number of t=
+ests have been created to validate the functioning of the RASQL parser &amp=
+; lexer. These tests are made to run very quickly, so run them frequently w=
+hen changing the syntax.&nbsp;</p>
+<h2 id=3D"id-8.1.7.4RASQLTechnicalAnalysis-Usingtheparseddata">Using the pa=
+rsed data</h2>
+<p>As said before, the parser generates an abstract syntax tree. That howev=
+er, does us no good. How do we actually use that which the parser returned?=
+&nbsp;</p>
+<p>We have two methods at our disposal to process the syntax trees into dat=
+astructures we can use.&nbsp;</p>
+<ol>
+<li>Visitors</li>
+<li>Listeners</li>
+</ol>
+<p>The listener is the simpler of the two. When the generated parser is par=
+sing the token stream, it will call Enter_(rule name) when first matching a=
+ rule, and Exit_(rule name) when the rule match is complete. These methods =
+are called in sequential order. We use an observer to store all of the diff=
+erent parts of a RASQL statement (USING, WHEN THEN, DEFINE, CALCULATE, etc)=
+. When exiting a CALCULATE clause for example, the calculation in that CALC=
+ULATE clause is stored.&nbsp;</p>
+<p>Visitors walk the abstract syntax tree in a recursive manner. Each step =
+returns some user-defined return value. We use visitors to help us with the=
+ execution of our expressions. The result of the RASQL visitor will be a tr=
+ee of functions that, when executed, returns the correct value.&nbsp;</p>
+<p>To recap, most of the data storage is done by a listener</p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_66_1916199034.1704259969936--

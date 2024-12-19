@@ -1,0 +1,406 @@
+Date: Wed, 3 Jan 2024 04:37:55 +0000 (UTC)
+Message-ID: <1694986981.41.1704256675793@9c4c96a6ba92>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_40_170965924.1704256675793"
+
+------=_Part_40_170965924.1704256675793
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>&#39;Status dashboards&#39;: effort investigation for custom imp=
+lementation</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>&#39;Status dashboards&#39;: effort investigation for custom implem=
+entation</h1>
+    <div class=3D"Section1">
+        <h2 class=3D"sc-cJOK hOYdJP" id=3D"id-'Statusdashboards':effortinve=
+stigationforcustomimplementation-References">References</h2>
+<p>See&nbsp;<a class=3D"unresolved" href=3D"#">2018-04-19 Meeting notes: Ti=
+me filter functionality</a>.</p>
+<h2 id=3D"id-'Statusdashboards':effortinvestigationforcustomimplementation-=
+Subjectandscopeofthisdocument">Subject and scope of this document</h2>
+<p>This is about custom implementation for <strong>status dashboards</stron=
+g> (because it is not available out-of-the box).</p>
+<p>This is <strong>NOT</strong> about time filter implementation.</p>
+<h2 id=3D"id-'Statusdashboards':effortinvestigationforcustomimplementation-=
+DevExpress">DevExpress</h2>
+<ul style=3D"list-style-type: square;">
+<li>custom item web dashboards
+<ul style=3D"list-style-type: square;">
+<li>only available since devExpress 17.1</li>
+<li>javascript extension</li>
+<li>different types
+<ul style=3D"list-style-type: square;">
+<li>static</li>
+<li>data aware</li>
+<li>data aware 'using external visualization widget'</li>
+</ul></li>
+</ul></li>
+<li>links to interesting devExpress documentation
+<ul style=3D"list-style-type: square;">
+<li><a class=3D"external-link" href=3D"https://documentation.devexpress.com=
+/Dashboard/119283/Building-the-Designer-and-Viewer-Applications/Web-Dashboa=
+rd/Web-Dashboard-Technical-Overview" rel=3D"nofollow" style=3D"text-decorat=
+ion: none;" title=3D"https://documentation.devexpress.com/Dashboard/119283/=
+Building-the-Designer-and-Viewer-Applications/Web-Dashboard/Web-Dashboard-T=
+echnical-Overview">https://documentation.devexpress.com/Dashboard/119283/Bu=
+ilding-the-Designer-and-Viewer-Applications/Web-Dashboard/Web-Dashboard-Tec=
+hnical-Overview</a></li>
+<li><a class=3D"external-link" href=3D"https://documentation.devexpress.com=
+/Dashboard/117232/Building-the-Designer-and-Viewer-Applications/Web-Dashboa=
+rd/Customize-the-Web-Dashboard-using-Extensions/Extensions" rel=3D"nofollow=
+" style=3D"text-decoration: underline;" title=3D"https://documentation.deve=
+xpress.com/Dashboard/117232/Building-the-Designer-and-Viewer-Applications/W=
+eb-Dashboard/Customize-the-Web-Dashboard-using-Extensions/Extensions">https=
+://documentation.devexpress.com/Dashboard/117232/Building-the-Designer-and-=
+Viewer-Applications/Web-Dashboard/Customize-the-Web-Dashboard-using-Extensi=
+ons/Extensions</a></li>
+<li><a class=3D"external-link" href=3D"https://documentation.devexpress.com=
+/Dashboard/117546/Building-the-Designer-and-Viewer-Applications/Web-Dashboa=
+rd/Custom-Item" rel=3D"nofollow" style=3D"text-decoration: none;" title=3D"=
+https://documentation.devexpress.com/Dashboard/117546/Building-the-Designer=
+-and-Viewer-Applications/Web-Dashboard/Custom-Item">https://documentation.d=
+evexpress.com/Dashboard/117546/Building-the-Designer-and-Viewer-Application=
+s/Web-Dashboard/Custom-Item</a></li>
+<li><a class=3D"external-link" href=3D"https://documentation.devexpress.com=
+/ClientDashboard/api/DevExpress.Dashboard.CustomItemViewer.html" rel=3D"nof=
+ollow" style=3D"text-decoration: underline;" title=3D"https://documentation=
+.devexpress.com/ClientDashboard/api/DevExpress.Dashboard.CustomItemViewer.h=
+tml">https://documentation.devexpress.com/ClientDashboard/api/DevExpress.Da=
+shboard.CustomItemViewer.html</a></li>
+<li><a class=3D"external-link" href=3D"https://www.devexpress.com/Support/C=
+enter/Question/Details/T491984/web-dashboard-how-to-create-a-custom-dashboa=
+rd-item-extension" rel=3D"nofollow" style=3D"text-decoration: none;" title=
+=3D"https://www.devexpress.com/Support/Center/Question/Details/T491984/web-=
+dashboard-how-to-create-a-custom-dashboard-item-extension">https://www.deve=
+xpress.com/Support/Center/Question/Details/T491984/web-dashboard-how-to-cre=
+ate-a-custom-dashboard-item-extension</a></li>
+</ul></li>
+</ul>
+<h2 id=3D"id-'Statusdashboards':effortinvestigationforcustomimplementation-=
+Re-useexistinglibraries">Re-use existing libraries</h2>
+<p>Javascript libraries to support 'status dashboards'</p>
+<ul style=3D"list-style-type: square;">
+<li>plot.ly (<a class=3D"external-link" href=3D"https://plot.ly/javascript/=
+" rel=3D"nofollow">https://plot.ly/javascript/</a>)</li>
+<li>D3 TimelineChart (<a class=3D"external-link" href=3D"https://github.com=
+/commodityvectors/d3-timeline" rel=3D"nofollow">https://github.com/commodit=
+yvectors/d3-timeline</a>)</li>
+<li>Visavail.js (<a class=3D"external-link" href=3D"https://github.com/flrs=
+/visavail" rel=3D"nofollow">https://github.com/flrs/visavail</a>)
+<ul style=3D"list-style-type: square;">
+<li>uses D3</li>
+<li>very interesting but only seems to focus on concept of missing/availabl=
+e data (<img class=3D"emoticon emoticon-smile" data-emoji-id=3D"1f642" data=
+-emoji-shortname=3D":slight_smile:" data-emoji-fallback=3D"=F0=9F=99=82" sr=
+c=3D"10d9ffe253c42c0788e284fd850d4380" width=3D"16" height=3D"16" data-emot=
+icon-name=3D"smile" alt=3D"(smile)">)</li>
+<li>update: see&nbsp;<a class=3D"external-link" href=3D"http://sleep.cs.bro=
+wn.edu/comparison/" rel=3D"nofollow">http://sleep.cs.brown.edu/comparison/<=
+/a>&nbsp;(the comparison chart): looks very much like what we need</li>
+</ul></li>
+</ul>
+<h2 id=3D"id-'Statusdashboards':effortinvestigationforcustomimplementation-=
+Effortestimate">Effort estimate</h2>
+<ul>
+<li><p>technically, it looks definitely possible to implement a basic 'stat=
+us dashboard'</p>
+<ul>
+<li><p>a basic 'status dashboard' is:</p>
+<ul>
+<li><p>time on x-axis</p></li>
+<li><p>some blocks along x-axis</p></li>
+<li><p>discrete data values have specific color mapping</p></li>
+<li><p>no zooming, dragging</p></li>
+</ul></li>
+</ul></li>
+<li><p>the implementation effort is very hard to estimate</p>
+<ul>
+<li><p>technically complex</p></li>
+<li><p>dependent on 3rd party code</p></li>
+<li><p>no experience with D3.js (if we would go for a visualization library=
+ that uses it)</p></li>
+<li><p>incomplete requirements</p></li>
+</ul></li>
+<li><p>a custom implementation may not be the best idea</p>
+<ul>
+<li><p>it will become like a separate project in RAS</p>
+<ul>
+<li><p>extra to be maintaned</p></li>
+</ul></li>
+<li><p>impact of devexpress updates</p>
+<ul>
+<li><p>risk of breaking changes</p></li>
+<li><p>no guarantee that a solution will continue to work after devExpress =
+updates</p></li>
+</ul></li>
+<li><p>not much front-end experience in RAS team</p></li>
+</ul></li>
+<li><p>even a custom implementation still requires a lot of further thought=
+ / decisions</p>
+<ul>
+<li><p>multi-asset?</p></li>
+<li><p>zooming must be synchronized with other widgets</p></li>
+<li><p>impact of max 100 000 points</p></li>
+<li><p>...</p></li>
+</ul></li>
+</ul>
+<h2 id=3D"id-'Statusdashboards':effortinvestigationforcustomimplementation-=
+Conclusion"><strong>Conclusion</strong></h2>
+<ul>
+<li><p><strong>there is no effort estimate, too hard to estimate correctly<=
+/strong></p></li>
+<li><p><strong>an estimate would be anywhere between several man-weeks and =
+man-months</strong></p></li>
+<li><p><strong>a custom implementation implies a lot of extra effort and ov=
+erhead for the future</strong></p></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_40_170965924.1704256675793
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/10d9ffe253c42c0788e284fd850d4380
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAKfwAACn8AG1cEgF
+AAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpu
+czptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9
+Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRm
+OkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8v
+bnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3Rp
+ZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+Cjwv
+eDp4bXBtZXRhPgpMwidZAAACNElEQVQ4EY1TTY9MURA9dV/3vCZh0JJJzCxELNg1C2Jhg4iQFktr
+EsO/mH/BLFhb+oogTCIWE9+9QyKGZJpMaGYiae/N63fLqXpamghucm9uquqc+hbwqM4EkZno/86J
+PYh6itKDVGyFQhBkge8cJFyU1pVHoxgZgtUMn7fPoxam0UiAbyVQOCdQD8AayjLKBpjFrqvnREhv
+jis2gjvH72B87JD2ckOVNCACRPqJdEA0EmmmASurd9G6dthIKgPz7OAsl5qIpEmdxkOwMQSTmU57
+WW62Hi0VopZz0Ieaxyh1kd6nTF68+YJ9rQkkVYAoo2K+s4Sd2zaiubmhWqhKGgKi7A3UnvacGTb5
+5PaDd9h/5jFeLSyD9fBrf5OZzmz4lI5hsQOzP+AFq3Km7j+O2VqR2SmJT9oDUiYsEpgjer0Mf02h
+2YAO2DKLQzAQfdou2Oua+XWSxOh4hy00hR1rZalQXgebjARMQd66EiyJsbJgJLS6m0l17G8y6n6A
+o2OIDVTM2ZB4n1m0Dx/7uD+/iH6/oL06n/1NZjorrNvaYEHu/dpGxhNLlcs3X+PGrZeYmhr3CLqL
+Kzh2ZAdOHt2OkHB4I3620ePUZ+0L2JBO6+c8l4AxhCDd91/RXaJHnsmJtZjcso4pMKaIVdmUpljO
+Z2X39bMVge3ByCgzz5I5Jky4mkaDFYxN/zDK1TKxEpxtZ7UJW1+vUxI0H8Cu/U3m00fPwz0YWSZu
+1b/WmQVjZy79vs7fAdlwN9BZNtNNAAAAAElFTkSuQmCC
+------=_Part_40_170965924.1704256675793--

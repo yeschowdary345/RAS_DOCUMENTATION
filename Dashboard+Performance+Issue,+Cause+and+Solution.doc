@@ -1,0 +1,305 @@
+Date: Wed, 3 Jan 2024 05:09:36 +0000 (UTC)
+Message-ID: <1833437827.53.1704258576601@89ec1521d75b>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_52_1370929215.1704258576600"
+
+------=_Part_52_1370929215.1704258576600
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Dashboard Performance Issue, Cause and Solution</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Dashboard Performance Issue, Cause and Solution</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"DashboardPerformanceIssue,CauseandSolution-Issue"><style>=
+[data-colorid=3Dfc3n8in7bx]{color:#ff5630} html[data-color-mode=3Ddark] [da=
+ta-colorid=3Dfc3n8in7bx]{color:#cf2600}</style><strong>Issue</strong></h2>
+<ol>
+<li><p>Dashboards are slow to load data</p></li>
+<li><p>Some dashboards are getting stuck to load data (such as Dashboard - =
+Pack_I and Pack_V, etc.)</p></li>
+<li><p>Filters are getting stuck to load asset. (Unable to load when few pr=
+operties selected such as Pack_I, Cell Volt, etc.)</p></li>
+<li><p>Alarms and Events History dashboard is getting stuck to load data</p=
+></li>
+</ol>
+<h2 id=3D"DashboardPerformanceIssue,CauseandSolution-Cause"><strong>Cause</=
+strong></h2>
+<ol>
+<li><p>Current installed database server MS SQL 2017 Express edition has 10=
+GB size limit.</p></li>
+<li><p>Current RASDB size reached 7GB withing month with 5 to 6 assets, due=
+ to high frequency data and simulated data</p></li>
+<li><p>Dashboard is not designed to load historical data. It is only for re=
+cent status.</p></li>
+<li><p>Loading complete historical data of Alarms and Events history not go=
+od approach</p></li>
+<li><p>Current low-end server machine is not sufficient to handle the large=
+ data and network data traffic.</p></li>
+<li><p>This is development server for the development, testing and demonstr=
+ation with small data chunk.</p></li>
+<li><p>Dashboard mapped filter modification can be a issue. Dashboard will =
+crash if the used property is removed or changed to a filter.</p></li>
+</ol>
+<h2 id=3D"DashboardPerformanceIssue,CauseandSolution-DataAnalysis"><strong>=
+Data Analysis</strong></h2>
+<p><a class=3D"external-link" href=3D"https://exideleclanche.sharepoint.com=
+/:x:/s/RnD_RAS201910-Developers/EezemUNuoAlAt09m-IUGY6IBnSzqPtRWH6KHpZywZ2q=
+daQ?e=3DumsU0f" rel=3D"nofollow">Assets data size analysis for Pack_I and P=
+ack_V</a> </p>
+<h2 id=3D"DashboardPerformanceIssue,CauseandSolution-Solution"><strong>Solu=
+tion</strong></h2>
+<ol>
+<li><p>Migrate the existing data to MS SQL 2019 Developer edition server. (=
+<span data-colorid=3D"fc3n8in7bx">This should not be used for commercialize=
+d. It can be used only for development and education purpose</span>) </p></=
+li>
+<li><p>Shrink the data base size</p></li>
+<li><p>Remove the unnecessary test data</p></li>
+<li><p>Make a scheduler based backup plan to clean the historical data, kee=
+p only one months data live.</p></li>
+<li><p>Create a separate UI for Historical data</p></li>
+<li><p>Restrict the records in filter. Suggestion: load last 2 or 5 days da=
+ta only in filter.</p></li>
+<li><p>Dashboard need to optimized with group level selection.</p></li>
+<li><p>Events and Alarms Dashboard.</p>
+<ol>
+<li><p>Pagination required to develop in UI</p></li>
+<li><p>SP need to be modified in DB with arguments such as Page No. Page Co=
+unt, Company Id, User Id. </p></li>
+<li><p>Load last 100 records based on company ID in SP is a immediate solut=
+ion.</p></li>
+</ol></li>
+<li><p>Suggest to load partial data in dashboard, So Pagination must be req=
+uired to implement in dashboard for historical data</p></li>
+<li><p>Carefully edit the used filter.</p></li>
+</ol>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_52_1370929215.1704258576600--

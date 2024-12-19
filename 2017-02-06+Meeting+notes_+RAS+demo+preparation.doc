@@ -1,0 +1,462 @@
+Date: Wed, 3 Jan 2024 04:33:49 +0000 (UTC)
+Message-ID: <2107653327.57.1704256429908@d806889b90f2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_56_116213904.1704256429908"
+
+------=_Part_56_116213904.1704256429908
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>2017-02-06 Meeting notes: RAS demo preparation</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>2017-02-06 Meeting notes: RAS demo preparation</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-2017-02-06Meetingnotes:RASdemopreparation-Date">Date</=
+h2>
+<p><time datetime=3D"2017-02-06" class=3D"date-past">06 Feb 2017</time></p>
+<h2 id=3D"id-2017-02-06Meetingnotes:RASdemopreparation-Attendees">Attendees=
+</h2>
+<ul>
+<li><p><a class=3D"confluence-userlink user-mention" data-account-id=3D"557=
+058:a5da892f-a12c-453d-8c7f-77a2f5cb148e" href=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki/people/557058:a5da892f-a12c-453d-8c7f-77a2f5cb148e?=
+ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeappli=
+cations.atlassian.net/wiki">Bob Dijck (Unlicensed)</a></p></li>
+<li><p><a class=3D"confluence-userlink user-mention" data-account-id=3D"557=
+058:c6945f74-0ebe-42fe-a15d-9f5bcd2b520d" href=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki/people/557058:c6945f74-0ebe-42fe-a15d-9f5bcd2b520d?=
+ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeappli=
+cations.atlassian.net/wiki">Erik Michiels (Unlicensed)</a></p></li>
+<li><a class=3D"confluence-userlink user-mention" data-account-id=3D"557058=
+:6d8466bc-14d3-4565-bb00-c012fd21c00e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/557058:6d8466bc-14d3-4565-bb00-c012fd21c00e?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">Stefan Louis (Unlicensed)</a></li>
+<li><a class=3D"confluence-userlink user-mention" data-account-id=3D"557058=
+:e3d98d64-efc4-48c5-8d4b-1ca4c6e5b399" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/557058:e3d98d64-efc4-48c5-8d4b-1ca4c6e5b399?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">David Vermeulen (Unlicensed)</a></li>
+</ul>
+<h2 id=3D"id-2017-02-06Meetingnotes:RASdemopreparation-Discussionitems">Dis=
+cussion items</h2>
+<p>Input data</p>
+<ul>
+<li>Zitten nog gaten in.</li>
+<li>Er moet realistische data inzitten. Data moet =E2=80=98kloppen=E2=80=99=
+.</li>
+</ul>
+<p>Tijdsbalk bovenaan</p>
+<ul>
+<li>Nauwere periode is in te stellen</li>
+</ul>
+<p>SOC graph</p>
+<ul>
+<li>Per uur, niet per minuut</li>
+<li>Te veel datapunten</li>
+<li>Te veel memory (&gt; 500 MB)</li>
+<li>Geen nieuwe data bij inzoomen</li>
+</ul>
+<p>Gebruikte dataset</p>
+<ul>
+<li>Zo lang: zinvol?</li>
+<li>Dynamisch aan te passen?</li>
+<li>Link tussen filter bovenaan en grafieken</li>
+<li>Timestamp: link tussen grafieken</li>
+</ul>
+<p>Wat is zinvolle data?</p>
+<p>SOC graph bus</p>
+<ul>
+<li>Klopt niet?</li>
+<li>Er is geen data voor sommige periodes!</li>
+<li>Geen logaritmische schaal, maar lineair</li>
+<li>Beter plastipack? ToExcel?
+<ul>
+<li>Data is vervuild</li>
+</ul></li>
+</ul>
+<p>Time filter</p>
+<ul>
+<li>SOC heeft geen zin</li>
+<li>Alternatief: aantal uren actief (som van aantal actieve uren)</li>
+<li>David zal laten zien hoe dit wordt bepaald</li>
+</ul>
+<p>Data hoeft niet zo ver terug in tijd te gaan, afgelopen jaar is voldoend=
+e.</p>
+<p>Asset filter dropdown</p>
+<ul>
+<li>Bevat alle assets die aan gebruiker zijn gelinkt</li>
+<li>Ideaal: =E2=80=98oude=E2=80=99 asset filter ter vervanging.</li>
+<li>Er moet kunnen worden gefilterd op data die aan component wordt aangele=
+verd.</li>
+</ul>
+<p>Asset filter</p>
+<ul>
+<li>SL aan bord.</li>
+<li>Vb. prop1 =3D diesel, prop2 =3D geel</li>
+<li>Dashboard moet enkel assets tonen die aan assets voldoen.</li>
+<li>Filters aanpassen =C3=A0 dashboard moet volgen</li>
+<li>Filter: los van devexpress</li>
+<li>Kan devexpress niet.</li>
+<li>PM toont hoe Devexpress werkt</li>
+<li>DV ziet het probleem niet.</li>
+<li>Some discussion=E2=80=A6</li>
+<li>conclusion: probably what SL requests is possible</li>
+</ul>
+<p>My assets pagina</p>
+<ul>
+<li>Uitleg PM</li>
+<li>Filtermechanisme: prima</li>
+<li>Zou ook voor rapporten moeten werken</li>
+<li>Filter in databank?</li>
+<li>Filter on properties: bovenaan in 1 regel in het breed; plat; values er=
+bij;</li>
+<li>Filter uitklapbaar?</li>
+<li>Zijn filters te bewaren?</li>
+<li>Filter doorgeven aan dashboard.
+<ul>
+<li>Waarschuwing indien te veel data?</li>
+<li>Alternatief: top(x), maar dan wel met tekst =E2=80=98showing x records =
+of y available records=E2=80=99</li>
+<li>Enkel laatste 50000 records</li>
+<li>Geen filter: =E2=80=98showing all records (x records)=E2=80=99</li>
+<li>Filter controls laten staan zodat ze aangepast kunnen worden</li>
+<li>Voor demo? Liefst wel.</li>
+<li>Toevoegen: tekst-filter (vb asset name) met wildcard match</li>
+<li>Asset name: static property</li>
+</ul></li>
+</ul>
+<p>Reports</p>
+<ul>
+<li>Edit/view</li>
+<li>Gekoppeld aan dummy DB</li>
+<li>Kan het aan SQL RAS database?</li>
+<li>Bewaren kan nog niet</li>
+</ul>
+<p>My alerts</p>
+<ul>
+<li>Lijst van gestuurde notifications</li>
+<li>Per asset type</li>
+<li>En per asset</li>
+<li>Mogelijkheid om de asset-type notifications per asset te gebruiken of n=
+iet.</li>
+<li>Alternatief: Notifications obv filter
+<ul>
+<li>Bv alle bussen provincie w-vlaanderen</li>
+</ul></li>
+<li>Filter voor assets te selecteren: voor dashboard, reports, notification=
+s</li>
+</ul>
+<p>Notifications/alerts: definities vs berichten</p>
+<ul>
+<li>Read/unread</li>
+<li>Belletje: unread notifications</li>
+</ul>
+<p>Manage assets</p>
+<ul>
+<li>Device properties &lt;&gt; custom properties</li>
+<li>+ system properties</li>
+<li>Log</li>
+<li>Notifications: filtered on specific asset</li>
+<li>Remote control
+<ul>
+<li>Extra tab bij =E2=80=98manage assets=E2=80=99</li>
+<li>Control room background</li>
+<li>na klikken: befaamde asset filter</li>
+<li>asset erbij: graciosa 1</li>
+<li>als graciosa 1 getoond wordt, dan moet tab 'remote control' getoond wor=
+den
+<ul>
+<li>4 afbeeldingen die na elkaar getoond moeten worden</li>
+</ul></li>
+</ul></li>
+<li>general information tab: foto toevoegen</li>
+</ul>
+<p>My company</p>
+<ul style=3D"list-style-type: square;">
+<li>contactpersonen van het bedrijf</li>
+<li>statische tabel: user gevens (naam, emailadres)</li>
+</ul>
+<p>Dashboard</p>
+<ul style=3D"list-style-type: square;">
+<li>battery temperature
+<ul style=3D"list-style-type: square;">
+<li>zinloos</li>
+<li>andere datasource voor maken</li>
+<li>temperatuur histogram: per dag
+<ul style=3D"list-style-type: square;">
+<li>nog verder te bekijken...</li>
+</ul></li>
+</ul></li>
+<li>errors occurred: legenda mag weg</li>
+<li>current over time</li>
+<li>SOC: als er 1 cm data is</li>
+</ul>
+<p>Asset type filter</p>
+<ul style=3D"list-style-type: square;">
+<li>SL: asset type filter: niet enkel om asset types te filteren, maar ook =
+voor time range</li>
+<li>time filter die nu bovenaan staat moet niet worden behouden (dubbelop)<=
+/li>
+</ul>
+<p>Dashboard</p>
+<ul style=3D"list-style-type: square;">
+<li>taal: moet user-gekoppeld worden</li>
+<li>kaart
+<ul style=3D"list-style-type: square;">
+<li>google maps niet mogelijk</li>
+<li>custom maps</li>
+<li>voorlopig voldoende</li>
+<li>labels: SOC, kilometers</li>
+<li>kleur bolletje: status</li>
+</ul></li>
+</ul>
+<p><br></p>
+<p>State of health</p>
+<ul style=3D"list-style-type: square;">
+<li>tussen 80 en 100</li>
+<li>data moet worden aangepast om 'knikje' te simuleren</li>
+<li>data is nu nog niet beschikbaar</li>
+<li>moet nog over worden nagedacht</li>
+</ul>
+<p><br></p>
+<p>Kaartje:</p>
+<ul style=3D"list-style-type: square;">
+<li>last known position</li>
+<li>include status</li>
+</ul>
+<p><br></p>
+<p>praktisch:</p>
+<ul style=3D"list-style-type: square;">
+<li>woensdagmiddag voor demo: freeze van demo</li>
+</ul>
+<h2 id=3D"id-2017-02-06Meetingnotes:RASdemopreparation-Actionitems">Action =
+items</h2>
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"83755409">
+<li data-inline-task-id=3D"1"><span>&nbsp;</span></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_56_116213904.1704256429908--

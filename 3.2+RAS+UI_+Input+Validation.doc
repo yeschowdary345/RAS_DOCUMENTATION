@@ -1,0 +1,350 @@
+Date: Wed, 3 Jan 2024 05:21:01 +0000 (UTC)
+Message-ID: <1638566622.73.1704259261652@825850ec0edf>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_72_775277468.1704259261652"
+
+------=_Part_72_775277468.1704259261652
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>3.2 RAS UI: Input Validation</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>3.2 RAS UI: Input Validation</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-3.2RASUI:InputValidation-DescriptionandPriority"><styl=
+e>[data-colorid=3Dvnhx6txkym]{color:#707070} html[data-color-mode=3Ddark] [=
+data-colorid=3Dvnhx6txkym]{color:#8f8f8f}[data-colorid=3Djwghmd84cv]{color:=
+#707070} html[data-color-mode=3Ddark] [data-colorid=3Djwghmd84cv]{color:#8f=
+8f8f}[data-colorid=3Dw49ez6gbkq]{color:#707070} html[data-color-mode=3Ddark=
+] [data-colorid=3Dw49ez6gbkq]{color:#8f8f8f}</style>Description and Priorit=
+y</h2>
+<p class=3D"level3text">Input validation is a requirement for almost all th=
+e dialogs in the RAS UI. The implementation should be as consistent as poss=
+ible for both user satisfaction as well as ease of implementation. This fea=
+ture specification describes how this will be done.</p>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable">
+<colgroup>
+<col style=3D"width: 30.0px;">
+<col style=3D"width: 440.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th colspan=3D"1" class=3D"confluenceTh">#</th>
+<th class=3D"confluenceTh">Component</th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">1</td>
+<td class=3D"confluenceTd">Input validation alerts</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-3.2RASUI:InputValidation-Userinteractionanddesign">User intera=
+ction and design</h2>
+<p> </p>
+<div style=3D"width: 100.0%;height: 100.0%;text-align: left;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/58556493/b=
+alsamiq_2278E287-509B-183B-1098-2EC38DDDB7D8_Master.png">
+</div>=20
+<p></p>
+<p class=3D"level3text"><br></p>
+<h2 class=3D"level4" id=3D"id-3.2RASUI:InputValidation-FunctionalRequiremen=
+ts">Functional Requirements</h2>
+<p class=3D"level3text"></p>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 44.=
+365%;">
+<colgroup>
+<col style=3D"width: 8.31266%;">
+<col style=3D"width: 91.6873%;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">REQ #</th>
+<th class=3D"confluenceTh">Description</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">REQ01</td>
+<td class=3D"confluenceTd">When possible inline validation is added beneath=
+ the field</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">REQ02</td>
+<td class=3D"confluenceTd">An alert is displayed showing a summary of the v=
+alidation errors</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">REQ03</td>
+<td colspan=3D"1" class=3D"confluenceTd">The alert is always displayed in t=
+he top right corner of the screen</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">REQ04</td>
+<td colspan=3D"1" class=3D"confluenceTd">When a form submit was successfull=
+ a green alert is shown indicating what happened</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 class=3D"level3text" id=3D"id-3.2RASUI:InputValidation-BusinessRules">B=
+usiness Rules</h2>
+<ul>
+<li class=3D"template"><span data-colorid=3D"jwghmd84cv"><span data-colorid=
+=3D"w49ez6gbkq"></span></span><span data-colorid=3D"vnhx6txkym">&nbsp;</spa=
+n></li>
+</ul>
+<h2 id=3D"id-3.2RASUI:InputValidation-Questions">Questions</h2>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">#</th>
+<th class=3D"confluenceTh">Question</th>
+<th class=3D"confluenceTh">Outcome</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">1</td>
+<td class=3D"confluenceTd"></td>
+<td class=3D"confluenceTd"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-3.2RASUI:InputValidation-NotDoing">Not Doing</h2>
+<ul>
+<li></li>
+</ul>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_72_775277468.1704259261652--

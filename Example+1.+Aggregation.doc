@@ -1,0 +1,567 @@
+Date: Wed, 3 Jan 2024 05:30:46 +0000 (UTC)
+Message-ID: <1066174310.89.1704259846599@825850ec0edf>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_88_731670086.1704259846599"
+
+------=_Part_88_731670086.1704259846599
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Example 1. Aggregation</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Example 1. Aggregation</h1>
+    <div class=3D"Section1">
+        <p><strong>Case:</strong>&nbsp;We record temperature in Fahrenheit =
+and would like to evaluate the average temperature on a monthly basis. We t=
+hen want to calculate this into Celsius and receive an alert when it is hig=
+her than 80=C2=B0 Celsius.</p>
+<p><strong>Data Analysis Definition:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">WITH AS=
+SET("Toll Plaza") AS Tollplaza
+DEFINE
+    AVG(Tollplaza.TEMPF) AS AverageTempF
+USING PERIOD(1, WEEK)
+CALCULATE (AverageTempF - 32) / 1.8 AS AverageTempC
+WHEN AverageTempC &gt; 70 THEN EVENT() THROTTLE BY MAX(1, DAY)
+WHEN AverageTempC &gt; 70 THEN WEBNOTIFICATION('Temperature critical', 'The=
+ temperature of asset 1 has reached [AverageTempC]=C2=B0 Celsius!', severit=
+y.Danger) THROTTLE BY MAX(1, DAY)</pre>=20
+</div>
+</div>
+<h1 id=3D"Example1.Aggregation-Example"><strong>Example</strong></h1>
+<h3 id=3D"Example1.Aggregation-Sampledata(boldindicatesnewdata)"><strong>Sa=
+mple data (bold indicates new data)</strong></h3>
+<div class=3D"table-wrap">
+<table class=3D"wrapped tablesorter tablesorter-default stickyTableHeaders =
+confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr class=3D"tablesorter-headerRow">
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Id
+</div></th>
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Property
+</div></th>
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Timestamp
+</div></th>
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" colspan=3D"1" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Float
+</div></th>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">1</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">TEMP_F</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">2017-10-23 12:00:00.=
+123</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd" colspan=3D"1">130</t=
+d>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">2</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">TEMP_F</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">2017-10-24 12:00:00.=
+123</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd" colspan=3D"1">160</t=
+d>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">3</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">TEMP_F</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">2017-10-25 12:00:00.=
+123</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd" colspan=3D"1">191</t=
+d>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">4</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">TEMP_F</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">2017-10-26 12:00:00.=
+123</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd" colspan=3D"1">145</t=
+d>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">5</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">TEMP_F</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">2017-10-27 12:00:00.=
+123</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd" colspan=3D"1">164</t=
+d>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><strong>6</strong></=
+td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><strong>TEMP_F</stro=
+ng></td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><strong>2017-10-28 1=
+2:00:00.123</strong></td>
+<td style=3D"text-align: left;" class=3D"confluenceTd" colspan=3D"1"><stron=
+g>194</strong></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>7</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>TEMP_F</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>2017-10-29 12:00:00.123</s=
+trong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>145</strong></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>8</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>TEMP_F</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>2017-10-30 12:00:00.123</s=
+trong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>165</strong></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>9</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>TEMP_F</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>2017-10-31 12:00:00.123</s=
+trong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>54</strong></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>10</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>TEMP_F</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>2017-11-01 12:00:00.123</s=
+trong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>94</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 class=3D"table-wrap" id=3D"Example1.Aggregation-Samplestate">Sample sta=
+te</h3>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Timestamp</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><br></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 class=3D"auto-cursor-target" id=3D"Example1.Aggregation-DataInputResult=
+"><span style=3D"font-size: 16.0px;font-weight: bold;">Data Input Result</s=
+pan></h3>
+<pre>WITH ASSET("Toll Plaza") AS Tollplaza <br>DEFINE AVG(Tollplaza.TEMPF) =
+AS AverageTempF <br>USING PERIOD(1, WEEK)</pre>
+<p>The query will verify if the week has been closed because the aggregate =
+period is ONE WEEK.</p>
+<p class=3D"table-wrap">From the sample data, the current week has not been=
+ closed yet. The last week closed is WEEK#43 which runs from&nbsp;<strong>O=
+ctober 23, 2017&nbsp;-&nbsp;October 29, 2017</strong>.</p>
+<p class=3D"table-wrap">Aggregating this data will result in the following:=
+</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Property</th>
+<th class=3D"confluenceTh">Value</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">AverageTempF</td>
+<td class=3D"confluenceTd">161,2857</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Timestamp</td>
+<td class=3D"confluenceTd">2017-10-30 00:00:00.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Note: based on the current data sample, we only retrieve one aggrega=
+te. In other examples this may be more.</em></p>
+<h3 id=3D"Example1.Aggregation-ComputationResult">Computation Result</h3>
+<pre>CALCULATE (AverageTempF - 32) / 1.8 AS AverageTempC</pre>
+<p>We calculate the computation and replace the variable with the received =
+average (139,285).</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Property</th>
+<th class=3D"confluenceTh">Value</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">AverageTempF</td>
+<td class=3D"confluenceTd">161,2857</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Timestamp</td>
+<td class=3D"confluenceTd">2017-10-30 00:00:00.000</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Computation</td>
+<td colspan=3D"1" class=3D"confluenceTd">71,2854</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<h3 id=3D"Example1.Aggregation-EvaluationResult">Evaluation Result</h3>
+<pre>WHEN AverageTempC &gt; 70 THEN EVENT() THROTTLE BY MAX(1, DAY) <br>WHE=
+N AverageTempC &gt; 70 THEN WEBNOTIFICATION('Temperature critical', 'The te=
+mperature of asset 1 has reached [AverageTempC]=C2=B0 Celsius!', severity.D=
+anger) THROTTLE BY MAX(1, DAY)</pre>
+<p>We replace computation with the computed value (=3D71,8254) and evaluate=
+ the evaluation expression which results in true</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col style=3D"width: 116.0px;">
+<col style=3D"width: 179.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Property</p></th>
+<th class=3D"confluenceTh">Value</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">AverageTempF</td>
+<td class=3D"confluenceTd">161,2857</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Timestamp</td>
+<td class=3D"confluenceTd">2017-10-30 00:00:00.000</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Computation</td>
+<td colspan=3D"1" class=3D"confluenceTd">71,8254</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Evaluation</td>
+<td colspan=3D"1" class=3D"confluenceTd">true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=3D"Example1.Aggregation-ActionThrottlingResult">Action Throttling Re=
+sult</h3>
+<pre>WHEN AverageTempC &gt; 70 THEN EVENT() THROTTLE BY MAX(1, DAY) <br>WHE=
+N AverageTempC &gt; 70 THEN WEBNOTIFICATION('Temperature critical', 'The te=
+mperature of asset 1 has reached [AverageTempC]=C2=B0 Celsius!', severity.D=
+anger) THROTTLE BY MAX(1, DAY)</pre>
+<p>The upperlimit indicates that it can only fire once daily. Since we have=
+n't got any previous state in this example, we can conclude it hasn't been =
+fired yet today.</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col style=3D"width: 116.0px;">
+<col style=3D"width: 179.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Property</p></th>
+<th class=3D"confluenceTh">Value</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">AverageTempF</td>
+<td class=3D"confluenceTd">161,2857</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Timestamp</td>
+<td class=3D"confluenceTd">2017-10-30 00:00:00.000</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Computation</td>
+<td colspan=3D"1" class=3D"confluenceTd">71,8254</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Evaluation</td>
+<td colspan=3D"1" class=3D"confluenceTd">true</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Throttling</td>
+<td colspan=3D"1" class=3D"confluenceTd">true</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class=3D"table-wrap">New sample state</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Timestamp</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">2017-10-30 00:00:00.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=3D"Example1.Aggregation-ActionResult">Action Result</h3>
+<pre>WHEN AverageTempC &gt; 70 THEN EVENT() THROTTLE BY MAX(1, DAY) <br>WHE=
+N AverageTempC &gt; 70 THEN WEBNOTIFICATION('Temperature critical', 'The te=
+mperature of asset 1 has reached [AverageTempC]=C2=B0 Celsius!', severity.D=
+anger) THROTTLE BY MAX(1, DAY)</pre>
+<p>The first method indicates we should fire the event.</p>
+<p>The second method indicates we should send a website notification to all=
+ the users of the data analysis definition.</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_88_731670086.1704259846599--

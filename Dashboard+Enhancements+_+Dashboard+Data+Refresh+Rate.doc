@@ -1,0 +1,710 @@
+Date: Wed, 3 Jan 2024 05:06:46 +0000 (UTC)
+Message-ID: <445581809.49.1704258406702@89ec1521d75b>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_48_1790950246.1704258406702"
+
+------=_Part_48_1790950246.1704258406702
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Dashboard Enhancements / Dashboard Data Refresh Rate</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Dashboard Enhancements / Dashboard Data Refresh Rate</h1>
+    <div class=3D"Section1">
+        <h3 id=3D"DashboardEnhancements/DashboardDataRefreshRate-Dataretrie=
+vallogicusingFiltersinRAS">Data retrieval logic using Filters in RAS</h3>
+<p>During the last step of RAS Filter creation, we can see the data preview=
+ with last <strong>1000</strong> records based on Timestamp ordered by desc=
+ending order. While configuring the dashboard using Filters, the maximum re=
+cords fetched from database stands at <strong>100000</strong>. </p>
+<p>The filter data records are retrieved from database are stored in cache =
+for <strong>5 minutes</strong> and after 5 minutes again the data is fetche=
+d from database against the request and the cycle continues.</p>
+<p>The implemented logic can be found as mentioned below.</p>
+<ol>
+<li><p>GetAssetValues (RAS.Backend.Data.Assets.Repositories - DataSetReposi=
+tory.cs)</p></li>
+<li><p>GetPreview (RAS.Backend.Data.Assets.Repositories - DataSetRepository=
+.cs)</p></li>
+<li><p>GetPivotedFilterData (RAS.Private.UI.DashboardDataSources - FilterDa=
+taCache.cs)</p></li>
+</ol>
+<h3 id=3D"DashboardEnhancements/DashboardDataRefreshRate-Datagrouping">Data=
+ grouping</h3>
+<p>This is in requirement gathering phase and the below points are based on=
+ initial discussion held on 17 Aug 2021.</p>
+<ol>
+<li><p>We need to store site details in master table and the same needs to =
+be mapped against respective assets (especially for Telecom projects)</p></=
+li>
+<li><p>Modify the Filter UI to choose the sites and the backend module to b=
+ring all assets from the selected sites to dashboard</p></li>
+<li><p>Another possible grouping is having hierarchy as follows</p>
+<ol>
+<li><p>Site</p></li>
+<li><p>Cluster</p></li>
+<li><p>District</p></li>
+<li><p>Circle</p></li>
+</ol></li>
+</ol>
+<h3 id=3D"DashboardEnhancements/DashboardDataRefreshRate-DevExpressLimitati=
+ons">DevExpress Limitations</h3>
+<p>DevExpress loads all the data from RAS database and performs sorting, fi=
+ltering with the retrieved data. Currently it=E2=80=99s not performing the =
+database calls / Web API calls based on the selections in the dashboard.</p=
+>
+<p></p>
+<h3 id=3D"DashboardEnhancements/DashboardDataRefreshRate-Tasks">Tasks</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+<col style=3D"width: 136.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Task</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Effort (hrs)</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Type</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Remarks</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Responsibility</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Filter table changes </p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Database</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Filter create, update and delete rest API cha=
+nges</p></td>
+<td class=3D"confluenceTd"><p>32 </p></td>
+<td class=3D"confluenceTd"><p>Backend</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Data retrieval logic change</p></td>
+<td class=3D"confluenceTd"><p>24 </p></td>
+<td class=3D"confluenceTd"><p>Backend</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Dashboard contract changes to accommodate new=
+ additions and testing</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>Backend</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Create - Step Up Validation</p></td>
+<td class=3D"confluenceTd"><p>40</p></td>
+<td class=3D"confluenceTd"><p>UI</p></td>
+<td class=3D"confluenceTd"><p>Adding buffer time</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Create mock screen for =E2=80=9CCreate Filter=
+=E2=80=9C wizard based on group level</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Functional Testing</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>Testing</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Regression Testing</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>Testing</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"DashboardEnhancements/DashboardDataRefreshRate-ImplementationMeth=
+ods">Implementation Methods</h2>
+<p><strong>Filter Design</strong></p>
+<p><strong>[RASDB].[dbo].[Filter]</strong></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>Id</p></td>
+<td class=3D"confluenceTd"><p>title</p></td>
+<td class=3D"confluenceTd"><p>UserId</p></td>
+<td class=3D"confluenceTd"><p>IsHidden</p></td>
+<td class=3D"confluenceTd"><p>TimestampFrom</p></td>
+<td class=3D"confluenceTd"><p>TimestampTo</p></td>
+<td class=3D"confluenceTd"><p>SecondsFromNow</p></td>
+<td data-highlight-colour=3D"#ffc400" class=3D"confluenceTd"><p><strong>IsG=
+roup</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>25</p></td>
+<td class=3D"confluenceTd"><p>Filter_20210816142831</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td data-highlight-colour=3D"#ffc400" class=3D"confluenceTd"><p><strong>1</=
+strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p><strong>[RASDB].[dbo].[AssetFilter]</strong></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 254.0px;">
+<col style=3D"width: 253.0px;">
+<col style=3D"width: 253.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>Id</p></td>
+<td class=3D"confluenceTd"><p>AssetId</p></td>
+<td class=3D"confluenceTd"><p>FilterId</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>35</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>25</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>36</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>25</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>[RASDB].[dbo].[PropertyFilter]</strong></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 95.0px;">
+<col style=3D"width: 95.0px;">
+<col style=3D"width: 95.0px;">
+<col style=3D"width: 95.0px;">
+<col style=3D"width: 95.0px;">
+<col style=3D"width: 95.0px;">
+<col style=3D"width: 95.0px;">
+<col style=3D"width: 95.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>Id</p></td>
+<td class=3D"confluenceTd"><p>AssetTypePropertyId</p></td>
+<td class=3D"confluenceTd"><p>FilterId</p></td>
+<td class=3D"confluenceTd"><p>Expression</p></td>
+<td class=3D"confluenceTd"><p>MinValueDouble</p></td>
+<td class=3D"confluenceTd"><p>MaxValueDouble</p></td>
+<td class=3D"confluenceTd"><p>IsEnabled</p></td>
+<td class=3D"confluenceTd"><p>AssetPropertyId</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>57</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>25</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>71</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>58</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>25</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>97</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>59</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>25</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>72</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>60</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>25</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>98</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>61</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>25</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>10119</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p></p>
+<p>We can use </p>
+<p><strong>[RASDB].[dbo].[AssetSerialMappings]</strong> table for maintaini=
+ng the hierarchy as this will be used for Asset Remapping as well. </p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+<col style=3D"width: 85.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p>Id</p></td>
+<td class=3D"confluenceTd"><p>SerialNumber</p></td>
+<td class=3D"confluenceTd"><p>CreatedAt</p></td>
+<td class=3D"confluenceTd"><p>CreatedBy</p></td>
+<td class=3D"confluenceTd"><p>AssetId</p></td>
+<td class=3D"confluenceTd"><p>ParentId</p></td>
+<td class=3D"confluenceTd"><p>IsParent</p></td>
+<td class=3D"confluenceTd"><p>OrderNumber</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>21</p></td>
+<td class=3D"confluenceTd"><p>5.44465E+11</p></td>
+<td class=3D"confluenceTd"><p>20:08.7</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>30</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>22</p></td>
+<td class=3D"confluenceTd"><p>4.65467E+11</p></td>
+<td class=3D"confluenceTd"><p>20:08.7</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>31</p></td>
+<td class=3D"confluenceTd"><p>30</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>23</p></td>
+<td class=3D"confluenceTd"><p>65645465665</p></td>
+<td class=3D"confluenceTd"><p>20:08.7</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>32</p></td>
+<td class=3D"confluenceTd"><p>30</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>24</p></td>
+<td class=3D"confluenceTd"><p>64564646546</p></td>
+<td class=3D"confluenceTd"><p>20:08.7</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>33</p></td>
+<td class=3D"confluenceTd"><p>30</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>4</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>25</p></td>
+<td class=3D"confluenceTd"><p>616919191</p></td>
+<td class=3D"confluenceTd"><p>17:04.9</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>34</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>26</p></td>
+<td class=3D"confluenceTd"><p>649949196</p></td>
+<td class=3D"confluenceTd"><p>17:04.9</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>35</p></td>
+<td class=3D"confluenceTd"><p>34</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>27</p></td>
+<td class=3D"confluenceTd"><p>5.16517E+12</p></td>
+<td class=3D"confluenceTd"><p>05:50.4</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>36</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>28</p></td>
+<td class=3D"confluenceTd"><p>8.69165E+14</p></td>
+<td class=3D"confluenceTd"><p>35:33.7</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>37</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>29</p></td>
+<td class=3D"confluenceTd"><p>6461684651</p></td>
+<td class=3D"confluenceTd"><p>50:23.3</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>38</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>30</p></td>
+<td class=3D"confluenceTd"><p>9.46576E+11</p></td>
+<td class=3D"confluenceTd"><p>53:51.9</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>39</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p><strong>Risks associated with grouping</strong></p>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p>While grouping will work fine under normal scenario, but not in case of =
+re-mapping. If in case the re-mapping becomes normal use case in future, th=
+en we need to take care of Filter created for group programmatically whenev=
+er re-mapping happens.</p>
+</div>
+</div>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 340.0px;">
+<col style=3D"width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p style=3D"text-align: center;"><strong>Using A=
+sset table</strong></p></th>
+<th class=3D"confluenceTh"><p style=3D"text-align: center;"><strong>Using A=
+ssetSerialMapping table</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>New column Parent needs to be added</p></td>
+<td class=3D"confluenceTd"><p>Existing design is sufficient</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Since this is primary table, all assets detai=
+ls are guaranteed anytime. Even though any future design changes will requi=
+re additional effort for the availability.</p></td>
+<td class=3D"confluenceTd"><p>We need to take care the availability of asse=
+ts in the AssetSerialMapping table as we store records only during Asset Re=
+gistration. (2 cases needs to be taken care)</p>
+<ol>
+<li><p>During Asset creation in Private UI</p></li>
+<li><p>During auto registration </p></li>
+</ol></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Hierarchy level can=E2=80=99t maintained usin=
+g Asset table</p></td>
+<td class=3D"confluenceTd"><p>Hierarchy level can be maintained by adding o=
+ne column (max two columns)</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Conclusion</strong></p>
+<p>Taking into account of loose coupling of hierarchy information with Asse=
+t table, by ensuring the all asset information is stored and updated whenev=
+er needed, we can proceed with implementation using AssetSerialMapping tabl=
+e.</p>
+    </div>
+</body>
+</html>
+------=_Part_48_1790950246.1704258406702--

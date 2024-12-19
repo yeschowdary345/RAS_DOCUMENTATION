@@ -1,0 +1,542 @@
+Date: Wed, 3 Jan 2024 05:55:16 +0000 (UTC)
+Message-ID: <1454236584.123.1704261316510@9c4c96a6ba92>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_122_45629043.1704261316510"
+
+------=_Part_122_45629043.1704261316510
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>20.4 OTA Commands</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>20.4 OTA Commands</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"wide" data-local-id=3D"78ed4a5b-6b57-48ea-a81f-dac9ec=
+694a97" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 78.0px;">
+<col style=3D"width: 179.0px;">
+<col style=3D"width: 348.0px;">
+<col style=3D"width: 355.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p></p><p><strong>Command</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Description</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Telemetry (Incoming Sample JSON)</str=
+ong></p></th>
+<th class=3D"confluenceTh"><p><strong>RAS (Response Sample JSON)</strong></=
+p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>CURRENT_FIRMWARE_VERSION </p></td>
+<td class=3D"confluenceTd"><p>Device should its current firmware version un=
+der the name CURRENT_FIRMWARE_VERSION to RAS through performance data</p></=
+td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+&nbsp;&nbsp;&nbsp;&nbsp;"Password":&nbsp;"123456",
+&nbsp;&nbsp;&nbsp;&nbsp;"Measurements":&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'Parameter':'FRM_SLV','Flo=
+at':'','String':'1.0.0','Timestamp':'2020-12-23T19:&nbsp;00:&nbsp;05.334Z'}
+&nbsp;&nbsp;&nbsp;&nbsp;]
+}</pre>=20
+</div>
+</div><p>URL - <a class=3D"external-link" href=3D"http://103.133.214.159/In=
+boundHandler/ec81d36d-d684-5e0c-4941-cf0a82e4c530/Measurements" rel=3D"nofo=
+llow">http://103.133.214.159/InboundHandler/ec81d36d-d684-5e0c-4941-cf0a82e=
+4c530/Measurements</a></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">[
+    {
+        "Key": "FIRMWARE_UPDATE_AVAILABLE",
+        "Value": {
+            "Id": 3,
+            "AssetFileType": "FRM_TCU",
+            "AssetFileName": "20210219_frm_sample.frm",
+            "Version": 2,
+            "ReleaseDate": "2021-02-10T00:00:00",
+            "Comments": "Minor update"
+        }
+    }
+]</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>CURRENT_CONFIG_VERSION </p></td>
+<td class=3D"confluenceTd"><p>Device should its current configuration versi=
+on under the name CURRENT_FIRMWARE_VERSION to RAS through performance data<=
+/p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+&nbsp;&nbsp;&nbsp;&nbsp;"Password":&nbsp;"123456",
+&nbsp;&nbsp;&nbsp;&nbsp;"Measurements":&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'Parameter':'CURRENT_CONFI=
+G_VERSION','Float':'','String':'1.0.0','Timestamp':'2020-12-23T19:&nbsp;00:=
+&nbsp;05.334Z'}
+&nbsp;&nbsp;&nbsp;&nbsp;]
+}</pre>=20
+</div>
+</div><p>URL - <a class=3D"external-link" href=3D"http://103.133.214.159/In=
+boundHandler/ec81d36d-d684-5e0c-4941-cf0a82e4c530/Measurements" rel=3D"nofo=
+llow">http://103.133.214.159/InboundHandler/ec81d36d-d684-5e0c-4941-cf0a82e=
+4c530/Measurements</a></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">[
+    {
+        "Key": "CONFIGURATION_UPDATE_AVAILABLE",
+        "Value": {
+            "Id": 4,
+            "AssetType": "CFG",
+            "AssetFileType": "BMS",
+            "AssetFileName": "20210219_frm_ionbms_1.frm",
+            "Version": 2,
+            "ReleaseDate": "2021-02-10T00:00:00",
+            "Comments": "Minor update"
+        }
+    }
+]</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>START_DOWNLOAD</p></td>
+<td class=3D"confluenceTd"><p>Before starting to download file from server<=
+/p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+&nbsp;&nbsp;&nbsp;&nbsp;"Password":&nbsp;"123456",
+&nbsp;&nbsp;&nbsp;&nbsp;"Measurements":&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'Parameter':'START_DOWNLOA=
+D','Float':'','String':'1','Timestamp':'2020-12-23T19:&nbsp;00:&nbsp;05.334=
+Z'}
+&nbsp;&nbsp;&nbsp;&nbsp;]
+}</pre>=20
+</div>
+</div><p>URL - <a class=3D"external-link" href=3D"http://103.133.214.159/In=
+boundHandler/ec81d36d-d684-5e0c-4941-cf0a82e4c530/Measurements" rel=3D"nofo=
+llow">http://103.133.214.159/InboundHandler/ec81d36d-d684-5e0c-4941-cf0a82e=
+4c530/Measurements</a></p></td>
+<td class=3D"confluenceTd"><p>HTTPSTATUS 200</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>FW_DOWNLOADED&nbsp; </p></td>
+<td class=3D"confluenceTd"><p>File download SUCCESS.</p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+&nbsp;&nbsp;&nbsp;&nbsp;"Password":&nbsp;"123456",
+&nbsp;&nbsp;&nbsp;&nbsp;"Measurements":&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'Parameter':'FW_DOWNLOADED=
+','Float':'','String':'1','Timestamp':'2020-12-23T19:&nbsp;00:&nbsp;05.334Z=
+'}
+&nbsp;&nbsp;&nbsp;&nbsp;]
+}</pre>=20
+</div>
+</div><p>URL - <a class=3D"external-link" href=3D"http://103.133.214.159/In=
+boundHandler/ec81d36d-d684-5e0c-4941-cf0a82e4c530/Measurements" rel=3D"nofo=
+llow">http://103.133.214.159/InboundHandler/ec81d36d-d684-5e0c-4941-cf0a82e=
+4c530/Measurements</a></p></td>
+<td class=3D"confluenceTd"><p>HTTPSTATUS 200</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>FW_DOWNLOAD_FAILED</p></td>
+<td class=3D"confluenceTd"><p>File download FAILURE.</p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+&nbsp;&nbsp;&nbsp;&nbsp;"Password":&nbsp;"123456",
+&nbsp;&nbsp;&nbsp;&nbsp;"Measurements":&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'Parameter':'FW_DOWNLOAD_F=
+AILED','Float':'','String':'1','Timestamp':'2020-12-23T19:&nbsp;00:&nbsp;05=
+.334Z'}
+&nbsp;&nbsp;&nbsp;&nbsp;]
+}</pre>=20
+</div>
+</div><p>URL - <a class=3D"external-link" href=3D"http://103.133.214.159/In=
+boundHandler/ec81d36d-d684-5e0c-4941-cf0a82e4c530/Measurements" rel=3D"nofo=
+llow">http://103.133.214.159/InboundHandler/ec81d36d-d684-5e0c-4941-cf0a82e=
+4c530/Measurements</a></p></td>
+<td class=3D"confluenceTd"><p>HTTPSTATUS 200</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>START_UPGRADE</p></td>
+<td class=3D"confluenceTd"><p>Before starting the upgrading the device</p><=
+/td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+&nbsp;&nbsp;&nbsp;&nbsp;"Password":&nbsp;"123456",
+&nbsp;&nbsp;&nbsp;&nbsp;"Measurements":&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'Parameter':'START_UPGRADE=
+','Float':'','String':'1','Timestamp':'2020-12-23T19:&nbsp;00:&nbsp;05.334Z=
+'}
+&nbsp;&nbsp;&nbsp;&nbsp;]
+}</pre>=20
+</div>
+</div><p>URL - <a class=3D"external-link" href=3D"http://103.133.214.159/In=
+boundHandler/ec81d36d-d684-5e0c-4941-cf0a82e4c530/Measurements" rel=3D"nofo=
+llow">http://103.133.214.159/InboundHandler/ec81d36d-d684-5e0c-4941-cf0a82e=
+4c530/Measurements</a></p></td>
+<td class=3D"confluenceTd"><p>HTTPSTATUS 200</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>UPGRADE_FAILED&nbsp;</p></td>
+<td class=3D"confluenceTd"><p>Up-gradation FAILURE</p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+&nbsp;&nbsp;&nbsp;&nbsp;"Password":&nbsp;"123456",
+&nbsp;&nbsp;&nbsp;&nbsp;"Measurements":&nbsp;[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'Parameter':'UPGRADE_FAILE=
+D','Float':'','String':'1','Timestamp':'2020-12-23T19:&nbsp;00:&nbsp;05.334=
+Z'}
+&nbsp;&nbsp;&nbsp;&nbsp;]
+}</pre>=20
+</div>
+</div><p>URL - <a class=3D"external-link" href=3D"http://103.133.214.159/In=
+boundHandler/ec81d36d-d684-5e0c-4941-cf0a82e4c530/Measurements" rel=3D"nofo=
+llow">http://103.133.214.159/InboundHandler/ec81d36d-d684-5e0c-4941-cf0a82e=
+4c530/Measurements</a></p></td>
+<td class=3D"confluenceTd"><p>HTTPSTATUS 200</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p>Solution</p>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"7e4a8e9f-d2e3-4128-92cb-e56=
+4f1692a96" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 63.0px;">
+<col style=3D"width: 141.0px;">
+<col style=3D"width: 275.0px;">
+<col style=3D"width: 281.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Command</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Description</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Telemetry (Incoming Sample JSON)</str=
+ong></p></th>
+<th class=3D"confluenceTh"><p><strong>RAS (Response Sample JSON)</strong></=
+p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>CURRENT_FIRMWARE_VERSION </p></td>
+<td class=3D"confluenceTd"><p>Device should its current firmware version un=
+der the name CURRENT_FIRMWARE_VERSION to RAS through performance data</p></=
+td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POST /I=
+nboundHandler/7780f4a7-93da-7e62-582b-ab584c5b36f2/Measurements
+Host: ras.leclanche.com
+Content-Type: application/json
+=20
+{
+    "Password": "Asset Password",
+    "Measurements": [{
+            "Timestamp": "2019-03-28T08:23:05.334Z",
+            "Parameter": "TCUAPP",
+            "Float": 1.0.0,
+            "String": "StringVal,ue1"
+        },
+        {
+            "Timestamp": "2019-03-28T08:23:06.380Z",
+            "Parameter": "CUSTOMERAPP",
+            "Float": 1.0.0,
+            "String": "StringValue12"
+        }
+    ]
+}</pre>=20
+</div>
+</div><p>URL - <a class=3D"external-link" href=3D"http://103.133.214.159/In=
+boundHandler/ec81d36d-d684-5e0c-4941-cf0a82e4c530/Measurements" rel=3D"nofo=
+llow">http://103.133.214.159/InboundHandler/ec81d36d-d684-5e0c-4941-cf0a82e=
+4c530/Measurements</a></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">[
+    {
+        "Key": "FIRMWARE_UPDATE_AVAILABLE",
+        "Value": {
+            "Id": 3,
+            "AssetType": "FRM",
+            "AssetFileType": "BMS",
+            "AssetFileName": "20210219_frm_ionbms_1.frm",
+            "Version": 2,
+            "ReleaseDate": "2021-02-10T00:00:00",
+            "Comments": "Minor update"
+        }
+    }
+]</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_122_45629043.1704261316510--

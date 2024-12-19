@@ -1,0 +1,306 @@
+Date: Wed, 3 Jan 2024 05:32:18 +0000 (UTC)
+Message-ID: <802511712.113.1704259938080@d806889b90f2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_112_187123375.1704259938079"
+
+------=_Part_112_187123375.1704259938079
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>8.1.4 Data Analysis Engine: Item Level Security</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>8.1.4 Data Analysis Engine: Item Level Security</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-8.1.4DataAnalysisEngine:ItemLevelSecurity-Sharing">Sha=
+ring</h2>
+<p>The only point in sharing a DAD is to allow other users to collaborate o=
+n the development of the DAD. All consequences of the existance of a DAD ot=
+her than webnotifications (emails, records written, http requests) are "use=
+able" by other users just as much as by the creator the DAD.&nbsp;</p>
+<p>We suspect that sharing DAD's is functionality that will be seldomly use=
+d and is low priority.&nbsp;</p>
+<p><span class=3D"inline-comment-marker" data-ref=3D"1d77c183-ce0b-4aef-bd8=
+0-936f68fe929d">There are also some issues with sharing a DAD: suppose A sh=
+ares a DAD with B. B adds a clause to the DAD stating that he'd like to rec=
+eive notifications. However, only the owner of a DAD receives notifications=
+, not all of the people the DAD is shared with. So A, instead of B, would r=
+eceive these notifications, thereby confusing both A and B.</span>&nbsp;</p=
+>
+<p>As a result, we chose not to implement DAD sharing.&nbsp;</p>
+<h2 id=3D"id-8.1.4DataAnalysisEngine:ItemLevelSecurity-Transferofownership"=
+>Transfer of ownership</h2>
+<p>Transfer of ownership should be available for all RAS objects, including=
+ DAD's. When a DAD is transferred from one user to the next, the system sho=
+uld check if the new user has access to all of the mentioned assets. &nbsp;=
+When transferring ownership, a rabbitmq message should be sent to the DAE n=
+otifying it that the owner has changed. The DAE will then reload the DAD wi=
+thout recalculation.&nbsp;</p>
+<p>We considered making it so that if the receiving user does not have acce=
+ss to all assets mentioned in the latest version of the DAD, the user shoul=
+d not be able to accept the transfer of ownership. However, if the new owne=
+r does not have the required access to the asset, the DAD will disable itse=
+lf and log an error. Therefore, notifying beforehand is not required.&nbsp;=
+</p>
+<h2 id=3D"id-8.1.4DataAnalysisEngine:ItemLevelSecurity-Usage">Usage</h2>
+<h3 id=3D"id-8.1.4DataAnalysisEngine:ItemLevelSecurity-Readingdata">Reading=
+ data</h3>
+<p>A DAD should only be able to read the things his owner can read, and to =
+write to places the owner can write. As such, we need to check whether any =
+asset referenced (either by id or by name) is managed by the DAD owner's co=
+mpany.</p>
+<p>Furthermore, we need to ensure that the IDE auto-suggest only provides t=
+he properties for assets that are managed by the DAD's owner's company. If =
+we were to forget to implement this check, you could use the autosuggest fu=
+nctionality to retrieve a list of properties for any asset, even ones you h=
+ave no affiliation with. This information in turn&nbsp; could be used by a =
+smart attacker to determine asset types, and could even be used to build an=
+ entire database of all asset ID's that are in use and their corresponding =
+properties.&nbsp;</p>
+<h3 id=3D"id-8.1.4DataAnalysisEngine:ItemLevelSecurity-Writingdata">Writing=
+ data</h3>
+<p>Currently, we do not have a separate permission for writing new data to =
+the database. All users are able to set (static) parameters for all assets =
+managed by their companies. Similarly, all DAD's can write new data to the =
+database provided the parametername starts with "<span class=3D"inline-comm=
+ent-marker" data-ref=3D"1efc8ad3-16c1-4583-b8e3-fb6777e4e219">DAE_</span>".=
+&nbsp; All records that are written to the database by the DAE should be ma=
+rked as such in the database.&nbsp;</p>
+<h3 id=3D"id-8.1.4DataAnalysisEngine:ItemLevelSecurity-Emails">Emails</h3>
+<p>Emails can be sent to all <span class=3D"inline-comment-marker" data-ref=
+=3D"84defa25-6be2-4eab-bd75-de5ef3e34940">e-mail addresses</span>, irrespec=
+tive of DAD owner. No checks are necessary.&nbsp;</p>
+<h3 id=3D"id-8.1.4DataAnalysisEngine:ItemLevelSecurity-Webnotifications">We=
+bnotifications</h3>
+<p>Webnotifications are always sent to the DAD owner, so no checks are nece=
+ssary.&nbsp;</p>
+<h3 id=3D"id-8.1.4DataAnalysisEngine:ItemLevelSecurity-HTTPRequests">HTTP R=
+equests</h3>
+<p>HTTP requests too are independent of DAD owner, so no checks are necessa=
+ry.&nbsp;</p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_112_187123375.1704259938079--

@@ -1,0 +1,710 @@
+Date: Wed, 3 Jan 2024 05:32:30 +0000 (UTC)
+Message-ID: <767767200.97.1704259950914@825850ec0edf>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_96_1781018438.1704259950914"
+
+------=_Part_96_1781018438.1704259950914
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>8.1.7.1 RASQL Functional Analysis: Available Functions</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>8.1.7.1 RASQL Functional Analysis: Available Functions</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Intr=
+oduction">Introduction</h1>
+<p>This document describes which functions are available in RASQL, where yo=
+u can use them and which parameters they take. We'll also provide a C-style=
+ function definition for each function. This definition&nbsp;<strong>is not=
+</strong>&nbsp;(necessarily) the definition that will be used by the develo=
+pers in the C# code, but it is the public API RASQL users will see. Interna=
+lly other parameters, such as current scope, current statement etc may be r=
+equired. Other types may also be used. The C-style definition is only provi=
+ded as an easily understood shorthand.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Tableofconte=
+nts">Table of contents</h2>
+<p>&nbsp;<style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1704259950903 {padding: 0px;}
+div.rbtoc1704259950903 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1704259950903 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1704259950903">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Introd=
+uction">Introduction</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Tableo=
+fcontents">Table of contents</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-WITHcl=
+ause">WITH clause</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AssetR=
+eferenceASSET(stringassetname)">AssetReference ASSET(string assetname)</a><=
+/li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AssetR=
+eferenceASSET(intassetid)">AssetReference ASSET(int assetid)</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-DEFINE=
+clause">DEFINE clause</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionAVGC(AssetPropertyReferencepropref)">AggregateDefintion AVGC(As=
+setPropertyReference propref)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionAVGE(AssetPropertyReferencepropref)">AggregateDefintion AVGE(As=
+setPropertyReference propref)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionMAXC(AssetPropertyReferencepropref)">AggregateDefintion MAXC(As=
+setPropertyReference propref)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionMAXE(AssetPropertyReferencepropref)">AggregateDefintion MAXE(As=
+setPropertyReference propref)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionMINC(AssetPropertyReferencepropref)">AggregateDefintion MINC(As=
+setPropertyReference propref)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionFIRSTC(AssetPropertyReferencepropref)">AggregateDefintion FIRST=
+C(AssetPropertyReference propref)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionLASTC(AssetPropertyReferencepropref)">AggregateDefintion LASTC(=
+AssetPropertyReference propref)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionMINE(AssetPropertyReferencepropref)">AggregateDefintion MINE(As=
+setPropertyReference propref)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionCOUNTE(AssetPropertyReferencepropref)">AggregateDefintion COUNT=
+E(AssetPropertyReference propref)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionSUME(AssetPropertyReferencepropref)">AggregateDefintion SUME(As=
+setPropertyReference propref)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionINTEGRATEC(AssetPropertyReferencepropref)">AggregateDefintion I=
+NTEGRATEC(AssetPropertyReference propref)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefintionPREVIOUS(AssetPropertyReferencepropref)">AggregateDefintion PRE=
+VIOUS(AssetPropertyReference propref)</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ationContext">Aggregation Context</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-EachPo=
+intContext">Each Point Context</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Real-t=
+imeContext">Real-time Context</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefinitionLASTPROPERTYVALUETIME(AssetReferenceassetRef)">AggregateDefini=
+tion LASTPROPERTYVALUETIME(AssetReference assetRef)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Aggreg=
+ateDefinitionLASTCONNECTIONTIME(AssetReferenceassetRef)">AggregateDefinitio=
+n LASTCONNECTIONTIME(AssetReference assetRef)</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-USINGc=
+lause">USING clause</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Period=
+DefinitionPERIOD(inthowMany,TimeUnitduration)">PeriodDefinition PERIOD(int =
+howMany, TimeUnit duration)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Period=
+DefinitionPERIOD(inthowMany,TimeUnitduration,stringreferenceDate)">PeriodDe=
+finition PERIOD(int howMany, TimeUnit duration, string referenceDate)</a></=
+li>=20
+</ul> </li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-CALCUL=
+ATEclause">CALCULATE clause</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-THENcl=
+ause">THEN clause</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-voidWR=
+ITEVALUE(AssetPropertyReferencepropRef,doublevalue)">void WRITEVALUE(AssetP=
+ropertyReference propRef, double value)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-voidWR=
+ITEVALUE(AssetPropertyReferencepropRef,doublevalue,doubletimestamp)">void W=
+RITEVALUE(AssetPropertyReference propRef, double value, double timestamp)</=
+a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-voidEM=
+AIL(stringtemplatename)">void EMAIL(string templatename)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-voidWE=
+BNOTIFICATION(stringtemplatename)">void WEBNOTIFICATION(string templatename=
+)</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-CALCUL=
+ATE/WHEN/THENClause">CALCULATE / WHEN / THEN Clause</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-double=
+ABS(doubleinput)">double ABS(double input)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-double=
+ROUND(doubleinput,doublenumberOfDecimals)">double ROUND(double input, doubl=
+e numberOfDecimals)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-double=
+DATE(stringdate)">double DATE(string date)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-double=
+DATEADDDAYS(doubledate,doublenumdays)">double DATEADDDAYS(double date, doub=
+le numdays)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-double=
+DATEADDHOURS(doubledate,doublenumhours)">double DATEADDHOURS(double date, d=
+ouble numhours)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-double=
+DATEADDMINUTES(doubledate,doublenumminutes)">double DATEADDMINUTES(double d=
+ate, double numminutes)</a></li>=20
+<li><a href=3D"#id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-double=
+DATEADDSECONDS(doubledate,doublenumseconds)">double DATEADDSECONDS(double d=
+ate, double numseconds)</a></li>=20
+</ul> </li>=20
+</ul>=20
+</div>
+<p></p>
+<h1 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-WITHclause">=
+WITH clause</h1>
+<p>In a WITH clause, only one function is available, and that function has =
+two forms.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AssetReferen=
+ceASSET(stringassetname)">AssetReference ASSET(string assetname)</h2>
+<p><strong>assetname:</strong> name of the asset that will be used in the s=
+tatement.&nbsp;</p>
+<p>This function returns a reference to the user's asset with assetname equ=
+al to the given parameter.&nbsp;</p>
+<p>If no such asset matches, the functions throws an exception.&nbsp;</p>
+<p>If mutiple assets match, the function throws an exception.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AssetReferen=
+ceASSET(intassetid)">AssetReference ASSET(int assetid)</h2>
+<p><strong>assetid:</strong> id of the asset that will be used in the state=
+ment.&nbsp;</p>
+<p>This function returns a reference to the user's asset with asset id equa=
+l to the given parameter.&nbsp;</p>
+<p>If no such asset matches, the functions throws an exception.&nbsp;</p>
+<p><br></p>
+<h1 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-DEFINEclause=
+">DEFINE clause</h1>
+<p>In the define clause, the only functions allowed are aggregate functions=
+ and the exceptional PREVIOUS function.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionAVGC(AssetPropertyReferencepropref)">AggregateDefintion AVGC(AssetPro=
+pertyReference propref)&nbsp;</h2>
+<p><strong>propref:&nbsp;</strong>Reference to the field which will be aggr=
+egated.&nbsp;</p>
+<p><strong>Note:&nbsp;</strong>This method is meant to be used for continuo=
+us-type data.&nbsp;</p>
+<p>If data for the given propref exists in the current time period, and the=
+ current time period is fully received, this function returns a time-weight=
+ed average of all points including the last point before the start of the p=
+eriod.&nbsp;</p>
+<p>If there is no data in the current time period and the current time peri=
+od is fully received, but data for the parameter exists before the time per=
+iod, the last point before the time period is returned.&nbsp;</p>
+<p>If there is no data in the current time period and the current time peri=
+od is fully received, and no data exists before the time period, the RASQL =
+statement cannot be executed for the current time period. As a result, the =
+current time period will be skipped.&nbsp;</p>
+<p>If the current time period is not fully received, execution will stop an=
+d be reattempted when new data is received.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionAVGE(AssetPropertyReferencepropref)">AggregateDefintion AVGE(AssetPro=
+pertyReference propref)&nbsp;</h2>
+<p><strong>propref:&nbsp;</strong>Reference to the field which will be aggr=
+egated.&nbsp;</p>
+<p><strong>Note:&nbsp;</strong>This method is meant to be used for event-ty=
+pe data.&nbsp;</p>
+<p>If data for the given propref exists in the current time period, and the=
+ current time period is fully received, this function returns the arithmeti=
+c average of the datapoints in the period.&nbsp;</p>
+<p>If there is no data in the current time period and the current time peri=
+od is fully received, the RASQL statement cannot be executed for the curren=
+t time period. As a result, the current time period will be skipped.&nbsp;<=
+/p>
+<p>If the current time period is not fully received, execution will stop an=
+d be reattempted when new data is received.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionMAXC(AssetPropertyReferencepropref)">AggregateDefintion MAXC(AssetPro=
+pertyReference propref)</h2>
+<p><strong>propref:&nbsp;</strong>Reference to the field which will be aggr=
+egated.&nbsp;</p>
+<p><strong>Note:&nbsp;</strong>This method is meant to be used for continuo=
+us-type data.&nbsp;</p>
+<p>If data for the given propref exists in the current time period, and the=
+ current time period is fully received, this function returns the maximum o=
+f the datapoints including the last data point before the period started.&n=
+bsp;</p>
+<p>If there is no data in the current time period and the current time peri=
+od is fully received, but data for the parameter exists before the time per=
+iod, the last point before the time period is returned.&nbsp;</p>
+<p>If there is no data in the current time period and the current time peri=
+od is fully received, and no data exists before the time period, the RASQL =
+statement cannot be executed for the current time period. As a result, the =
+current time period will be skipped.&nbsp;</p>
+<p>If the current time period is not fully received, execution will stop an=
+d be reattempted when new data is received.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionMAXE(AssetPropertyReferencepropref)">AggregateDefintion MAXE(AssetPro=
+pertyReference propref)</h2>
+<p><strong>propref:&nbsp;</strong>Reference to the field which will be aggr=
+egated.&nbsp;</p>
+<p><strong>Note:&nbsp;</strong>This method is meant to be used for event-ty=
+pe data.&nbsp;</p>
+<p>If data for the given propref exists in the current time period, and the=
+ current time period is fully received, this function returns the maximum o=
+f the datapoints in the period.&nbsp;</p>
+<p>If there is no data in the current time period and the current time peri=
+od is fully received, the RASQL statement cannot be executed for the curren=
+t time period. As a result, the current time period will be skipped.&nbsp;<=
+/p>
+<p>If the current time period is not fully received, execution will stop an=
+d be reattempted when new data is received.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionMINC(AssetPropertyReferencepropref)">AggregateDefintion MINC(AssetPro=
+pertyReference propref)</h2>
+<p><strong>propref:&nbsp;</strong>Reference to the field which will be aggr=
+egated.&nbsp;</p>
+<p><strong>Note:&nbsp;</strong>This method is meant to be used for continuo=
+us-type data.&nbsp;</p>
+<p>If data for the given propref exists in the current time period, and the=
+ current time period is fully received, this function returns the minimum o=
+f the datapoints including the last data point before the period started.&n=
+bsp;</p>
+<p>If there is no data in the current time period and the current time peri=
+od is fully received, but data for the parameter exists before the time per=
+iod, the last point before the time period is returned.&nbsp;</p>
+<p>If there is no data in the current time period and the current time peri=
+od is fully received, and no data exists before the time period, the RASQL =
+statement cannot be executed for the current time period. As a result, the =
+current time period will be skipped.&nbsp;</p>
+<p>If the current time period is not fully received, execution will stop an=
+d be reattempted when new data is received.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionFIRSTC(AssetPropertyReferencepropref)">AggregateDefintion FIRSTC(Asse=
+tPropertyReference propref)</h2>
+<p><strong>propref:&nbsp;</strong>Reference to the field which will be aggr=
+egated.&nbsp;</p>
+<p><strong>Note:&nbsp;</strong>This method is meant to be used for continuo=
+us-type data.&nbsp;</p>
+<p>This function returns the value that was in place at the very start of t=
+he aggregation period. If no such value is found, the aggregation period is=
+ skipped and no value is calculated.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionLASTC(AssetPropertyReferencepropref)">AggregateDefintion LASTC(AssetP=
+ropertyReference propref)</h2>
+<p><strong>propref:&nbsp;</strong>Reference to the field which will be aggr=
+egated.&nbsp;</p>
+<p><strong>Note:&nbsp;</strong>This method is meant to be used for continuo=
+us-type data.&nbsp;</p>
+<p>This function returns the value that was in place at the very end of the=
+ aggregation period. If no such value is found, the aggregation period is s=
+kipped and no value is calculated.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionMINE(AssetPropertyReferencepropref)">AggregateDefintion MINE(AssetPro=
+pertyReference propref)</h2>
+<p><strong>propref:&nbsp;</strong>Reference to the field which will be aggr=
+egated.&nbsp;</p>
+<p><strong>Note:&nbsp;</strong>This method is meant to be used for event-ty=
+pe data.&nbsp;</p>
+<p>If data for the given propref exists in the current time period, and the=
+ current time period is fully received, this function returns the minimum o=
+f the datapoints in the period.&nbsp;</p>
+<p>If there is no data in the current time period and the current time peri=
+od is fully received, but data for the parameter exists before the time per=
+iod, the last point before the time period is returned.&nbsp;</p>
+<p>If there is no data in the current time period and the current time peri=
+od is fully received, and no data exists before the time period, the RASQL =
+statement cannot be executed for the current time period. As a result, the =
+current time period will be skipped.&nbsp;</p>
+<p>If the current time period is not fully received, execution will stop an=
+d be reattempted when new data is received.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionCOUNTE(AssetPropertyReferencepropref)">AggregateDefintion COUNTE(Asse=
+tPropertyReference propref)</h2>
+<p><strong>propref:&nbsp;</strong>Reference to the field which will be aggr=
+egated.&nbsp;</p>
+<p>If data for the given propref exists in the current time period, and the=
+ current time period is fully received, this function returns the number of=
+ datapoints.</p>
+<p>If there is no data in the current time period and the current time peri=
+od is fully received, zero is returned.&nbsp;</p>
+<p><strong>Note:&nbsp;</strong>this only makes sense when working with "eve=
+nt" type data (and does not make sense when working with continuous measure=
+ment data).&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionSUME(AssetPropertyReferencepropref)">AggregateDefintion SUME(AssetPro=
+pertyReference propref)</h2>
+<p><strong>propref:&nbsp;</strong>Reference to the field which will be aggr=
+egated.&nbsp;</p>
+<p>If data for the given propref exists in the current time period, and the=
+ current time period is fully received, this function returns the sum of al=
+l data points that fall into the given period.&nbsp;</p>
+<p><strong>Note:&nbsp;</strong>this only makes sense when working with "eve=
+nt" type data (and does not make sense when working with continuous measure=
+ment data). The continuous equivalent to this function is the INTEGRATEC ag=
+gregate.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionINTEGRATEC(AssetPropertyReferencepropref)">AggregateDefintion INTEGRA=
+TEC(AssetPropertyReference propref)</h2>
+<p><strong>propref:&nbsp;</strong>Reference to the field which will be aggr=
+egated.&nbsp;</p>
+<p><strong>Note:&nbsp;</strong>This method is meant to be used for continuo=
+us-type data.&nbsp;</p>
+<p>This function integrates the given&nbsp;<em>propref</em> over time.&nbsp=
+;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+intionPREVIOUS(AssetPropertyReferencepropref)">AggregateDefintion PREVIOUS(=
+AssetPropertyReference propref)</h2>
+<p><strong>Note:&nbsp;</strong>This function is not a pure AGGREGATE functi=
+on.&nbsp;</p>
+<p><strong>propref:&nbsp;</strong>Reference to the field of which to get th=
+e previous value</p>
+<p>Previous has two distinct ways of operation. The first is operation in a=
+n aggregation context, the second is in a each-point-context. the PREVIOUS =
+function must always be combined with other non-PREVIOUS data gathering fun=
+ctions.&nbsp;</p>
+<h3 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregationC=
+ontext">Aggregation Context</h3>
+<p>In an aggregation context, this function returns the value for the given=
+ propref that was applicable&nbsp;<em>just before the beginning of the iter=
+ation time period.&nbsp;</em>If no such value exists, the RASQL statement c=
+annot be executed for the current time period.&nbsp;</p>
+<h3 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-EachPointCon=
+text">Each Point Context</h3>
+<p>In an each point context, the value just before the iteration timestamp =
+is returned.&nbsp;If no such value exists, the RASQL statement cannot be ex=
+ecuted for the current iteration timestamp.&nbsp;</p>
+<h3 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-Real-timeCon=
+text">Real-time Context</h3>
+<p>PREVIOUS is not available in a real-time context.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+initionLASTPROPERTYVALUETIME(AssetReferenceassetRef)">AggregateDefinition L=
+ASTPROPERTYVALUETIME(AssetReference assetRef)</h2>
+<p><strong>Note:&nbsp;</strong>This function can only be used when running =
+in scheduler mode.&nbsp;</p>
+<p><strong>assetRef:&nbsp;</strong>Reference to the asset of which the last=
+ property value should be returned.&nbsp;</p>
+<p>This function returns the timestamp for the last property value for the =
+given asset. Both the value and the TIMESTAMP will be set to that timestamp=
+. This function is meant to be used for watchdog purposes. It can be used t=
+o monitor if some asset is still transmitting data.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-AggregateDef=
+initionLASTCONNECTIONTIME(AssetReferenceassetRef)">AggregateDefinition LAST=
+CONNECTIONTIME(AssetReference assetRef)</h2>
+<p><strong>Note:&nbsp;</strong>This function can only be used when running =
+in scheduler mode.&nbsp;</p>
+<p><strong>assetRef:&nbsp;</strong>Reference to the asset of which the last=
+ connection time should be returned.&nbsp;</p>
+<p>This function returns the timestamp for the last time the given asset co=
+nnected to RAS. Both the value and the TIMESTAMP will be set to that timest=
+amp. This function is meant to be used for watchdog purposes. It can be use=
+d to monitor if some asset is still transmitting data.&nbsp;</p>
+<h1 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-USINGclause"=
+>USING clause</h1>
+<p>In the USING clause, only the function "PERIOD" is valid.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-PeriodDefini=
+tionPERIOD(inthowMany,TimeUnitduration)">PeriodDefinition PERIOD(int howMan=
+y, <span class=3D"inline-comment-marker" data-ref=3D"37af47e5-480d-4ee5-b22=
+b-784dc4b752be">TimeUnit duration</span>)</h2>
+<p><strong>howMany:&nbsp;</strong>How many of the given&nbsp;<strong>durati=
+on</strong>'s fall in one period.&nbsp;<br><strong>duration</strong><strong=
+>:&nbsp;</strong> WEEK / MONTH / DAY / YEAR / HOUR / MINUTE / SECOND<span c=
+lass=3D"legacy-color-text-red2">.&nbsp;</span></p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-PeriodDefini=
+tionPERIOD(inthowMany,TimeUnitduration,stringreferenceDate)">PeriodDefiniti=
+on PERIOD(int howMany, TimeUnit duration, string referenceDate)</h2>
+<p><strong>howMany:&nbsp;</strong>How many of the given&nbsp;<strong>durati=
+on</strong>'s fall in one period.&nbsp;<br><strong>duration</strong><strong=
+>:&nbsp;</strong> WEEK / MONTH / DAY / YEAR / HOUR / MINUTE / SECOND<span c=
+lass=3D"legacy-color-text-red2">.&nbsp;<br><span class=3D"legacy-color-text=
+-default"><strong>referenceDate:&nbsp;</strong>At what point does some sing=
+le period start. Which period does not matter. This date must be specified =
+in ISO8601 format, for example "1997-07-16T19:20:30.45"</span><br></span></=
+p>
+<h1 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-CALCULATEcla=
+use">CALCULATE clause</h1>
+<p>This section lists the functions that are available in the CALCULATE sec=
+tion. These functions usually help the user retrieve other data that is som=
+ehow related to the current data point.&nbsp;</p>
+<h1 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-THENclause">=
+THEN clause</h1>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-voidWRITEVAL=
+UE(AssetPropertyReferencepropRef,doublevalue)">void WRITEVALUE(AssetPropert=
+yReference propRef, double value)</h2>
+<p><strong>propRef:&nbsp;</strong>The asset property the given value will b=
+e written to<br><strong>value:&nbsp;</strong>The value that will be written=
+</p>
+<p>Writes the value&nbsp;<em>value</em> to the asset property&nbsp;<em>prop=
+Ref</em>.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-voidWRITEVAL=
+UE(AssetPropertyReferencepropRef,doublevalue,doubletimestamp)">void WRITEVA=
+LUE(AssetPropertyReference propRef, double value, double timestamp)</h2>
+<p><strong>propRef:&nbsp;</strong>The asset property the given value will b=
+e written to<br><strong>value:&nbsp;</strong>The value that will be written=
+</p>
+<p>Writes the value&nbsp;<em>value</em> to the asset property&nbsp;<em>prop=
+Ref</em>.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-voidEMAIL(st=
+ringtemplatename)">void EMAIL(string templatename)</h2>
+<p><strong>templatename:&nbsp;</strong>The name of the template that is to =
+be used.&nbsp;</p>
+<p>Sends an email using the given template name.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-voidWEBNOTIF=
+ICATION(stringtemplatename)">void WEBNOTIFICATION(string templatename)</h2>
+<p><strong>templatename:&nbsp;</strong>The name of the template that is to =
+be used.&nbsp;</p>
+<p>Sends a web noficiation using a given template name.&nbsp;</p>
+<h1 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-CALCULATE/WH=
+EN/THENClause">CALCULATE / WHEN / THEN Clause</h1>
+<p>The following functions are available in both the CALCULATE, the WHEN an=
+d THEN clauses.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-doubleABS(do=
+ubleinput)">double ABS(double input)</h2>
+<p>Returns the absolute value of the given input (if input is smaller than =
+zero, return -input, else return input).&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-doubleROUND(=
+doubleinput,doublenumberOfDecimals)">double ROUND(double input, double numb=
+erOfDecimals)</h2>
+<p>Rounds the given input to the given number of decimals, away from zero.&=
+nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-doubleDATE(s=
+tringdate)">double DATE(string date)</h2>
+<p>Converts the given date in format "1997-07-16T19:20:30.45" to a RASQL-da=
+te.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-doubleDATEAD=
+DDAYS(doubledate,doublenumdays)">double DATEADDDAYS(double date, double num=
+days)</h2>
+<p>Adds the given number of days to the given date</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-doubleDATEAD=
+DHOURS(doubledate,doublenumhours)">double DATEADDHOURS(double date, double =
+numhours)</h2>
+<p>Add the given number of hours to the given date.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-doubleDATEAD=
+DMINUTES(doubledate,doublenumminutes)">double DATEADDMINUTES(double date, d=
+ouble numminutes)</h2>
+<p>Adds the given number of minutes to the given date.&nbsp;</p>
+<h2 id=3D"id-8.1.7.1RASQLFunctionalAnalysis:AvailableFunctions-doubleDATEAD=
+DSECONDS(doubledate,doublenumseconds)">double DATEADDSECONDS(double date, d=
+ouble numseconds)</h2>
+<p>Adds the given number of seconds to the given date. Note: this method is=
+ provided for completeness only and is equivalent to date+numseconds.&nbsp;=
+</p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_96_1781018438.1704259950914--

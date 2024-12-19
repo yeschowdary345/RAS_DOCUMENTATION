@@ -1,0 +1,400 @@
+Date: Wed, 3 Jan 2024 04:20:38 +0000 (UTC)
+Message-ID: <1518340743.51.1704255638721@d806889b90f2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_50_1439162375.1704255638721"
+
+------=_Part_50_1439162375.1704255638721
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Functional testing</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Functional testing</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"Functionaltesting-Ageneralnoteonfunctionaltesting">A gene=
+ral note on functional testing</h2>
+<p>Functional tests are conducted to ensure the system behaves <strong>acco=
+rding to the functional requirements</strong>.</p>
+<p>Tests are defined to validate that all functions outlined in the require=
+ments are present in the system and work as intended.</p>
+<p>This testing mainly involves black box testing and it is not concerned a=
+bout the source code of the application. It&nbsp;should not be performed by=
+ the people who built the system.</p>
+<h2 id=3D"Functionaltesting-FunctionaltestingofRAS">Functional testing of R=
+AS</h2>
+<p>The testing of RAS is described in a test document ('test book'). This d=
+ocument describes:</p>
+<ul style=3D"list-style-type: square;">
+<li>details about the RAS version to be tested</li>
+<li>a description of all the tests that have to be carried out</li>
+</ul>
+<h4 id=3D"Functionaltesting-RASenvironmentdetails">RAS environment details<=
+/h4>
+<ul style=3D"list-style-type: square;">
+<li>environment (usually DEMO)
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">URL</li>
+</ul></li>
+<li>user credentials
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">login/password</li>
+<li style=3D"margin-left: 0.0px;">multiple sets may be required (e.g. to te=
+st authorization)</li>
+</ul></li>
+</ul>
+<h4 id=3D"Functionaltesting-Testdescriptions">Test descriptions</h4>
+<p>For every test the following should ideally be available:</p>
+<ul style=3D"list-style-type: square;">
+<li><u>Test summary and identifier<br></u>For every test a summary must be =
+defined. The identifier will make it easier to refer to the test in bug rep=
+orts.</li>
+<li><u>Test preconditions</u><br>A specific test setup and preconditions ma=
+y be required depending on the specific test.<br>For example, a test could =
+involve 'clicking the &lt;edit dashboard&gt; button' which requires a dashb=
+oard to be available while the test involving 'click the &lt;contact us&gt;=
+ icon in the lower right' does not.<br>Therefore each test should indicate =
+which preconditions should be met.</li>
+<li style=3D"margin-left: 0.0px;"><u>Step-by-step instructions<br></u>A tes=
+t usually consists of several steps. Every step should be described in suff=
+icient detail.</li>
+<li style=3D"margin-left: 0.0px;"><u>Expected outcome<br></u>A clear, unamb=
+iguous description of the system behavior that is expected.&nbsp;</li>
+</ul>
+<h4 id=3D"Functionaltesting-Testexample">Test example</h4>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd">Test ID</td>
+<td class=3D"confluenceTd">RAS_0123</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Summary</td>
+<td class=3D"confluenceTd">user can log into RAS succesfully</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Preconditions</td>
+<td class=3D"confluenceTd"><p>a user account is available that can log in</=
+p><p>no user is logged in before starting the test</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Steps</td>
+<td class=3D"confluenceTd">
+<ol>
+<li>navigate to application URL</li>
+<li>enter username</li>
+<li>enter correct password</li>
+<li>click &lt;login&gt;</li>
+</ol></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Expected outcome</td>
+<td class=3D"confluenceTd"><p>The login is successful: the RAS homepage (li=
+st of dashboards) is displayed.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<h2 id=3D"Functionaltesting-Reportoftestruns">Report of test runs</h2>
+<p>If during functional testing tests from this suite above are found to be=
+ failing, the failure should be registered in a ticketing system using a re=
+ference to the failed test and the tested RAS application:</p>
+<ul>
+<li>Reference to failed test
+<ul>
+<li style=3D"margin-left: 0.0px;">Test ID (e.g. 4.1.5)</li>
+<li style=3D"margin-left: 0.0px;">Test document version ID (e.g. 0.6)</li>
+</ul></li>
+<li>Reference to the tested RAS application
+<ul>
+<li style=3D"margin-left: 0.0px;">Build reference (commit tag?)</li>
+</ul></li>
+</ul>
+<p>Functional testing should produce a test report that contains:</p>
+<ul style=3D"margin-left: 0.0px;">
+<li>Time-stamp of when the test was performed (begin, end)</li>
+<li>Details of person(s) who performed the test</li>
+<li>RAS information that can identify the specific version of RAS (e.g. bui=
+ld number)</li>
+<li>Reference to log files that may be available.</li>
+<li>Reference to screenshots that may be available.</li>
+<li>A short summary table describing the test results, for example:
+<ul>
+<li>Number of test(s) successful: 125</li>
+<li>Number of test(s) failed: 14</li>
+<li>Number of test(s) not performed: 3</li>
+</ul></li>
+<li>An overview of the number of bugs (tickets) that have been created, for=
+ example:
+<ul>
+<li>Number of CRITICAL bugs logged: 2</li>
+<li>Number of MAJOR bugs logged: 4</li>
+<li>Number of MINOR bugs logged: 5</li>
+<li>Number of OTHER tickets logged: 11</li>
+</ul></li>
+<li>...</li>
+</ul>
+<h2 id=3D"Functionaltesting-Functionalareas">Functional areas</h2>
+<p>For RAS, we can identify the following areas to be tested (this is based=
+ on the RAS UI):</p>
+<ul style=3D"list-style-type: square;">
+<li>assets</li>
+<li>filters</li>
+<li>dashboards</li>
+<li>reports</li>
+<li>events</li>
+<li>scheduled tasks</li>
+<li>...</li>
+</ul>
+<p><br></p>
+<p>Other:</p>
+<ul style=3D"list-style-type: square;">
+<li>integration
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">upload file, pre-processor, post-processo=
+r, notification engine, etc.,&nbsp;</li>
+</ul></li>
+<li>&nbsp;security
+<ul style=3D"list-style-type: square;">
+<li style=3D"margin-left: 0.0px;">feature level: user can/cannot edit/view/=
+etc</li>
+<li style=3D"margin-left: 0.0px;">sharing items</li>
+</ul></li>
+<li style=3D"margin-left: 0.0px;">support of multiple browsers (?)</li>
+<li style=3D"margin-left: 0.0px;">...</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_50_1439162375.1704255638721--

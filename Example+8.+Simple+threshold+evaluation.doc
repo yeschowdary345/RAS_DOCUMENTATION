@@ -1,0 +1,524 @@
+Date: Wed, 3 Jan 2024 05:31:25 +0000 (UTC)
+Message-ID: <1210944938.61.1704259885384@01146b9ad81d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_60_1685051336.1704259885384"
+
+------=_Part_60_1685051336.1704259885384
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Example 8. Simple threshold evaluation</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Example 8. Simple threshold evaluation</h1>
+    <div class=3D"Section1">
+        <p><strong>Case:</strong>&nbsp;When the water temperature drops bel=
+ow 50 degrees.&nbsp;</p>
+<p><strong>Data Analysis Definition:</strong></p>
+<div style=3D"text-align: left;" class=3D"line number1 index0 alt2">
+<code style=3D"text-align: left;" class=3D"java plain">WITH&nbsp;&nbsp;&nbs=
+p; ASSET(</code><code style=3D"text-align: left;" class=3D"java value">4</c=
+ode><code style=3D"text-align: left;" class=3D"java plain">) as tollplaza</=
+code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number2 index1 alt1">
+<code style=3D"text-align: left;" class=3D"java plain">DEFINE&nbsp;&nbsp;to=
+llplaza.temp AS Temp,</code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number3 index2 alt2">
+<code style=3D"text-align: left;" class=3D"java spaces">&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code style=3D"=
+text-align: left;" class=3D"java plain">tollplaza.temp_threshold DEFAULT 0 =
+as old_threshold_state</code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number4 index3 alt1">
+<code style=3D"text-align: left;" class=3D"java plain">CALCULATE&nbsp;&nbsp=
+; THRESHOLDSTATE(temp,<span>&nbsp;</span></code><code style=3D"text-align: =
+left;" class=3D"java value">50</code><code style=3D"text-align: left;" clas=
+s=3D"java plain">,<span>&nbsp;</span></code><code style=3D"text-align: left=
+;" class=3D"java value">50</code><code style=3D"text-align: left;" class=3D=
+"java plain">) as new_threshold_state,</code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number5 index4 alt2">
+<code style=3D"text-align: left;" class=3D"java spaces">&nbsp; &nbsp; &nbsp=
+; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code style=3D"text-align: lef=
+t;" class=3D"java plain">THRESHOLDSTATEFALLING(old_threshold_state, new_thr=
+eshold_state</code><code style=3D"text-align: left;" class=3D"java plain">)=
+ as state_changed_falling</code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number6 index5 alt1">
+<code style=3D"text-align: left;" class=3D"java plain">WHEN state_changed_f=
+alling THEN MAILNOTIFICATION(), WRITEVALUE(tollplaza.temp_threshold, new_th=
+reshold_state)</code>
+</div>
+<h1 id=3D"Example8.Simplethresholdevaluation-Example"><strong>Example</stro=
+ng></h1>
+<p><strong>Today =3D 2017-10-27 17:00:00</strong></p>
+<h3 id=3D"Example8.Simplethresholdevaluation-Sampledata(boldindicatesnewdat=
+a)"><strong>Sample data (bold indicates new data)</strong></h3>
+<p><strong>Question: No previous data available and data being processed is=
+ below or above treshold, should we trigger? Answer: Yes</strong></p>
+<div class=3D"table-wrap">
+<div class=3D"table-wrap">
+<div class=3D"table-wrap">
+<div class=3D"table-wrap">
+<table class=3D"wrapped tablesorter tablesorter-default stickyTableHeaders =
+confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr class=3D"tablesorter-headerRow">
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Id
+</div></th>
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" colspan=3D"1">AssetId</th>
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Property
+</div></th>
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Timestamp
+</div></th>
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" colspan=3D"1" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Float
+</div></th>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><strong>1</strong></=
+td>
+<td style=3D"text-align: left;" class=3D"confluenceTd" colspan=3D"1"><stron=
+g>1</strong></td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><strong>Temp</strong=
+></td>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><strong>2017-10-23 1=
+0:00:00.123</strong></td>
+<td style=3D"text-align: left;" class=3D"confluenceTd" colspan=3D"1"><stron=
+g>45</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h3 class=3D"table-wrap" id=3D"Example8.Simplethresholdevaluation-Samplesta=
+te">Sample state</h3>
+<div class=3D"table-wrap">
+<div class=3D"table-wrap">
+<table class=3D"wrapped tablesorter tablesorter-default confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr class=3D"tablesorter-headerRow">
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+AssetPropertyValueId
+</div></th>
+<th class=3D"tablesorter-header sortableHeader tablesorter-headerUnSorted c=
+onfluenceTh" colspan=3D"1">Triggered</th>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd"><br></td>
+<td colspan=3D"1" class=3D"confluenceTd"><br></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3 class=3D"auto-cursor-target" id=3D"Example8.Simplethresholdevaluation-D=
+ataInputResult"><span>Data Input Result</span></h3>
+</div>
+<div style=3D"text-align: left;" class=3D"line number1 index0 alt2">
+<code style=3D"text-align: left;" class=3D"java plain">WITH&nbsp;&nbsp;&nbs=
+p; ASSET(</code><code style=3D"text-align: left;" class=3D"java value">4</c=
+ode><code style=3D"text-align: left;" class=3D"java plain">) as tollplaza</=
+code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number2 index1 alt1">
+<code style=3D"text-align: left;" class=3D"java plain">DEFINE&nbsp;&nbsp;to=
+llplaza.temp AS Temp,</code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number3 index2 alt2">
+<code style=3D"text-align: left;" class=3D"java spaces">&nbsp; &nbsp; &nbsp=
+; &nbsp; </code><code style=3D"text-align: left;" class=3D"java plain">toll=
+plaza.temp_threshold DEFAULT 0 as old_threshold_state</code>
+</div>
+<p class=3D"table-wrap">Loading this data will result in the following obje=
+ct:</p>
+<div class=3D"table-wrap">
+<p class=3D"auto-cursor-target"><strong>Important Remark: </strong>there is=
+ no value for temp_treshold in the database, hence we use the defined defau=
+lt.<br>If we wouldn't specify a default and there is none in the database, =
+the data analysis definition would never do anything as no treshold_state i=
+s ever defined and all data needs to be available before the data analysis =
+engine can execute the definition.</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped tablesorter tablesorter-default confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr class=3D"tablesorter-headerRow">
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Property
+</div></th>
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Value
+</div></th>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">Temp</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">45</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">old_treshold_state</td>
+<td colspan=3D"1" class=3D"confluenceTd">0</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">Timestamp</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">2017-10-25 13:00:00.=
+123</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3 id=3D"Example8.Simplethresholdevaluation-ComputationResult">Computation=
+ Result</h3>
+<div style=3D"text-align: left;" class=3D"line number4 index3 alt1">
+<div style=3D"text-align: left;" class=3D"line number4 index3 alt1">
+<code style=3D"text-align: left;" class=3D"java plain">CALCULATE&nbsp;&nbsp=
+; THRESHOLDSTATE(temp,<span>&nbsp;</span></code><code style=3D"text-align: =
+left;" class=3D"java value">50</code><code style=3D"text-align: left;" clas=
+s=3D"java plain">,<span>&nbsp;</span></code><code style=3D"text-align: left=
+;" class=3D"java value">60</code><code style=3D"text-align: left;" class=3D=
+"java plain">) as new_threshold_state,</code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number5 index4 alt2">
+<code style=3D"text-align: left;" class=3D"java spaces">&nbsp; &nbsp; &nbsp=
+; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code style=3D"text-align: lef=
+t;" class=3D"java plain">THRESHOLDSTATEFALLING(old_threshold_state, new_thr=
+eshold_state</code><code style=3D"text-align: left;" class=3D"java plain">)=
+ as state_changed_falling</code>
+</div>
+</div>
+<div class=3D"table-wrap">
+<div class=3D"table-wrap">
+<table class=3D"wrapped tablesorter tablesorter-default confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr class=3D"tablesorter-headerRow">
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Property
+</div></th>
+<th style=3D"text-align: left;" class=3D"tablesorter-header sortableHeader =
+tablesorter-headerUnSorted confluenceTh" scope=3D"col">
+<div class=3D"tablesorter-header-inner">
+Value
+</div></th>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">Temp</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">42</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd">old_treshold_state</=
+td>
+<td style=3D"text-align: left;" class=3D"confluenceTd">0</td>
+</tr>
+<tr>
+<td style=3D"text-align: left;" class=3D"confluenceTd" colspan=3D"1">Timest=
+amp</td>
+<td style=3D"text-align: left;" class=3D"confluenceTd" colspan=3D"1">2017-1=
+0-25 13:00:00.123</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>new_treshold_state</strong=
+></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>-1</strong></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>state_changed_rising</stro=
+ng></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>0 (false)</strong></td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>state_changed_falling</str=
+ong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>1 (true)</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3 id=3D"Example8.Simplethresholdevaluation-EvaluationResult">Evaluation R=
+esult</h3>
+<pre><code style=3D"text-align: left;" class=3D"java plain">WHEN state_chan=
+ged_falling<br></code></pre>
+<p>In our example the state_changed_falling is 1 (which we evaluate as true=
+) so we can say that the entire statement evaluates to true and we can exec=
+ute the action throttling</p>
+<h3 id=3D"Example8.Simplethresholdevaluation-ActionThrottlingResult">Action=
+ Throttling Result</h3>
+<pre>Not defined</pre>
+<div class=3D"table-wrap">
+<p class=3D"auto-cursor-target">No throttling defined.</p>
+</div>
+<h3 id=3D"Example8.Simplethresholdevaluation-ActionResult">Action Result</h=
+3>
+<p><code style=3D"text-align: left;" class=3D"java plain">THEN MAILNOTIFICA=
+TION(), WRITEVALUE(tollplaza.temp_threshold, new_threshold_state)</code><br=
+><br>The MAILNOTIFICATION() will send an email to the user.<br>WRITEVALUE w=
+ill store value "-1" for the parameter "temp_treshold" in the assetproperty=
+values table.</p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_60_1685051336.1704259885384--

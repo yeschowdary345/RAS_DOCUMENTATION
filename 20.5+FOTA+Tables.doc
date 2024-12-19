@@ -1,0 +1,705 @@
+Date: Wed, 3 Jan 2024 05:55:22 +0000 (UTC)
+Message-ID: <2074393634.93.1704261322326@0564475b91b8>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_92_1007143918.1704261322326"
+
+------=_Part_92_1007143918.1704261322326
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>20.5 FOTA Tables</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>20.5 FOTA Tables</h1>
+    <div class=3D"Section1">
+        <p>The following tables are required to implement FOTA:</p>
+<ol>
+<li><p>AssetFileType</p></li>
+<li><p>AssetInstallationFile</p></li>
+<li><p>AssetInstallationStates</p></li>
+<li><p>AssetInstallationStatus</p></li>
+<li><p>AssetTypeFileTypeMapping</p></li>
+<li><p>AssetTypeInstallationFile</p></li>
+<li><p>AssetFotaCommands</p></li>
+</ol>
+<p></p>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"d2a96f7b-4281-4847-97ed-552=
+c6b6f468f" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 155.0px;">
+<col style=3D"width: 155.0px;">
+<col style=3D"width: 155.0px;">
+<col style=3D"width: 155.0px;">
+<col style=3D"width: 140.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td colspan=3D"4" class=3D"confluenceTd"><p><strong>AssetFileType</strong><=
+/p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Id</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>FileType</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>FileDescription</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>IsGroupLevel</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Common</strong> </p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>FRM_SLV</p></td>
+<td class=3D"confluenceTd"><p>Slave Firmware</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>CFG_SLV</p></td>
+<td class=3D"confluenceTd"><p>Slave Configuration</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>FRM_TCU</p></td>
+<td class=3D"confluenceTd"><p>TCU Firmware</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>FRM_MCU</p></td>
+<td class=3D"confluenceTd"><p>MCU Firmware</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>FRM_NEX</p></td>
+<td class=3D"confluenceTd"><p>NEX Firmware</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>CFG_GUID</p></td>
+<td class=3D"confluenceTd"><p>GUID Configuration</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>CFG_TCU</p></td>
+<td class=3D"confluenceTd"><p>TCU Configuration</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>CFG_PARAM</p></td>
+<td class=3D"confluenceTd"><p>Param configuraiton</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>DBC</p></td>
+<td class=3D"confluenceTd"><p>DBC File</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>CFG_APP</p></td>
+<td class=3D"confluenceTd"><p>Application config</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>11</p></td>
+<td class=3D"confluenceTd"><p>CFG_SITENAME</p></td>
+<td class=3D"confluenceTd"><p>Application config</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+<td class=3D"confluenceTd"><p>0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"553ce5d2-be63-4160-9192-625=
+cdd0c59b9" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 50.0px;">
+<col style=3D"width: 64.0px;">
+<col style=3D"width: 63.0px;">
+<col style=3D"width: 84.0px;">
+<col style=3D"width: 167.0px;">
+<col style=3D"width: 58.0px;">
+<col style=3D"width: 62.0px;">
+<col style=3D"width: 72.0px;">
+<col style=3D"width: 140.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td colspan=3D"9" class=3D"confluenceTd"><p><strong>AssetInstallationFile</=
+strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Id</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>AssetId</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>AssetFileTypeId</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>FileName</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>FilePath</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Version</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>ReleaseDate</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Comment</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>FileOrder</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>11099</p></td>
+<td class=3D"confluenceTd"><p>120499</p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>GUIDConfig.config</p></td>
+<td class=3D"confluenceTd"><p>C:\RAS\OTAFiles\TCU500\CFG_GUID\699f5cf0-b018=
+-471d-87f3-03dc7df4d30c\GUIDConfig_v1.0.0.cfg</p></td>
+<td class=3D"confluenceTd"><p>1.0.0</p></td>
+<td class=3D"confluenceTd"><p>15:31.2</p></td>
+<td class=3D"confluenceTd"><p>Asset Remapping Configuration</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"8c528a36-98d2-4fef-86fa-dfa=
+25dd25e3b" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 117.0px;">
+<col style=3D"width: 117.0px;">
+<col style=3D"width: 117.0px;">
+<col style=3D"width: 117.0px;">
+<col style=3D"width: 117.0px;">
+<col style=3D"width: 117.0px;">
+<col style=3D"width: 117.0px;">
+<col style=3D"width: 117.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td colspan=3D"8" class=3D"confluenceTd"><p><strong>AssetTypeInstallationFi=
+le</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Id</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>FileName</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>AssetTypeId</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>AssetFileTypeId</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>FilePath</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Comment</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Version</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>ReleaseDate</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>50008</p></td>
+<td class=3D"confluenceTd"><p>TCUAPP.frm</p></td>
+<td class=3D"confluenceTd"><p>10008</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>C:\RAS\OTAFiles\TCU500\FRM_TCU\Frm_TCU500_v1.=
+0.0.frm</p></td>
+<td class=3D"confluenceTd"><p>Firmware TCU</p></td>
+<td class=3D"confluenceTd"><p>1.0.0</p></td>
+<td class=3D"confluenceTd"><p>42:32.0</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"9f19e528-6d0a-4557-8a0b-40c=
+349ca5048" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 68.0px;">
+<col style=3D"width: 82.0px;">
+<col style=3D"width: 87.0px;">
+<col style=3D"width: 143.0px;">
+<col style=3D"width: 177.0px;">
+<col style=3D"width: 142.0px;">
+<col style=3D"width: 281.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 140.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td colspan=3D"17" class=3D"confluenceTd"><p><strong>AssetInstallationStatu=
+s</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Id</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>AssetId</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>AssetFileTypeId</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>AssetInstallationFileId</strong></p><=
+/td>
+<td class=3D"confluenceTd"><p><strong>AssetTypeInstallationFileId</strong><=
+/p></td>
+<td class=3D"confluenceTd"><p><strong>InstalledVersion</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>InstalledDate</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>NextVersion</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>IsAllowed</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>InstallationStateId</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>InstallationMessage</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>CreatedAt</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>CreatedBy</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>CommandSendDate</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>CommandStatusTime</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>&nbsp;Fix Versions</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>User Remarks</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>20074</p></td>
+<td class=3D"confluenceTd"><p>120489</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>50008</p></td>
+<td class=3D"confluenceTd"><p>1.0.0</p></td>
+<td class=3D"confluenceTd"><p>15:31.2</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>15:31.2</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;1</p></td>
+<td class=3D"confluenceTd"><p>Testing</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>20079</p></td>
+<td class=3D"confluenceTd"><p>120499</p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>11099</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>1.0.0</p></td>
+<td class=3D"confluenceTd"><p>42:32.0</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" href=3D"mailto:tes=
+t@test.com" rel=3D"nofollow">test@test.com</a></p></td>
+<td class=3D"confluenceTd"><p>42:32.0</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>&nbsp;2</p></td>
+<td class=3D"confluenceTd"><p>Minor change build</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"bdceee1f-595a-49c5-9068-5a7=
+358098439" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 254.0px;">
+<col style=3D"width: 253.0px;">
+<col style=3D"width: 253.0px;">
+</colgroup>
+<tbody>
+<tr>
+<td class=3D"confluenceTd"><p><strong>AssetTypeFileTypeMapping</strong></p>=
+</td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Id</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>AssetTypeId</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>AssetFileTypeId</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>10008</p></td>
+<td class=3D"confluenceTd"><p>3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"99927ffe-43c0-4ab3-9d8a-c08=
+1011fb505" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 97.14px;">
+<col style=3D"width: 97.14px;">
+<col style=3D"width: 97.14px;">
+<col style=3D"width: 97.14px;">
+<col style=3D"width: 97.14px;">
+<col style=3D"width: 97.14px;">
+<col style=3D"width: 97.14px;">
+</colgroup>
+<tbody>
+<tr>
+<td colspan=3D"7" class=3D"confluenceTd"><p><strong>AssetInstallationStates=
+</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><strong>Id</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>InstallationState</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>CreatedAt</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>LastModifiedAt</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>CreatedBy</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>LastModifiedBy</strong></p></td>
+<td class=3D"confluenceTd"><p><strong>Command</strong></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>1</p></td>
+<td class=3D"confluenceTd"><p>Initial</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>Initial</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>2</p></td>
+<td class=3D"confluenceTd"><p>Sent</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>Sent</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>3</p></td>
+<td class=3D"confluenceTd"><p>Command Received</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>Command Received</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>4</p></td>
+<td class=3D"confluenceTd"><p>Connecting to =E2=80=9CRAS File server=E2=80=
+=9D</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>Connecting to =E2=80=9CRAS File server=E2=80=
+=9D</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>5</p></td>
+<td class=3D"confluenceTd"><p>Connecting to =E2=80=9CRAS File server=E2=80=
+=9D</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>Connecting to =E2=80=9CRAS File server=E2=80=
+=9D</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p>Downloading</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>Downloading</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>7</p></td>
+<td class=3D"confluenceTd"><p>Downloaded</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>Downloaded</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>Installing</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>Installing</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Installed / Sucess</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>10</p></td>
+<td class=3D"confluenceTd"><p>Failed to Install</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>11</p></td>
+<td class=3D"confluenceTd"><p>Timeout</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>12</p></td>
+<td class=3D"confluenceTd"><p>Unknown</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+<td class=3D"confluenceTd"><p>NULL</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+    </div>
+</body>
+</html>
+------=_Part_92_1007143918.1704261322326--

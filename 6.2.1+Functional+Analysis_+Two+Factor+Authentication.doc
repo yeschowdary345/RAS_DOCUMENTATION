@@ -1,0 +1,355 @@
+Date: Wed, 3 Jan 2024 05:25:27 +0000 (UTC)
+Message-ID: <1730001461.69.1704259527567@89ec1521d75b>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_68_320475282.1704259527566"
+
+------=_Part_68_320475282.1704259527566
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>6.2.1 Functional Analysis: Two Factor Authentication</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>6.2.1 Functional Analysis: Two Factor Authentication</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-6.2.1FunctionalAnalysis:TwoFactorAuthentication-Introd=
+uction">Introduction</h2>
+<p>As a result of the Toreon security audit, a need for two factor authenti=
+cation for prilvileged (administrator) users became clear. Two factor authe=
+ntication is a security mechanism where a user needs not only something he =
+knows (ie his username &amp; password), but also something he has (ie his p=
+hone) to log on.&nbsp;</p>
+<p>By requiring this second factor, we can substantially increase security.=
+&nbsp;</p>
+<h2 id=3D"id-6.2.1FunctionalAnalysis:TwoFactorAuthentication-Typesofsecondf=
+actor">Types of second factor</h2>
+<p>Several ways of providing the second factor in a 2FA authentication sche=
+me exist:</p>
+<ul style=3D"list-style-type: square;">
+<li>Send users an email containing a secret code they'll fill in on the web=
+site.&nbsp;<br><br>Advantages:<br>&nbsp;- Free<br>&nbsp;- Nothing to carry<=
+br>Disadvantages:<br>&nbsp;- When email is compromised, the website is also=
+ compromised<br>&nbsp;- Would be time consuming for the user</li>
+</ul>
+<p><br></p>
+<ul style=3D"list-style-type: square;">
+<li>Send users an sms containing a secret code they'll fill in on the websi=
+te<br><br>Advantages:<br>&nbsp;- Easy for users<br>Disadvantages:<br>&nbsp;=
+- Not free<br>&nbsp;- Susceptible to telephony provider attack</li>
+</ul>
+<p><br></p>
+<ul style=3D"list-style-type: square;">
+<li>Have users use a dedicated app (ie google authenticator)<br><br>Advanta=
+ges:<br>&nbsp;- Free<br>&nbsp;- Relatively easy<br>&nbsp;- More secure than=
+ email &amp; sms&nbsp;<br>Disadvantages:<br>&nbsp;- Few? A little more work=
+ maybe than sms</li>
+</ul>
+<p><br></p>
+<ul style=3D"list-style-type: square;">
+<li>Use a dedicated hardware token (ie FIDO)<br><br>Advantages:<br>&nbsp;- =
+Most secure<br>&nbsp;- Easy<br>Disadvantages:<br>&nbsp;- Difficult/impossib=
+le to automate for testing (anyone want to build a robot arm to press the l=
+ittle button on the top of the device?)&nbsp;<br>&nbsp;- Not free: need a d=
+evice per administrator. These are not that expensive but still somewhat an=
+noying<br>&nbsp;- If we ever want to expand the 2FA to non-administrator us=
+ers (perhaps opt-in), users will not have these tokens and will need to pur=
+chase them<br>&nbsp;- At the moment, pretty much no support for mobile (cel=
+l phone). A scenario where an admin needs to look up something quickly on h=
+is phone is not that far fetched, and would be made impossible by this (no =
+way to connect, no drivers, no android integration, ...)&nbsp;</li>
+</ul>
+<p><br></p>
+<p>Author's recommendation: use a dedicated app</p>
+<p><br></p>
+<h2 id=3D"id-6.2.1FunctionalAnalysis:TwoFactorAuthentication-Userinterface"=
+>User interface</h2>
+<p>When logging in, users are shown the very same username &amp; password s=
+creen. When their provided credentials are correct, they're shown another p=
+age where they are asked for their code.&nbsp;</p>
+<p> </p>
+<div style=3D"width: 100.0%;height: 100.0%;text-align: center;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/549748791/=
+balsamiq_E1E7C231-AFE0-4F54-AAFE-5E4A97F16BCA_Master.png">
+</div>=20
+<p></p>
+<p>In the user profile, we will add a link that is visible only to administ=
+rators reading "Set 2 Factor Authentication code". Loading this page will g=
+enerate a new server-side code, set it in the database for your user and wi=
+ll show you the code you need to configure your 2FA app. It will also show =
+a QR code that can be <span class=3D"inline-comment-marker" data-ref=3D"c77=
+f4b69-9954-4e40-905c-f7b7d3356441">used for quicker configuration</span>.&n=
+bsp;</p>
+<p> </p>
+<div style=3D"width: 100.0%;height: 100.0%;text-align: center;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/549748791/=
+balsamiq_2278E287-509B-183B-1098-2EC38DDDB7D8_Master.png">
+</div>=20
+<p></p>
+<h2 id=3D"id-6.2.1FunctionalAnalysis:TwoFactorAuthentication-Recovery">Reco=
+very</h2>
+<p>If a user were to lose access to the key-generating app, he can contact =
+another administrator. The administrator with functioning access will imper=
+sonate the user who lost his token and will communicate the iniitial setup =
+code to him.&nbsp;</p>
+<p>If this too fails, the administrator can use database queries to restore=
+.&nbsp;</p>
+<p><br></p>
+<h2 id=3D"id-6.2.1FunctionalAnalysis:TwoFactorAuthentication-Impactontestin=
+g">Impact on testing</h2>
+<p>Currently, some of our tests depend on the test user having administrato=
+r permissions. These tests test if the administrator part of the website is=
+ functioning normally.&nbsp;</p>
+<p>If the account used for testing requires administrator permissions, we n=
+aturally need to provide a way for the automated tests to "read" a new veri=
+fication code.&nbsp;</p>
+<p>There are several options to solve this issue:</p>
+<p>&nbsp;1) Stop testing the administrator part of the website. Currently t=
+he tests for the administrator part of the website are very limited and hon=
+estly would not be greatly missed. A middle road would be to only run these=
+ admin tests on the master branch &amp; not require 2FA for&nbsp;<a class=
+=3D"external-link" href=3D"mailto:test@test.com" rel=3D"nofollow">test@test=
+.com</a>&nbsp;on master.&nbsp;</p>
+<p>&nbsp;2) Hardcode the security token for&nbsp;<a class=3D"external-link"=
+ href=3D"mailto:test@test.com" rel=3D"nofollow">test@test.com</a>&nbsp;into=
+ the smoketest test project. Include the code to generate 2FA verification =
+codes based on this token into the smoketests program. This is in itself a =
+security risk&nbsp;=E2=80=93 anyone gains access to our source code would i=
+mmediately gain access to the production environment (note that this is cur=
+rently also the case, due to&nbsp;<a class=3D"external-link" href=3D"mailto=
+:test@test.com" rel=3D"nofollow">test@test.com</a>&nbsp;having admin permis=
+sions).&nbsp;</p>
+<p><span class=3D"inline-comment-marker" data-ref=3D"239c2147-adb1-45c9-8c1=
+1-39694df7928f">3) Install a separate key-generating application onto the b=
+uild server and have the smoketest code use that to read smoke tests. This =
+would mean that anyone with access to the development server can also gain =
+access to the production server, but that is already the case (they could d=
+eploy a new version of the software...).</span>&nbsp;</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_68_320475282.1704259527566--

@@ -1,0 +1,658 @@
+Date: Wed, 3 Jan 2024 06:02:25 +0000 (UTC)
+Message-ID: <1441305330.139.1704261745462@825850ec0edf>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_138_1799453208.1704261745462"
+
+------=_Part_138_1799453208.1704261745462
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>2021-12-07 Retrospective - Sprint #25</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>2021-12-07 Retrospective - Sprint #25</h1>
+    <div class=3D"Section1">
+        <p></p>
+<div class=3D"plugin-tabmeta-details">
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"d41e0ef8-5961-4aae-9954-316=
+16f90fc45" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 251.0px;">
+<col style=3D"width: 475.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Date</p></th>
+<td class=3D"confluenceTd"><p> <time datetime=3D"2021-12-07" class=3D"date-=
+past">07 Dec 2021</time> to <time datetime=3D"2021-12-23" class=3D"date-pas=
+t">23 Dec 2021</time> </p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh"><p>Team</p></th>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<th class=3D"confluenceTh"><p>Participants</p></th>
+<td class=3D"confluenceTd"><p> <a class=3D"confluence-userlink user-mention=
+" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeapp=
+lications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluen=
+ce" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlass=
+ian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/5efed4ee7295050bad7a9d11=
+?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeappl=
+ications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a> <a cla=
+ss=3D"confluence-userlink user-mention" data-account-id=3D"5d3e751d982c2b0d=
+b298708e" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5=
+d3e751d982c2b0db298708e?ref=3Dconfluence" target=3D"_blank" data-linked-res=
+ource-id=3D"32799" data-linked-resource-version=3D"1" data-linked-resource-=
+type=3D"userinfo" data-base-url=3D"https://nexchargeapplications.atlassian.=
+net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h2 id=3D"id-2021-12-07Retrospective-Sprint#25-Background">Background</h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" data-local-id=3D"ec237510-227e-42e8-a9c3-eff816=
+56dbf4" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 146.0px;">
+<col style=3D"width: 362.0px;">
+<col style=3D"width: 117.0px;">
+<col style=3D"width: 224.0px;">
+<col style=3D"width: 111.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Assignee</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Sprint Backlogs (To Do)</strong></p><=
+/th>
+<th class=3D"confluenceTh"><p><strong>Actual Efforts (Hrs.)</strong></p></t=
+h>
+<th class=3D"confluenceTh"><p><strong>Remarks</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Approval</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-784?atlOrigin=3DeyJpIjoiOWU0YmMzMjk5NmM0NDk1ZGJlMmZlNDAwMWU0NTlkZDciLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-784?atlOrigin=3DeyJpIjoiOWU0YmMzMjk5NmM0NDk1ZGJlMmZlNDAwMWU0NTlkZDc=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-763?atlOrigin=3DeyJpIjoiNDU4OTZhZDQ0NmFiNGEzZGFkOGNiNzlmMzdjOTg2ZGEiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-763?atlOrigin=3DeyJpIjoiNDU4OTZhZDQ0NmFiNGEzZGFkOGNiNzlmMzdjOTg2ZGE=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-780?atlOrigin=3DeyJpIjoiMjUwYWYyMTUyMDI5NGVlNjkxZGFjMzM0Y2E3NDg4N2EiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-780?atlOrigin=3DeyJpIjoiMjUwYWYyMTUyMDI5NGVlNjkxZGFjMzM0Y2E3NDg4N2E=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>6</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-757?atlOrigin=3DeyJpIjoiYTAyOTI1MGE3OTljNDI1YmEwMjNiZjdhNGUzOGQyMTAiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-757?atlOrigin=3DeyJpIjoiYTAyOTI1MGE3OTljNDI1YmEwMjNiZjdhNGUzOGQyMTA=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-758?atlOrigin=3DeyJpIjoiYWNmYzIxMThlMDQ5NGZmZjhlNWIxODFiZTc0ZTBlNjYiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-758?atlOrigin=3DeyJpIjoiYWNmYzIxMThlMDQ5NGZmZjhlNWIxODFiZTc0ZTBlNjY=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-785?atlOrigin=3DeyJpIjoiOGFmZGMwODJjMGI5NGE2Mjg2N2E3ZmI0M2Q2YzQzZGYiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-785?atlOrigin=3DeyJpIjoiOGFmZGMwODJjMGI5NGE2Mjg2N2E3ZmI0M2Q2YzQzZGY=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-713?atlOrigin=3DeyJpIjoiZWRhMGNjMTVjNTVmNGQ4YWFmMjI3YTIxYjQ3YmM2YjAiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-713?atlOrigin=3DeyJpIjoiZWRhMGNjMTVjNTVmNGQ4YWFmMjI3YTIxYjQ3YmM2YjA=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>24</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-789?atlOrigin=3DeyJpIjoiNjgxNzI1N2ExMDEzNDU3ZjkwMzNkMzZlZmI3NzZhYjEiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-789?atlOrigin=3DeyJpIjoiNjgxNzI1N2ExMDEzNDU3ZjkwMzNkMzZlZmI3NzZhYjE=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-781?atlOrigin=3DeyJpIjoiNzhhMmYzNmEyMWY2NDg1NWFjNjhkOTIzMjM1NmU0ZGUiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-781?atlOrigin=3DeyJpIjoiNzhhMmYzNmEyMWY2NDg1NWFjNjhkOTIzMjM1NmU0ZGU=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>9</p></td>
+<td class=3D"confluenceTd"><p>Need Expert support as we requested to Pradee=
+p - In Progress</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-774?atlOrigin=3DeyJpIjoiNmYzYjc5MTI0MzAwNGZjMmExYzc1ZjMwOGM0NGE3NzMiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-774?atlOrigin=3DeyJpIjoiNmYzYjc5MTI0MzAwNGZjMmExYzc1ZjMwOGM0NGE3NzM=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-783?atlOrigin=3DeyJpIjoiNmU0Nzg2MTY4ZTQ1NGIzZjkwMzZkYTk3MWRjZjVhMTUiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-783?atlOrigin=3DeyJpIjoiNmU0Nzg2MTY4ZTQ1NGIzZjkwMzZkYTk3MWRjZjVhMTU=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>78</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-786?atlOrigin=3DeyJpIjoiMWFkZDRlZmYwOGI3NGUyOGFjNzJiYjBmMzk2NWExYjYiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-786?atlOrigin=3DeyJpIjoiMWFkZDRlZmYwOGI3NGUyOGFjNzJiYjBmMzk2NWExYjY=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p><a class=3D"external-link" data-card-appearan=
+ce=3D"inline" href=3D"https://nexchargeapplications.atlassian.net/browse/RA=
+SP-788?atlOrigin=3DeyJpIjoiYmRkZTIzYzUzMzNmNDY4ZThkMjVkN2RkYTkxOGYzZGIiLCJw=
+IjoiaiJ9" rel=3D"nofollow">https://nexchargeapplications.atlassian.net/brow=
+se/RASP-788?atlOrigin=3DeyJpIjoiYmRkZTIzYzUzMzNmNDY4ZThkMjVkN2RkYTkxOGYzZGI=
+iLCJwIjoiaiJ9</a> </p></td>
+<td class=3D"confluenceTd"><p>33</p></td>
+<td class=3D"confluenceTd"><p><a href=3D"/wiki/spaces/RASNEX/pages/10633543=
+69/FOTA+-+Discussion+Points" data-linked-resource-id=3D"1063354369" data-li=
+nked-resource-version=3D"1" data-linked-resource-type=3D"page">FOTA - Discu=
+ssion Points</a> </p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Capacity : 224 Hrs. (Total hours in <strong>14 days </strong>sprint )</p=
+>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"cae43d81-5635-4701-b1f1-352=
+424cf2fa0" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 206.0px;">
+<col style=3D"width: 207.0px;">
+<col style=3D"width: 140.0px;">
+<col style=3D"width: 207.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Name</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Availability (in hrs) / 120Hrs.(3W)</=
+strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Planed Leave/Holiday (Hrs.)</strong><=
+/p></th>
+<th class=3D"confluenceTh"><p><strong>Remarks</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Pandey.Vartika (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p>112</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>1 day Mandatory holiday</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><a class=3D"confluence-userlink user-mention"=
+ data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexchargeappl=
+ications.atlassian.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfluenc=
+e" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassi=
+an.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a> </p></td>
+<td class=3D"confluenceTd"><p>112</p></td>
+<td class=3D"confluenceTd"><p>8</p></td>
+<td class=3D"confluenceTd"><p>1 day Mandatory holiday</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Total</p></td>
+<td class=3D"confluenceTd"><p>224</p></td>
+<td class=3D"confluenceTd"><p>16</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<h2 id=3D"id-2021-12-07Retrospective-Sprint#25-Retrospective">Retrospective=
+</h2>
+<div class=3D"confluence-information-macro confluence-information-macro-inf=
+ormation">
+<span class=3D"aui-icon aui-icon-small aui-iconfont-info confluence-informa=
+tion-macro-icon"></span>
+<div class=3D"confluence-information-macro-body">
+<p></p>
+</div>
+</div>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" data-local-id=3D"4b99eb51-2f2c-4dc7-99e4-5ccbbf=
+067765" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 456.0px;">
+<col style=3D"width: 503.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour=3D"#e3fcef" class=3D"confluenceTh"><p><strong>Wha=
+t did we do well?</strong></p></th>
+<th data-highlight-colour=3D"#ffebe6" class=3D"confluenceTh"><p><strong>Wha=
+t didn=E2=80=99t go well?</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Achieved successful POC with RJIO </p></li>
+<li><p>DevExpress 20.2 POC done successfully</p></li>
+<li><p>FOTA downgrade option completed for Firmware and Configuration </p><=
+/li>
+<li><p>Developed FOTA separate UI for uploading Firmware/Config. files dire=
+ctly for the testing purpose</p></li>
+<li><p>Implemented Pagination logic and applied on FOTA status page and Ass=
+et Mapping History Page</p></li>
+<li><p>Enhancement</p>
+<ul>
+<li><p>Added the Edit option for Company</p></li>
+<li><p> Added the Edit option for Asset Type</p></li>
+</ul></li>
+</ul><p> </p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Unable to get exploration on release system for firmware and configu=
+ration files.</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" data-local-id=3D"f8ac2333-324a-4f96-b8dc-=
+82321d7ba9df" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 540.0px;">
+<col style=3D"width: 472.0px;">
+<col style=3D"width: 428.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour=3D"#e3fcef" class=3D"confluenceTh"><p><strong>Sta=
+rt doing</strong></p></th>
+<th data-highlight-colour=3D"#ffebe6" class=3D"confluenceTh"><p><strong>Sto=
+p doing</strong></p></th>
+<th data-highlight-colour=3D"#eae6ff" class=3D"confluenceTh"><p><strong>Kee=
+p doing</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Need to describe task and sub-task properly.<=
+/p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>Running confluence documents, team keep updat=
+ing</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Need to create linking between build number a=
+gainst completed epic/story/task.</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p>Logging actual efforts against their estimate=
+d efforts</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-2021-12-07Retrospective-Sprint#25-Actionitems">Action items</h=
+2>
+<p></p>
+<ul class=3D"inline-task-list" data-inline-tasks-content-id=3D"1062862849">
+<li data-inline-task-id=3D"1"><span>&nbsp;</span></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_138_1799453208.1704261745462--

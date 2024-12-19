@@ -1,0 +1,1858 @@
+Date: Wed, 3 Jan 2024 05:58:42 +0000 (UTC)
+Message-ID: <1080722307.91.1704261522349@2fe592dbd4e0>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_90_205583603.1704261522349"
+
+------=_Part_90_205583603.1704261522349
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Retrospectives</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Retrospectives</h1>
+    <div class=3D"Section1">
+        <p style=3D"text-align: right;"><button class=3D"aui-button create-=
+from-template-button" data-space-key=3D"RASNEX" href=3D"https://nexchargeap=
+plications.atlassian.net/wiki?createDialogSpaceKey=3DRASNEX&amp;createDialo=
+gBlueprintId=3D9325d49f-bc7f-49d5-a281-93c2c61d38ad" data-content-blueprint=
+-id=3D"9325d49f-bc7f-49d5-a281-93c2c61d38ad" disabled=3D"true">Add Retrospe=
+ctive</button></p>
+<p></p>
+<div class=3D"table-wrap">
+<table class=3D"aui metadata-summary-macro retrospective" data-cql=3D"label=
+ =3D &quot;retrospective&quot; and space =3D currentSpace ( )" data-heading=
+s=3D"Date,Participants" data-first-column-heading=3D"Title" data-count-comm=
+ents=3D"false" data-count-likes=3D"false" data-total-pages=3D"1" data-page-=
+size=3D"1000" data-sort-by=3D"null" data-reverse-sort=3D"false" data-bluepr=
+int-present=3D"false" data-current-space-key=3D"RASNEX" data-current-conten=
+t-id=3D"103186463">
+<thead>
+<tr>
+<th>Title</th>
+<th>Date</th>
+<th>Participants</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=3D"title" data-content-id=3D"1062862849"><a href=3D"/wiki/spaces/=
+RASNEX/pages/1062862849/2021-12-07+Retrospective+-+Sprint+%2325">2021-12-07=
+ Retrospective - Sprint #25</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <time datetime=3D"2021-12-07=
+" class=3D"date-past">07 Dec 2021</time> to <time datetime=3D"2021-12-23" c=
+lass=3D"date-past">23 Dec 2021</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" target=3D"_blank"=
+ data-linked-resource-id=3D"32799" data-linked-resource-version=3D"1" data-=
+linked-resource-type=3D"userinfo" data-base-url=3D"https://nexchargeapplica=
+tions.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"1059258377"><a href=3D"/wiki/spaces/=
+RASNEX/pages/1059258377/2021-12-03+Retrospective+-+Sprint+%2324">2021-12-03=
+ Retrospective - Sprint #24</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <time datetime=3D"2021-11-15=
+" class=3D"date-past">15 Nov 2021</time> to <time datetime=3D"2021-12-03" c=
+lass=3D"date-past">03 Dec 2021</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"1059160083"><a href=3D"/wiki/spaces/=
+RASNEX/pages/1059160083/2021-11-12+Retrospective+-+Sprint+%2323">2021-11-12=
+ Retrospective - Sprint #23</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2021-10-25"=
+ class=3D"date-past">25 Oct 2021</time> to <time datetime=3D"2021-11-12" cl=
+ass=3D"date-past">12 Nov 2021</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"1059160065"><a href=3D"/wiki/spaces/=
+RASNEX/pages/1059160065/2021-10-15+Retrospective+-+Sprint+%2322">2021-10-15=
+ Retrospective - Sprint #22</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <time datetime=3D"2021-09-28=
+" class=3D"date-past">28 Sep 2021</time> to <time datetime=3D"2021-10-21" c=
+lass=3D"date-past">21 Oct 2021</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"1010991111"><a href=3D"/wiki/spaces/=
+RASNEX/pages/1010991111/2021-09-27+Retrospective+-+Sprint+%2321">2021-09-27=
+ Retrospective - Sprint #21</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2021-09-06"=
+ class=3D"date-past">06 Sep 2021</time> to <time datetime=3D"2021-09-27" cl=
+ass=3D"date-past">27 Sep 2021</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"846561305"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/846561305/2021-06-29+Retrospective+-+Sprint+%2317">2021-06-29 R=
+etrospective - Sprint #17</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2021-06-08"=
+ class=3D"date-past">08 Jun 2021</time> to <time datetime=3D"2021-06-29" cl=
+ass=3D"date-past">29 Jun 2021</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"652148737"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/652148737/2021-03-14+Retrospective+-+Sprint+%2313">2021-03-14 R=
+etrospective - Sprint #13</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml">2021-03-14</p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"388399115"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/388399115/2020-01-19+Retrospective+-+Sprint+%2311">2020-01-19 R=
+etrospective - Sprint #11</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> <a class=3D"con=
+fluence-userlink user-mention" data-account-id=3D"5da7fdaf0771540c26a015ea"=
+ href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5da7fdaf07=
+71540c26a015ea?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https:/=
+/nexchargeapplications.atlassian.net/wiki">Manjunath (Unlicensed)</a> </p><=
+/td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"382894089"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/382894089/2020-12-11+Retrospective+-+Sprint+%2310">2020-12-11 R=
+etrospective - Sprint #10</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml">2020-12-11</p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> <a class=3D"con=
+fluence-userlink user-mention" data-account-id=3D"5da7fdaf0771540c26a015ea"=
+ href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5da7fdaf07=
+71540c26a015ea?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https:/=
+/nexchargeapplications.atlassian.net/wiki">Manjunath (Unlicensed)</a> </p><=
+/td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"212467774"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/212467774/2020-10-20+Retrospective+-++Sprint+%238">2020-10-20 R=
+etrospective - Sprint #8</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2020-10-20"=
+ class=3D"date-past">20 Oct 2020</time></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml">&nbsp;<a class=3D"confluence-=
+userlink user-mention" data-account-id=3D"5d3e751d982c2b0db298708e" href=3D=
+"https://nexchargeapplications.atlassian.net/wiki/people/5d3e751d982c2b0db2=
+98708e?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"32799=
+" data-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Awninde=
+ra Shukla</a><a class=3D"confluence-userlink user-mention" data-account-id=
+=3D"5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassi=
+an.net/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_bl=
+ank" data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gau=
+tam Kumar (Unlicensed)</a><a class=3D"confluence-userlink user-mention" dat=
+a-account-id=3D"5da7fdaf0771540c26a015ea" href=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki/people/5da7fdaf0771540c26a015ea?ref=3Dconfluence" t=
+arget=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassian.n=
+et/wiki">Manjunath (Unlicensed)</a><a class=3D"confluence-userlink user-men=
+tion" data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexcharg=
+eapplications.atlassian.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconf=
+luence" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.at=
+lassian.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a>&nbsp;&nbsp;&nbsp;=
+&nbsp;<a class=3D"confluence-userlink user-mention" data-account-id=3D"5da7=
+fd980771540c26a015e7" href=3D"https://nexchargeapplications.atlassian.net/w=
+iki/people/5da7fd980771540c26a015e7?ref=3Dconfluence" target=3D"_blank" dat=
+a-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Pandey.Vart=
+ika (Unlicensed)</a></p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"846594077"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/846594077/2021-06-07+Retrospective+-+Sprint+%2316">2021-06-07 R=
+etrospective - Sprint #16</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2021-05-18"=
+ class=3D"date-past">18 May 2021</time> To <time datetime=3D"2021-06-07" cl=
+ass=3D"date-past">07 Jun 2021</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"986611713"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/986611713/2021-09-03+Retrospective+-+Sprint+%2320">2021-09-03 R=
+etrospective - Sprint #20</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2021-08-16"=
+ class=3D"date-past">16 Aug 2021</time> to <time datetime=3D"2021-09-03" cl=
+ass=3D"date-past">03 Sep 2021</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"985366529"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/985366529/2021-08-26+Retrospective+-+Sprint+%2319">2021-08-26 R=
+etrospective - Sprint #19</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2021-07-05"=
+ class=3D"date-past">05 Jul 2021</time> to <time datetime=3D"2021-07-23" cl=
+ass=3D"date-past">23 Jul 2021</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"894435345"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/894435345/2021-07-22+Retrospective+-+Sprint+%2318">2021-07-22 R=
+etrospective - Sprint #18</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2021-07-01"=
+ class=3D"date-past">01 Jul 2021</time> to <time datetime=3D"2021-07-22" cl=
+ass=3D"date-past">22 Jul 2021</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"751566869"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/751566869/2021-05-17+Retrospective+-+Sprint+%2315">2021-05-17 R=
+etrospective - Sprint #15</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2021-04-26"=
+ class=3D"date-past">26 Apr 2021</time> To <time datetime=3D"2021-05-17" cl=
+ass=3D"date-past">17 May 2021</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"714211329"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/714211329/2021-04-05+Retrospective+-+Sprint+%2314">2021-04-05 R=
+etrospective - Sprint #14</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml">2021-03-14</p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"571539457"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/571539457/2021-02-10+Retrospective+-+Sprint+%2312">2021-02-10 R=
+etrospective - Sprint #12</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml">2021-02-10</p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"257953066"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/257953066/2020-11-19+Retrospective+-+Sprint+%239">2020-11-19 Re=
+trospective - Sprint #9</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2020-11-18"=
+ class=3D"date-past">18 Nov 2020</time></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"> <a class=3D"confluence-userl=
+ink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" href=3D"http=
+s://nexchargeapplications.atlassian.net/wiki/people/5da7fd980771540c26a015e=
+7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapp=
+lications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a> <a class=3D"c=
+onfluence-userlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d1=
+1" href=3D"https://nexchargeapplications.atlassian.net/wiki/people/5efed4ee=
+7295050bad7a9d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https=
+://nexchargeapplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlice=
+nsed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"=
+5f733773837bb800680baa8f" href=3D"https://nexchargeapplications.atlassian.n=
+et/wiki/people/5f733773837bb800680baa8f?ref=3Dconfluence" target=3D"_blank"=
+ data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Gautam =
+Kumar (Unlicensed)</a> <a class=3D"confluence-userlink user-mention" data-a=
+ccount-id=3D"5d3e751d982c2b0db298708e" href=3D"https://nexchargeapplication=
+s.atlassian.net/wiki/people/5d3e751d982c2b0db298708e?ref=3Dconfluence" targ=
+et=3D"_blank" data-linked-resource-id=3D"32799" data-linked-resource-versio=
+n=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=3D"https://nex=
+chargeapplications.atlassian.net/wiki">Awnindera Shukla</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"134381644"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/134381644/2020-08-14+Retrospective+-+Sprint+%234">2020-08-14 Re=
+trospective - Sprint #4</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2020-07-15"=
+ class=3D"date-past">15 Jul 2020</time></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"5d3e751d982c2b0db298708e" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/5d3e751d982c2b0db298708e=
+?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"32799" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Awnindera Shu=
+kla</a>&nbsp;<a class=3D"confluence-userlink user-mention" data-account-id=
+=3D"5da7fdaf0771540c26a015ea" href=3D"https://nexchargeapplications.atlassi=
+an.net/wiki/people/5da7fdaf0771540c26a015ea?ref=3Dconfluence" target=3D"_bl=
+ank" data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Man=
+junath (Unlicensed)</a>&nbsp;<a class=3D"confluence-userlink user-mention" =
+data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappli=
+cations.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluence=
+" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassia=
+n.net/wiki">Pandey.Vartika (Unlicensed)</a>&nbsp;<a class=3D"confluence-use=
+rlink user-mention" data-account-id=3D"5efed4ee7295050bad7a9d11" href=3D"ht=
+tps://nexchargeapplications.atlassian.net/wiki/people/5efed4ee7295050bad7a9=
+d11?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargea=
+pplications.atlassian.net/wiki">Siva Prakash Chinnanai (Unlicensed)</a> </p=
+></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"195526818"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/195526818/2020-10-16+Retrospective+-++Sprint+%237">2020-10-16 R=
+etrospective - Sprint #7</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2020-10-16"=
+ class=3D"date-past">16 Oct 2020</time></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"5d3e751d982c2b0db298708e" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/5d3e751d982c2b0db298708e=
+?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"32799" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Awnindera Shu=
+kla</a>&nbsp;<a class=3D"confluence-userlink user-mention" data-account-id=
+=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexchargeapplications.atlassi=
+an.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfluence" target=3D"_bl=
+ank" data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Siv=
+a Prakash Chinnanai (Unlicensed)</a>&nbsp;<a class=3D"confluence-userlink u=
+ser-mention" data-account-id=3D"5da7fdaf0771540c26a015ea" href=3D"https://n=
+exchargeapplications.atlassian.net/wiki/people/5da7fdaf0771540c26a015ea?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">Manjunath (Unlicensed)</a>&nbsp;<a class=3D"conflu=
+ence-userlink user-mention" data-account-id=3D"5f5091afea5e2f00390b914b" hr=
+ef=3D"https://nexchargeapplications.atlassian.net/wiki/people/5f5091afea5e2=
+f00390b914b?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://ne=
+xchargeapplications.atlassian.net/wiki">kiran.seethakalnagarajaiah (Unlicen=
+sed)</a> <a class=3D"confluence-userlink user-mention" data-account-id=3D"5=
+da7fd980771540c26a015e7" href=3D"https://nexchargeapplications.atlassian.ne=
+t/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluence" target=3D"_blank" =
+data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Pandey.V=
+artika (Unlicensed)</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"158629889"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/158629889/2020-09-28+Retrospective+-++Sprint+%236">2020-09-28 R=
+etrospective - Sprint #6</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2020-09-28"=
+ class=3D"date-past">28 Sep 2020</time></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"5d3e751d982c2b0db298708e" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/5d3e751d982c2b0db298708e=
+?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"32799" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Awnindera Shu=
+kla</a>&nbsp;<a class=3D"confluence-userlink user-mention" data-account-id=
+=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexchargeapplications.atlassi=
+an.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfluence" target=3D"_bl=
+ank" data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Siv=
+a Prakash Chinnanai (Unlicensed)</a>&nbsp;<a class=3D"confluence-userlink u=
+ser-mention" data-account-id=3D"5da7fdaf0771540c26a015ea" href=3D"https://n=
+exchargeapplications.atlassian.net/wiki/people/5da7fdaf0771540c26a015ea?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">Manjunath (Unlicensed)</a>&nbsp;<a class=3D"conflu=
+ence-userlink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" hr=
+ef=3D"https://nexchargeapplications.atlassian.net/wiki/people/5da7fd9807715=
+40c26a015e7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://ne=
+xchargeapplications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a>&nbs=
+p;<a class=3D"confluence-userlink user-mention" data-account-id=3D"5f5091af=
+ea5e2f00390b914b" href=3D"https://nexchargeapplications.atlassian.net/wiki/=
+people/5f5091afea5e2f00390b914b?ref=3Dconfluence" target=3D"_blank" data-ba=
+se-url=3D"https://nexchargeapplications.atlassian.net/wiki">kiran.seethakal=
+nagarajaiah (Unlicensed)</a> </p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"151453702"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/151453702/2020-09-07+Retrospective+-++Sprint+%235">2020-09-07 R=
+etrospective - Sprint #5</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2020-08-07"=
+ class=3D"date-past">07 Aug 2020</time></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"5d3e751d982c2b0db298708e" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/5d3e751d982c2b0db298708e=
+?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"32799" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Awnindera Shu=
+kla</a>&nbsp;<a class=3D"confluence-userlink user-mention" data-account-id=
+=3D"5efed4ee7295050bad7a9d11" href=3D"https://nexchargeapplications.atlassi=
+an.net/wiki/people/5efed4ee7295050bad7a9d11?ref=3Dconfluence" target=3D"_bl=
+ank" data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Siv=
+a Prakash Chinnanai (Unlicensed)</a>&nbsp;<a class=3D"confluence-userlink u=
+ser-mention" data-account-id=3D"5da7fdaf0771540c26a015ea" href=3D"https://n=
+exchargeapplications.atlassian.net/wiki/people/5da7fdaf0771540c26a015ea?ref=
+=3Dconfluence" target=3D"_blank" data-base-url=3D"https://nexchargeapplicat=
+ions.atlassian.net/wiki">Manjunath (Unlicensed)</a>&nbsp;<a class=3D"conflu=
+ence-userlink user-mention" data-account-id=3D"5da7fd980771540c26a015e7" hr=
+ef=3D"https://nexchargeapplications.atlassian.net/wiki/people/5da7fd9807715=
+40c26a015e7?ref=3Dconfluence" target=3D"_blank" data-base-url=3D"https://ne=
+xchargeapplications.atlassian.net/wiki">Pandey.Vartika (Unlicensed)</a>&nbs=
+p;</p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"116326557"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/116326557/2020-06-19+Retrospective+-+Sprint+%233">2020-06-19 Re=
+trospective - Sprint #3</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2020-06-19"=
+ class=3D"date-past">19 Jun 2020</time></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"5d3e751d982c2b0db298708e" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/5d3e751d982c2b0db298708e=
+?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"32799" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Awnindera Shu=
+kla</a>&nbsp;<a class=3D"confluence-userlink user-mention" data-account-id=
+=3D"5da7fdaf0771540c26a015ea" href=3D"https://nexchargeapplications.atlassi=
+an.net/wiki/people/5da7fdaf0771540c26a015ea?ref=3Dconfluence" target=3D"_bl=
+ank" data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Man=
+junath (Unlicensed)</a>&nbsp;<a class=3D"confluence-userlink user-mention" =
+data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappli=
+cations.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluence=
+" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassia=
+n.net/wiki">Pandey.Vartika (Unlicensed)</a>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"114524179"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/114524179/2020-06-16+Retrospective+-+Sprint+%232">2020-06-16 Re=
+trospective - Sprint #2</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2020-06-16"=
+ class=3D"date-past">16 Jun 2020</time></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"5d3e751d982c2b0db298708e" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/5d3e751d982c2b0db298708e=
+?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"32799" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Awnindera Shu=
+kla</a>&nbsp;<a class=3D"confluence-userlink user-mention" data-account-id=
+=3D"5da7fdaf0771540c26a015ea" href=3D"https://nexchargeapplications.atlassi=
+an.net/wiki/people/5da7fdaf0771540c26a015ea?ref=3Dconfluence" target=3D"_bl=
+ank" data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Man=
+junath (Unlicensed)</a>&nbsp;<a class=3D"confluence-userlink user-mention" =
+data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappli=
+cations.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluence=
+" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassia=
+n.net/wiki">Pandey.Vartika (Unlicensed)</a>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"103088141"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/103088141/2020-06-03+Retrospective+Test">2020-06-03 Retrospecti=
+ve Test</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2020-05-03"=
+ class=3D"date-past">03 May 2020</time></p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"5d3e751d982c2b0db298708e" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/5d3e751d982c2b0db298708e=
+?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"32799" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Awnindera Shu=
+kla</a>&nbsp;</p></td>
+</tr>
+<tr>
+<td class=3D"title" data-content-id=3D"115048449"><a href=3D"/wiki/spaces/R=
+ASNEX/pages/115048449/2020-05-28+Retrospective+-+Sprint+%231">2020-05-28 Re=
+trospective - Sprint #1</a></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><time datetime=3D"2020-05-28"=
+ class=3D"date-past">28 May 2020</time> </p></td>
+<td><p xmlns=3D"http://www.w3.org/1999/xhtml"><a class=3D"confluence-userli=
+nk user-mention" data-account-id=3D"5d3e751d982c2b0db298708e" href=3D"https=
+://nexchargeapplications.atlassian.net/wiki/people/5d3e751d982c2b0db298708e=
+?ref=3Dconfluence" target=3D"_blank" data-linked-resource-id=3D"32799" data=
+-linked-resource-version=3D"1" data-linked-resource-type=3D"userinfo" data-=
+base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Awnindera Shu=
+kla</a>&nbsp;<a class=3D"confluence-userlink user-mention" data-account-id=
+=3D"5da7fdaf0771540c26a015ea" href=3D"https://nexchargeapplications.atlassi=
+an.net/wiki/people/5da7fdaf0771540c26a015ea?ref=3Dconfluence" target=3D"_bl=
+ank" data-base-url=3D"https://nexchargeapplications.atlassian.net/wiki">Man=
+junath (Unlicensed)</a>&nbsp;<a class=3D"confluence-userlink user-mention" =
+data-account-id=3D"5da7fd980771540c26a015e7" href=3D"https://nexchargeappli=
+cations.atlassian.net/wiki/people/5da7fd980771540c26a015e7?ref=3Dconfluence=
+" target=3D"_blank" data-base-url=3D"https://nexchargeapplications.atlassia=
+n.net/wiki">Pandey.Vartika (Unlicensed)</a>&nbsp;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<h2 id=3D"Retrospectives-RoadMap"><strong>Road Map&nbsp;</strong></h2>
+<p></p>
+<div style=3D"background:#CCCCCC;width:250px;height:250px;">
+<div style=3D"height:30px;padding:2px;">
+Gadgets can only be viewed in browsers
+</div>
+<img src=3D"50b6bb3c2347d208693d65b9a462de86" width=3D"250" height=3D"219">
+</div>
+<p></p>
+<h2 id=3D"Retrospectives-StoryPoint"><strong>Story Point</strong></h2>
+<p style=3D"margin-left: 30.0px;"><span class=3D"confluence-embedded-file-w=
+rapper confluence-embedded-manual-size"><img class=3D"confluence-embedded-i=
+mage" height=3D"249" loading=3D"lazy" src=3D"00dc7347294a655d3c41ea14960412=
+f3" data-image-src=3D"https://nexchargeapplications.atlassian.net/wiki/down=
+load/attachments/103186463/image2020-6-19_8-45-51.png?version=3D1&amp;modif=
+icationDate=3D1592536558178&amp;cacheVersion=3D1&amp;api=3Dv2" data-unresol=
+ved-comment-count=3D"0" data-linked-resource-id=3D"116261143" data-linked-r=
+esource-version=3D"1" data-linked-resource-type=3D"attachment" data-linked-=
+resource-default-alias=3D"image2020-6-19_8-45-51.png" data-base-url=3D"http=
+s://nexchargeapplications.atlassian.net/wiki" data-linked-resource-content-=
+type=3D"image/png" data-linked-resource-container-id=3D"103186463" data-lin=
+ked-resource-container-version=3D"4" data-media-id=3D"6f421e08-ed05-47a4-a8=
+40-b67e5672f031" data-media-type=3D"file" width=3D"403"></span></p>
+<ul>
+<li>Note:
+<ul>
+<li>1 sprint =3D 3w =3D 15d =3D 120h</li>
+<li>1&nbsp;Sub task should not be more than 16 h</li>
+</ul></li>
+</ul>
+<p style=3D"margin-left: 30.0px;"><br></p>
+<p style=3D"margin-left: 30.0px;"><br></p>
+    </div>
+</body>
+</html>
+------=_Part_90_205583603.1704261522349
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/00dc7347294a655d3c41ea14960412f3
+
+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
+Aw9gDL/oO1qhAAAAAElFTkSuQmCC
+------=_Part_90_205583603.1704261522349
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/50b6bb3c2347d208693d65b9a462de86
+
+iVBORw0KGgoAAAANSUhEUgAAAPoAAADcCAYAAABZGbwWAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QUIBiEImlEkewAABFhJREFUeNrt3T9vG2UcwPFfUSSQ
+LCSM0iP8Ua0zMFAcpMpDPTUoFu8h5kUkWYGlA7A2ztp26ALlNVSO1ExnyV5IKAMohgWBFakCYYmt
+DCyotQtCF9J7/PmMyeLn7r655y53fi6MRqNHASTtOZsAhA4IHRA6IHRA6IDQAaEDQgehA0IHhA4I
+HRA6IHRA6IDQQeiA0AGhA0IHhA4IHRA6IHQQOiB0QOiA0AGhA0IHhA4IHRA6CB0QOiB0QOiA0AGh
+A0IHnrSS2oDa7ba9ypkaj8fO6IDQAaEDQgeEDggdltbKsgz065++j1//+N0eL8Gl+lo06msLfz+d
+TqMohjGbzSo5vjzPo9O5KvRqhv5d/PjwZ5WW4NqbVxaGPhgcxF5/v/Jj7HY3Y3dn29Qd5rl563YS
+4xgMDmIwOBA6PO5kMqnsdH3RJYjQ4TEpRZ4aoVOaV7LMRhA6qcuyLNbXW8mMp5XQWIROqT75+KPK
+x16r1WJ3ZzvWW+mEvuLQpOxIPv/sUxvCGR0QOiB0QOiA0EHoQKL8e41SzWaz+OLLu1EUw8o+K97p
+XI1ebyuaeS50mGevvx9FMaz0GIpiGEdHx7HfvxFZIo/1mrpT6tm86pH/fSxeU4U5TiYTG0HogNCp
+vJReAon467l9ocMcH/a2khhHM8+j291MZr+4606per2taK234vjouNJn8m53M6kzutA5kyl8atN4
+U3dA6IDQAaEDQgf+FXfdKd1sNqv047C1Wi2pN9eETumKYhh7/f3Kr9pikUV4ipu3biexNJNFFmGB
+k8kkqYUJLbIIC67NETqJs8ii0FkCWZYldbfaIouwwM7uduVjt8gi/INmnke/fyOm02n8UtGbWSm+
+eSd0zmwan7lmN3UHhA4IHRA6IHQQOiB0QOiA0AGhA0IH/puledb9vdfejsbLr9rjJbhUX7MRhP6s
+hv6WvY2pOyB0QOiA0IFztTQ34+7fP4zT09NKfebV1dXY2Lg293ffHHx1bp8ry9+Ni/mTX7f0w8Pf
+4s7422SOmY3m6/F+8w2hV8nh4WE8eFCtg/Dy5XeeEvrd8/tgm1sLQ79+r0jmmLn+QSeZ0E3dwTU6
+IHRA6IDQAaEDQgeEDggdhA4IHRA6IHRA6IDQAaEDQgehA6lamq+SajQaSX3mbM5XOf1favWLc3/+
+0gvPJ/PVSxERjfqLyYzlwmg0epRS0O12259vztR4PDZ1B4QOCB0QOiB0QOggdEDogNABoQPnKrln
+3av4eCI4owNCB4QOCB2EDggdEDogdEDogNABoQNCB6EDQgeEDggdEDogdEDogNBB6IDQAaEDQgeE
+DggdEDogdEDoIHRA6IDQAaEDQgeEDggdEDoIHRA6IHRA6IDQAaEDQgeEDkIHhA4IHRA6IHRA6IDQ
+AaEDQgehA0IHhA4IHRA6IHRA6IDQQeiA0AGhA0IHhA4IHRA6IHQQOiB0QOiA0AGhA0IHhA4IHRA6
+CB0QOiB04NnwJ2oPxDh2ZnyCAAAAAElFTkSuQmCC
+------=_Part_90_205583603.1704261522349--

@@ -1,0 +1,516 @@
+Date: Wed, 3 Jan 2024 05:37:38 +0000 (UTC)
+Message-ID: <996337237.73.1704260258715@01146b9ad81d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_72_1613511848.1704260258715"
+
+------=_Part_72_1613511848.1704260258715
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>9.1 Time filter functionality</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>9.1 Time filter functionality</h1>
+    <div class=3D"Section1">
+        <h2 id=3D"id-9.1Timefilterfunctionality-Mockups">Mockups</h2>
+<p> </p>
+<div style=3D"width: 100.0%;height: 100.0%;text-align: center;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/253263873/=
+balsamiq_21862C2E-963F-4693-B420-F974D45DFB81_Master.png">
+</div>=20
+<p></p>
+<h2 id=3D"id-9.1Timefilterfunctionality-Identifyingtypesofdata">Identifying=
+ types of data</h2>
+<p><br></p>
+<p>This relates to other documents:&nbsp;</p>
+<p><a href=3D"/wiki/spaces/RASNEX/pages/83755609/Data+quality" data-linked-=
+resource-id=3D"83755609" data-linked-resource-version=3D"1" data-linked-res=
+ource-type=3D"page">Data quality</a></p>
+<p><a class=3D"unresolved" href=3D"#">2018-01-24 Meeting on {Heart,Dead}bea=
+t</a></p>
+<h3 id=3D"id-9.1Timefilterfunctionality-&quot;Sick&quot;data(Dataiscorrupt)=
+">"Sick" data (Data is corrupt)</h3>
+<p>This relies on the concept of heartbeat which is explained in the docume=
+nts mentioned above.</p>
+<p>We&nbsp;should be able to use the DAE to determine the periods when the =
+data is missing due to corrupt files or bugs in MFC.</p>
+<p>An idea of how the RASQL could look:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">WITH AS=
+SET("MFC1") AS mfc
+DEFINE
+                EVERY(mfc.Heartbeat) AS hb,
+                PREVIOUS(mfc.Heartbeat) AS previousHb
+CALCULATE hb - previousHb AS diff
+WHEN diff &gt; 1 THEN WRITEVALUE(previousHb.Timestamp, "SICKPERIOD", hb.Tim=
+estamp)</pre>=20
+</div>
+</div>
+<p>Note that we would need to create an individual DAD object for each asse=
+t that we want to monitor the sick periods of.</p>
+<h4 id=3D"id-9.1Timefilterfunctionality-Thingspreventingimplementation(d.d.=
+20180313)">Things preventing implementation (d.d. 20180313)</h4>
+<ul style=3D"list-style-type: square;">
+<li>DAE does not currently support the concept PREVIOUS or similar that sho=
+uld allow us to compare two sequential datapoints</li>
+<li>DAE does not currently support the WRITEVALUE concept</li>
+</ul>
+<h3 id=3D"id-9.1Timefilterfunctionality-&quot;Missing&quot;data(MFCisdead)"=
+>"Missing" data (MFC is dead)</h3>
+<p>This relies on the concept of deadbeat which is explained in the documen=
+ts mentioned above.</p>
+<p>We should be able to use the DAE to determine the periods when the data =
+is missing due to MFC being offline.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">WITH AS=
+SET("MFC1") AS mfc
+DEFINE
+                EVERY(mfc.Heartbeat) AS hb,
+                EVERY(mfc.Deadbeat) AS db
+WHEN 1 THEN WRITEVALUE(hb.Timestamp, "DEADPERIOD", db.Timestamp - hb.Timest=
+amp)</pre>=20
+</div>
+</div>
+<h4 id=3D"id-9.1Timefilterfunctionality-Thingspreventingimplementation(d.d.=
+20180313).1">Things preventing implementation (d.d. 20180313)</h4>
+<ul>
+<li>Deadbeat is implemented in the SYSLOG which is only textual data and ca=
+n not be processed by the DAE</li>
+<li>Variable implementation DAE</li>
+</ul>
+<h3 id=3D"id-9.1Timefilterfunctionality-Completedata(everythingelse)">Compl=
+ete data (everything else)</h3>
+<p>This would be everything from first datapoint to last, except for the ab=
+ove determined periods.</p>
+<h3 id=3D"id-9.1Timefilterfunctionality-Otherpossibletypeofmissingdata">Oth=
+er possible type of missing data</h3>
+<p>MFC is functioning and sending heart + deadbeats but it is not logging a=
+ny other data due to an inability to read data.&nbsp;</p>
+<h2 id=3D"id-9.1Timefilterfunctionality-UpdatingtheUIafterselectionchanges"=
+>Updating the UI after selection changes</h2>
+<p>Whenever a user changes the time filter selection the underlying data ne=
+eds to be reloaded. To do this, we need to find a way to tell the DevExpres=
+s Dashboard that the data has changed.</p>
+<p>So in detail, here's what the system should do:</p>
+<ol>
+<li>User changes the selection
+<ol>
+<li>Validation occurs to see if max amount of datapoints was not crossed</l=
+i>
+</ol></li>
+<li>Update rest call is sent to the private ui
+<ol>
+<li>Updates the selected timeperiod of the dashboard for that user</li>
+<li>Clears the cache of the dataset for this user + dashboard</li>
+</ol></li>
+<li><p class=3D"auto-cursor-target">Reload the dashboard:&nbsp;ASPxDashboar=
+dDesigner1.Refresh();</p></li>
+</ol>
+<h2 id=3D"id-9.1Timefilterfunctionality-Absoluteandrelativetimeperiodselect=
+ion">Absolute and relative timeperiod selection</h2>
+<p><br></p>
+<p>It makes sense to, as a default, set the initially selected time period =
+to relative and display the last 100.000 records (if available).</p>
+<p>But when the user has changed the selection and comes back at a later po=
+int and opens the dashboard again, should we show the previously selected t=
+imefilter? Or revert back to the default?</p>
+<p>Proposed solution:&nbsp;</p>
+<ul style=3D"list-style-type: square;">
+<li>When the user selects a time period that ends at the last point of data=
+ we mark the selection as relative.<br><strong>Remark:</strong> This is det=
+ermined on the client as it should be equal to the current last visible dat=
+apoint, irrelevant of the data on the server.<br><span class=3D"confluence-=
+embedded-file-wrapper"><img class=3D"confluence-embedded-image" loading=3D"=
+lazy" src=3D"c3c5acdd10026bf0b35a9de8b98b576f" data-image-src=3D"https://ne=
+xchargeapplications.atlassian.net/wiki/download/attachments/83755536/image2=
+018-3-13_10-53-38.png?version=3D1&amp;modificationDate=3D1581406910859&amp;=
+cacheVersion=3D1&amp;api=3Dv2" data-unresolved-comment-count=3D"0" data-lin=
+ked-resource-id=3D"83756464" data-linked-resource-version=3D"1" data-linked=
+-resource-type=3D"attachment" data-linked-resource-default-alias=3D"image20=
+18-3-13_10-53-38.png" data-base-url=3D"https://nexchargeapplications.atlass=
+ian.net/wiki" data-linked-resource-content-type=3D"image/png" data-linked-r=
+esource-container-id=3D"83755536" data-linked-resource-container-version=3D=
+"1" data-media-id=3D"5c2eadb4-d6e4-4f38-91e5-b2f7533668ac" data-media-type=
+=3D"file" width=3D"468" height=3D"81"></span></li>
+<li>When the user selects a time period that ends before the last point of =
+data, we mark the selection as absolute<br><span class=3D"confluence-embedd=
+ed-file-wrapper"><img class=3D"confluence-embedded-image" loading=3D"lazy" =
+src=3D"b8fb5eea2f0625a8917241b876538af4" data-image-src=3D"https://nexcharg=
+eapplications.atlassian.net/wiki/download/attachments/83755536/image2018-3-=
+13_10-54-16.png?version=3D1&amp;modificationDate=3D1581406910622&amp;cacheV=
+ersion=3D1&amp;api=3Dv2" data-unresolved-comment-count=3D"0" data-linked-re=
+source-id=3D"83756460" data-linked-resource-version=3D"1" data-linked-resou=
+rce-type=3D"attachment" data-linked-resource-default-alias=3D"image2018-3-1=
+3_10-54-16.png" data-base-url=3D"https://nexchargeapplications.atlassian.ne=
+t/wiki" data-linked-resource-content-type=3D"image/png" data-linked-resourc=
+e-container-id=3D"83755536" data-linked-resource-container-version=3D"1" da=
+ta-media-id=3D"9034243a-4480-4c19-a28e-5a84dc6f833f" data-media-type=3D"fil=
+e" width=3D"468" height=3D"80"></span></li>
+<li>Reloading a relative selection will ensure the latest data is always sh=
+own. The starting point remains fixed as long as the max number of datapoin=
+ts has not been crossed. If this happens, the starting point will slide wit=
+h the max allotted window size relative to the end point.</li>
+<li>Reloading an absolute selection will display exactly the same data as w=
+hen you last used it.</li>
+</ul>
+<h2 id=3D"id-9.1Timefilterfunctionality-Whataboutcurrentfilterfunctionality=
+(timeperiodselection)">What about current filter functionality (time period=
+ selection)</h2>
+<p>TODO</p>
+<h2 id=3D"id-9.1Timefilterfunctionality-PitfallsregardingcustomMFClogic">Pi=
+tfalls regarding custom MFC logic</h2>
+<p>In general, something we don't want is to write custom logic for a speci=
+fic type of asset, in this case an MFC. This is why the approach of placing=
+ this logic into DAD objects is ideal. We don't have to write custom code t=
+o make this work.</p>
+<p>This is not so obvious for the definition of the chart being displayed a=
+s the timeline filter, because the data visualized inside the timeline filt=
+er, will need to use very specific data to visualize the downtime periods. =
+Ideally we'll provide a way for the user to specify the contents of the tim=
+eline filter. This comes at a large implementation cost however. Also, we d=
+on't want to force a user to have to specify this for every dashboard so we=
+ should provide some kind of default from the start...</p>
+<h3 id=3D"id-9.1Timefilterfunctionality-3B50D7F3-31E8-4822-A13E-E85F52C8E57=
+6att253132806Left/download/attachments/253263873/balsamiq_3B50D7F3-31E8-482=
+2-A13E-E85F52C8E576_Master.pngeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIi=
+OiJmZjgwODA4MTU4NDE0ZmRlMDE1ODRkNjQ1Yjhj">=20
+<div style=3D"width: 100.0%;height: 100.0%;text-align: left;">
+<img alt=3D"Balsamiq Wireframes" style=3D"max-width: 600.0px;" src=3D"https=
+://nexchargeapplications.atlassian.net/wiki/download/attachments/253263873/=
+balsamiq_3B50D7F3-31E8-4822-A13E-E85F52C8E576_Master.png">
+</div> </h3>
+<p><br></p>
+<h2 id=3D"id-9.1Timefilterfunctionality-FinalRemarks">Final Remarks</h2>
+<p>Ideally we should go over the assettype analysis again first. So we can,=
+ at the base level, define certain things, such as logging type etc. <br>At=
+ the moment this is all being worked around and we hope for the best... You=
+ can't combine hysteresis based log data along with normal log data for exa=
+mple.</p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_72_1613511848.1704260258715
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/c3c5acdd10026bf0b35a9de8b98b576f
+
+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
+
+------=_Part_72_1613511848.1704260258715
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/b8fb5eea2f0625a8917241b876538af4
+
+iVBORw0KGgoAAAANSUhEUgAAAuEAAAB/CAYAAABBsxyIAAAJLUlEQVR4Ae3bwVUUURAF0G4PWRiH
+bGFtHBIHQxwYh2vYYhzG0R5kUyxUZrQfNf9fNpYwM/XrVp/2nVbXbdu2xRcBAgQIECBAgAABAjGB
+D7FOGhEgQIAAAQIECBAg8EtACHchECBAgAABAgQIEAgLCOFhcO0IECBAgAABAgQICOGuAQIECBAg
+QIAAAQJhASE8DK4dAQIECBAgQIAAASHcNUCAAAECBAgQIEAgLCCEh8G1I0CAAAECBAgQICCEuwYI
+ECBAgAABAgQIhAWE8DC4dgQIECBAgAABAgSEcNcAAQIECBAgQIAAgbCAEB4G144AAQIECBAgQICA
+EO4aIECAAAECBAgQIBAWEMLD4NoRIECAAAECBAgQEMJdAwQIECBAgAABAgTCAkJ4GFw7AgQIECBA
+gAABAkK4a4AAAQIECBAgQIBAWEAID4NrR4AAAQIECBAgQEAIdw0QIECAAAECBAgQCAtchPtpR4AA
+AQLLstxcYiBAgACBPQXun/b89H//bE/C/93QJxAgQIAAAQIECBA4SsCT8KO4vJgAAQL/V6D7k5r/
+O61PI0CAwP4C5/I3jZ6E738t6ECAAAECBAgQIEDglYAQ/orDbwgQIECAAAECBAjsLyCE72+sAwEC
+BAgQIECAAIFXAi1D+OFwWNZ1XZ5/9UWAAAECBAgQIEBgNIGWIXw0ZPMQIECAAAECBAgQqAJCeNVQ
+EyBAgAABAgQIEAgICOEBZC0IECBAgAABAgQIVAEhvGqoCRAgQIAAAQIECAQEhPAAshYECBAgQIAA
+AQIEqoAQXjXUBAgQIECAAAECBAICQngAWQsCBAgQIECAAAECVUAIrxpqAgQIECBAgAABAgEBITyA
+rAUBAgQIECBAgACBKiCEVw01AQIECBAgQIAAgYCAEB5A1oIAAQIECBAgQIBAFRDCq4aaAAECBAgQ
+IECAQEBACA8ga0GAAAECBAgQIECgCgjhVUNNgAABAgQIECBAICAghAeQtSBAgAABAgQIECBQBYTw
+qqEmQIAAAQIECBAgEBAQwgPIWhAgQIAAAQIECBCoAkJ41VATIECAAAECBAgQCAgI4QFkLQgQIECA
+AAECBAhUASG8aqgJECBAgAABAgQIBASE8ACyFgQIECBAgAABAgSqgBBeNdQECBAgQIAAAQIEAgJC
+eABZCwIECBAgQIAAAQJVQAivGmoCBAgQIECAAAECAQEhPICsBQECBAgQIECAAIEqIIRXDTUBAgQI
+ECBAgACBgIAQHkDWggABAgQIECBAgEAVEMKrhpoAAQIECBAgQIBAQEAIDyBrQYAAAQIECBAgQKAK
+COFVQ02AAAECBAgQIEAgICCEB5C1IECAAAECBAgQIFAFhPCqoSZAgAABAgQIECAQEBDCA8haECBA
+gAABAgQIEKgCQnjVUBMgQIAAAQIECBAICAjhAWQtCBAgQIAAAQIECFQBIbxqqAkQIECAAAECBAgE
+BITwALIWBAgQIECAAAECBKqAEF411AQIECBAgAABAgQCAkJ4AFkLAgQIECBAgAABAlVACK8aagIE
+CBAgQIAAAQIBASE8gKwFAQIECBAgQIAAgSoghFcNNQECBAgQIECAAIGAgBAeQNaCAAECBAgQIECA
+QBUQwquGmgABAgQIECBAgEBAQAgPIGtBgAABAgQIECBAoAoI4VVDTYAAAQIECBAgQCAgIIQHkLUg
+QIAAAQIECBAgUAWE8KqhJkCAAAECBAgQIBAQEMIDyFoQIECAAAECBAgQqAJCeNVQEyBAgAABAgQI
+EAgICOEBZC0IECBAgAABAgQIVAEhvGqoCRAgQIAAAQIECAQEhPAAshYECBAgQIAAAQIEqoAQXjXU
+BAgQIECAAAECBAICQngAWQsCBAgQIECAAAECVUAIrxpqAgQIECBAgAABAgEBITyArAUBAgQIECBA
+gACBKrBu27bVb7y1PhwOb33p0a97eHhYHh8fl6urq+X6+vro93sDAQIEugv8+PZyD/34eb97aXcD
+5yNAgMAeAu91fz02G58cwtd13cPNZxIgQGAKgS+fXp5/fP3uXjrFwg1JgEBM4L3ur8c+1744VeT2
+9vbUt/71fZ6E/5XICwgQOHOBH99eBtjzXnrmRI5PgACBkwTO5f568pPwk1Te+Kbnx/l3d3fL8x9O
+xz7af2MLLyNAgMC7CtxcvrS/f3rXY2hOgACB4QTO5f7qP2YOd+kZiAABAgQIECBAoLuAEN59Q85H
+gAABAgQIECAwnIAQPtxKDUSAAAECBAgQINBdQAjvviHnI0CAAAECBAgQGE5ACB9upQYiQIAAAQIE
+CBDoLiCEd9+Q8xEgQIAAAQIECAwnIIQPt1IDESBAgAABAgQIdBcQwrtvyPkIECBAgAABAgSGExDC
+h1upgQgQIECAAAECBLoLCOHdN+R8BAgQIECAAAECwwkI4cOt1EAECBAgQIAAAQLdBYTw7htyPgIE
+CBAgQIAAgeEEhPDhVmogAgQIECBAgACB7gJCePcNOR8BAgQIECBAgMBwAkL4cCs1EAECBAgQIECA
+QHcBIbz7hpyPAAECBAgQIEBgOAEhfLiVGogAAQIECBAgQKC7gBDefUPOR4AAAQIECBAgMJyAED7c
+Sg1EgAABAgQIECDQXUAI774h5yNAgAABAgQIEBhOQAgfbqUGIkCAAAECBAgQ6C5w0f2AzkeAAIGR
+BW4uR57ObAQIECDwOwFPwn8n4/sECBAgQIAAAQIEdhLwJHwnWB9LgACBPwncP/3pp35GgAABAqML
+rNu2baMPaT4CBAgQIECAAAECnQT8c5RO23AWAgQIECBAgACBKQSE8CnWbEgCBAgQIECAAIFOAkJ4
+p204CwECBAgQIECAwBQCQvgUazYkAQIECBAgQIBAJwEhvNM2nIUAAQIECBAgQGAKASF8ijUbkgAB
+AgQIECBAoJOAEN5pG85CgAABAgQIECAwhYAQPsWaDUmAAAECBAgQINBJQAjvtA1nIUCAAAECBAgQ
+mEJACJ9izYYkQIAAAQIECBDoJCCEd9qGsxAgQIAAAQIECEwhIIRPsWZDEiBAgAABAgQIdBIQwjtt
+w1kIECBAgAABAgSmEBDCp1izIQkQIECAAAECBDoJCOGdtuEsBAgQIECAAAECUwj8BEoJTaBPeJSO
+AAAAAElFTkSuQmCC
+------=_Part_72_1613511848.1704260258715--

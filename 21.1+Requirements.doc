@@ -1,0 +1,500 @@
+Date: Wed, 3 Jan 2024 05:40:40 +0000 (UTC)
+Message-ID: <1508267325.87.1704260440027@19aa8add6f59>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_86_2108803556.1704260440027"
+
+------=_Part_86_2108803556.1704260440027
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>21.1 Requirements</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>21.1 Requirements</h1>
+    <div class=3D"Section1">
+        <p><style>[data-colorid=3Dvwpi2lnc0n]{color:#ff5630} html[data-colo=
+r-mode=3Ddark] [data-colorid=3Dvwpi2lnc0n]{color:#cf2600}[data-colorid=3Dla=
+2xzub9k3]{color:#ff5630} html[data-color-mode=3Ddark] [data-colorid=3Dla2xz=
+ub9k3]{color:#cf2600}[data-colorid=3Dbs5jboc0ja]{color:#ff5630} html[data-c=
+olor-mode=3Ddark] [data-colorid=3Dbs5jboc0ja]{color:#cf2600}[data-colorid=
+=3Db3pmqoy6cz]{color:#ff5630} html[data-color-mode=3Ddark] [data-colorid=3D=
+b3pmqoy6cz]{color:#cf2600}[data-colorid=3Dmu7ymibnfh]{color:#ff5630} html[d=
+ata-color-mode=3Ddark] [data-colorid=3Dmu7ymibnfh]{color:#cf2600}[data-colo=
+rid=3Doy10ymvde1]{color:#ff5630} html[data-color-mode=3Ddark] [data-colorid=
+=3Doy10ymvde1]{color:#cf2600}[data-colorid=3Df8mzl8m7kk]{color:#ff5630} htm=
+l[data-color-mode=3Ddark] [data-colorid=3Df8mzl8m7kk]{color:#cf2600}[data-c=
+olorid=3Dlh2hmq7f8k]{color:#ff5630} html[data-color-mode=3Ddark] [data-colo=
+rid=3Dlh2hmq7f8k]{color:#cf2600}[data-colorid=3Dmw3ljc809t]{color:#ff5630} =
+html[data-color-mode=3Ddark] [data-colorid=3Dmw3ljc809t]{color:#cf2600}[dat=
+a-colorid=3Dtxegaz3n4t]{color:#ff5630} html[data-color-mode=3Ddark] [data-c=
+olorid=3Dtxegaz3n4t]{color:#cf2600}[data-colorid=3Dtahqqldae2]{color:#ff563=
+0} html[data-color-mode=3Ddark] [data-colorid=3Dtahqqldae2]{color:#cf2600}[=
+data-colorid=3Dcht14p3v1b]{color:#ff5630} html[data-color-mode=3Ddark] [dat=
+a-colorid=3Dcht14p3v1b]{color:#cf2600}[data-colorid=3Dfsw0gaxpc7]{color:#ff=
+5630} html[data-color-mode=3Ddark] [data-colorid=3Dfsw0gaxpc7]{color:#cf260=
+0}[data-colorid=3Db2le8k5uvt]{color:#ff5630} html[data-color-mode=3Ddark] [=
+data-colorid=3Db2le8k5uvt]{color:#cf2600}[data-colorid=3Db5lbb9h3wu]{color:=
+#ff5630} html[data-color-mode=3Ddark] [data-colorid=3Db5lbb9h3wu]{color:#cf=
+2600}</style>Required to develop a desktop-based application with a graphic=
+al interface for assets(Nexcharge Products) registration on RAS with the fo=
+llowing features:-</p>
+<h3 id=3D"id-21.1Requirements-AssetRegistrationProcessRequirements:"><stron=
+g>Asset Registration Process Requirements:</strong></h3>
+<ul>
+<li><p>Register new Nexcharge product as an asset in RAS and generate GUID =
+(Universally unique identifier) with password</p></li>
+<li><p>Store the GUID and password in the respective Asset (Hardware)</p></=
+li>
+<li><p>Store the destination server(RAS) information such as Domain, IP, an=
+d API name in Asset (Hardware)</p></li>
+<li><p>Create a logical mapping of assets in the RAS application</p></li>
+<li><p>Registered only authorized NEXCHARGE product (Asset)</p></li>
+</ul>
+<h3 id=3D"id-21.1Requirements-ProductionRequirements(confirmationrequired):=
+"><strong>Production Requirements (<span data-colorid=3D"la2xzub9k3">confir=
+mation required</span>):</strong></h3>
+<ul>
+<li><p>Ideally, Each product(Asset) must be released from the production li=
+ne of Factory (Prantij)</p></li>
+<li><p>In some cases, if the product does not assemble at our plant and is =
+delivered from the vendor plant then we will have to share this application=
+ with the vendor and the vendor must be used NEXCHARGE serial number for th=
+eir product (It can be print on top-up of the product by generating serail =
+number from NEXCHARGE released-server)</p></li>
+<li><p>Each product(Asset) and its parts must have a unique serial number a=
+nd registered in the company released-server</p></li>
+<li><p>The application would be required at end of the production line when=
+ the product(Asset) will ready before dispatch</p></li>
+<li><p>The serial number will be print as a QR code on each product</p></li=
+>
+<li><p>The application needs to bypass asset verification, and store the se=
+rial number with the GUID in the server database until the "release-server"=
+ is ready</p></li>
+<li><p>In case of any asset will replace in the field directly from one loc=
+ation to another then Asset(Endpoint) should inform to RAS server automatic=
+ally, or manually (via email) by the filed engineer. RAS server will be res=
+ponsible to send new configuration file after received asset replacement in=
+formation</p></li>
+</ul>
+<h2 id=3D"id-21.1Requirements-FunctionalRequirements">Functional Requiremen=
+ts</h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 102.0px;">
+<col style=3D"width: 526.0px;">
+<col style=3D"width: 132.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>REQ #</p></th>
+<th class=3D"confluenceTh"><p>Description</p></th>
+<th class=3D"confluenceTh"><p> Remark</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ01</p></td>
+<td class=3D"confluenceTd"><p>Develop following Graphical User Interface an=
+d backend connectivity</p>
+<ul>
+<li><p>Login screen with user authentication and application authentication=
+ </p></li>
+<li><p>Asset Registration and Mapping </p></li>
+<li><p>Asset Re-Mapping (Need to develop in RAS under admin)</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ02</p></td>
+<td class=3D"confluenceTd"><p>Create tables in the database for mapping (if=
+ needed)</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ03</p></td>
+<td class=3D"confluenceTd"><p>The application should be capable to support =
+multiple types of communication (such as CAN, RS485 etc) for the product(As=
+set)</p><p>Required initial communication: =E2=80=9CCAN=E2=80=9D</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ04</p></td>
+<td class=3D"confluenceTd"><p>Application will require detect the product b=
+y SN(serial number) and SN can be found with following way:</p>
+<ul>
+<li><p>Read digitally through device communication</p></li>
+<li><p>Scan through barcode sticker</p></li>
+<li><p>Entery manually</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ05</p></td>
+<td class=3D"confluenceTd"><p>Create asset in RAS, Generate GUI and passwor=
+d, Configure server details(GUI, Password, Web API name, and server domain/=
+IP) in asset should be happening on single button click</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ06</p></td>
+<td class=3D"confluenceTd"><p>Provided a provision to arranging the product=
+s(Assets) in a logical group. </p><p>Example 1TCU + 6PACKs can be identifie=
+d as a single Site/Unit</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ07</p></td>
+<td class=3D"confluenceTd"><p>Scenario 1 and 2 (<a href=3D"/wiki/spaces/RAS=
+NEX/pages/668565675/21.2+Use+Cases" data-linked-resource-id=3D"668565675" d=
+ata-linked-resource-version=3D"8" data-linked-resource-type=3D"page">21.2 U=
+se Cases</a> ) required to stored each slaves GUID details in the master</p=
+><p>E.g.: A system has 1TCU and 6packs then it requires to store each 6Pack=
+'s GUID and serial number in TCU hardware. TCU should maintain the mapping =
+table</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ08</p></td>
+<td class=3D"confluenceTd"><p>The application should be required to arrange=
+ the product(Asset) in product-type</p>
+<ul>
+<li><p>Company name</p></li>
+<li><p>Customer name</p></li>
+<li><p>Hardware type</p></li>
+</ul><p>Ideally, this information should come from the release-server. For =
+now, we can configure it here</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ09</p></td>
+<td class=3D"confluenceTd"><p>Store the serial number and GUID mapping in t=
+he server database</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ10</p></td>
+<td class=3D"confluenceTd"><p>RAS server will be responsible to send new co=
+nfiguration file after received asset replacement information</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ11</p></td>
+<td class=3D"confluenceTd"><p>Implement auto intimation command for the dev=
+ice which replaced directly in filed</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ11</p></td>
+<td class=3D"confluenceTd"><p>Functional Testing</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>REQ12</p></td>
+<td class=3D"confluenceTd"><p>Application Testing</p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><span data-colorid=3D"cht14p3v1b">REQ13</span=
+></p></td>
+<td class=3D"confluenceTd"><p><span data-colorid=3D"oy10ymvde1">When BMS it=
+self is a master hardware with no slave hardware and still has the transmis=
+sion or storage capacity, then asset registration is applicable for that BM=
+S for eg. ION -BMS</span></p></td>
+<td class=3D"confluenceTd"><p></p><p>After discussion with Raveesha, single=
+ asset registration is possible </p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><span data-colorid=3D"mu7ymibnfh">REQ14</span=
+></p></td>
+<td class=3D"confluenceTd"><p><span data-colorid=3D"b5lbb9h3wu">Asset regis=
+tration for single slave hardware without any master hardware is possible <=
+/span></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><span data-colorid=3D"lh2hmq7f8k">REQ15</span=
+></p></td>
+<td class=3D"confluenceTd"><p><span data-colorid=3D"tahqqldae2">In configur=
+ation file generation, Order number </span></p>
+<ul>
+<li><p><span data-colorid=3D"vwpi2lnc0n">0 represents TCU500</span></p></li=
+>
+<li><p><span data-colorid=3D"b3pmqoy6cz">1 represents MSC</span></p></li>
+<li><p><span data-colorid=3D"mw3ljc809t">2-17 represents BMS</span></p></li=
+>
+</ul><p></p></td>
+<td class=3D"confluenceTd"><p><strong>19-05-2021 </strong>-After discussion=
+ with Raveesha nad Sebastian on , Siva needs to take care the order number =
+in WPF app.</p><p></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p><span data-colorid=3D"b2le8k5uvt">REQ16</span=
+></p></td>
+<td class=3D"confluenceTd"><p><span data-colorid=3D"f8mzl8m7kk">Refer to FO=
+TA schema for file transfer of Asset Remapping</span></p><p><a href=3D"/wik=
+i/spaces/RASNEX/pages/860913683/20.5+FOTA+Tables" data-linked-resource-id=
+=3D"860913683" data-linked-resource-version=3D"7" data-linked-resource-type=
+=3D"page">20.5 FOTA Tables</a><span data-colorid=3D"txegaz3n4t"> </span></p=
+></td>
+<td class=3D"confluenceTd"><p><span data-colorid=3D"fsw0gaxpc7">14-06-2021<=
+/span></p><p><span data-colorid=3D"bs5jboc0ja">After discussion with Awnind=
+era, FOTA schema has been finalized and can be proceed with the development=
+</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"id-21.1Requirements-HardwareRequirements">Hardware Requirements</=
+h2>
+<ul>
+<li><p>Desktop machine (16GB RAM + i5 + 500 GB storage ) with Windows 10</p=
+></li>
+<li><p>Internet via LAN cable</p></li>
+<li><p>Barcode Scanner</p></li>
+<li><p>USB to CAN converter</p></li>
+</ul>
+<h3 id=3D"id-21.1Requirements-RequirementsfortheFirmwareTeam">Requirements =
+for the Firmware Team</h3>
+<ul>
+<li><p>Required communication protocol documents for the TCU500 and MSC ove=
+r to CAN</p></li>
+<li><p>Required information such as parameters and CAN OID details to confi=
+gure the GUID and destination server information in TCU500 or MSC</p></li>
+<li><p>Required the communication document for Scenario 3 (<a href=3D"/wiki=
+/spaces/RASNEX/pages/668565675/21.2+Use+Cases" data-linked-resource-id=3D"6=
+68565675" data-linked-resource-version=3D"8" data-linked-resource-type=3D"p=
+age">21.2 Use Cases</a> )</p></li>
+<li><p>Required to develop remapping configuration file </p></li>
+</ul>
+<h3 id=3D"id-21.1Requirements-Dependency:">Dependency:</h3>
+<p>The application depends on the communication interface and firmware team=
+ for the following hardware:-</p>
+<ul>
+<li><p>TCU500</p></li>
+<li><p>MSC</p></li>
+<li><p>BMS</p></li>
+</ul>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_86_2108803556.1704260440027--

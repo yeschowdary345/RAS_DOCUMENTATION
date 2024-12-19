@@ -1,0 +1,296 @@
+Date: Wed, 3 Jan 2024 04:18:18 +0000 (UTC)
+Message-ID: <2053388886.27.1704255498502@825850ec0edf>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_26_2119154667.1704255498502"
+
+------=_Part_26_2119154667.1704255498502
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>App.config transformations</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>App.config transformations</h1>
+    <div class=3D"Section1">
+        <p>We've chosen to use a different VS build configuration for each =
+environment. We therefore need a different .config file for each configurat=
+ion (different DB connection string, different paths, different logging set=
+tings). Visual Studio provides a mechanism to apply these XML transformatio=
+ns, but only for web projects. The same can be done in non-web projects by =
+following these steps:</p>
+<ol>
+<li><p class=3D"auto-cursor-target">Name all xml transformations "App.<code=
+>configuration</code>.Config" where&nbsp;<code>configuration</code>&nbsp;is=
+ a build configuration (eg Demo). Place these in the same directory as the =
+app.config</p></li>
+<li><p class=3D"auto-cursor-target">Edit the VS project file and add entrie=
+s for each XML transformation in the following manner:&nbsp;</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence"> &lt;It=
+emGroup&gt;
+    &lt;Content Include=3D"App.config" /&gt;
+    &lt;Content Include=3D"App.Demo.Config"&gt;
+      &lt;DependentUpon&gt;App.Config&lt;/DependentUpon&gt;
+      &lt;SubType&gt;Designer&lt;/SubType&gt;
+    &lt;/Content&gt;</pre>=20
+</div>
+</div><p class=3D"auto-cursor-target">The ItemGroup already exists. You'll =
+have to set the type of the app.config tag to Content, and add a new Conten=
+t entry for each XML transformation noting that this file is dependent upon=
+ the base app.config.&nbsp;</p></li>
+<li><p class=3D"auto-cursor-target">At the very bottom of the file, just be=
+fore the closing &lt;/Project&gt; tag, add the following block of code:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">  &lt;U=
+singTask TaskName=3D"TransformXml" AssemblyFile=3D"$(MSBuildExtensionsPath)=
+\Microsoft\VisualStudio\v$(VisualStudioVersion)\Web\Microsoft.Web.Publishin=
+g.Tasks.dll" /&gt;
+  &lt;Target Name=3D"AfterCompile" Condition=3D"exists('app.$(Configuration=
+).config')"&gt;
+    &lt;!-- Generate transformed app config in the intermediate directory -=
+-&gt;
+    &lt;TransformXml Source=3D"app.config" Destination=3D"$(IntermediateOut=
+putPath)$(TargetFileName).config" Transform=3D"app.$(Configuration).config"=
+ /&gt;
+    &lt;!-- Force build process to use the transformed configuration file f=
+rom now on. --&gt;
+    &lt;ItemGroup&gt;
+      &lt;AppConfigWithTargetPath Remove=3D"app.config" /&gt;
+      &lt;AppConfigWithTargetPath Include=3D"$(IntermediateOutputPath)$(Tar=
+getFileName).config"&gt;
+        &lt;TargetPath&gt;$(TargetFileName).config&lt;/TargetPath&gt;
+      &lt;/AppConfigWithTargetPath&gt;
+    &lt;/ItemGroup&gt;
+  &lt;/Target&gt;</pre>=20
+</div>
+</div></li>
+</ol>
+<p>Re-load the project, everything should be functional.&nbsp;</p>
+    </div>
+</body>
+</html>
+------=_Part_26_2119154667.1704255498502--

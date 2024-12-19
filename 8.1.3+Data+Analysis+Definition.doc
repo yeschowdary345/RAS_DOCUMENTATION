@@ -1,0 +1,714 @@
+Date: Wed, 3 Jan 2024 05:31:56 +0000 (UTC)
+Message-ID: <588949371.65.1704259916850@2fe592dbd4e0>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_64_2079967144.1704259916849"
+
+------=_Part_64_2079967144.1704259916849
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>8.1.3 Data Analysis Definition</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>8.1.3 Data Analysis Definition</h1>
+    <div class=3D"Section1">
+        <p>An event definition consists of several components. This documen=
+t tries to explain each one and the functionality they provide.</p>
+<p><style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1704259916824 {padding: 0px;}
+div.rbtoc1704259916824 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1704259916824 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1704259916824">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#id-8.1.3DataAnalysisDefinition-SelectDataProcess">Select Da=
+ta Process</a></li>=20
+<li><a href=3D"#id-8.1.3DataAnalysisDefinition-ComputationProcess">Computat=
+ion Process</a></li>=20
+<li><a href=3D"#id-8.1.3DataAnalysisDefinition-EvaluationProcess">Evaluatio=
+n Process</a></li>=20
+<li><a href=3D"#id-8.1.3DataAnalysisDefinition-ActionThrottling">Action Thr=
+ottling</a></li>=20
+<li><a href=3D"#id-8.1.3DataAnalysisDefinition-ActionBuilderProcess">Action=
+ Builder Process</a></li>=20
+</ul>=20
+</div>
+<p></p>
+<p><strong>For a list of available functions for each step, see&nbsp;<a hre=
+f=3D"/wiki/spaces/RASNEX/pages/83755025/8.1.7.1+RASQL+Functional+Analysis%3=
+A+Available+Functions" data-linked-resource-id=3D"83755025" data-linked-res=
+ource-version=3D"1" data-linked-resource-type=3D"page">8.1.7.1 RASQL Functi=
+onal Analysis: Available Functions</a></strong></p>
+<h1 id=3D"id-8.1.3DataAnalysisDefinition-SelectDataProcess">Select Data Pro=
+cess</h1>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Definition">Definition</h2>
+<p>Transforms expressions of data into the actual set of data that is requi=
+red for the data analysis process</p>
+<p>Consists of the following segments:</p>
+<h3 id=3D"id-8.1.3DataAnalysisDefinition-AggregatePeriod"><strong>Aggregate=
+ Period</strong></h3>
+<p>The period for which all the aggregates are executed. This is required w=
+hen aggregate input data is defined.</p>
+<p><strong>Example: "USING PERIOD(2, DAY)"</strong></p>
+<h3 id=3D"id-8.1.3DataAnalysisDefinition-InputData"><strong>Input Data</str=
+ong></h3>
+<p><strong>Example:&nbsp;</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable" style=3D"text-align: left;" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<colgroup>
+<col>
+</colgroup>
+<tbody style=3D"text-align: left;">
+<tr style=3D"text-align: left;">
+<td style=3D"text-align: left;" class=3D"code confluenceTd">
+<div style=3D"text-align: left;" class=3D"container" title=3D"Hint: double-=
+click to select code">
+<div style=3D"text-align: left;" class=3D"line number1 index0 alt2">
+<code style=3D"text-align: left;" class=3D"java plain">WITH ASSET(</code><c=
+ode style=3D"text-align: left;" class=3D"java string">"Asset1"</code><code =
+style=3D"text-align: left;" class=3D"java plain">) AS Asset1,</code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number1 index0 alt2">
+<code style=3D"text-align: left;" class=3D"java plain">&nbsp; &nbsp; &nbsp;=
+ASSET(</code><code style=3D"text-align: left;" class=3D"java string">"Asset=
+2"</code><code style=3D"text-align: left;" class=3D"java plain">) AS Asset2=
+</code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number2 index1 alt1">
+<code style=3D"text-align: left;" class=3D"java plain">DEFINE</code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number3 index2 alt2">
+<code style=3D"text-align: left;" class=3D"java plain">&nbsp; &nbsp; AVG(As=
+set1.TEMP) AS AverageTempAsset1,</code>
+</div>
+<div style=3D"text-align: left;" class=3D"line number4 index3 alt1">
+<code style=3D"text-align: left;" class=3D"java spaces">&nbsp; &nbsp; AVG</=
+code><code style=3D"text-align: left;" class=3D"java plain">(Asset2.TEMP) A=
+S AverageTempAsset2</code>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Required. Consists of WITH statements and DEFINE statements, defining th=
+e aggregate or raw input data.<br>Multiple assets and properties can be sup=
+plied yet the following rules apply;</p>
+<ol>
+<li>Aggregate input data definitions can only be combined with other aggreg=
+ate input data definitions</li>
+<li>Aggregate input data definitions all use the same granularity, which is=
+ defined in the Aggregate Period</li>
+<li>Raw input data definitions can only be combined with other raw input da=
+ta definitions</li>
+<li>Each input data definition needs to have a unique alias</li>
+<li>Can deal with multiple assets</li>
+</ol>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Returns">Returns</h2>
+<p>A list of objects.</p>
+<p>Each object should contain:</p>
+<ul>
+<li>a property with a value for each requested RAW value
+<ul>
+<li style=3D"margin-left: 0.0px;">The name of the property equals the alias=
+ of the input data definition</li>
+</ul></li>
+<li>a property with a value for each requested AGGREGATE value
+<ul>
+<li>The name of the property equals the alias of the input data definition<=
+/li>
+</ul></li>
+<li>a property containing the timestamp
+<ul>
+<li style=3D"margin-left: 0.0px;">The name of the property is always 'times=
+tamp'</li>
+</ul></li>
+</ul>
+<p>Example of aggregation result: <strong>(important: This is only ONE obje=
+ct in a list of possibly many!)</strong></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Property</th>
+<th class=3D"confluenceTh">Value</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><strong>Timestamp</strong></td>
+<td class=3D"confluenceTd"><strong>2017-10-01 00:00:00.000</strong></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><strong>AverageTempAsset1</strong></td>
+<td class=3D"confluenceTd"><strong>84</strong></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><strong>AverageTempAsset2</strong></td>
+<td class=3D"confluenceTd"><strong>121</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Example of RAW input data result</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Property</th>
+<th class=3D"confluenceTh">Value</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><strong>Timestamp</strong></td>
+<td class=3D"confluenceTd"><strong>2017-10-01 00:00:00.000</strong></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><strong>SOC</strong></td>
+<td class=3D"confluenceTd"><strong>84</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"id-8.1.3DataAnalysisDefinition-ComputationProcess"><span style=3D=
+"font-size: 24.0px;">Computation Process</span></h1>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Definition.1">Definition</h2>
+<p>For each result that is passed from the "Select Data Process", we will r=
+un the computation process.</p>
+<p>Executes the necessary computations based on the defined computation exp=
+ression.</p>
+<p>A data analysis definition can have unlimited calculate expressions.</p>
+<p><strong>Example: "CALCULATE (AverageTempAsset1 + AverageTempAsset2) / 2 =
+AS AverageTemp"</strong></p>
+<p>All properties defined in the "Select Data Process" can be used in the c=
+omputation expression.</p>
+<p>Calculations are executed in the same order as they are written.</p>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Functionalities">Functionalities</=
+h2>
+<p>The following <a class=3D"external-link" href=3D"https://docs.microsoft.=
+com/en-us/dotnet/csharp/language-reference/operators/" rel=3D"nofollow">c# =
+operators</a> are supported:</p>
+<ul style=3D"list-style-type: square;">
+<li>Multiplicative (*,/,%)</li>
+<li>Additive (+,-)</li>
+<li>Relational (&lt;,&lt;=3D,&gt;,&gt;=3D)</li>
+<li>Unary (-x,!x)</li>
+<li>Equality (=3D=3D,&nbsp;!=3D)</li>
+</ul>
+<p>Other special functionalities are</p>
+<h4 id=3D"id-8.1.3DataAnalysisDefinition-Datefunctions">Date functions</h4>
+<div class=3D"table-wrap">
+<table class=3D"relative-table wrapped confluenceTable" style=3D"width: 92.=
+9786%;">
+<colgroup>
+<col style=3D"width: 5.549%;">
+<col style=3D"width: 4.60449%;">
+<col style=3D"width: 16.8831%;">
+<col style=3D"width: 46.0449%;">
+<col style=3D"width: 26.9185%;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Function</th>
+<th class=3D"confluenceTh">Type</th>
+<th class=3D"confluenceTh">Syntax</th>
+<th class=3D"confluenceTh">Parameters</th>
+<th colspan=3D"1" class=3D"confluenceTh">Returns</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><pre>DATEADD</pre></td>
+<td class=3D"confluenceTd"><pre>datetime</pre></td>
+<td class=3D"confluenceTd"><pre>&nbsp;DATEADD(datepart, number, date)</pre>=
+</td>
+<td class=3D"confluenceTd"><pre>datepart: specifies the type of boundary cr=
+ossed. Must be one of the following string values: year, month, dayofyear, =
+day, week, weekday, hour, minute, second, millisecond<br>number: an express=
+ion that resolves to an int<br>date: an expression that resolves to a datet=
+ime</pre></td>
+<td colspan=3D"1" class=3D"confluenceTd"><pre>Returns a specified&nbsp;date=
+&nbsp;with the specified&nbsp;number&nbsp;interval (signed integer) added t=
+o a specified&nbsp;datepart&nbsp;of that&nbsp;date.</pre></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><pre>DATEDIFF</pre></td>
+<td class=3D"confluenceTd"><pre>int</pre></td>
+<td class=3D"confluenceTd"><pre>DATEDIFF(datepart, startdate, enddate)</pre=
+></td>
+<td class=3D"confluenceTd"><pre>datepart: specifies the type of boundary cr=
+ossed. Must be one of the following string values: year, month, dayofyear, =
+day, week, weekday, hour, minute, second, millisecond<br>startdate: an expr=
+ession that resolves to a&nbsp;datetime<br>enddate: an expression that reso=
+lves to a datetime</pre></td>
+<td colspan=3D"1" class=3D"confluenceTd"><pre>Returns the count (signed int=
+eger) of the specified&nbsp;datepart&nbsp;boundaries crossed between the sp=
+ecified&nbsp;startdate&nbsp;and&nbsp;enddate.</pre></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><pre>DATEPART</pre></td>
+<td class=3D"confluenceTd"><pre>int</pre></td>
+<td class=3D"confluenceTd"><pre>DATEPART(datepart, date)</pre></td>
+<td class=3D"confluenceTd"><pre>datepart: specifies the type of boundary cr=
+ossed. Must be one of the following string values: year, month, dayofyear, =
+day, week, weekday, hour, minute, second, millisecond<br>date: an expressio=
+n that resolved to a datetime</pre></td>
+<td colspan=3D"1" class=3D"confluenceTd"><pre><br></pre></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>For a list of available functions see&nbsp;<a href=3D"/wiki/spaces/RASNE=
+X/pages/83755025/8.1.7.1+RASQL+Functional+Analysis%3A+Available+Functions" =
+data-linked-resource-id=3D"83755025" data-linked-resource-version=3D"1" dat=
+a-linked-resource-type=3D"page">8.1.7.1 RASQL Functional Analysis: Availabl=
+e Functions</a></p>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Returns.1">Returns</h2>
+<p>The same object that the "Select Data Process" returned, with the result=
+ of the computation added as a property with the alias being the name of th=
+e property.</p>
+<p>Example:&nbsp;</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Property</th>
+<th class=3D"confluenceTh">Value</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Timestamp</td>
+<td class=3D"confluenceTd">2017-10-01 00:00:00.000</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">AverageTempAsset1</td>
+<td class=3D"confluenceTd">84</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">AverageTempAsset2</td>
+<td class=3D"confluenceTd">121</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>AverageTemp</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>102,5</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"id-8.1.3DataAnalysisDefinition-EvaluationProcess"><span style=3D"=
+font-size: 24.0px;">Evaluation Process</span></h1>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Definition.2">Definition</h2>
+<p>For each result that is passed from the "Computation Process", we will r=
+un the evaluation process.</p>
+<p>Executes the necessary evaluations based on the defined evaluation expre=
+ssion.</p>
+<p>A data analysis definition can only have one evaluation expression.</p>
+<p>It can contain all properties defined in the Input Data Definition as we=
+ll as the computation result.</p>
+<p><strong>Example: "WHEN&nbsp;<strong>AverageTemp&nbsp;</strong>&gt; 80 ||=
+ AverageTempAsset2 &lt; 10 || AverageTempAsset1 &lt; 10"</strong></p>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Functionalities.1">Functionalities=
+</h2>
+<p>The following c# operators are supported:</p>
+<ul>
+<li>Relational (&lt;,&lt;=3D,&gt;,&gt;=3D)</li>
+<li>Equality (=3D=3D,&nbsp;!=3D)</li>
+<li>AND (&amp;&amp;)</li>
+<li>OR (||)</li>
+</ul>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Function</th>
+<th class=3D"confluenceTh">Type</th>
+<th class=3D"confluenceTh">Syntax</th>
+<th class=3D"confluenceTh">Parameters</th>
+<th colspan=3D"1" class=3D"confluenceTh">Result</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><pre>DATEADD</pre></td>
+<td class=3D"confluenceTd"><pre>datetime</pre></td>
+<td class=3D"confluenceTd"><pre>DATEADD(date:datetime, period:timespan)</pr=
+e></td>
+<td class=3D"confluenceTd"><pre>date: the date to modify<br>period: a times=
+pan to modify the date with</pre></td>
+<td colspan=3D"1" class=3D"confluenceTd"><pre>A new datetime with the reque=
+sted period added</pre></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><pre>NOW</pre></td>
+<td class=3D"confluenceTd"><pre>datetime</pre></td>
+<td class=3D"confluenceTd"><pre>NOW()</pre></td>
+<td class=3D"confluenceTd"><pre>/</pre></td>
+<td colspan=3D"1" class=3D"confluenceTd"><pre>The current datetime</pre></t=
+d>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><pre>PERIOD</pre></td>
+<td colspan=3D"1" class=3D"confluenceTd"><pre>Timespan</pre></td>
+<td colspan=3D"1" class=3D"confluenceTd"><pre>PERIOD(months, weeks, days, h=
+ours, minutes, seconds, milliseconds)</pre></td>
+<td colspan=3D"1" class=3D"confluenceTd"><pre>months: the number of months<=
+br>weeks: the number of weeks<br>days: the number of days<br>hours: the num=
+ber of hours<br>minutes: the number of minutes<br>seconds: the number of se=
+conds<br>milliseconds: the number of milliseconds</pre></td>
+<td colspan=3D"1" class=3D"confluenceTd"><pre>A timespan</pre></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>For a list of available functions see&nbsp;<a href=3D"/wiki/spaces/RASNE=
+X/pages/83755025/8.1.7.1+RASQL+Functional+Analysis%3A+Available+Functions" =
+data-linked-resource-id=3D"83755025" data-linked-resource-version=3D"1" dat=
+a-linked-resource-type=3D"page">8.1.7.1 RASQL Functional Analysis: Availabl=
+e Functions</a></p>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Returns.2">Returns</h2>
+<p>A new object, inheriting from the Computation Process result object that=
+ also contains a property for the evaluation result.</p>
+<p>Example:&nbsp;</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Property</th>
+<th class=3D"confluenceTh">Value</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Timestamp</td>
+<td class=3D"confluenceTd">2017-10-01 00:00:00.000</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">AverageTempAsset1</td>
+<td class=3D"confluenceTd">84</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">AverageTempAsset2</td>
+<td class=3D"confluenceTd">121</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">AverageTemp</td>
+<td colspan=3D"1" class=3D"confluenceTd">102,5</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>Evaluation</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>true</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"id-8.1.3DataAnalysisDefinition-ActionThrottling">Action Throttlin=
+g</h1>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Definition.3">Definition</h2>
+<p>For each result that evaluated to true in the evaluation process, we wil=
+l run the action throttling process</p>
+<p>It is an expression that limits how often an action will be run.</p>
+<p>The action throttling step will add a record to the data analysis thrott=
+ling state whenever it evaluated to true.</p>
+<p><strong>Example:&nbsp;THROTTLE BY MAX(5,WEEK) AND MIN(2,DAY)</strong></p=
+>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Result">Result</h2>
+<p>A new object, inheriting from the Evaluation Process result object that =
+also contains a property for the action throttling result.</p>
+<p>Example:&nbsp;</p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh">Property</th>
+<th class=3D"confluenceTh">Value</th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">Timestamp</td>
+<td class=3D"confluenceTd">2017-10-01 00:00:00.000</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">AverageTempAsset1</td>
+<td class=3D"confluenceTd">84</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">AverageTempAsset2</td>
+<td class=3D"confluenceTd">121</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">AverageTemp</td>
+<td colspan=3D"1" class=3D"confluenceTd">102,5</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd">Evaluation</td>
+<td colspan=3D"1" class=3D"confluenceTd">true</td>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>Throttling</strong></td>
+<td colspan=3D"1" class=3D"confluenceTd"><strong>true</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id=3D"id-8.1.3DataAnalysisDefinition-ActionBuilderProcess"><span style=
+=3D"font-size: 24.0px;">Action Builder Process</span></h1>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Definition.4">Definition</h2>
+<p>For each result for which the Throttling equals true in the action throt=
+tling process, we will run the action builder process.</p>
+<p><strong>Example: THEN WEBNOTIFICATION('Battery temperature for asset X h=
+as reached dangerous levels!', level.danger)</strong></p>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Functionalities.2">Functionalities=
+</h2>
+<p>For a list of available functions see&nbsp;<a href=3D"/wiki/spaces/RASNE=
+X/pages/83755025/8.1.7.1+RASQL+Functional+Analysis%3A+Available+Functions" =
+data-linked-resource-id=3D"83755025" data-linked-resource-version=3D"1" dat=
+a-linked-resource-type=3D"page">8.1.7.1 RASQL Functional Analysis: Availabl=
+e Functions</a></p>
+<h2 id=3D"id-8.1.3DataAnalysisDefinition-Returns.3">Returns</h2>
+<p>void</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_64_2079967144.1704259916849--

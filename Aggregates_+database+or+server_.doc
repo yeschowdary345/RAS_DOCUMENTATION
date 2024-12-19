@@ -1,0 +1,414 @@
+Date: Wed, 3 Jan 2024 05:30:20 +0000 (UTC)
+Message-ID: <732965622.107.1704259820865@d806889b90f2>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_106_128335193.1704259820865"
+
+------=_Part_106_128335193.1704259820865
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Aggregates: database or server?</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Aggregates: database or server?</h1>
+    <div class=3D"Section1">
+        <p>This document aims to answer the following question: "Should agg=
+regates in DAE definitions be calculated on the database or in the data ana=
+lysis engine itself?". Before we can answer it, we must first consider whet=
+her it's possible and practical to do the aggregation calculations on datab=
+ase in the first place.&nbsp;</p>
+<p>The following aggregates&nbsp; must be supported:</p>
+<ul>
+<li>Min</li>
+<li>Max</li>
+<li>Avg</li>
+<li>Count</li>
+</ul>
+<p>The following functionalities must also be supported:</p>
+<ul>
+<li>Previous</li>
+<li>Variable starting points</li>
+</ul>
+<p>In general the structure of one of these SQL statements is</p>
+<p>SELECT <strong>A</strong> FROM apv WHERE <strong>B</strong> GROUP BY <st=
+rong>C</strong></p>
+<p>C would be some function that returns the correct aggregation period (we=
+ek etc). Although it might be possible to write some function that can retu=
+rn an accurate day/month/week/hour number based starting from some arbitrat=
+ry and provided startpoint, it would be difficult.&nbsp;</p>
+<p>A larger problem is the issue that the previous datapoint is not taken i=
+nto account. Say for example we receive the following temperature data:</p>
+<p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
+al-size"><img class=3D"confluence-embedded-image" height=3D"250" loading=3D=
+"lazy" src=3D"f19539320ddc6262e8b793e8de3cb2be" data-image-src=3D"https://n=
+exchargeapplications.atlassian.net/wiki/download/attachments/83755014/image=
+2017-12-20_14-59-30.png?version=3D1&amp;modificationDate=3D1581406884324&am=
+p;cacheVersion=3D1&amp;api=3Dv2" data-unresolved-comment-count=3D"0" data-l=
+inked-resource-id=3D"83755724" data-linked-resource-version=3D"1" data-link=
+ed-resource-type=3D"attachment" data-linked-resource-default-alias=3D"image=
+2017-12-20_14-59-30.png" data-base-url=3D"https://nexchargeapplications.atl=
+assian.net/wiki" data-linked-resource-content-type=3D"image/png" data-linke=
+d-resource-container-id=3D"83755014" data-linked-resource-container-version=
+=3D"1" data-media-id=3D"79970a84-b6bb-489a-ac3d-948001c5b7c0" data-media-ty=
+pe=3D"file" width=3D"391"></span></p>
+<p><br></p>
+<p>And propose we want to calculate some aggregate of the blue period. A na=
+=C3=AFve implementation would only look at the datapoint in the period and =
+return the following values:</p>
+<ul>
+<li>Min: 20</li>
+<li>Max: 20</li>
+<li>Avg: 20</li>
+<li>Count: 1</li>
+</ul>
+<p>While the real temperature that was experienced in that period were sign=
+ificiantly different! A large proportion of the total time in that period t=
+he temperature was actually 12=C2=B0C +/- hysteresis threshold. The actual =
+values that should be returned are:</p>
+<ul>
+<li>Min: 12</li>
+<li>Max: 20</li>
+<li>Avg: 16? One could consider making this some weighted average. Or just =
+the average of the points. A weighted average is probably more accurate but=
+ more difficult to implement.&nbsp;</li>
+<li>Count: 1 (probably? depends on the definition of count, but number of t=
+imes data has changed seems a reasonable definition)</li>
+</ul>
+<p>This one extra point cannot be included in normal SQL SELECT queries, me=
+aning that the only way this can be realised in SQL is by using cursors.&nb=
+sp;</p>
+<p>The extra effort &amp; complexity that would be needed to implement this=
+ algorithm in SQL versus implementation in C# does not justify the marginal=
+ speed advantage an SQL implementation would have in my opinion.&nbsp;</p>
+<p>We therefore propose implementing aggregates in C#.&nbsp;</p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_106_128335193.1704259820865
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/f19539320ddc6262e8b793e8de3cb2be
+
+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
+N6wQZgYAAAAASUVORK5CYII=
+------=_Part_106_128335193.1704259820865--

@@ -1,0 +1,460 @@
+Date: Wed, 3 Jan 2024 04:38:58 +0000 (UTC)
+Message-ID: <1175492335.45.1704256738194@9c4c96a6ba92>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_44_652497392.1704256738194"
+
+------=_Part_44_652497392.1704256738194
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>ColumnStorage: Performance Analysis</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>ColumnStorage: Performance Analysis</h1>
+    <div class=3D"Section1">
+        <p>In newer versions of SQL Server, a&nbsp; tables' clustered index=
+ can be a column-based rather than a row-based index. This should result in=
+ performance increases in IOT-like applications.&nbsp;</p>
+<h2 id=3D"ColumnStorage:PerformanceAnalysis-Performance">Performance</h2>
+<p>Read performance (display dashboard) increased in approximately 10 to 15=
+%.&nbsp;</p>
+<h2 id=3D"ColumnStorage:PerformanceAnalysis-DiskStorage">Disk Storage</h2>
+<p>ColumnStore requires significantly less disk space in sparse use cases. =
+Comparison, noting that one of the indices could not be recreated due to co=
+nstraints (see "warning" below).&nbsp;</p>
+<p>Lower is better:</p>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"confluenceTable">
+<tbody>
+<tr>
+<td width=3D"230" class=3D"confluenceTd"><br></td>
+<td width=3D"170" class=3D"confluenceTd"><strong>Data</strong></td>
+<td width=3D"134" class=3D"confluenceTd"><strong>Indexes</strong></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><strong>Column Store</strong></td>
+<td class=3D"confluenceTd">388112</td>
+<td class=3D"confluenceTd">1589680</td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><strong>Row Store</strong></td>
+<td class=3D"confluenceTd">3144320</td>
+<td class=3D"confluenceTd">5374000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span class=3D"confluence-embedded-file-wrapper"><img class=3D"confluenc=
+e-embedded-image" loading=3D"lazy" src=3D"69dd86a203b639c2480c14852ef66b10"=
+ data-image-src=3D"https://nexchargeapplications.atlassian.net/wiki/downloa=
+d/attachments/83755459/image2019-1-2_15-59-53.png?version=3D1&amp;modificat=
+ionDate=3D1581406806429&amp;cacheVersion=3D1&amp;api=3Dv2" data-unresolved-=
+comment-count=3D"0" data-linked-resource-id=3D"83757731" data-linked-resour=
+ce-version=3D"1" data-linked-resource-type=3D"attachment" data-linked-resou=
+rce-default-alias=3D"image2019-1-2_15-59-53.png" data-base-url=3D"https://n=
+exchargeapplications.atlassian.net/wiki" data-linked-resource-content-type=
+=3D"image/png" data-linked-resource-container-id=3D"83755459" data-linked-r=
+esource-container-version=3D"1" data-media-id=3D"d0b2aac3-8a3a-4457-ba99-4d=
+a1f7f3c0f9" data-media-type=3D"file" width=3D"468" height=3D"276"></span></=
+p>
+<p><br></p>
+<h2 id=3D"ColumnStorage:PerformanceAnalysis-Method">Method</h2>
+<p>Script non-clustered&nbsp; indexes to text. Drop all indexes. Create new=
+ columnstore index using</p>
+<p>create clustered columnstore index IX_Timestamp on AssetPropertyValue</p=
+>
+<p>Recreated dropped indexes.</p>
+<h2 id=3D"ColumnStorage:PerformanceAnalysis-Warning">Warning</h2>
+<p>One of the indices could not be recreated because it contains a varchar(=
+*) column. Large &amp; byte-style columns are not allowed in columnstore ta=
+bles. This might be an issue.&nbsp;</p>
+<h2 id=3D"ColumnStorage:PerformanceAnalysis-Conclusion">Conclusion</h2>
+<p>ColumnStore for APV storage is definitely the way forward. ColumnStore w=
+as developed pretty much specifically for our use case so it would be fooli=
+sh not to use it.&nbsp;</p>
+    </div>
+</body>
+</html>
+------=_Part_44_652497392.1704256738194
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/69dd86a203b639c2480c14852ef66b10
+
+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
+AAAASUVORK5CYII=
+------=_Part_44_652497392.1704256738194--

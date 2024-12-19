@@ -1,0 +1,365 @@
+Date: Wed, 3 Jan 2024 04:18:25 +0000 (UTC)
+Message-ID: <352495139.19.1704255505226@9c4c96a6ba92>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_18_681862153.1704255505225"
+
+------=_Part_18_681862153.1704255505225
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Aurelia development</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Aurelia development</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"Aureliadevelopment-Gettingthingsready">Getting things rea=
+dy</h1>
+<p>Before you can start working with Aurelia projects you need to perform t=
+hese tasks:</p>
+<p>1.&nbsp;First you need to have nodejs installed.</p>
+<p style=3D"margin-left: 30.0px;">Download the setup here:&nbsp;<a class=3D=
+"external-link" href=3D"https://nodejs.org/en/download/" rel=3D"nofollow">h=
+ttps://nodejs.org/en/download/</a></p>
+<p>2. Once nodejs is installed, you can install jspm (another package manag=
+er) using a command prompt</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">npm ins=
+tall jspm -g</pre>=20
+</div>
+</div>
+<h1 id=3D"Aureliadevelopment-RAS.Private.UI">RAS.Private.UI</h1>
+<p>Because we're using multiple independent aurelia app's in this project, =
+we had to improvise.</p>
+<p>Here's how you work with them:</p>
+<p>Each individual app has it's own 'app-bunde.js' file and these need to b=
+e generated using the =C2=B4jspm bundle=C2=B4 command.</p>
+<p>Because all apps are using a common set of modules there is also a =C2=
+=B4vendor_bundle.js=C2=B4. This should also be generated using the =C2=B4js=
+pm bundle=C2=B4 command.</p>
+<h3 id=3D"Aureliadevelopment-Vendorbundle">Vendor bundle</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">jspm bu=
+ndle Aurelia\vendor-bundle.js Aurelia\dist\vendor-bundle.js --inject --mini=
+fy</pre>=20
+</div>
+</div>
+<h3 id=3D"Aureliadevelopment-Filters">Filters</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">jspm bu=
+ndle Aurelia\Filter\Create\app.js - aurelia-framework Aurelia\dist\Filter\a=
+pp-bundle.js --inject --minify</pre>=20
+</div>
+</div>
+<h3 id=3D"Aureliadevelopment-DataAnalysisDefinition">DataAnalysisDefinition=
+</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">jspm bu=
+ndle Aurelia\DataAnalysisDefinition\Create\app.js - aurelia-framework Aurel=
+ia\dist\DataAnalysisDefinition\app-bundle.js --inject --minify</pre>=20
+</div>
+</div>
+<h3 id=3D"Aureliadevelopment-ScheduledTask">ScheduledTask</h3>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">jspm bu=
+ndle Aurelia\ScheduledTask\Create\app.js - aurelia-framework - jquery Aurel=
+ia\dist\ScheduledTask\app-bundle.js --inject --minify</pre>=20
+</div>
+</div>
+<h2 id=3D"Aureliadevelopment-Addingdependenciesusingnpm">Adding dependencie=
+s using npm</h2>
+<p>Adding a dependency which should be used in your aurelia classes, is dif=
+ficult if you don't know where to start. Follow these steps:</p>
+<ol>
+<li>open a command prompt</li>
+<li>install the package using npm: e.g. "npm install moment"</li>
+<li>wait for the installation to complete</li>
+<li>you can now reference the module in your class as follows:&nbsp;<p><cod=
+e>import moment from "moment";</code></p></li>
+</ol>
+<p>Note: some dependencies you'll have to inject into the constructor of yo=
+ur class, others do not require this (like jquery, moment).</p>
+<h2 id=3D"Aureliadevelopment-SetupinTeamcityCI">Setup in Teamcity CI</h2>
+<p>For this project we have added an additional build step which bundles al=
+l the necessary aurelia files called "JSPM install + bundling".</p>
+<h2 id=3D"Aureliadevelopment-Warning">Warning</h2>
+<p>For this project, don't update any packages without knowing what you're =
+doing. Some modules use very specific versions of a package and updating mo=
+dules will cause those modules to fail.</p>
+<p>If you really have to update some packages for security reasons or whate=
+ver, keep this in mind:</p>
+<p>Inside the file Aurelia\vendor_bundle.js file there is a list of depende=
+ncies with a hardcoded version. You need to manually update these to the co=
+rrect version. This is necessary for the jspm bundling to work.</p>
+<h1 id=3D"Aureliadevelopment-RAS.Monitoring.UI">RAS.Monitoring.UI</h1>
+<p>For the monitoring app we've resorted to the proper way of using aurelia=
+ and thus the entire project is a single aurelia application.</p>
+<p>To start working with the app, follow these steps.</p>
+<p>1.&nbsp;Open a command prompt and navigate to the RAS.Monitoring.UI fold=
+er</p>
+<p>2. Make sure aurelia-cli is installed globally</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">npm ins=
+tall aurelia-cli -g</pre>=20
+</div>
+</div>
+<p>3. Make sure all necessary modules are installed locally</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">npm ins=
+tall</pre>=20
+</div>
+</div>
+<p>4. Run the application by executing this command:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">au run =
+--watch</pre>=20
+</div>
+</div>
+<p>Note that the command will tell you where the website is running and you=
+ can navigate to the address.</p>
+<p>Now you can start working on the monitoring app. Whenever a change is de=
+tected, the application is automatically updated.</p>
+<h2 id=3D"Aureliadevelopment-SetupinTeamcityCI.1">Setup in Teamcity CI</h2>
+<p>For this project we have added an additional build step which deploys th=
+e application called&nbsp;NPM install aurelia-cli + build app (RAS.Monitori=
+ng.UI).</p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_18_681862153.1704255505225--
